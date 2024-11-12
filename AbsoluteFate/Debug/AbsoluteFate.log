@@ -1,2 +1,1 @@
-﻿SDL2main.lib(SDL_windows_main.obj) : error LNK2019: unresolved external symbol __imp__CommandLineToArgvW@8 referenced in function _main_getcmdline
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe : fatal error LNK1120: 1 unresolved externals
+﻿  AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
