@@ -7,7 +7,7 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-	Game myGame("TheGame");
+	Game myGame("My Pong Game");
 	myGame.Init();
 	return 0;
 }

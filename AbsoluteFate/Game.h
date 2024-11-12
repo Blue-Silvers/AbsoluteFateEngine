@@ -1,12 +1,15 @@
 #pragma once
 #include "Window.h"
 #include "Renderer.h"
+#include "Scene.h"
+
 class Game
 {
 private:
 	std::string mTitle = "Fate Engine";
 	Window* mWindow;
 	Renderer* mRenderer;
+	Scene* mScene;
 	bool mIsRunning;
 
 public:

@@ -20,6 +20,8 @@ void Game::Init()
 {
     mWindow = new Window{ 800,800 };
     mRenderer = new Renderer;
+    mScene = new Scene{"Test"};
+    mScene->SetRenderer(mRenderer);
     if (mWindow->Open(mTitle) && mRenderer->Initialize(*mWindow))
     {
         Loop();
@@ -40,11 +42,12 @@ void Game::Loop()
 
 void Game::Render()
 {
+    mScene->Render();
+    /*mRenderer->BeginDraw();
     
-    mRenderer->BeginDraw();
     Rectangle rRect = { {300,300},{200,300} };
     mRenderer->DrawRect(rRect);
-    mRenderer->EndDraw();
+    mRenderer->EndDraw();*/
 }
 
 void Game::Update()
