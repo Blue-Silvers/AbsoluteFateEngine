@@ -1,8 +1,15 @@
 #pragma once
 #include "Scene.h"
+#include "Paddle.h"
 
 class Pong : public Scene
 {
+private:
+	float mPaddleSpeed = 1.5;
+
+public:
+	Paddle playerPaddle, aiPaddle;
+
 	virtual void SetRenderer(Renderer* pRenderer) override;
 	virtual void Start() override;
 	virtual void Update()override;

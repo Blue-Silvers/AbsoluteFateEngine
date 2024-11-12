@@ -9,16 +9,16 @@ private:
 	std::string mTitle = "Fate Engine";
 	Window* mWindow;
 	Renderer* mRenderer;
-	Scene* mScene;
+	Scene* mScene[1] = {nullptr};
 	bool mIsRunning;
 
 public:
 	
-	Game(std::string gameTitle);
+	Game(std::string gameTitle, Scene* newScene);
 	Game(const Game&) = delete;
 	Game& operator= (const Game&) = delete;
 
-	void Init();
+	void Init(Scene* newScene);
 	void Loop();//chore
 	void Render();
 	void Update();//gameplay

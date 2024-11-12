@@ -5,6 +5,8 @@ class Scene
 {
 private:
 	std::string mTitle = "Fate Engine";
+
+protected:
 	Renderer* mRenderer;
 
 public:

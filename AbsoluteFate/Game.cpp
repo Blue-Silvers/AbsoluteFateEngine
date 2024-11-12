@@ -1,7 +1,7 @@
 #include "Game.h"
 #include <iostream>
 
-Game::Game(std::string gameTitle): mTitle(gameTitle),mIsRunning(true)
+Game::Game(std::string gameTitle, Scene* newScene): mTitle(gameTitle),mIsRunning(true)
 {
     if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
     {
@@ -13,15 +13,15 @@ Game::Game(std::string gameTitle): mTitle(gameTitle),mIsRunning(true)
     }
     mTitle = gameTitle;
 
-    Init();
+    Init(newScene);
 }
 
-void Game::Init()
+void Game::Init(Scene* newScene)
 {
     mWindow = new Window{ 800,800 };
     mRenderer = new Renderer;
-    mScene = new Scene{"Test"};
-    mScene->SetRenderer(mRenderer);
+    mScene[0] = newScene;
+    mScene[0]->SetRenderer(mRenderer);
     if (mWindow->Open(mTitle) && mRenderer->Initialize(*mWindow))
     {
         Loop();
@@ -30,6 +30,8 @@ void Game::Init()
 
 void Game::Loop()
 {
+    mScene[0]->Start();
+
     while (mIsRunning)
     {
         CheckInput();
@@ -42,7 +44,7 @@ void Game::Loop()
 
 void Game::Render()
 {
-    mScene->Render();
+    mScene[0]->Render();
     /*mRenderer->BeginDraw();
     
     Rectangle rRect = { {300,300},{200,300} };
@@ -52,6 +54,7 @@ void Game::Render()
 
 void Game::Update()
 {
+    mScene[0]->Update();
 }
 
 void Game::CheckInput()
@@ -67,7 +70,7 @@ void Game::CheckInput()
                 mIsRunning = false;
                 break;
             default:
-                //Send input to scene
+                mScene[0]->OnInput(event);
                 break;
             }
         }
