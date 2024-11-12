@@ -8,6 +8,7 @@ void Pong::SetRenderer(Renderer* pRenderer)
 void Pong::Start()
 {
 	aiPaddle.mPaddlePositions = { 65,300 };
+	pongBall.Start(playerPaddle, aiPaddle);
 }
 
 void Pong::Update()
@@ -40,6 +41,8 @@ void Pong::Update()
 	}
 
 	mPlayerMove = 0;
+
+	pongBall.Update();
 }
 
 void Pong::Render()
@@ -51,6 +54,8 @@ void Pong::Render()
 	Rectangle rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };
 	mRenderer->DrawRect(rRectPlayer);
 	mRenderer->DrawRect(rRectAi);
+	Rectangle rBall = { {pongBall.mBallCenter},{20,20} };
+	mRenderer->DrawRect(rBall);
 
 	mRenderer->EndDraw();
 }
@@ -72,6 +77,10 @@ void Pong::OnInput(SDL_Event event)
 			playerPaddle.mPaddlePositions.y += mPaddleSpeed * 3;
 		}*/
 		mPlayerMove = -1;
+	}
+	if (event.key.keysym.sym == SDLK_SPACE)
+	{
+		pongBall.mBallLunch = true;
 	}
 }
 

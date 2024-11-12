@@ -1,5 +1,7 @@
 #include "PongBall.h"
 #include <SDL.h>
+#include "Renderer.h"
+
 PongBall::PongBall()
 {
 
@@ -7,13 +9,13 @@ PongBall::PongBall()
 
 void PongBall::Start(Paddle& paddle, Paddle& aiPaddle)
 {
-	mBallCenterX = 400;
-	mBallCenterY = 400;
-	mBallRadius = 15;
+	mBallCenter.x = 400;
+	mBallCenter.y = 400;
+	mBallRadius = 20;
 	mBallSpeedX = 2;
 	mBallSpeedY = 2;
 	mPlayerPaddle = &paddle;
-	//mAiPaddle = &aiPaddle;
+	mAiPaddle = &aiPaddle;
 	mBallLife = 3;
 	mBallLunch = false;
 }
@@ -27,33 +29,52 @@ void PongBall::Update()
 
 	if (mBallLunch)
 	{
-		mBallCenterX += mBallSpeedX;
-		if ((mBallCenterX >= 800 - mBallRadius / 2 && mBallSpeedX > 0) || (mBallCenterX <= mBallRadius / 2 && mBallSpeedX < 0))
+		mBallCenter.x += mBallSpeedX;
+		if ((mBallCenter.x >= 800 - mBallRadius / 2 && mBallSpeedX > 0) || (mBallCenter.x <= mBallRadius / 2 && mBallSpeedX < 0))
 		{
 			mBallSpeedX *= -1;
 		}
 
-		mBallCenterY += mBallSpeedY;
-		if ((mBallCenterY >= 800 - mBallRadius / 2 && mBallSpeedY > 0) || (mBallCenterY <= mBallRadius / 2 && mBallSpeedY < 0))
+		mBallCenter.y += mBallSpeedY;
+		if ((mBallCenter.y >= 800 - mBallRadius / 2 && mBallSpeedY > 0) || (mBallCenter.y <= mBallRadius / 2 && mBallSpeedY < 0))
 		{
 			mBallSpeedY *= -1;
 		}
 
-		if (mBallCenterY + mBallRadius >= mPlayerPaddle->mPaddleY && mBallCenterX + mBallRadius > mPlayerPaddle->mPaddleX && mBallCenterX - mBallRadius < mPlayerPaddle->mPaddleX + mPlayerPaddle->mPaddleWidth)
+		if (mBallCenter.y + mBallRadius >= mPlayerPaddle->mPaddlePositions.y && mBallCenter.x + mBallRadius > mPlayerPaddle->mPaddlePositions.x && mBallCenter.x - mBallRadius < mPlayerPaddle->mPaddlePositions.x + mPlayerPaddle->mPaddleDimension.y)
 		{
-			if (mBallCenterX > mPlayerPaddle->mPaddleX + mPlayerPaddle->mPaddleWidth / 2)
+			if (mBallCenter.x > mPlayerPaddle->mPaddlePositions.x + mPlayerPaddle->mPaddleDimension.y / 2)
 			{
-				float distanceRight = mPlayerPaddle->mPaddleX + mPlayerPaddle->mPaddleWidth / 2 - mBallCenterX;
-				mBallSpeedX = -mBallSpeedMax * (distanceRight / (newPaddle->mPaddleWidth / 2));
+				float distanceRight = mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2 - mBallCenter.x;
+				mBallSpeedX = -mBallSpeedMax * (distanceRight / (mPlayerPaddle->mPaddleDimension.y / 2));
 			}
-			else if (mBallCenterX < mPlayerPaddle->mPaddleX + mPlayerPaddle->mPaddleWidth / 2)
+			else if (mBallCenter.x < mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2)
 			{
-				float distanceLeft = newPaddle->mPaddleX + newPaddle->mPaddleWidth / 2 - mBallCenterX;
-				mBallSpeedX = -mBallSpeedMax * (distanceLeft / (newPaddle->mPaddleWidth / 2));
+				float distanceLeft = mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2 - mBallCenter.x;
+				mBallSpeedX = -mBallSpeedMax * (distanceLeft / (mPlayerPaddle->mPaddleDimension.y / 2));
 			}
 			else
 			{
-				mBallCenterX = 0;
+				mBallCenter.x = 0;
+			}
+			mBallSpeedY *= -1;
+		}
+		//mAiPaddle
+		if (mBallCenter.y + mBallRadius >= mAiPaddle->mPaddlePositions.y && mBallCenter.x + mBallRadius > mAiPaddle->mPaddlePositions.x && mBallCenter.x - mBallRadius < mAiPaddle->mPaddlePositions.x + mAiPaddle->mPaddleDimension.y)
+		{
+			if (mBallCenter.x > mAiPaddle->mPaddlePositions.x + mAiPaddle->mPaddleDimension.y / 2)
+			{
+				float distanceRight = mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2 - mBallCenter.x;
+				mBallSpeedX = -mBallSpeedMax * (distanceRight / (mAiPaddle->mPaddleDimension.y / 2));
+			}
+			else if (mBallCenter.x < mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2)
+			{
+				float distanceLeft = mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2 - mBallCenter.x;
+				mBallSpeedX = -mBallSpeedMax * (distanceLeft / (mAiPaddle->mPaddleDimension.y / 2));
+			}
+			else
+			{
+				mBallCenter.x = 0;
 			}
 			mBallSpeedY *= -1;
 		}
@@ -63,21 +84,11 @@ void PongBall::Update()
 	{
 		mBallSpeedX = 2;
 		mBallSpeedY = -2;
-		mBallCenterX = 400;
-		mBallCenterY = 400;
+		mBallCenter.x = 400;
+		mBallCenter.y = 400;
 
 		mBallLunch = false;
 
 	}
 }
 
-
-void PongBall::Draw()
-{
-	Circle DrawCircle(mBallCenterX, mBallCenterY, mBallRadius, mBallColor);
-}
-
-void PongBall::CollideBrick()
-{
-	mBallSpeedX *= -1;
-}
