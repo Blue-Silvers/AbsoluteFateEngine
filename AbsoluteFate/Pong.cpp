@@ -28,6 +28,18 @@ void Pong::Update()
 	{
 		aiPaddle.onTop = false;
 	}
+
+
+	if (playerPaddle.mPaddlePositions.y > 0 && mPlayerMove == 1)
+	{
+		playerPaddle.mPaddlePositions.y -= mPaddleSpeed * 3;
+	}
+	else if (playerPaddle.mPaddlePositions.y < 600 && mPlayerMove == -1)
+	{
+		playerPaddle.mPaddlePositions.y += mPaddleSpeed * 3;
+	}
+
+	mPlayerMove = 0;
 }
 
 void Pong::Render()
@@ -43,9 +55,24 @@ void Pong::Render()
 	mRenderer->EndDraw();
 }
 
-void Pong::OnInput(SDL_Event)
+void Pong::OnInput(SDL_Event event)
 {
-
+	if (event.key.keysym.sym == SDLK_UP)
+	{
+		/*if (playerPaddle.mPaddlePositions.y > 0 )
+		{
+			playerPaddle.mPaddlePositions.y -= mPaddleSpeed * 3;
+		}*/
+		mPlayerMove = 1;
+	}
+	else if (event.key.keysym.sym == SDLK_DOWN)
+	{
+		/*if (playerPaddle.mPaddlePositions.y < 600)
+		{
+			playerPaddle.mPaddlePositions.y += mPaddleSpeed * 3;
+		}*/
+		mPlayerMove = -1;
+	}
 }
 
 void Pong::Close()

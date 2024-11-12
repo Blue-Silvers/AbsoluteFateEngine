@@ -6,6 +6,7 @@ class Pong : public Scene
 {
 private:
 	float mPaddleSpeed = 1.5;
+	int mPlayerMove = 0;
 
 public:
 	Paddle playerPaddle, aiPaddle;

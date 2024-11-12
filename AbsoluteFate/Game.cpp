@@ -69,8 +69,11 @@ void Game::CheckInput()
             case SDL_QUIT:
                 mIsRunning = false;
                 break;
-            default:
+            case SDL_KEYDOWN:
                 mScene[0]->OnInput(event);
+                break;
+            default:
+                
                 break;
             }
         }
