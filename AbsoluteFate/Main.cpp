@@ -3,11 +3,11 @@
 #include <glew.h>
 #include "Vector2D.h"
 #include "Log.h"
+#include "Game.h"
 using namespace std;
 
 int main(int argc, char** argv) {
-	Vector2D myVector = Vector2D::One;
-	myVector *= 2.0f;
-	Log::Info("");
+	Game myGame("TheGame");
+	myGame.Init();
 	return 0;
 }

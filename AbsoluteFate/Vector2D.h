@@ -1,5 +1,6 @@
 #pragma once
 #include"cmath"
+#include "string"
 struct Vector2D
 {
 public:
@@ -41,14 +42,15 @@ public:
 	{
 		return { left.x - right.x, left.y - right.y };
 	}
-	friend Vector2D operator/(Vector2D& left, float scalar)
-	{
-		return { left.x / scalar, left.y / scalar };
-	}
 	friend Vector2D operator*(float scalar, Vector2D& right)
 	{
 		return { scalar * right.x, scalar * right.y };
 	}
+	friend Vector2D operator/(Vector2D& left, float scalar)
+	{
+		return { left.x / scalar, left.y / scalar };
+	}
+
 
 	inline float GetMagnitude() const 
 	{
@@ -65,6 +67,15 @@ public:
 	friend float Dot(Vector2D& left, Vector2D& right)
 	{
 		return left.x * right.x + left.y * right.y;
+	}
+
+	inline std::string ToStrings() 
+	{
+		return "( " + std::to_string(x) + " , " + std::to_string(y) + " )";
+	}
+	inline std::string MagnitudeToStrings()
+	{
+		return "( " + std::to_string(GetMagnitude()) + " )";
 	}
 };
 
