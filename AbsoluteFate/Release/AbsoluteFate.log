@@ -1,0 +1,4 @@
+﻿  Main.cpp
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+SDL2main.lib(SDL_windows_main.obj) : error LNK2001: unresolved external symbol __imp__CommandLineToArgvW@8
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Release\AbsoluteFate.exe : fatal error LNK1120: 1 unresolved externals

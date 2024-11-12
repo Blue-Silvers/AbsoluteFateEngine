@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Main.cpp",
+              "RelativeDocumentMoniker": "AbsoluteFate\\Main.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Main.cpp",
+              "RelativeToolTip": "AbsoluteFate\\Main.cpp",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowBIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-12T08:02:30.072Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
