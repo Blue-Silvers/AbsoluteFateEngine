@@ -15,7 +15,7 @@ public:
 	Paddle playerPaddle, aiPaddle;
 	PongBall pongBall;
 
-	Color redBall = /*{ 215,20,20,1 }*/Color::Red;
+	Color redBall = Color::Red;
 
 	Rectangle rRectPlayer = { playerPaddle.mPaddlePositions, playerPaddle.mPaddleDimension };
 	Rectangle rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };
@@ -30,4 +30,3 @@ public:
 
 	void Restart();
 };
-

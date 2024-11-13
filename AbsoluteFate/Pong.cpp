@@ -5,15 +5,19 @@ void Pong::SetRenderer(Renderer* pRenderer)
 	mRenderer = pRenderer;
 }
 
+//Initialize scene
 void Pong::Start()
 {
+	//Reset score
 	mPoint[0] = 0;
 	mPoint[1] = 0;
+	//Reset position
 	aiPaddle.mPaddlePositions = { 65,300 };
 	playerPaddle.mPaddlePositions = { 700,300 };
 	pongBall.Start(playerPaddle, aiPaddle);
 }
 
+//Lunch new round
 void Pong::Restart()
 {
 	aiPaddle.mPaddlePositions = { 65,300 };
@@ -25,69 +29,81 @@ void Pong::Update()
 {
 	if (pongBall.mBallAlive == false)
 	{
+		//Check which player to win
 		if (pongBall.mBallCenter.x >= 800 - pongBall.mBallRadius / 2 || pongBall.mBallCenter.x <= pongBall.mBallRadius / 2)
 		{
-			mPoint[0] += 1;
+			mPoint[0] += 1; //Ai win
 		}
 		else if(pongBall.mBallCenter.x <= pongBall.mBallRadius / 2)
 		{
-			mPoint[1] += 1;
+			mPoint[1] += 1; //Player win
 		}
-		Restart();
+		Restart(); // new round
 	}
 
+	//Move ai paddle, following ball and can't go out of the screen
 	if (aiPaddle.mPaddlePositions.y > 0 && pongBall.mBallCenter.y < aiPaddle.mPaddlePositions.y + aiPaddle.mPaddleDimension.y/3)
 	{
-		aiPaddle.mPaddlePositions.y -= mPaddleSpeed;
+		aiPaddle.mPaddlePositions.y -= mPaddleSpeed; //Up
 	}
 	else if (aiPaddle.mPaddlePositions.y < 600 && pongBall.mBallCenter.y > aiPaddle.mPaddlePositions.y + (aiPaddle.mPaddleDimension.y / 3)*2)
 	{
-		aiPaddle.mPaddlePositions.y += mPaddleSpeed;
+		aiPaddle.mPaddlePositions.y += mPaddleSpeed; //Down
 	}
 
-
+	//Move player paddle whith input key down and can't go out of the screen
 	if (playerPaddle.mPaddlePositions.y > 0 && mPlayerMove == 1)
 	{
-		playerPaddle.mPaddlePositions.y -= mPaddleSpeed * 3;
+		playerPaddle.mPaddlePositions.y -= mPaddleSpeed * 3; //Up
 	}
 	else if (playerPaddle.mPaddlePositions.y < 600 && mPlayerMove == -1)
 	{
-		playerPaddle.mPaddlePositions.y += mPaddleSpeed * 3;
+		playerPaddle.mPaddlePositions.y += mPaddleSpeed * 3; //Down
 	}
 
-	mPlayerMove = 0;
-
+	//Update ball
 	pongBall.Update();
 
+	//Actualise drawing value
 	rRectPlayer = { playerPaddle.mPaddlePositions, playerPaddle.mPaddleDimension };
 	rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };
 	rBall = { {pongBall.mBallCenter},{pongBall.mBallRadius,pongBall.mBallRadius} };
 }
 
+
+//Drawing
 void Pong::Render()
 {
-	//Rectangle rRect = { {700,300},{35,200} };
-
+	//Square in middle of the screen and disappear only if ball is in collider zone
 	Rectangle rBox = { {380,380},{40,40} };
-	if (rBox.RectCollide(rBall) == false) {
+	if (rBox.RectCollide(rBall) == false) 
+	{
 		mRenderer->DrawRect(rBox);
 	}
+
+	//Draw paddles and ball
 	mRenderer->DrawRect(rRectPlayer);
 	mRenderer->DrawRect(rRectAi);
 	mRenderer->DrawRectColor(rBall, redBall);
 }
 
+
+//Input key down
 void Pong::OnInput(SDL_Event event)
 {
-	if (event.key.keysym.sym == SDLK_UP)
+	if (event.key.keysym.sym == SDLK_UP) //Go up if key up is down
 	{
-		mPlayerMove = 1;
+		mPlayerMove = 1; 
 	}
-	else if (event.key.keysym.sym == SDLK_DOWN)
+	else if (event.key.keysym.sym == SDLK_DOWN) //Go down if key down is down
 	{
-		mPlayerMove = -1;
+		mPlayerMove = -1; 
 	}
-	if (event.key.keysym.sym == SDLK_SPACE)
+	else 
+	{
+		mPlayerMove = 0; //Stop movement
+	}
+	if (event.key.keysym.sym == SDLK_SPACE) //Lunch ball when key space is pressed
 	{
 		pongBall.mBallLunch = true;
 	}

@@ -7,6 +7,7 @@ PongBall::PongBall()
 
 }
 
+//reset all value
 void PongBall::Start(Paddle& paddle, Paddle& aiPaddle)
 {
 	mBallCenter.x = 400;
@@ -14,8 +15,8 @@ void PongBall::Start(Paddle& paddle, Paddle& aiPaddle)
 	mBallRadius = 20;
 	mBallSpeedX = 2;
 	mBallSpeedY = 2;
-	mPlayerPaddle = &paddle;
-	mAiPaddle = &aiPaddle;
+	mPlayerPaddle = &paddle; //Define player paddle
+	mAiPaddle = &aiPaddle; //Define ai paddle
 	mBallAlive = true;
 	mBallLunch = false;
 }
@@ -23,57 +24,63 @@ void PongBall::Start(Paddle& paddle, Paddle& aiPaddle)
 void PongBall::Update()
 {
 
+	//ball moving and check collision only if is lunching
 	if (mBallLunch)
 	{
-		mBallCenter.x += mBallSpeedX;
+		mBallCenter.x += mBallSpeedX; //move ball in x axis
+
+		//Check if the ball collide right or left window wall
 		if ((mBallCenter.x >= 800 - mBallRadius / 2 && mBallSpeedX > 0) || (mBallCenter.x <= mBallRadius / 2 && mBallSpeedX < 0))
 		{
-			//mBallSpeedX *= -1; //loose
-			mBallAlive = false;
+			mBallAlive = false; //game over
 		}
 
+		//Check if the ball collide right or left window wall
 		mBallCenter.y += mBallSpeedY;
 		if ((mBallCenter.y >= 800 - mBallRadius / 2 && mBallSpeedY > 0) || (mBallCenter.y <= mBallRadius / 2 && mBallSpeedY < 0))
 		{
-			mBallSpeedY *= -1;
+			mBallSpeedY *= -1; // bounes ball
 		}
 
+		//Ball collide mPlayerPaddle
 		if (mBallCenter.y <= mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y && mBallCenter.y + mBallRadius >= mPlayerPaddle->mPaddlePositions.y 
 			&& mBallCenter.x + mBallRadius > mPlayerPaddle->mPaddlePositions.x && mBallCenter.x - mBallRadius < mPlayerPaddle->mPaddlePositions.x + mPlayerPaddle->mPaddleDimension.y)
 		{
-			if (mBallCenter.y < mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2)
+			//Ball bounes whith angle and speed changing in fonction of collide location whith player paddle
+			if (mBallCenter.y < mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2) //Check if the ball is above the middle of player paddle
 			{
-				float distanceRight = mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2 - mBallCenter.y;
-				mBallSpeedY = -mBallSpeedMax * (distanceRight / (mPlayerPaddle->mPaddleDimension.y / 2));
+				float distanceRight = mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2 - mBallCenter.y; //Verify distance between the ball collision and player paddle
+				mBallSpeedY = -mBallSpeedMax * (distanceRight / (mPlayerPaddle->mPaddleDimension.y / 2)); //Bounes and change speed whith max speed and distance between the ball collision and player paddle
 			}
-			else if (mBallCenter.y > mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2)
+			else if (mBallCenter.y > mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2) //Check if the ball is below the middle of player paddle
 			{
-				float distanceLeft = mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2 - mBallCenter.y;
-				mBallSpeedY = -mBallSpeedMax * (distanceLeft / (mPlayerPaddle->mPaddleDimension.y / 2));
+				float distanceLeft = mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2 - mBallCenter.y;//Verify distance between the ball collision and player paddle
+				mBallSpeedY = -mBallSpeedMax * (distanceLeft / (mPlayerPaddle->mPaddleDimension.y / 2));//Bounes and change speed whith max speed and distance between the ball collision and player paddle
 			}
-			else
+			else //The ball is on middle of player paddle
 			{
-				mBallSpeedY = 0;
+				mBallSpeedY = 0; //Ball have horizontal movement
 			}
 			mBallSpeedX *= -1;
 		}
 
-		//mAiPaddle
+		//Ball collide mAiPaddle
 		if (mBallCenter.y <= mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y && mBallCenter.y + mBallRadius >= mAiPaddle->mPaddlePositions.y && mBallCenter.x + mBallRadius > mAiPaddle->mPaddlePositions.x && mBallCenter.x - mBallRadius < mAiPaddle->mPaddlePositions.x + mAiPaddle->mPaddleDimension.x - mBallRadius)
 		{
-			if (mBallCenter.y < mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2)
+			//Ball bounes whith angle and speed changing in fonction of collide location whith ai paddle
+			if (mBallCenter.y < mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2)//Check if the ball is above the middle of ai paddle
 			{
-				float distanceRight = mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2 - mBallCenter.y;
-				mBallSpeedY = -mBallSpeedMax * (distanceRight / (mAiPaddle->mPaddleDimension.y / 2));
+				float distanceRight = mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2 - mBallCenter.y;//Verify distance between the ball collision and ai paddle
+				mBallSpeedY = -mBallSpeedMax * (distanceRight / (mAiPaddle->mPaddleDimension.y / 2));//Bounes and change speed whith max speed and distance between the ball collision and ai paddle
 			}
-			else if (mBallCenter.y > mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2)
+			else if (mBallCenter.y > mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2) //Check if the ball is below the middle of ai paddle
 			{
-				float distanceLeft = mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2 - mBallCenter.y;
-				mBallSpeedY = -mBallSpeedMax * (distanceLeft / (mAiPaddle->mPaddleDimension.y / 2));
+				float distanceLeft = mAiPaddle->mPaddlePositions.y + mAiPaddle->mPaddleDimension.y / 2 - mBallCenter.y;//Verify distance between the ball collision and ai paddle
+				mBallSpeedY = -mBallSpeedMax * (distanceLeft / (mAiPaddle->mPaddleDimension.y / 2));//Bounes and change speed whith max speed and distance between the ball collision and ai paddle
 			}
-			else
+			else //The ball is on middle of ai paddle
 			{
-				mBallSpeedY = 0;
+				mBallSpeedY = 0; //Ball have horizontal movement
 			}
 			mBallSpeedX *= -1;
 		}
@@ -81,6 +88,7 @@ void PongBall::Update()
 	}
 	else
 	{
+		//reset ball position and speed
 		mBallSpeedX = 2;
 		mBallSpeedY = -2;
 		mBallCenter.x = 400;

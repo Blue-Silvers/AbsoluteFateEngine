@@ -2,6 +2,7 @@
 #include <SDL_rect.h>
 #include "Vector2D.h"
 
+//Enum of rectangle face
 enum FaceHit 
 {
     UP,
@@ -16,6 +17,7 @@ struct Rectangle
     Vector2D position;
     Vector2D dimensions;
 
+    //Draw rectangle
     SDL_Rect ToSdlRect() const
     {
         return SDL_Rect{
@@ -25,6 +27,7 @@ struct Rectangle
             static_cast<int>(dimensions.y) };
     }
 
+    //Check if this rectangle hit another rectangle
     bool RectCollide(Rectangle& other) const 
     {
         if (position.y < other.position.y + other.dimensions.y && position.y + dimensions.y > other.position.y
@@ -38,15 +41,18 @@ struct Rectangle
         }
 
     };
+
+    //Check face of this rectangle hit another rectangle
     FaceHit RectCollideFace(Rectangle& other) const
     {
         if (position.y < other.position.y + other.dimensions.y && position.y + dimensions.y > other.position.y
             && position.x < other.position.x + other.dimensions.x && position.x + dimensions.x > other.position.x)
         {
-            float upCollide = position.y - other.position.y + other.dimensions.y;
-            float downCollide = position.y + dimensions.y - other.position.y;
-            float rightCollide = position.x + dimensions.x - other.position.x;
-            float leftCollide = position.x - other.position.x + other.dimensions.x;
+            float upCollide = position.y - other.position.y + other.dimensions.y; //verify distance between top of this rectangle and bottom of other rectangle
+            float downCollide = position.y + dimensions.y - other.position.y; //verify distance between bottom this rectangle and top of other rectangle
+            float rightCollide = position.x + dimensions.x - other.position.x; //verify distance between right side of this rectangle and left side of other rectangle
+            float leftCollide = position.x - other.position.x + other.dimensions.x; //verify distance between left side of this rectangle and right side of other rectangle
+
             if (upCollide >= downCollide && upCollide >= rightCollide && upCollide >= leftCollide)
             {
                 return UP;

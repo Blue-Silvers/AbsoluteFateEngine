@@ -10,6 +10,8 @@ protected:
 	Renderer* mRenderer;
 
 public:
+
+	//Base of scene
 	Scene(std::string pTitle = "Scene");
 	virtual void SetRenderer(Renderer* pRenderer);
 	virtual void Start();
