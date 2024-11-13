@@ -15,10 +15,8 @@ private:
 public:
 	bool mBallLunch = false;
 	Vector2D mBallCenter = { 400,400 };
-	//float mBallCenterX = 400;
-	//float mBallCenterY = 400;
 	float mBallRadius = 20;
-	int mBallLife = 3;
+	bool mBallAlive = true;
 	PongBall();
 	void Update();
 	void Start(Paddle& paddle, Paddle& aiPaddle);

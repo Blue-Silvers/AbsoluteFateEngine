@@ -16,7 +16,7 @@ void PongBall::Start(Paddle& paddle, Paddle& aiPaddle)
 	mBallSpeedY = 2;
 	mPlayerPaddle = &paddle;
 	mAiPaddle = &aiPaddle;
-	mBallLife = 3;
+	mBallAlive = true;
 	mBallLunch = false;
 }
 
@@ -28,7 +28,8 @@ void PongBall::Update()
 		mBallCenter.x += mBallSpeedX;
 		if ((mBallCenter.x >= 800 - mBallRadius / 2 && mBallSpeedX > 0) || (mBallCenter.x <= mBallRadius / 2 && mBallSpeedX < 0))
 		{
-			mBallSpeedX *= -1;
+			//mBallSpeedX *= -1; //loose
+			mBallAlive = false;
 		}
 
 		mBallCenter.y += mBallSpeedY;
@@ -37,7 +38,8 @@ void PongBall::Update()
 			mBallSpeedY *= -1;
 		}
 
-		if (mBallCenter.y <= mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y && mBallCenter.y + mBallRadius >= mPlayerPaddle->mPaddlePositions.y && mBallCenter.x + mBallRadius > mPlayerPaddle->mPaddlePositions.x && mBallCenter.x - mBallRadius < mPlayerPaddle->mPaddlePositions.x + mPlayerPaddle->mPaddleDimension.y)
+		if (mBallCenter.y <= mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y && mBallCenter.y + mBallRadius >= mPlayerPaddle->mPaddlePositions.y 
+			&& mBallCenter.x + mBallRadius > mPlayerPaddle->mPaddlePositions.x && mBallCenter.x - mBallRadius < mPlayerPaddle->mPaddlePositions.x + mPlayerPaddle->mPaddleDimension.y)
 		{
 			if (mBallCenter.y < mPlayerPaddle->mPaddlePositions.y + mPlayerPaddle->mPaddleDimension.y / 2)
 			{

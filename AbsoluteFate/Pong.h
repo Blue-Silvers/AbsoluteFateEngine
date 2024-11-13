@@ -8,6 +8,7 @@ class Pong : public Scene
 private:
 	float mPaddleSpeed = 2;
 	int mPlayerMove = 0;
+	int mPoint[2] = { 0,0 };
 
 public:
 	Paddle playerPaddle, aiPaddle;
@@ -23,5 +24,7 @@ public:
 	virtual void Render() override;
 	virtual void OnInput(SDL_Event) override;
 	virtual void  Close() override;
+
+	void Restart();
 };
 
