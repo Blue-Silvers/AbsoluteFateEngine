@@ -44,12 +44,12 @@ void Game::Loop()
 
 void Game::Render()
 {
-    mScene[0]->Render();
-    /*mRenderer->BeginDraw();
     
-    Rectangle rRect = { {300,300},{200,300} };
-    mRenderer->DrawRect(rRect);
-    mRenderer->EndDraw();*/
+    mRenderer->BeginDraw();
+    mScene[0]->Render();
+    /*Rectangle rRect = { {300,300},{200,300} };
+    mRenderer->DrawRect(rRect);*/
+    mRenderer->EndDraw();
 }
 
 void Game::Update()

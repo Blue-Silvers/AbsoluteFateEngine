@@ -13,21 +13,14 @@ void Pong::Start()
 
 void Pong::Update()
 {
-	if (aiPaddle.mPaddlePositions.y < 600 && aiPaddle.onTop == true) 
-	{
-		aiPaddle.mPaddlePositions.y += mPaddleSpeed;
-	}
-	else if (aiPaddle.mPaddlePositions.y > 0 && aiPaddle.onTop == false)
+
+	if (aiPaddle.mPaddlePositions.y > 0 && pongBall.mBallCenter.y < aiPaddle.mPaddlePositions.y + aiPaddle.mPaddleDimension.y/3)
 	{
 		aiPaddle.mPaddlePositions.y -= mPaddleSpeed;
 	}
-	else if (aiPaddle.mPaddlePositions.y <= 0 && aiPaddle.onTop == false)
+	else if (aiPaddle.mPaddlePositions.y < 600 && pongBall.mBallCenter.y > aiPaddle.mPaddlePositions.y + (aiPaddle.mPaddleDimension.y / 3)*2)
 	{
-		aiPaddle.onTop = true;
-	}
-	else
-	{
-		aiPaddle.onTop = false;
+		aiPaddle.mPaddlePositions.y += mPaddleSpeed;
 	}
 
 
@@ -47,17 +40,13 @@ void Pong::Update()
 
 void Pong::Render()
 {
-	mRenderer->BeginDraw();
-
 	//Rectangle rRect = { {700,300},{35,200} };
 	Rectangle rRectPlayer = {playerPaddle.mPaddlePositions, playerPaddle.mPaddleDimension};
 	Rectangle rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };
 	mRenderer->DrawRect(rRectPlayer);
 	mRenderer->DrawRect(rRectAi);
-	Rectangle rBall = { {pongBall.mBallCenter},{20,20} };
+	Rectangle rBall = { {pongBall.mBallCenter},{pongBall.mBallRadius,pongBall.mBallRadius} };
 	mRenderer->DrawRect(rBall);
-
-	mRenderer->EndDraw();
 }
 
 void Pong::OnInput(SDL_Event event)

@@ -17,7 +17,7 @@ public:
 	Vector2D mBallCenter = { 400,400 };
 	//float mBallCenterX = 400;
 	//float mBallCenterY = 400;
-	int mBallRadius = 20;
+	float mBallRadius = 20;
 	int mBallLife = 3;
 	PongBall();
 	void Update();

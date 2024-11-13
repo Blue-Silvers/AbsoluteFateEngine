@@ -1,13 +1,6 @@
-﻿  Game.cpp
-  Log.cpp
-  Main.cpp
+﻿  Main.cpp
   Paddle.cpp
   Pong.cpp
   PongBall.cpp
-  Rectangle.cpp
-  Renderer.cpp
-  Scene.cpp
-  Vector2D.cpp
-  Window.cpp
   Generating Code...
   AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
