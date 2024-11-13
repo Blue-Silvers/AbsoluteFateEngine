@@ -13,6 +13,10 @@ public:
 	Paddle playerPaddle, aiPaddle;
 	PongBall pongBall;
 
+	Rectangle rRectPlayer = { playerPaddle.mPaddlePositions, playerPaddle.mPaddleDimension };
+	Rectangle rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };
+	Rectangle rBall = { {pongBall.mBallCenter},{pongBall.mBallRadius,pongBall.mBallRadius} };
+
 	virtual void SetRenderer(Renderer* pRenderer) override;
 	virtual void Start() override;
 	virtual void Update()override;

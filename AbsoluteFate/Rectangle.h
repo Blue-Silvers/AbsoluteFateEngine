@@ -15,4 +15,9 @@ struct Rectangle
             static_cast<int>(dimensions.x),
             static_cast<int>(dimensions.y) };
     }
+
+    bool RectCollide(Rectangle* other) const 
+    {
+
+    };
 };

@@ -36,16 +36,20 @@ void Pong::Update()
 	mPlayerMove = 0;
 
 	pongBall.Update();
+
+	rRectPlayer = { playerPaddle.mPaddlePositions, playerPaddle.mPaddleDimension };
+	rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };
+	rBall = { {pongBall.mBallCenter},{pongBall.mBallRadius,pongBall.mBallRadius} };
 }
 
 void Pong::Render()
 {
 	//Rectangle rRect = { {700,300},{35,200} };
-	Rectangle rRectPlayer = {playerPaddle.mPaddlePositions, playerPaddle.mPaddleDimension};
+	/*Rectangle rRectPlayer = {playerPaddle.mPaddlePositions, playerPaddle.mPaddleDimension};
 	Rectangle rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };
+	Rectangle rBall = { {pongBall.mBallCenter},{pongBall.mBallRadius,pongBall.mBallRadius} };*/
 	mRenderer->DrawRect(rRectPlayer);
 	mRenderer->DrawRect(rRectAi);
-	Rectangle rBall = { {pongBall.mBallCenter},{pongBall.mBallRadius,pongBall.mBallRadius} };
 	mRenderer->DrawRect(rBall);
 }
 
