@@ -2,6 +2,7 @@
 #include "Scene.h"
 #include "Paddle.h"
 #include "PongBall.h"
+#include "Color.h"
 
 class Pong : public Scene
 {
@@ -13,6 +14,8 @@ private:
 public:
 	Paddle playerPaddle, aiPaddle;
 	PongBall pongBall;
+
+	Color redBall = /*{ 215,20,20,1 }*/Color::Red;
 
 	Rectangle rRectPlayer = { playerPaddle.mPaddlePositions, playerPaddle.mPaddleDimension };
 	Rectangle rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };

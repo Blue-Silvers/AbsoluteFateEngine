@@ -1,6 +1,8 @@
 #include "Game.h"
 #include <iostream>
 
+
+//Initialize SDL at start of the game
 Game::Game(std::string gameTitle, Scene* newScene): mTitle(gameTitle),mIsRunning(true)
 {
     if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
@@ -16,6 +18,7 @@ Game::Game(std::string gameTitle, Scene* newScene): mTitle(gameTitle),mIsRunning
     Init(newScene);
 }
 
+//Initialize game whith scenes
 void Game::Init(Scene* newScene)
 {
     mWindow = new Window{ 800,800 };
@@ -28,6 +31,7 @@ void Game::Init(Scene* newScene)
     }
 }
 
+//Luck loop of the game
 void Game::Loop()
 {
     mScene[0]->Start();
@@ -42,21 +46,25 @@ void Game::Loop()
     Close();
 }
 
+//Start and End drawing the game
 void Game::Render()
 {
-    
     mRenderer->BeginDraw();
-    mScene[0]->Render();
-    /*Rectangle rRect = { {300,300},{200,300} };
-    mRenderer->DrawRect(rRect);*/
+
+    ////Drawing Zone////
+    mScene[0]->Render();//draw scene
+    ///////////////////
+
     mRenderer->EndDraw();
 }
 
+//Update actual scene of the game
 void Game::Update()
 {
     mScene[0]->Update();
 }
 
+//Check if key is down when the game is open and possibilitie to close game
 void Game::CheckInput()
 {
     if (mIsRunning)
@@ -66,11 +74,11 @@ void Game::CheckInput()
         {
             switch (event.type)
             {
-            case SDL_QUIT:
+            case SDL_QUIT: //close game
                 mIsRunning = false;
                 break;
-            case SDL_KEYDOWN:
-                mScene[0]->OnInput(event);
+            case SDL_KEYDOWN: //look if key is down
+                mScene[0]->OnInput(event); //use input of the scene
                 break;
             default:
                 
@@ -81,6 +89,7 @@ void Game::CheckInput()
 
 }
 
+//Close game
 void Game::Close()
 {
     mWindow->Close();

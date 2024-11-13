@@ -1,5 +1,6 @@
 #pragma once
 #include "Rectangle.h"
+#include "Color.h"
 #include "Window.h"
 #include "Log.h"
 
@@ -18,6 +19,7 @@ public:
 	void Close();
 
 	void DrawRect(Rectangle& rRect);
+	void DrawRectColor(Rectangle& rRect, Color& rColor);
 };
 
 

@@ -36,3 +36,10 @@ void Renderer::DrawRect(Rectangle& rRect)
     SDL_Rect sdlRect = rRect.ToSdlRect();
     SDL_RenderFillRect(mSdlRenderer, &sdlRect);
 }
+
+void Renderer::DrawRectColor(Rectangle& rRect, Color& rColor)
+{
+    SDL_SetRenderDrawColor(mSdlRenderer, rColor.r, rColor.g, rColor.b, rColor.a);
+    SDL_Rect sdlRect = rRect.ToSdlRect();
+    SDL_RenderFillRect(mSdlRenderer, &sdlRect);
+}

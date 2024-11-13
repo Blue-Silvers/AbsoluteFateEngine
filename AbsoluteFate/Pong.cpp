@@ -74,7 +74,7 @@ void Pong::Render()
 	}
 	mRenderer->DrawRect(rRectPlayer);
 	mRenderer->DrawRect(rRectAi);
-	mRenderer->DrawRect(rBall);
+	mRenderer->DrawRectColor(rBall, redBall);
 }
 
 void Pong::OnInput(SDL_Event event)

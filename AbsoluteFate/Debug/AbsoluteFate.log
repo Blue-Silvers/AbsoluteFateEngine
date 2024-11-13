@@ -1,2 +1,13 @@
-﻿  Pong.cpp
+﻿  Color.cpp
+  Game.cpp
+  Main.cpp
+  Pong.cpp
+  PongBall.cpp
+  Renderer.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(42,78): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(42,68): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(42,58): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(42,48): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+  Scene.cpp
+  Generating Code...
   AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
