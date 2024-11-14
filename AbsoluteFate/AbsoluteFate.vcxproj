@@ -136,8 +136,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Actor.cpp" />
     <ClCompile Include="BigBool.cpp" />
     <ClCompile Include="Color.cpp" />
+    <ClCompile Include="Components.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -147,12 +149,16 @@
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Transform2D.cpp" />
     <ClCompile Include="Vector2D.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Actor.h" />
     <ClInclude Include="BigBool.h" />
     <ClInclude Include="Color.h" />
+    <ClInclude Include="Components.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="Paddle.h" />
@@ -161,6 +167,8 @@
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="Transform2D.h" />
     <ClInclude Include="Vector2D.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>

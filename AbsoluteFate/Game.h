@@ -2,6 +2,7 @@
 #include "Window.h"
 #include "Renderer.h"
 #include "Scene.h"
+#include "Time.h"
 
 class Game
 {
