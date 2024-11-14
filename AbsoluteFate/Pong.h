@@ -3,12 +3,14 @@
 #include "Paddle.h"
 #include "PongBall.h"
 #include "Color.h"
+#include "BigBool.h"
 
 class Pong : public Scene
 {
 private:
 	float mPaddleSpeed = 2;
-	int mPlayerMove = 0;
+	//int mPlayerMove = 0;
+	BigBool mPlayerMove = BigBool::MAYBE;
 	int mPoint[2] = { 0,0 };
 
 public:

@@ -52,15 +52,16 @@ void Pong::Update()
 	}
 
 	//Move player paddle whith input key down and can't go out of the screen
-	if (playerPaddle.mPaddlePositions.y > 0 && mPlayerMove == 1)
+	if (playerPaddle.mPaddlePositions.y > 0 && mPlayerMove == BigBool::TRUE)
 	{
 		playerPaddle.mPaddlePositions.y -= mPaddleSpeed * 3; //Up
 	}
-	else if (playerPaddle.mPaddlePositions.y < 600 && mPlayerMove == -1)
+	else if (playerPaddle.mPaddlePositions.y < 600 && mPlayerMove == BigBool::FALSE)
 	{
 		playerPaddle.mPaddlePositions.y += mPaddleSpeed * 3; //Down
 	}
 
+	mPlayerMove = BigBool::MAYBE;
 	//Update ball
 	pongBall.Update();
 
@@ -93,16 +94,16 @@ void Pong::OnInput(SDL_Event event)
 {
 	if (event.key.keysym.sym == SDLK_UP) //Go up if key up is down
 	{
-		mPlayerMove = 1; 
+		mPlayerMove = BigBool::TRUE; 
 	}
 	else if (event.key.keysym.sym == SDLK_DOWN) //Go down if key down is down
 	{
-		mPlayerMove = -1; 
+		mPlayerMove = BigBool::FALSE;
 	}
-	else 
-	{
-		mPlayerMove = 0; //Stop movement
-	}
+	//else 
+	//{
+	//	mPlayerMove = BigBool::MAYBE; //Stop movement
+	//}
 	if (event.key.keysym.sym == SDLK_SPACE) //Lunch ball when key space is pressed
 	{
 		pongBall.mBallLunch = true;
