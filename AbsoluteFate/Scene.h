@@ -1,10 +1,12 @@
 #pragma once
 #include "Renderer.h"
+#include "Actor.h"
 #include <iostream>
 class Scene
 {
 private:
 	std::string mTitle = "Fate Engine";
+	std::vector<Actor*> mActorsList;
 
 protected:
 	Renderer* mRenderer;
