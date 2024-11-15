@@ -23,12 +23,13 @@ public:
 	Rectangle rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };
 	Rectangle rBall = { {pongBall.mBallCenter},{pongBall.mBallRadius,pongBall.mBallRadius} };
 
-	virtual void SetRenderer(Renderer* pRenderer) override;
-	virtual void Start() override;
-	virtual void Update()override;
-	virtual void Render() override;
-	virtual void OnInput(SDL_Event) override;
-	virtual void  Close() override;
+	Pong() :Scene("Pong") {};
+	void SetRenderer(Renderer* pRenderer) override;
+	void Start() override;
+	void Update()override;
+	void Render() override;
+	void OnInput(SDL_Event) override;
+	void  Close() override;
 
 	void Restart();
 };

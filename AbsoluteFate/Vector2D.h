@@ -17,6 +17,7 @@ public:
 	//Set vector
 	Vector2D():x(0), y(0) {};
 	Vector2D(float pX, float pY) : x(pX), y(pY) {};
+	Vector2D(float size) : x(size), y(size) {};
 
 	//Vector calculs
 	inline void operator+=(Vector2D& right)

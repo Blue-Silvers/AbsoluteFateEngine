@@ -1,19 +1,22 @@
 #pragma once
+#include "Actor.h"
+
+class Actor;
+
 class Components
 {
 	protected:
 		bool mIsActive;
-		//Actor& mOwner;
+		Actor* mOwner;
 		int mUpdateOrder;
 
 	public:
-		Components(/*const Actor& pOwner,*/ int pUpdateOrder) 
+		Components(Actor* pOwner, int pUpdateOrder) //Component constructor with owner and default update order
 		{
-			//mOwner = pOwner;
+			mOwner = pOwner;
 			mUpdateOrder = pUpdateOrder;
 		};
-		Components(const Components&) = delete;
-		virtual Components& operator= (const Components&) = delete;
+		Components() = delete; //Delete default constructor
 		virtual void OnStart() = 0;
 		virtual void Update() = 0;
 		virtual void OnEnd() = 0;

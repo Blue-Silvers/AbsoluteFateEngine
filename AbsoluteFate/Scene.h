@@ -12,13 +12,16 @@ protected:
 public:
 
 	//Base of scene
-	Scene(std::string pTitle = "Scene");
-	virtual void SetRenderer(Renderer* pRenderer);
-	virtual void Start();
-	virtual void Update();
-	virtual void Render();
-	virtual void OnInput(SDL_Event);
-	virtual void  Close();
+	Scene(std::string pTitle = "Scene") :mTitle(pTitle) {};
+	virtual void SetRenderer(Renderer* pRenderer)
+	{
+		mRenderer = pRenderer;
+	};
+	virtual void Start() {};
+	virtual void Update() {};
+	virtual void Render() {};
+	virtual void OnInput(SDL_Event) {};
+	virtual void  Close() {};
 
 };
 
