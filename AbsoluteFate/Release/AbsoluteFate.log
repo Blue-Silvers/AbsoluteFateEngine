@@ -1,4 +1,32 @@
-﻿  Main.cpp
+﻿  Actor.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(38,27): warning C4018: '<': signed/unsigned mismatch
+  BigBool.cpp
+  BoxCollider2D.cpp
+  Color.cpp
+  Components.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(38,27): warning C4018: '<': signed/unsigned mismatch
+  Game.cpp
+  Log.cpp
+  Main.cpp
+  Paddle.cpp
+  Pong.cpp
+  PongBall.cpp
+  Rectangle.cpp
+  Renderer.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(49,78): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(49,68): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(49,58): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(49,48): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+  Scene.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(38,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Scene.cpp(39,20): warning C4018: '<': signed/unsigned mismatch
+  Time.cpp
+  Transform2D.cpp
+  Vector2D.cpp
+  Window.cpp
 LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
-SDL2main.lib(SDL_windows_main.obj) : error LNK2001: unresolved external symbol __imp__CommandLineToArgvW@8
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Release\AbsoluteFate.exe : fatal error LNK1120: 1 unresolved externals
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 192 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\Release\AbsoluteFate.exe
