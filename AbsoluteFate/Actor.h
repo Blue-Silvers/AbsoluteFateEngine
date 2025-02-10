@@ -17,7 +17,7 @@ enum class ActorState {
 class Actor
 {
 private:
-	Scene* mSceneAttached;
+	Scene* mSceneAttached = Scene::ActiveScene;
 	ActorState mState = ActorState::Active;
 	Transform2D mTransforform2D;
 	std::vector<Components*> mComponentsList;

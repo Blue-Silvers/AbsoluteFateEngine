@@ -2,6 +2,8 @@
 #include "Renderer.h"
 #include <iostream>
 #include <vector>
+#include <algorithm>
+
 class Actor;
 
 class Scene
@@ -9,12 +11,15 @@ class Scene
 private:
 	std::string mTitle = "Fate Engine";
 	std::vector<Actor*> mActorsList{};
+	std::vector<Actor*> mActorsPending{};
+	bool mUpdatingActors;
+	std::vector<Actor*> mDeadActors{};
 
 protected:
 	Renderer* mRenderer;
 
 public:
-
+	static Scene* ActiveScene;//handling actors
 	//Base of scene
 	Scene(std::string pTitle = "Scene") :mTitle(pTitle) {};
 	virtual ~Scene();
@@ -31,6 +36,7 @@ public:
 
 	//Actors
 	void AddActor(Actor* newActor);
+	void UpdateAllActors();
 	void RemoveActor(Actor* deadActor);
 };
 
