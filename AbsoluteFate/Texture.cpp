@@ -7,12 +7,17 @@ bool Texture::LoadTexture(Renderer& pRenderer, const string& filename)
 
 void Texture::UnloadTexture()
 {
-	if (mSdlTexture) SDL_DestroyTexture(mSdlTexture);
+	if (mSdlTexture) 
+	{
+		SDL_DestroyTexture(mSdlTexture);
+	}
 }
 
+//return mTextureWidth and mTextureHeight to pIntInfoWidth and pIntInfoHeight
 void Texture::UpdateInfo(int& pIntInfoWidth, int& pIntInfoHeight)
 {
-
+	pIntInfoWidth = mTextureWidth;
+	pIntInfoHeight = mTextureHeight;
 }
 
 int Texture::GetWidth()

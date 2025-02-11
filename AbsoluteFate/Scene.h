@@ -28,15 +28,22 @@ public:
 	{
 		mRenderer = pRenderer;
 	};
+	virtual Renderer* GetRenderer()
+	{
+		return mRenderer;
+	};
 	virtual void Start();
 	virtual void Update();
 	virtual void Render() {};
 	virtual void OnInput(SDL_Event) {};
-	virtual void  Close() {};
+	virtual void Close() {};
 
 	//Actors
 	void AddActor(Actor* newActor);
 	void UpdateAllActors();
 	void RemoveActor(Actor* deadActor);
+
+	void Load();
+	void Unload();
 };
 

@@ -57,3 +57,54 @@ void Renderer::DrawRectColor(Rectangle& rRect, Color& rColor)
     SDL_Rect sdlRect = rRect.ToSdlRect();
     SDL_RenderFillRect(mSdlRenderer, &sdlRect);
 }
+
+void Renderer::Draw()
+{
+}
+
+void Renderer::DrawAllSprites()
+{
+}
+
+void Renderer::DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip) const
+{
+    SDL_Rect destinationRect;
+    Transform2D transform = pActor.GetTransform2D();
+    destinationRect.w = static_cast<int>(pTexture.GetWidth() * transform.GetScale().x);
+    destinationRect.h = static_cast<int>(pTexture.GetHeight() * transform.GetScale().y);
+    destinationRect.x = static_cast<int>(transform.GetPosition().x - pOrigin.x);
+    destinationRect.y = static_cast<int>(transform.GetPosition().y - pOrigin.y);
+
+    SDL_Rect* sourceSDL = nullptr;
+    sourceSDL = new SDL_Rect
+    {
+            Maths::Round(pSourceRect.position.x),
+            Maths::Round(pSourceRect.position.y),
+            Maths::Round(pSourceRect.dimensions.x),
+            Maths::Round(pSourceRect.dimensions.y) 
+    };
+
+    SDL_RenderCopyEx(mSdlRenderer, pTexture.GetSdlTexture(), sourceSDL,  &destinationRect, -Maths::ToDeg(transform.GetRotation()), nullptr, SDL_FLIP_NONE);
+    delete sourceSDL;
+}
+
+void Renderer::AddSprite(SpriteC* pSprite)
+{
+    int spriteDrawOrder = pSprite->GetDrawOrder();
+    vector<SpriteC*>::iterator spriteComponent;
+    for (spriteComponent = mSpritesList.begin(); spriteComponent != mSpritesList.end(); ++spriteComponent) 
+    {
+        if (spriteDrawOrder < (*spriteComponent)->GetDrawOrder()) 
+        {
+            break;
+        }
+    }
+    mSpritesList.insert (spriteComponent, pSprite);
+}
+
+void Renderer::RemoveSprite(SpriteC* pSprite)
+{
+    vector<SpriteC*>::iterator spriteComponent;
+    spriteComponent = find(mSpritesList.begin(), mSpritesList.end(), pSprite);
+    mSpritesList.erase(spriteComponent);
+}

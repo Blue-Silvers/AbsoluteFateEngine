@@ -17,13 +17,13 @@ enum class ActorState {
 class Actor
 {
 private:
-	Scene* mSceneAttached = Scene::ActiveScene;
-	ActorState mState = ActorState::Active;
+	Scene* mSceneAttached;
+	ActorState mState;
 	Transform2D mTransforform2D;
 	std::vector<Components*> mComponentsList;
 
 public:
-	Actor();
+	Actor(Transform2D pTransform2D, Scene* pScene);
 	virtual void Start() = 0;
 	virtual void AttachScene(Scene* pSceneAttached) //A reference to the scene it is attached to
 	{
@@ -49,5 +49,15 @@ public:
 	};
 	virtual void Update() = 0;
 	virtual void Destroy() = 0;
+
+	//Getter
+	virtual Scene* GetScene()
+	{
+		return mSceneAttached;
+	};	
+	virtual Transform2D GetTransform2D()
+	{
+		return mTransforform2D;
+	};
 };
 

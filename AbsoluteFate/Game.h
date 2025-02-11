@@ -11,6 +11,7 @@ private:
 	Window* mWindow;
 	Renderer* mRenderer;
 	Scene* mScene[1] = {nullptr};
+	int mLoadedScene = 0;
 	bool mIsRunning;
 
 public:

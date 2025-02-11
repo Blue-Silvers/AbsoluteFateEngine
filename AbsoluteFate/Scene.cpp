@@ -1,7 +1,6 @@
 #include "Scene.h"
 #include "Actor.h"
-
-
+#include "Asset.h"
 
 //Reset scene
 Scene::~Scene()
@@ -95,4 +94,20 @@ void Scene::RemoveActor(Actor* deadActor)
 		}
 	}
 	deadActor->Destroy();*/
+}
+
+void Scene::Load()
+{
+
+}
+
+void Scene::Unload()
+{
+	//Free actors pointers memory
+	while (!mActorsList.empty())
+	{
+		delete mActorsList.back();
+	}
+	//Free up resources
+	Asset::ClearMap();
 }

@@ -27,6 +27,7 @@ void Game::Init(Scene* newScene)
     mScene[0]->SetRenderer(mRenderer);
     if (mWindow->Open(mTitle) && mRenderer->Initialize(*mWindow))
     {
+        mScene[mLoadedScene]->Load();
         Loop();
     }
 }
@@ -54,7 +55,7 @@ void Game::Render()
     mRenderer->BeginDraw();
 
     ////Drawing Zone////
-    mScene[0]->Render();//draw scene
+    mScene[mLoadedScene]->Render();//draw scene
     ///////////////////
 
     mRenderer->EndDraw();
