@@ -9,7 +9,7 @@ class Renderer;
 
 class Scene
 {
-private:
+protected:
 	std::string mTitle = "Fate Engine";
 	std::vector<Actor*> mActorsList{};
 	std::vector<Actor*> mActorsPending{};

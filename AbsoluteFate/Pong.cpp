@@ -15,6 +15,11 @@ void Pong::Start()
 	aiPaddle.mPaddlePositions = { 65,300 };
 	playerPaddle.mPaddlePositions = { 700,300 };
 	pongBall.Start(playerPaddle, aiPaddle);
+
+	for (Actor* actor : mActorsList)
+	{
+		actor->Start();
+	}
 }
 
 //Lunch new round
@@ -23,10 +28,35 @@ void Pong::Restart()
 	aiPaddle.mPaddlePositions = { 65,300 };
 	playerPaddle.mPaddlePositions = { 700,300 };
 	pongBall.Start(playerPaddle, aiPaddle);
+
+	for (Actor* actor : mActorsList)
+	{
+		actor->Start();
+	}
 }
 
 void Pong::Update()
 {
+	mUpdatingActors = true;
+	for (Actor* actor : mActorsList)
+	{
+		actor->Update();
+	}
+	mUpdatingActors = false;
+
+	// Add pending actors to the pool
+	for (Actor* actor : mActorsPending)
+	{
+		mActorsList.emplace_back(actor);
+	}
+	mActorsPending.clear();
+	for (Actor* deadActor : mDeadActors)
+	{
+		delete deadActor;
+	}
+
+
+
 	if (pongBall.mBallAlive == false)
 	{
 		//Check which player to win

@@ -24,7 +24,9 @@ public:
 
 	virtual void SetTexture(Texture* pTexture);
 	virtual void Draw(Renderer& pRenderer);
-
+	void OnStart() {};
+	void Update() {};
+	void OnEnd() {};
 	//Getters
 	int GetDrawOrder() const { return mDrawOrder; }
 	int GetTextureWidth() const { return mTextureWidth; }

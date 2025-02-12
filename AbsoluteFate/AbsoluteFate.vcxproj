@@ -137,6 +137,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="ActorPokeball.cpp" />
     <ClCompile Include="AnimatedSpriteC.cpp" />
     <ClCompile Include="Asset.cpp" />
     <ClCompile Include="BigBool.cpp" />
@@ -162,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
+    <ClInclude Include="ActorPokeball.h" />
     <ClInclude Include="AnimatedSpriteC.h" />
     <ClInclude Include="Asset.h" />
     <ClInclude Include="BigBool.h" />

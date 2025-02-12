@@ -7,8 +7,10 @@
 #include "Pong.h"
 using namespace std;
 
+Pong* scene = new Pong();
+
 int main(int argc, char** argv) {
-	Game myGame("My Pong Game", { new Pong() });
+	Game myGame("My Pong Game", scene);
 	//myGame.Init();
 	return 0;
 }

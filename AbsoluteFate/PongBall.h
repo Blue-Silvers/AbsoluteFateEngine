@@ -2,7 +2,7 @@
 #include "Paddle.h"
 #include "Vector2D.h"
 
-class PongBall
+class PongBall/* : public Actor*/
 {
 private:
 	float mBallSpeedX = 2;
