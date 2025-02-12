@@ -13,7 +13,7 @@ private:
 	int mTextureWidth, mTextureHeight;
 
 public:
-	bool LoadTexture(Renderer& pRenderer, const string& filename);
+	bool LoadTexture(Renderer& pRenderer, const string& filename); //filenam = "Picture/pokeball.png"
 	void UnloadTexture();
 	void UpdateInfo(int& pIntInfoWidth, int& pIntInfoHeight); // Using references to get two informations out
 	int GetWidth();

@@ -2,6 +2,26 @@
 
 bool Texture::LoadTexture(Renderer& pRenderer, const string& filename)
 {
+	mFilepathString = filename;
+	SDL_Surface* surface = IMG_Load(mFilepathString.c_str());
+	if (!surface)
+	{
+		Log::Error(LogType::Application, "Failed to load texture file :" + mFilepathString);
+		return false;
+	}
+	mTextureWidth = surface->w;
+	mTextureHeight = surface->h;
+
+	//Create texture from surface
+	mSdlTexture = SDL_CreateTextureFromSurface(pRenderer.ToSdlRenderer(), surface); // add getter to mSdlRenderer
+	SDL_FreeSurface(surface);
+	if (!mSdlTexture)
+	{
+		Log::Error(LogType::Render, "Failed to convert surface to texture :" + mFilepathString);
+		return false;
+	}
+	Log::Info("Loaded texture : " + mFilepathString);
+
 	return true;
 }
 
