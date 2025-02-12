@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Asset.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -118,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -131,8 +131,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-12T13:56:44.035Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -145,8 +144,7 @@
               "ViewState": "AQIAAAQAAAAAAAAAAAAAABgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-12T13:52:03.856Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -159,8 +157,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-15T08:38:13.78Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -173,8 +170,7 @@
               "ViewState": "AQIAABEAAAAAAAAAAAAAACUAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-15T08:59:08.105Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -187,12 +183,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-10T15:49:43.732Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Texture.h",
               "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Texture.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Texture.h",
@@ -201,18 +196,17 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-10T16:38:31.197Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Texture.cpp",
               "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Texture.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Texture.cpp",
               "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Texture.cpp",
               "RelativeToolTip": "AbsoluteFate\\Texture.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-10T16:58:53.486Z",
               "IsPinned": true,
@@ -220,13 +214,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Renderer.cpp",
               "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Renderer.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Renderer.cpp",
               "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Renderer.cpp",
               "RelativeToolTip": "AbsoluteFate\\Renderer.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-12T13:33:47.218Z",
               "IsPinned": true,
@@ -243,8 +237,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-11T12:36:42.906Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -257,8 +250,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-11T12:36:46.78Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -271,8 +263,7 @@
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-11T13:33:20.256Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -285,8 +276,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-11T13:33:30.384Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -299,8 +289,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-12T13:33:30.5Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -313,8 +302,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-11T15:43:31.107Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -327,8 +315,7 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-11T16:01:35.536Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -340,8 +327,7 @@
               "RelativeToolTip": "AbsoluteFate\\Maths.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-12T08:28:01.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T08:28:01.96Z"
             },
             {
               "$type": "Document",
@@ -353,8 +339,7 @@
               "RelativeToolTip": "AbsoluteFate\\Transform2D.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-12T08:26:36.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T08:26:36.751Z"
             },
             {
               "$type": "Document",
@@ -366,8 +351,7 @@
               "RelativeToolTip": "AbsoluteFate\\Maths.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-12T08:04:02.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T08:04:02.932Z"
             },
             {
               "$type": "Document",
@@ -379,8 +363,7 @@
               "RelativeToolTip": "AbsoluteFate\\Components.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-11T13:35:24.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T13:35:24.658Z"
             },
             {
               "$type": "Document",
@@ -392,8 +375,7 @@
               "RelativeToolTip": "AbsoluteFate\\BoxCollider2DC.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-15T10:20:37.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T10:20:37.786Z"
             },
             {
               "$type": "Document",
@@ -405,8 +387,7 @@
               "RelativeToolTip": "AbsoluteFate\\BoxCollider2DC.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-10T14:20:22.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T14:20:22.666Z"
             },
             {
               "$type": "Document",
@@ -418,8 +399,7 @@
               "RelativeToolTip": "AbsoluteFate\\Game.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-12T12:46:33.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:46:33.507Z"
             },
             {
               "$type": "Document",
@@ -431,8 +411,7 @@
               "RelativeToolTip": "AbsoluteFate\\Game.cpp",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAABsAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-12T12:54:41.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:54:41.049Z"
             },
             {
               "$type": "Document",
@@ -444,8 +423,7 @@
               "RelativeToolTip": "AbsoluteFate\\Window.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-12T12:33:45.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:33:45.321Z"
             },
             {
               "$type": "Document",
@@ -457,8 +435,7 @@
               "RelativeToolTip": "AbsoluteFate\\Window.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-12T12:40:43.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:40:43.03Z"
             },
             {
               "$type": "Document",
@@ -470,8 +447,7 @@
               "RelativeToolTip": "AbsoluteFate\\Main.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-12T08:02:30.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T08:02:30.072Z"
             },
             {
               "$type": "Document",
@@ -483,8 +459,7 @@
               "RelativeToolTip": "AbsoluteFate\\Pong.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-12T14:26:48.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T14:26:48.506Z"
             }
           ]
         }

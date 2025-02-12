@@ -14,11 +14,11 @@ bool Renderer::Initialize(Window& rWindow)
         Log::Error(LogType::Video, "Failed to create Renderer");
         return false;
     }
-    //if (IMG_Init(IMG_INIT_PNG) == 0) // SDL Image
-    //{
+    if (IMG_Init(IMG_INIT_PNG) == 0) // SDL Image
+    {
         Log::Error(LogType::Video, "Unable to initialize SDL_Image");
-    //    return false;
-    //}
+        return false;
+    }
 
     return true;
 }
