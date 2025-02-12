@@ -9,6 +9,7 @@
 #include "SpriteC.h"
 #include <vector>
 class SpriteC;
+class Texture;
 
 enum class Flip
 {
@@ -36,6 +37,9 @@ public:
 
 	void DrawRect(Rectangle& rRect);
 	void DrawRectColor(Rectangle& rRect, Color& rColor);
+
+	//Texture
+	SDL_Renderer* GetSdlRenderer() { return mSdlRenderer; };
 
 	//SpriteComponent
 	void Draw();

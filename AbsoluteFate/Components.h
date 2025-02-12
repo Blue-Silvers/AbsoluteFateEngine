@@ -10,11 +10,7 @@ class Components
 		int mUpdateOrder;
 
 	public:
-		Components(Actor* pOwner, int pUpdateOrder) //Component constructor with owner and default update order
-		{
-			mOwner = pOwner;
-			mUpdateOrder = pUpdateOrder;
-		};
+		Components(Actor* pOwner, int pUpdateOrder); //Component constructor with owner and default update order
 		Components() = delete; //Delete default constructor
 		virtual void OnStart() = 0;
 		virtual void Update() = 0;

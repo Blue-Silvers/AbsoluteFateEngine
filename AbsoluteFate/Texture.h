@@ -5,10 +5,12 @@
 #include <vector>
 using namespace std;
 
+class Renderer;
+
 class Texture
 {
 private:
-	const string mFilepathString;
+	string mFilepathString;
 	SDL_Texture* mSdlTexture;
 	int mTextureWidth, mTextureHeight;
 

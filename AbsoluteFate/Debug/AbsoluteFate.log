@@ -1,28 +1,6 @@
-﻿  Actor.cpp
+﻿  Texture.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(38,27): warning C4018: '<': signed/unsigned mismatch
-  BigBool.cpp
-  BoxCollider2D.cpp
-  Color.cpp
-  Components.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(38,27): warning C4018: '<': signed/unsigned mismatch
-  Game.cpp
-  Log.cpp
-  Main.cpp
-  Paddle.cpp
-  Pong.cpp
-  PongBall.cpp
-  Rectangle.cpp
-  Renderer.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(49,78): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(49,68): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(49,58): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(49,48): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
-  Scene.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(38,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Scene.cpp(39,20): warning C4018: '<': signed/unsigned mismatch
-  Time.cpp
-  Transform2D.cpp
-  Vector2D.cpp
-  Window.cpp
-  Generating Code...
-  AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Texture.cpp(57,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Texture.cpp(57,18): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Texture.obj : error LNK2019: unresolved external symbol _IMG_Load referenced in function "public: bool __thiscall Texture::LoadTexture(class Renderer &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?LoadTexture@Texture@@QAE_NAAVRenderer@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe : fatal error LNK1120: 1 unresolved externals

@@ -35,7 +35,8 @@ public:
 	};
 	virtual void RemoveComponent(int index) //Remove one component
 	{
-		if (index >= 0 && index < mComponentsList.size()) {
+		if (index >= 0 && index < mComponentsList.size()) 
+		{
 			mComponentsList.erase(mComponentsList.begin() + index);
 		}
 	};

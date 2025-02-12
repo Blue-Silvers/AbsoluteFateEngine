@@ -5,6 +5,7 @@
 #include <algorithm>
 
 class Actor;
+class Renderer;
 
 class Scene
 {

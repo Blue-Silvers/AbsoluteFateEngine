@@ -2,6 +2,9 @@
 #include "Texture.h"
 #include "Components.h"
 
+class Renderer;
+class Texture;
+
 class SpriteC : public Components
 {
 private:
@@ -11,6 +14,7 @@ protected:
 	int mDrawOrder;
 	int mTextureWidth;
 	int mTextureHeight;
+
 public:
 	SpriteC(Actor* pOwner, Texture* pTexture, int pDrawOrder = 100);
 	virtual ~SpriteC();

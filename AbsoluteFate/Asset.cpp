@@ -13,7 +13,7 @@ Texture Asset::LoadTextureFromFile(Renderer& pRenderer, const string& pFileName)
 
 Texture Asset::LoadTexture(Renderer& pRenderer, const string& pFileName, const string& pTextureName)
 {
-	mTexturesMap[pTextureName].LoadTexture(pRenderer, pFileName);
+	mTexturesMap[pTextureName] = LoadTextureFromFile(pRenderer, pFileName);
 	return mTexturesMap[pTextureName];
 }
 
