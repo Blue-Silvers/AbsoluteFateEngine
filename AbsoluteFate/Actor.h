@@ -50,6 +50,10 @@ public:
 	{
 		mState = pState;
 	};
+	virtual void SetPosition(Vector2D pNewPosition) //set position
+	{
+		mTransforform2D = Transform2D(pNewPosition, mTransforform2D.GetScale(), mTransforform2D.GetRotation());
+	};
 	virtual void Update() = 0;
 	virtual void Destroy() = 0;
 

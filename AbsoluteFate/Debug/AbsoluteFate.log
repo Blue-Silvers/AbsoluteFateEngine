@@ -1,3 +1,7 @@
-﻿  ActorPokeball.cpp
+﻿  Renderer.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(40,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(57,78): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(57,68): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(57,58): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(57,48): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
   AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe

@@ -69,6 +69,7 @@ void Renderer::DrawAllSprites()
 
 void Renderer::DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip) const
 {
+
     SDL_Rect destinationRect;
     Transform2D transform = pActor.GetTransform2D();
     destinationRect.w = static_cast<int>(pTexture.GetWidth() * transform.GetScale().x);
@@ -84,6 +85,13 @@ void Renderer::DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRec
             Maths::Round(pSourceRect.dimensions.x),
             Maths::Round(pSourceRect.dimensions.y) 
     };
+
+
+        //Debug draw sqr
+    Rectangle rBox = { {(float)destinationRect.x,(float)destinationRect.y},{(float)destinationRect.w,(float)destinationRect.h} };
+    SDL_SetRenderDrawColor(mSdlRenderer, 255, 255, 255, 255);
+    SDL_Rect sdlRect = rBox.ToSdlRect();
+    SDL_RenderFillRect(mSdlRenderer, &sdlRect);
 
 
     SDL_RenderCopyEx(mSdlRenderer, pTexture.GetSdlTexture(), sourceSDL,  &destinationRect, -Maths::ToDeg(transform.GetRotation()), nullptr, SDL_FLIP_NONE);

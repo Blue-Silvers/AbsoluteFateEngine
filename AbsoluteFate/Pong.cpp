@@ -1,5 +1,9 @@
 #include "Pong.h"
 
+#include "SpriteC.h"
+#include "Asset.h"
+#include "Actor.h"
+
 void Pong::SetRenderer(Renderer* pRenderer)
 {
 	mRenderer = pRenderer;
@@ -15,8 +19,16 @@ void Pong::Start()
 	aiPaddle.mPaddlePositions = { 65,300 };
 	playerPaddle.mPaddlePositions = { 700,300 };
 	pongBall.Start(playerPaddle, aiPaddle);
-	ActorPokeball* test = new ActorPokeball({(100,100),(1,1),0}, this);
-	AddActor(test);
+
+		//Actor
+	//ActorPokeball* test = new ActorPokeball({(800,800),(0.1,0.1),0}, this);
+	//AddActor(test);
+	Asset::LoadTexture(*mRenderer, "Picture/pokeball.png", "ball");
+	ActorPokeball* actor = new ActorPokeball({ (800,800),(0.1,0.1),0 }, this);
+	SpriteC* sprite = new SpriteC(actor, &Asset::GetTexture("ball"),10);
+	actor->SetPosition(Vector2D{ 500, 500 });
+	actor->AddComponent(sprite);
+	AddActor(actor);
 
 	for (Actor* actor : mActorsList)
 	{
