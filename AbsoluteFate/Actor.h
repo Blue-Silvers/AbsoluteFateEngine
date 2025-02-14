@@ -16,15 +16,17 @@ enum class ActorState {
 
 class Actor
 {
-private:
+protected:
 	Scene* mSceneAttached;
 	ActorState mState;
 	Transform2D mTransforform2D;
-	std::vector<Components*> mComponentsList;
+	std::vector<Components*> mComponentsList; //DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip)
 
 public:
 	Actor(Transform2D pTransform2D, Scene* pScene);
+	
 	virtual void Start() = 0;
+	void Render();
 	virtual void AttachScene(Scene* pSceneAttached) //A reference to the scene it is attached to
 	{
 		mSceneAttached = pSceneAttached;

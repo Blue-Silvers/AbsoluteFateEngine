@@ -8,3 +8,11 @@ mTransforform2D(pTransform2D)
 {
 
 }
+
+void Actor::Render()
+{
+	for (Components* sprite : mComponentsList)
+	{
+		sprite->Draw(*mSceneAttached->GetRenderer());
+	}
+}

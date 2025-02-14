@@ -15,6 +15,8 @@ void Pong::Start()
 	aiPaddle.mPaddlePositions = { 65,300 };
 	playerPaddle.mPaddlePositions = { 700,300 };
 	pongBall.Start(playerPaddle, aiPaddle);
+	ActorPokeball* test = new ActorPokeball({(100,100),(1,1),0}, this);
+	AddActor(test);
 
 	for (Actor* actor : mActorsList)
 	{
@@ -116,6 +118,11 @@ void Pong::Render()
 	mRenderer->DrawRect(rRectPlayer);
 	mRenderer->DrawRect(rRectAi);
 	mRenderer->DrawRectColor(rBall, redBall);
+
+	for (Actor* actor : mActorsList)
+	{
+		actor->Render();
+	}
 }
 
 

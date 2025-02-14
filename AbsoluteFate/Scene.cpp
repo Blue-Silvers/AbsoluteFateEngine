@@ -29,6 +29,15 @@ void Scene::Update()
 	}
 }
 
+void Scene::Render()
+{
+	for (Actor* actor : mActorsList)
+	{
+		actor->Render();
+	}
+	//DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip)
+}
+
 void Scene::AddActor(Actor* newActor)
 {
 	//Add actor in the scene

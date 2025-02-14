@@ -85,6 +85,7 @@ void Renderer::DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRec
             Maths::Round(pSourceRect.dimensions.y) 
     };
 
+
     SDL_RenderCopyEx(mSdlRenderer, pTexture.GetSdlTexture(), sourceSDL,  &destinationRect, -Maths::ToDeg(transform.GetRotation()), nullptr, SDL_FLIP_NONE);
     delete sourceSDL;
 }

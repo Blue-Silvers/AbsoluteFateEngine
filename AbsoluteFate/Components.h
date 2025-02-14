@@ -1,6 +1,7 @@
 #pragma once
 
 class Actor;
+class Renderer;
 
 class Components
 {
@@ -12,6 +13,7 @@ class Components
 	public:
 		Components(Actor* pOwner, int pUpdateOrder); //Component constructor with owner and default update order
 		Components() = delete; //Delete default constructor
+		virtual void Draw(Renderer& pRenderer) {};
 		virtual void OnStart() = 0;
 		virtual void Update() = 0;
 		virtual void OnEnd() = 0;
