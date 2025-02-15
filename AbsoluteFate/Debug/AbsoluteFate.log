@@ -1,7 +1,7 @@
-﻿  Renderer.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(40,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(57,78): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(57,68): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(57,58): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Renderer.cpp(57,48): warning C4244: 'argument': conversion from 'float' to 'Uint8', possible loss of data
-  AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
+﻿  Pong.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(40,27): warning C4018: '<' : incompatibilité signed/unsigned
+  (compiler le fichier source 'Pong.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Pong.cpp(27,55): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Pong.cpp(27,49): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

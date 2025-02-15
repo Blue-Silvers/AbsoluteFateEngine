@@ -14,8 +14,17 @@ enum FaceHit
 
 struct Rectangle
 {
+    Rectangle(Vector2D pPosition = Vector2D::Zero, Vector2D pDimensions = Vector2D::One);
+
     Vector2D position;
     Vector2D dimensions;
+
+
+    //Operators
+    bool operator==(const Rectangle& other) const;
+    bool operator!=(const Rectangle& other) const;
+
+    static const Rectangle NullRect;
 
     //Draw rectangle
     SDL_Rect ToSdlRect() const
@@ -35,11 +44,8 @@ struct Rectangle
         {
             return true;
         }
-        else 
-        {
-            return false;
-        }
-
+        
+        return false;
     };
 
     //Check face of this rectangle hit another rectangle
@@ -70,10 +76,8 @@ struct Rectangle
                 return LEFT;
             }
         }
-        else
-        {
-            return NONE;
-        }
+        
+        return NONE;
 
     };
 };

@@ -78,25 +78,28 @@ void Renderer::DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRec
     destinationRect.y = static_cast<int>(transform.GetPosition().y - pOrigin.y);
 
     SDL_Rect* sourceSDL = nullptr;
-    sourceSDL = new SDL_Rect
+    if (pSourceRect != Rectangle::NullRect)
     {
-            Maths::Round(pSourceRect.position.x),
-            Maths::Round(pSourceRect.position.y),
-            Maths::Round(pSourceRect.dimensions.x),
-            Maths::Round(pSourceRect.dimensions.y) 
-    };
-
+        sourceSDL = new SDL_Rect
+        {
+                Maths::Round(pSourceRect.position.x),
+                Maths::Round(pSourceRect.position.y),
+                Maths::Round(pSourceRect.dimensions.x),
+                Maths::Round(pSourceRect.dimensions.y)
+        };
+    }
 
         //Debug draw sqr
-    Rectangle rBox = { {(float)destinationRect.x,(float)destinationRect.y},{(float)destinationRect.w,(float)destinationRect.h} };
+    /*Rectangle rBox = {{(float)destinationRect.x,(float)destinationRect.y},{(float)destinationRect.w,(float)destinationRect.h}};
     SDL_SetRenderDrawColor(mSdlRenderer, 255, 255, 255, 255);
     SDL_Rect sdlRect = rBox.ToSdlRect();
-    SDL_RenderFillRect(mSdlRenderer, &sdlRect);
+    SDL_RenderFillRect(mSdlRenderer, &sdlRect);*/
 
 
     SDL_RenderCopyEx(mSdlRenderer, pTexture.GetSdlTexture(), sourceSDL,  &destinationRect, -Maths::ToDeg(transform.GetRotation()), nullptr, SDL_FLIP_NONE);
     delete sourceSDL;
 }
+
 
 void Renderer::AddSprite(SpriteC* pSprite)
 {

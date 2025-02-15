@@ -23,9 +23,9 @@ void Pong::Start()
 		//Actor
 	//ActorPokeball* test = new ActorPokeball({(800,800),(0.1,0.1),0}, this);
 	//AddActor(test);
-	Asset::LoadTexture(*mRenderer, "Picture/pokeball.png", "ball");
-	ActorPokeball* actor = new ActorPokeball({ (800,800),(0.1,0.1),0 }, this);
-	SpriteC* sprite = new SpriteC(actor, &Asset::GetTexture("ball"),10);
+	Asset::LoadTexture(*mRenderer, "Ressources/meme.png", "ball");
+	ActorPokeball* actor = new ActorPokeball({ (800,800),(0.5 ,0.5),0 }, this);
+	SpriteC* sprite = new SpriteC(actor, &Asset::GetTexture("ball"),0);
 	actor->SetPosition(Vector2D{ 500, 500 });
 	actor->AddComponent(sprite);
 	AddActor(actor);
