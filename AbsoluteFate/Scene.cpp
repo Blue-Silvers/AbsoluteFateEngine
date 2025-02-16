@@ -2,7 +2,6 @@
 #include "Actor.h"
 #include "Asset.h"
 
-
 //Reset scene
 Scene::~Scene()
 {
@@ -43,7 +42,7 @@ void Scene::AddActor(Actor* newActor)
 {
 	//Add actor in the scene
 	newActor->AttachScene(this);
-	//newActor->Start();
+	newActor->Start();
 	if (mUpdatingActors) 
 	{
 		mActorsPending.emplace_back(newActor);

@@ -12,7 +12,7 @@ class Texture
 private:
 	string mFilepathString;
 	SDL_Texture* mSdlTexture;
-	int mTextureWidth = 1, mTextureHeight = 1;
+	int mTextureWidth, mTextureHeight;
 
 public:
 	bool LoadTexture(Renderer& pRenderer, const string& filename); //filenam = "Picture/pokeball.png"
