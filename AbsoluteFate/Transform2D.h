@@ -18,8 +18,8 @@ public:
 	Vector2D Up() const { return Vector2D(Maths::Sin(rotation), -Maths::Cos(rotation)); }
 
 	//Getter
-	Vector2D GetScale() { return scale; };
-	Vector2D GetPosition() { return position; };
-	float GetRotation() { return rotation; };
+	Vector2D GetScale() const { return scale; };
+	Vector2D GetPosition() const { return position; };
+	float GetRotation() const { return rotation; };
 };
 

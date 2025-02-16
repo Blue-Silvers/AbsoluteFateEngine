@@ -4,6 +4,7 @@
 #include <string>
 using namespace std;
 
+//SINGLETON CLASS
 class Asset
 {
 private:
@@ -11,9 +12,11 @@ private:
 	static Texture LoadTextureFromFile(Renderer& pRenderer, const string& pFileName);
 
 public:
+	//Storage for future References
 	static map<string, Texture> mTexturesMap;
+
 	static Texture LoadTexture(Renderer& pRenderer, const string& pFileName, const string& pTextureName);
-	static Texture& GetTexture(const string pTextureName);
+	static Texture& GetTexture(const string& pTextureName);
 	static void ClearMap();
 };
 

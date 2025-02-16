@@ -22,7 +22,7 @@ protected:
 public:
 	static Scene* ActiveScene;//handling actors
 	//Base of scene
-	Scene(std::string pTitle = "Scene") :mTitle(pTitle) {};
+	Scene(std::string pTitle = "Scene") :mTitle(pTitle), mUpdatingActors(false) {};
 	virtual ~Scene();
 
 	virtual void SetRenderer(Renderer* pRenderer)
@@ -32,6 +32,10 @@ public:
 	virtual Renderer* GetRenderer()
 	{
 		return mRenderer;
+	};
+	virtual std::vector<Actor*> GetAllActor()
+	{
+		return mActorsList;
 	};
 	virtual void Start();
 	virtual void Update();

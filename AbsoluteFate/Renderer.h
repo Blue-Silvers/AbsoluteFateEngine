@@ -7,6 +7,7 @@
 #include "Log.h"
 #include "Maths.h"
 #include "SpriteC.h"
+#include "SDL_image.h"
 #include <vector>
 class SpriteC;
 class Texture;

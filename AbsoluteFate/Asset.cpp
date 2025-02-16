@@ -17,7 +17,7 @@ Texture Asset::LoadTexture(Renderer& pRenderer, const string& pFileName, const s
 	return mTexturesMap[pTextureName];
 }
 
-Texture& Asset::GetTexture(const string pTextureName)
+Texture& Asset::GetTexture(const string& pTextureName)
 {
 	if (mTexturesMap.find(pTextureName) == mTexturesMap.end()) 
 	{

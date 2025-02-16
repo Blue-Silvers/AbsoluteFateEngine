@@ -19,10 +19,11 @@ class Actor
 protected:
 	Scene* mSceneAttached;
 	ActorState mState;
-	Transform2D mTransforform2D;
+	Transform2D mTransform2D;
 	std::vector<Components*> mComponentsList; //DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip)
 
 public:
+	Actor();
 	Actor(Transform2D pTransform2D, Scene* pScene);
 	
 	virtual void Start() = 0;
@@ -35,9 +36,13 @@ public:
 	{
 		mComponentsList.push_back(pComponents);
 	};
+	virtual std::vector<Components*> GetAllComponent() //get components
+	{
+		return mComponentsList;
+	};
 	virtual void RemoveComponent(int index) //Remove one component
 	{
-		if (index >= 0 && index < mComponentsList.size()) 
+		if (index >= 0 && mComponentsList.size()+1 >= index) 
 		{
 			mComponentsList.erase(mComponentsList.begin() + index);
 		}
@@ -52,7 +57,7 @@ public:
 	};
 	virtual void SetPosition(Vector2D pNewPosition) //set position
 	{
-		mTransforform2D = Transform2D(pNewPosition, mTransforform2D.GetScale(), mTransforform2D.GetRotation());
+		mTransform2D = Transform2D(pNewPosition, mTransform2D.GetScale(), mTransform2D.GetRotation());
 	};
 	virtual void Update() = 0;
 	virtual void Destroy() = 0;
@@ -64,7 +69,7 @@ public:
 	};	
 	virtual Transform2D GetTransform2D()
 	{
-		return mTransforform2D;
+		return mTransform2D;
 	};
 };
 

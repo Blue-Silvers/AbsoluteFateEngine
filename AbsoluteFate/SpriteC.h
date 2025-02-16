@@ -10,19 +10,19 @@ class SpriteC : public Components
 private:
 
 protected:
-	Texture* mTexture;
+	Texture mTexture;
 	int mDrawOrder;
 	int mTextureWidth;
 	int mTextureHeight;
 
 public:
-	SpriteC(Actor* pOwner, Texture* pTexture, int pDrawOrder = 100);
+	SpriteC(Actor* pOwner, Texture& pTexture, int pDrawOrder = 100);
 	virtual ~SpriteC();
 	SpriteC() = delete;
 	SpriteC(const SpriteC&) = delete;
 	SpriteC& operator= (const SpriteC&) = delete;
 
-	virtual void SetTexture(Texture* pTexture);
+	virtual void SetTexture(const Texture& pTexture);
 	void Draw(Renderer& pRenderer) override;
 	void OnStart() {};
 	void Update() {};

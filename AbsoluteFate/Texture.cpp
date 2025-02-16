@@ -1,5 +1,4 @@
 #include "Texture.h"
-#include "SDL_image.h"
 
 bool Texture::LoadTexture(Renderer& pRenderer, const string& filename)
 {
@@ -15,7 +14,7 @@ bool Texture::LoadTexture(Renderer& pRenderer, const string& filename)
 	mTextureHeight = surface->h;
 
 	//Create texture from surface
-	mSdlTexture = SDL_CreateTextureFromSurface(pRenderer.GetSdlRenderer(), surface); // get mSdlRenderer to Renderer
+	mSdlTexture = SDL_CreateTextureFromSurface(/**/pRenderer.GetSdlRenderer(), surface); // get mSdlRenderer to Renderer
 	SDL_FreeSurface(surface);
 	if (!mSdlTexture)
 	{
@@ -54,5 +53,5 @@ int Texture::GetHeight()
 
 Vector2D Texture::GetSize()
 {
-	return Vector2D(mTextureHeight, mTextureHeight);
+	return Vector2D((float)mTextureHeight, (float)mTextureHeight);
 }

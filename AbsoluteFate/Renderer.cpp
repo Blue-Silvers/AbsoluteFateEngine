@@ -1,5 +1,5 @@
 #include "Renderer.h"
-#include "SDL_image.h"
+
 Renderer::Renderer() :mSdlRenderer(nullptr)
 {
 }

@@ -2,9 +2,15 @@
 #include"Scene.h"
 #include "Transform2D.h"
 
+Actor::Actor() :mState(ActorState::Active),
+				mTransform2D(0, 1, 0),
+				mSceneAttached(Scene::ActiveScene)
+{
+}
+
 Actor::Actor(Transform2D pTransform2D, Scene* pScene) : mState(ActorState::Active),
-mSceneAttached(pScene->ActiveScene),
-mTransforform2D(pTransform2D)
+														mTransform2D(pTransform2D),
+														mSceneAttached(pScene->ActiveScene)
 {
 
 }
