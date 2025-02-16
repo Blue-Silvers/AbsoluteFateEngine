@@ -3,14 +3,11 @@
 #include "Scene.h"
 #include <vector>
 
-SpriteC::SpriteC(Actor* pOwner, Texture& pTexture, int pDrawOrder) :Components(pOwner),
-																	mTexture(pTexture),
-																	mDrawOrder(pDrawOrder),
-																	mTextureWidth(pTexture.GetWidth()),
-																	mTextureHeight(pTexture.GetHeight())
+SpriteC::SpriteC(Actor* pOwner, Texture& pTexture, int pDrawOrder) : Components(pOwner, pDrawOrder), mTexture(pTexture), mDrawOrder(pDrawOrder), mTextureWidth(pTexture.GetWidth()), mTextureHeight(pTexture.GetHeight())
 {
 	mOwner->GetScene()->GetRenderer()->AddSprite(this);
 }
+
 
 SpriteC::~SpriteC()
 {
@@ -26,6 +23,5 @@ void SpriteC::SetTexture(const Texture& pTexture)
 void SpriteC::Draw(Renderer& pRenderer)
 {
 	Vector2D origin{ mTextureWidth / 2.0f, mTextureHeight / 2.0f };
-	pRenderer.DrawSprite(*mOwner, mTexture, Rectangle(), origin, Renderer::Flip::None);
+	pRenderer.DrawSprite(*mOwner, mTexture, Rectangle(), origin, Flip::None);
 }
-

@@ -3,11 +3,10 @@
 #include "Asset.h"
 #include <iostream>
 
-
-//ActorPokeball::ActorPokeball(Transform2D pTransform2D, Scene* pScene) : Actor(pTransform2D, pScene)
-//{
-//	mSceneAttached = pScene;
-//}
+ActorPokeball::ActorPokeball(Transform2D pTransform2D, Scene* pScene) : Actor(pTransform2D, pScene)
+{
+	mSceneAttached = pScene;
+}
 
 void ActorPokeball::Start()
 {

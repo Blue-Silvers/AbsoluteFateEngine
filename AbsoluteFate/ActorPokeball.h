@@ -6,8 +6,7 @@ class ActorPokeball : public Actor
 private:
 
 public:
-	/*ActorPokeball();
-	ActorPokeball(Transform2D pTransform2D, Scene* pScene);*/
+	ActorPokeball(Transform2D pTransform2D, Scene* pScene);
 	void Start()override;
 	void Update()override;
 	void Destroy()override;
