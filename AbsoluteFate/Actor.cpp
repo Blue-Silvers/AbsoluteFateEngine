@@ -19,6 +19,9 @@ void Actor::Render()
 {
 	for (Components* sprite : mComponentsList)
 	{
-		sprite->Draw(*mSceneAttached->GetRenderer());
+		if (SpriteC* spriteComponent = dynamic_cast<SpriteC*>(sprite))
+		{
+			spriteComponent->Draw(*mSceneAttached->GetRenderer());
+		}
 	}
 }

@@ -1,48 +1,48 @@
 ﻿  Actor.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'Actor.cpp')
   
   ActorPokeball.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'ActorPokeball.cpp')
   
   AnimatedSpriteC.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'AnimatedSpriteC.cpp')
   
   Asset.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'Asset.cpp')
   
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SpriteC.h(13,10): error C2079: 'SpriteC::mTexture' utilise une class de 'Texture' non défini
   (compiler le fichier source 'Asset.cpp')
   
   BoxCollider2DC.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'BoxCollider2DC.cpp')
   
   Components.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'Components.cpp')
   
   Game.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'Game.cpp')
   
   Main.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'Main.cpp')
   
   Pong.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'Pong.cpp')
   
   PongBall.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'PongBall.cpp')
   
   Renderer.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'Renderer.cpp')
   
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(57,78): warning C4244: 'argument' : conversion de 'float' en 'Uint8', perte possible de données
@@ -50,18 +50,19 @@ C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Rendere
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(57,58): warning C4244: 'argument' : conversion de 'float' en 'Uint8', perte possible de données
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp(57,48): warning C4244: 'argument' : conversion de 'float' en 'Uint8', perte possible de données
   Scene.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'Scene.cpp')
   
   SpriteC.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'SpriteC.cpp')
   
   Texture.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(41,46): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(45,46): warning C4018: '>=' : incompatibilité signed/unsigned
   (compiler le fichier source 'Texture.cpp')
   
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SpriteC.h(13,10): error C2079: 'SpriteC::mTexture' utilise une class de 'Texture' non défini
   (compiler le fichier source 'Texture.cpp')
   
+  Transform2D.cpp
   Génération de code en cours...

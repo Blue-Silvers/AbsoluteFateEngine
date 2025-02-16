@@ -23,7 +23,7 @@ public:
 	SpriteC& operator= (const SpriteC&) = delete;
 
 	virtual void SetTexture(const Texture& pTexture);
-	void Draw(Renderer& pRenderer) override;
+	virtual void Draw(Renderer& pRenderer);
 	void OnStart() {};
 	void Update() {};
 	void OnEnd() {};
