@@ -2,7 +2,6 @@
 #include "Texture.h"
 #include "Components.h"
 
-class Renderer;
 class Texture;
 
 class SpriteC : public Components
@@ -24,12 +23,15 @@ public:
 
 	virtual void SetTexture(const Texture& pTexture);
 	virtual void Draw(Renderer& pRenderer);
-	void OnStart() {};
-	void Update() {};
-	void OnEnd() {};
+
 	//Getters
 	int GetDrawOrder() const { return mDrawOrder; }
-	int GetTextureWidth() const { return mTextureWidth; }
-	int GetTextureHeight() const { return mTextureHeight; }
+	int GetTexWidth() const { return mTextureWidth; }
+	int GetTexHeight() const { return mTextureHeight; }
+
+
+	virtual void OnStart() {};
+	virtual void Update() {};
+	virtual void OnEnd() {};
 };
 

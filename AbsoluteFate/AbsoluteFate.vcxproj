@@ -145,9 +145,13 @@
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Components.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="IInputListener.cpp" />
+    <ClCompile Include="InputEvent.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Maths.cpp" />
+    <ClCompile Include="MovingC.cpp" />
     <ClCompile Include="Paddle.cpp" />
     <ClCompile Include="Pong.cpp" />
     <ClCompile Include="PongBall.cpp" />
@@ -171,8 +175,12 @@
     <ClInclude Include="Color.h" />
     <ClInclude Include="Components.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="IInputListener.h" />
+    <ClInclude Include="InputEvent.h" />
+    <ClInclude Include="InputManager.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="Maths.h" />
+    <ClInclude Include="MovingC.h" />
     <ClInclude Include="Paddle.h" />
     <ClInclude Include="Pong.h" />
     <ClInclude Include="PongBall.h" />

@@ -54,7 +54,7 @@ void Renderer::DrawRect(Rectangle& rRect)
 //Draw rectangle whith rectangle class and set color whith color class
 void Renderer::DrawRectColor(Rectangle& rRect, Color& rColor)
 {
-    SDL_SetRenderDrawColor(mSdlRenderer, rColor.r, rColor.g, rColor.b, rColor.a);
+    SDL_SetRenderDrawColor(mSdlRenderer, (Uint8)rColor.r, (Uint8)rColor.g, (Uint8)rColor.b, (Uint8)rColor.a);
     SDL_Rect sdlRect = rRect.ToSdlRect();
     SDL_RenderFillRect(mSdlRenderer, &sdlRect);
 }

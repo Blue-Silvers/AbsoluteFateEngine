@@ -12,13 +12,6 @@
 class SpriteC;
 class Texture;
 
-enum class Flip
-{
-	None = SDL_FLIP_NONE,
-	Horizontal = SDL_FLIP_HORIZONTAL,
-	Vertical = SDL_FLIP_VERTICAL
-};
-
 
 class Renderer
 {
@@ -41,6 +34,13 @@ public:
 
 	//Texture
 	SDL_Renderer* GetSdlRenderer() { return mSdlRenderer; };
+
+	enum class Flip
+	{
+		None = SDL_FLIP_NONE,
+		Horizontal = SDL_FLIP_HORIZONTAL,
+		Vertical = SDL_FLIP_VERTICAL
+	};
 
 	//SpriteComponent
 	void Draw();

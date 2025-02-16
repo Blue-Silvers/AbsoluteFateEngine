@@ -22,7 +22,7 @@ protected:
 public:
 	static Scene* ActiveScene;//handling actors
 	//Base of scene
-	Scene(std::string pTitle = "Scene") :mTitle(pTitle), mUpdatingActors(false) {};
+	Scene(std::string pTitle = "Scene") : mTitle(pTitle), mUpdatingActors(false) {};
 	virtual ~Scene();
 
 	virtual void SetRenderer(Renderer* pRenderer)
@@ -40,7 +40,7 @@ public:
 	virtual void Start();
 	virtual void Update();
 	virtual void Render();
-	virtual void OnInput(SDL_Event) {};
+	virtual void OnInput(SDL_Event) {}; //replace by MovingC and InputManager
 	virtual void Close() {};
 
 	//Actors

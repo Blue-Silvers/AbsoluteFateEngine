@@ -51,7 +51,7 @@ public:
 	{
 		return { left.x - right.x, left.y - right.y };
 	}
-	friend Vector2D operator*(float scalar, Vector2D& right)
+	friend Vector2D operator*(Vector2D& right, float scalar)
 	{
 		return { scalar * right.x, scalar * right.y };
 	}

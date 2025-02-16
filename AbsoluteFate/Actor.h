@@ -42,7 +42,7 @@ public:
 	};
 	virtual void RemoveComponent(int index) //Remove one component
 	{
-		if (index >= 0 && mComponentsList.size()+1 >= index) 
+		if (index >= 0 && mComponentsList.size() > index) 
 		{
 			mComponentsList.erase(mComponentsList.begin() + index);
 		}
@@ -71,5 +71,19 @@ public:
 	{
 		return mTransform2D;
 	};
+
+	//template fonction
+	template<typename  C>
+	C* GetComponentOfType() const
+	{
+		C* result = nullptr;
+		for (Components* component : mComponentsList)
+		{
+			result = dynamic_cast<C*>(component);
+			if (result != nullptr) return result;
+		}
+		return nullptr;
+	}
+
 };
 
