@@ -59,6 +59,10 @@ public:
 	{
 		mTransform2D = Transform2D(pNewPosition, mTransform2D.GetScale(), mTransform2D.GetRotation());
 	};
+	virtual void SetScale(Vector2D pNewScale) //set scale
+	{
+		mTransform2D = Transform2D(mTransform2D.GetPosition(), pNewScale, mTransform2D.GetRotation());
+	};
 	virtual void Update() = 0;
 	virtual void Destroy() = 0;
 

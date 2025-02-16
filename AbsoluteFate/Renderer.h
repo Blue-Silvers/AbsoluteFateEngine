@@ -45,7 +45,7 @@ public:
 	//SpriteComponent
 	void Draw();
 	void DrawAllSprites();
-	void DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip) const;
+	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip) const;
 	void AddSprite(SpriteC* pSprite);
 	void RemoveSprite(SpriteC* pSprite);
 };

@@ -67,7 +67,7 @@ void Renderer::DrawAllSprites()
 {
 }
 
-void Renderer::DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip) const
+void Renderer::DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip) const
 {
 
     SDL_Rect destinationRect;

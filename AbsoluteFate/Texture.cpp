@@ -1,4 +1,14 @@
 #include "Texture.h"
+#include "Renderer.h"
+
+const Texture Texture::Default = {};
+
+Texture::Texture() : mFilepathString(""),
+					mSdlTexture(nullptr),
+					mTextureWidth(1),
+					mTextureHeight(1)
+{
+}
 
 bool Texture::LoadTexture(Renderer& pRenderer, const string& filename)
 {
@@ -35,23 +45,18 @@ void Texture::UnloadTexture()
 }
 
 //return mTextureWidth and mTextureHeight to pIntInfoWidth and pIntInfoHeight
-void Texture::UpdateInfo(int& pIntInfoWidth, int& pIntInfoHeight)
+void Texture::UpdateInfo(int& pIntInfoWidth, int& pIntInfoHeight) const
 {
 	pIntInfoWidth = mTextureWidth;
 	pIntInfoHeight = mTextureHeight;
 }
 
-int Texture::GetWidth()
+int Texture::GetWidth() const
 {
 	return mTextureWidth;
 }
 
-int Texture::GetHeight()
+int Texture::GetHeight() const
 {
 	return mTextureHeight;
-}
-
-Vector2D Texture::GetSize()
-{
-	return Vector2D((float)mTextureHeight, (float)mTextureHeight);
 }

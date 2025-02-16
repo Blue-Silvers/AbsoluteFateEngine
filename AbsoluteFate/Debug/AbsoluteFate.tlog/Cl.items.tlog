@@ -7,9 +7,13 @@ C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BoxColl
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Color.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Color.obj
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Components.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Components.obj
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Game.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Game.obj
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\IInputListener.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\IInputListener.obj
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\InputEvent.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\InputEvent.obj
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\InputManager.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\InputManager.obj
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Log.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Log.obj
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Main.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Main.obj
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Maths.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Maths.obj
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\MovingC.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\MovingC.obj
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Paddle.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Paddle.obj
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Pong.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Pong.obj
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\PongBall.cpp;C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\PongBall.obj
