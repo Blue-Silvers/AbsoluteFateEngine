@@ -1,32 +1,46 @@
 ﻿  Actor.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   ActorPokeball.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   AnimatedSpriteC.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   BoxCollider2DC.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   Components.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   Game.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   Main.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   MovingC.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   Pong.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Pong.cpp(29,33): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Pong.cpp(29,28): warning C4305: 'argument': truncation from 'double' to 'float'
   PongBall.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   Renderer.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   Scene.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   SpriteC.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   Texture.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   Generating Code...
   AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
