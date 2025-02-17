@@ -27,7 +27,7 @@ void AnimatedSpriteC::SetAnimationFps(float pFps)
 
 void AnimatedSpriteC::Update()
 {
-	//SpriteC::Update();
+	SpriteC::Update();
 
 	if (mAnimationTextures.size() == 0)
 	{

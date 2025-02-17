@@ -1,6 +1,7 @@
 #include "Pong.h"
 
 #include "SpriteC.h"
+#include "AnimatedSpriteC.h"
 #include "Asset.h"
 #include "Actor.h"
 
@@ -28,6 +29,7 @@ void Pong::Start()
 	actor->AttachScene(this);
 	actor->SetScale(Vector2D{ 0.3, 0.3 });
 	SpriteC* sprite = new SpriteC(actor, Asset::GetTexture("ball"));
+	AnimatedSpriteC* animation = new AnimatedSpriteC(actor, const vector<Texture*>&pTexture);
 	actor->SetPosition(Vector2D{ 500, 500 });
 	actor->AddComponent(sprite);
 	AddActor(actor);
