@@ -14,8 +14,10 @@ private:
 public:
 	//Storage for future References
 	static map<string, Texture> mTexturesMap;
+	static map<string, vector<Texture*> > mAnimationMap;
 
 	static Texture LoadTexture(Renderer& pRenderer, const string& pFileName, const string& pTextureName);
+	static vector <Texture*> LoadAllTextureFromFolder(Renderer& pRenderer, const string& pFileName, const string& pAnimationName);
 	static Texture& GetTexture(const string& pTextureName);
 	static void ClearMap();
 };
