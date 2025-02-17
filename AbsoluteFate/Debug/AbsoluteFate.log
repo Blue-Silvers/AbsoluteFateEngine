@@ -7,6 +7,7 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): 
   AnimatedSpriteC.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Asset.cpp
   BoxCollider2DC.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
@@ -16,12 +17,16 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): 
   Game.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  IInputListener.cpp
+  InputEvent.cpp
+  InputManager.cpp
   Main.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   MovingC.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Paddle.cpp
   Pong.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
@@ -30,6 +35,7 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Pong.cpp(29,28):
   PongBall.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Rectangle.cpp
   Renderer.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
@@ -43,4 +49,10 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): 
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   Generating Code...
+  Compiling...
+  Transform2D.cpp
+  Vector2D.cpp
+  Window.cpp
+  Generating Code...
+  LINK : C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe not found or not built by the last incremental link; performing full link
   AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
