@@ -1,6 +1,5 @@
 #pragma once
 #include "SDL_image.h"
-//#include "Renderer.h"
 #include <iostream>
 
 using namespace std;

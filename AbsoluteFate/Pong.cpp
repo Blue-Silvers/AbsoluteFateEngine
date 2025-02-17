@@ -26,7 +26,7 @@ void Pong::Start()
 	Asset::LoadTexture(*mRenderer, "Ressources/meme.png", "ball");
 	ActorPokeball* actor = new ActorPokeball();/*new ActorPokeball(( (800.f,800.f),(0.5 ,0.5),0 ), this);*/
 	actor->AttachScene(this);
-	actor->SetScale(Vector2D{ 0.1, 0.1 });
+	actor->SetScale(Vector2D{ 0.3, 0.3 });
 	SpriteC* sprite = new SpriteC(actor, Asset::GetTexture("ball"));
 	actor->SetPosition(Vector2D{ 500, 500 });
 	actor->AddComponent(sprite);
