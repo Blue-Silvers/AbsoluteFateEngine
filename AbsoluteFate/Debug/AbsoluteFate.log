@@ -1,8 +1,62 @@
-﻿  MovingC.cpp
+﻿  Actor.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  ActorPokeball.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  AnimatedSpriteC.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Asset.cpp
+  BigBool.cpp
+  BoxCollider2DC.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Color.cpp
+  Components.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Game.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  IInputListener.cpp
+  InputEvent.cpp
+  InputManager.cpp
+  Log.cpp
+  Main.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Maths.cpp
+  MovingC.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Paddle.cpp
   Pong.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  PongBall.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Rectangle.cpp
+  Generating Code...
+  Compiling...
+  Renderer.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Scene.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  SpriteC.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SpriteC.cpp(26,73): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SpriteC.cpp(26,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Texture.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
+  Time.cpp
+  Transform2D.cpp
+  Vector2D.cpp
+  Window.cpp
   Generating Code...
   AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe
