@@ -13,6 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Component">
+      <UniqueIdentifier>{cdf0ef40-e7cd-4994-93fa-f2a8340652dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Content">
+      <UniqueIdentifier>{aed60a04-0876-4d9f-9f66-b777f0dc36c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Manager">
+      <UniqueIdentifier>{6c9bd622-1f5a-4f69-9347-ca763736e6be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{83138965-a8dd-44f8-91e4-8ff5b9aa2dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Parameter">
+      <UniqueIdentifier>{7506d529-0613-437b-9e38-2e67d0c9546a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component">
+      <UniqueIdentifier>{70ac5bbc-1cdb-4fdc-91a8-c30a508cdb2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Content">
+      <UniqueIdentifier>{5bc6bd8f-c75f-4961-b891-3acf54c30652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager">
+      <UniqueIdentifier>{29fa83df-33ed-44d0-b8dc-4c9f3a3d3681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{0ffa9aa3-4cd4-4049-98f8-098c24986dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Parameter">
+      <UniqueIdentifier>{59aa1a25-0994-4a6b-bd02-d1a40e7ffb65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">

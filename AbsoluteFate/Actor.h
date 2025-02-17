@@ -16,6 +16,9 @@ enum class ActorState {
 
 class Actor
 {
+private:
+	std::vector<std::string> mTagList = {}; //all tag of Actor
+
 protected:
 	Scene* mSceneAttached;
 	ActorState mState;
@@ -63,6 +66,21 @@ public:
 	{
 		mTransform2D = Transform2D(mTransform2D.GetPosition(), pNewScale, mTransform2D.GetRotation());
 	};
+	virtual void SetTags(std::string pTag) //add tag
+	{
+		mTagList.push_back(pTag);
+	};
+	virtual void RemoveTag(int index) //Remove one tag
+	{
+		if (index >= 0 && mTagList.size() > index)
+		{
+			mTagList.erase(mTagList.begin() + index);
+		}
+	};
+	virtual void ClearTag() //Delette all tag
+	{
+		mTagList.clear();
+	};
 	virtual void Update() = 0;
 	virtual void Destroy() = 0;
 
@@ -74,6 +92,10 @@ public:
 	virtual Transform2D GetTransform2D()
 	{
 		return mTransform2D;
+	};
+	virtual std::vector<std::string> GetTags()
+	{
+		return mTagList;
 	};
 
 	//template fonction
