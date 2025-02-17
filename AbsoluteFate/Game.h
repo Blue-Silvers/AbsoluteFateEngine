@@ -16,6 +16,8 @@ private:
 
 public:
 	
+	SDL_Event event;
+
 	Game(std::string gameTitle, Scene* newScene);
 	Game(const Game&) = delete;
 	Game& operator= (const Game&) = delete;

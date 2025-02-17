@@ -24,6 +24,7 @@ bool Texture::LoadTexture(Renderer& pRenderer, const string& filename)
 	mTextureHeight = surface->h;
 
 	//Create texture from surface
+	//mSdlTexture = SDL_CreateTexture(pRenderer.GetSdlRenderer(), SDL_PIXELFORMAT_RGBA8888,SDL_TEXTUREACCESS_TARGET, mTextureWidth, mTextureHeight);
 	mSdlTexture = SDL_CreateTextureFromSurface(/**/pRenderer.GetSdlRenderer(), surface); // get mSdlRenderer to Renderer
 	SDL_FreeSurface(surface);
 	if (!mSdlTexture)

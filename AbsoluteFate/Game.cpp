@@ -72,7 +72,6 @@ void Game::CheckInput()
 {
     if (mIsRunning)
     {
-        SDL_Event event;
         while (SDL_PollEvent(&event))
         {
             switch (event.type)
