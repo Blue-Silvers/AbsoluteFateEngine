@@ -90,10 +90,10 @@ void Renderer::DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSou
     }
 
                                                 //Debug draw sqr//
-    /*Rectangle rBox = {{(float)destinationRect.x,(float)destinationRect.y},{(float)destinationRect.w,(float)destinationRect.h}};
-    SDL_SetRenderDrawColor(mSdlRenderer, 255, 255, 255, 255);
-    SDL_Rect sdlRect = rBox.ToSdlRect();
-    SDL_RenderFillRect(mSdlRenderer, &sdlRect);*/
+    //Rectangle rBox = {{(float)destinationRect.x,(float)destinationRect.y},{(float)destinationRect.w,(float)destinationRect.h}};
+    //SDL_SetRenderDrawColor(mSdlRenderer, 255, 255, 255, 255);
+    //SDL_Rect sdlRect = rBox.ToSdlRect();
+    //SDL_RenderFillRect(mSdlRenderer, &sdlRect);
 
 
     SDL_RenderCopyEx(mSdlRenderer, pTexture.GetSdlTexture(), sourceSDL,  &destinationRect, -Maths::ToDeg(transform.GetRotation()), nullptr, SDL_FLIP_NONE);

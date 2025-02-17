@@ -2,6 +2,7 @@
 
 #include "SpriteC.h"
 #include "AnimatedSpriteC.h"
+#include "MovingC.h"
 #include "Asset.h"
 #include "Actor.h"
 
@@ -24,7 +25,7 @@ void Pong::Start()
 		//Actor
 	//ActorPokeball* test = new ActorPokeball({(800,800),(0.1,0.1),0}, this);
 	//AddActor(test);
-	Asset::LoadTexture(*mRenderer, "Ressources/meme.png", "ball");
+	Asset::LoadTexture(*mRenderer, "Ressources/meme.png", "yes");
 
 	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/130_DeathAngel.png", "WalkF1");
 	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/131_DeathAngel.png", "WalkF2");
@@ -47,11 +48,16 @@ void Pong::Start()
 	ActorPokeball* actor = new ActorPokeball();/*new ActorPokeball(( (800.f,800.f),(0.5 ,0.5),0 ), this);*/
 	actor->AttachScene(this);
 	actor->SetScale(Vector2D{ 1, 1 });
-	//SpriteC* sprite = new SpriteC(actor, Asset::GetTexture("ball"));
+	SpriteC* sprite = new SpriteC(actor, Asset::GetTexture("yes"));
 	AnimatedSpriteC* animation = new AnimatedSpriteC(actor, walkAnim);
 	animation->SetAnimationFps(10);
 	actor->SetPosition(Vector2D{ 500, 500 });
 	actor->AddComponent(animation);
+
+	MovingC* movement = new MovingC(actor);
+	movement->SetSpeed(Vector2D{ 10, 0 });
+	actor->AddComponent(movement);
+
 	AddActor(actor);
 
 	for (Actor* actor : mActorsList)

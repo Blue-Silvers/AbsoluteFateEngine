@@ -17,8 +17,20 @@ void MovingC::Update()
 {
     if (!Maths::NearZero(mSpeed.GetMagnitude()))
     {
-        Vector2D newPosition = ((mOwner->GetTransform2D().Right().x * mSpeed.x + mOwner->GetTransform2D().Up().x * mSpeed.y) * Time::deltaTime + mOwner->GetTransform2D().GetPosition().x
-                            , (mOwner->GetTransform2D().Right().y * mSpeed.x + mOwner->GetTransform2D().Up().y * mSpeed.y) * Time::deltaTime) + mOwner->GetTransform2D().GetPosition().y;
+        // add right
+        Vector2D rightVector = mOwner->GetTransform2D().Right();
+        rightVector *= mSpeed.x;
+        rightVector *= Time::deltaTime;
+        // add up
+        Vector2D upVector = mOwner->GetTransform2D().Up();
+        upVector *= mSpeed.y;
+        upVector *= Time::deltaTime;
+        // add new coordonate
+        Vector2D newPosition = mOwner->GetTransform2D().GetPosition();
+        newPosition += rightVector; // add right
+        newPosition += upVector; // add up
+
         mOwner->SetPosition(newPosition);
     }
+
 }

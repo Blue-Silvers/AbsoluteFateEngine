@@ -1,4 +1,5 @@
 #include "ActorPokeball.h"
+#include "MovingC.h"
 #include "SpriteC.h"
 #include "Asset.h"
 #include <iostream>
@@ -21,6 +22,13 @@ void ActorPokeball::Start()
 
 void ActorPokeball::Update()
 {
+	for (Components* move : mComponentsList)
+	{
+		if (MovingC* movementComponent = dynamic_cast<MovingC*>(move))
+		{
+			movementComponent->Update();
+		}
+	}
 }
 
 void ActorPokeball::Destroy()

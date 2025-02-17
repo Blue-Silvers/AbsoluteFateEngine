@@ -18,5 +18,7 @@ public:
 	void SetSpeed(Vector2D pSpeed);
 
 	void Update() override;
+	virtual void OnStart() {};
+	virtual void OnEnd() {};
 };
 

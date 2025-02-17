@@ -36,7 +36,6 @@ void Scene::Render()
 	{
 		actor->Render();
 	}
-	//DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip)
 }
 
 void Scene::AddActor(Actor* newActor)
