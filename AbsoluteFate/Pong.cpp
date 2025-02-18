@@ -23,33 +23,14 @@ void Pong::Start()
 	pongBall.Start(playerPaddle, aiPaddle);
 
 		//Actor
-	//ActorPokeball* test = new ActorPokeball({(800,800),(0.1,0.1),0}, this);
-	//AddActor(test);
-	Asset::LoadTexture(*mRenderer, "Ressources/meme.png", "yes");
+	//Asset::LoadTexture(*mRenderer, "Ressources/meme.png", "yes");
 
-	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/130_DeathAngel.png", "WalkF1");
-	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/131_DeathAngel.png", "WalkF2");
-	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/132_DeathAngel.png", "WalkF3");
-	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/133_DeathAngel.png", "WalkF4");
-	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/134_DeathAngel.png", "WalkF5");
-	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/135_DeathAngel.png", "WalkF6");
-	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/136_DeathAngel.png", "WalkF7");
-	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/137_DeathAngel.png", "WalkF8");
-	Asset::LoadTexture(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk/138_DeathAngel.png", "WalkF9");
-	vector<Texture*> walkAnim = { &Asset::GetTexture("WalkF1")
-								, &Asset::GetTexture("WalkF2")
-								, &Asset::GetTexture("WalkF3")
-								, &Asset::GetTexture("WalkF4")
-								, &Asset::GetTexture("WalkF5")
-								, &Asset::GetTexture("WalkF6")
-								, &Asset::GetTexture("WalkF7")
-								, &Asset::GetTexture("WalkF8")
-								, &Asset::GetTexture("WalkF9") };
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk", "FrontWalk");
 	ActorPokeball* actor = new ActorPokeball();/*new ActorPokeball(( (800.f,800.f),(0.5 ,0.5),0 ), this);*/
 	actor->AttachScene(this);
 	actor->SetScale(Vector2D{ 1, 1 });
-	SpriteC* sprite = new SpriteC(actor, Asset::GetTexture("yes"));
-	AnimatedSpriteC* animation = new AnimatedSpriteC(actor, walkAnim);
+	//SpriteC* sprite = new SpriteC(actor, Asset::GetTexture("yes"));
+	AnimatedSpriteC* animation = new AnimatedSpriteC(actor, Asset::GetAnimation("FrontWalk"));
 	animation->SetAnimationFps(10);
 	actor->SetPosition(Vector2D{ 500, 500 });
 	actor->AddComponent(animation);

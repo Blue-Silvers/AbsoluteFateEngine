@@ -4,6 +4,7 @@
 #include <filesystem>
 
 map<string, Texture> Asset::mTexturesMap = {};
+map<string, vector<Texture> > Asset::mAnimationMap = {};
 
 Texture Asset::LoadTextureFromFile(Renderer& pRenderer, const string& pFileName)
 {
@@ -18,7 +19,7 @@ Texture Asset::LoadTexture(Renderer& pRenderer, const string& pFileName, const s
 	return mTexturesMap[pTextureName];
 }
 
-vector <Texture*> Asset::LoadAllTextureFromFolder(Renderer& pRenderer, const string& pFileName, const string& pAnimationName)
+vector<Texture> Asset::LoadAllTextureFromFolder(Renderer& pRenderer, const string& pFileName, const string& pAnimationName)
 {
 	filesystem::directory_iterator it(pFileName);
 
@@ -29,8 +30,8 @@ vector <Texture*> Asset::LoadAllTextureFromFolder(Renderer& pRenderer, const str
 		{
 			continue;
 		}
-		Texture* texture;
-		texture->LoadTexture(pRenderer, filePath.string());
+		Texture texture = LoadTexture(pRenderer, filePath.string(), filePath.filename().replace_extension().string());
+		//mAnimationMap[pAnimationName].push_back(&texture);
 		mAnimationMap[pAnimationName].push_back(texture);
 	}
 
@@ -46,6 +47,17 @@ Texture& Asset::GetTexture(const string& pTextureName)
 		Log::Error(LogType::Application, loadError.str());
 	}
 	return mTexturesMap[pTextureName];
+}
+
+vector<Texture>& Asset::GetAnimation(const string& pAnimationName)
+{
+	if (mAnimationMap.find(pAnimationName) == mAnimationMap.end())
+	{
+		ostringstream loadError;
+		loadError << "Animation " << pAnimationName << " doesn't exist in assets manageer\n";
+		Log::Error(LogType::Application, loadError.str());
+	}
+	return  mAnimationMap[pAnimationName];
 }
 
 void Asset::ClearMap()

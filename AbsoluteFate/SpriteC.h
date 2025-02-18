@@ -19,7 +19,7 @@ protected:
 	int mTextureHeight;
 
 public:
-	SpriteC(Actor* pOwner, Texture& pTexture, int pDrawOrder = 100);
+	SpriteC(Actor* pOwner, const Texture& pTexture, int pDrawOrder = 100);
 	virtual ~SpriteC();
 	SpriteC() = delete;
 	SpriteC(const SpriteC&) = delete;

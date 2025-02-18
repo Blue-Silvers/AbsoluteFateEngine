@@ -1,6 +1,6 @@
 #include "SpriteC.h"
 
-SpriteC::SpriteC(Actor* pOwner, Texture& pTexture, int pDrawOrder) :Components(pOwner),
+SpriteC::SpriteC(Actor* pOwner, const Texture& pTexture, int pDrawOrder) :Components(pOwner),
 																	mTexture(pTexture),
 																	mDrawOrder(pDrawOrder),
 																	mTextureWidth(pTexture.GetWidth()),

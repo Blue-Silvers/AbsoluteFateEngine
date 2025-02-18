@@ -2,6 +2,7 @@
 #include "Texture.h"
 #include <map>
 #include <string>
+#include <vector>
 using namespace std;
 
 //SINGLETON CLASS
@@ -14,11 +15,12 @@ private:
 public:
 	//Storage for future References
 	static map<string, Texture> mTexturesMap;
-	static map<string, vector<Texture*> > mAnimationMap;
+	static map<string, vector<Texture> > mAnimationMap;
 
 	static Texture LoadTexture(Renderer& pRenderer, const string& pFileName, const string& pTextureName);
-	static vector <Texture*> LoadAllTextureFromFolder(Renderer& pRenderer, const string& pFileName, const string& pAnimationName);
+	static vector<Texture> LoadAllTextureFromFolder(Renderer& pRenderer, const string& pFileName, const string& pAnimationName);
 	static Texture& GetTexture(const string& pTextureName);
+	static vector<Texture>& GetAnimation(const string& pAnimationName);
 	static void ClearMap();
 };
 

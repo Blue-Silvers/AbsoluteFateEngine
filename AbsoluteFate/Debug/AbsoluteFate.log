@@ -1,21 +1,8 @@
-﻿  ActorPokeball.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
-  Asset.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.h(17,21): error C2065: 'vector': undeclared identifier
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.h(17,36): error C2059: syntax error: '>'
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.h(17,9): error C2062: type 'unknown-type' unexpected
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.h(17,53): error C2238: unexpected token(s) preceding ';'
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.h(20,16): error C2143: syntax error: missing ';' before '<'
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.h(20,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.h(20,127): error C2238: unexpected token(s) preceding ';'
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.cpp(21,26): error C2039: 'LoadAllTextureFromFolder': is not a member of 'Asset'
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.cpp(34,3): error C2065: 'mAnimationMap': undeclared identifier
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Asset.cpp(37,9): error C2065: 'mAnimationMap': undeclared identifier
-  Pong.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
-  Scene.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
-  Generating Code...
+﻿  Pong.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>' : incompatibilité signed/unsigned
+  (compiler le fichier source 'Pong.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>' : incompatibilité signed/unsigned
+  (compiler le fichier source 'Pong.cpp')
+  
+  AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe
