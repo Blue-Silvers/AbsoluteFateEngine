@@ -1,6 +1,6 @@
 #include "Game.h"
+#include "InputManager.h"
 #include <iostream>
-
 
 //Initialize SDL at start of the game
 Game::Game(std::string gameTitle, Scene* newScene): mTitle(gameTitle),mIsRunning(true)
@@ -79,11 +79,11 @@ void Game::CheckInput()
             case SDL_QUIT: //close game
                 mIsRunning = false;
                 break;
-            case SDL_KEYDOWN: //look if key is down
-                mScene[0]->OnInput(event); //use input of the scene
-                break;
+            //case SDL_KEYDOWN: //look if key is down
+            //    //mScene[0]->OnInput(event); //use input of the scene
+            //    break;
             default:
-                
+                InputManager::Instance().HandleInputs(event);
                 break;
             }
         }

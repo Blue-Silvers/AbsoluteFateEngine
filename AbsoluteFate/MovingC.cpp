@@ -11,6 +11,23 @@ MovingC::MovingC(Actor* pOwner, int pUpdateOrder) : Components(pOwner, pUpdateOr
 void MovingC::SetSpeed(Vector2D pSpeed)
 {
     mSpeed = pSpeed;
+    lastDirection = currentDirection;
+    if (mSpeed.x > 0)
+    {
+        currentDirection = MOVE_RIGHT;
+    }
+    else if (mSpeed.x < 0)
+    {
+        currentDirection = MOVE_LEFT;
+    }
+    else if (mSpeed.y > 0)
+    {
+        currentDirection = MOVE_UP;
+    }
+    else if (mSpeed.y < 0)
+    {
+        currentDirection = MOVE_DOWN;
+    }
 }
 
 void MovingC::Update()

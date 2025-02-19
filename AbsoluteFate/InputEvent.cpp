@@ -4,10 +4,10 @@ InputEvent::InputEvent()
 {
 }
 
-//InputEvent::~InputEvent()
-//{
-//    mListeners.clear();
-//}
+InputEvent::~InputEvent()
+{
+    mListeners.clear();
+}
 
 void InputEvent::Subscribe(IInputListener* pListener)
 {

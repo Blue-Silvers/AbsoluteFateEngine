@@ -138,6 +138,9 @@
     <ClCompile Include="Platformer.cpp">
       <Filter>Source Files\Content</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DeathAngelA.h">
@@ -223,6 +226,9 @@
     </ClInclude>
     <ClInclude Include="Platformer.h">
       <Filter>Header Files\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

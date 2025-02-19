@@ -156,6 +156,7 @@
     <ClCompile Include="MovingC.cpp" />
     <ClCompile Include="Paddle.cpp" />
     <ClCompile Include="Platformer.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
     <ClCompile Include="Pong.cpp" />
     <ClCompile Include="PongBall.cpp" />
     <ClCompile Include="Rectangle.cpp" />
@@ -186,6 +187,7 @@
     <ClInclude Include="MovingC.h" />
     <ClInclude Include="Paddle.h" />
     <ClInclude Include="Platformer.h" />
+    <ClInclude Include="PlayerController.h" />
     <ClInclude Include="Pong.h" />
     <ClInclude Include="PongBall.h" />
     <ClInclude Include="Rectangle.h" />

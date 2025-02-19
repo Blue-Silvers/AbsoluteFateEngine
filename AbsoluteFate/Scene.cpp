@@ -73,11 +73,6 @@ void Scene::UpdateAllActors()
 	{
 		delete deadActor;
 	}
-
-	/*for (int i = 0; i < mActorsList.size(); i++)
-	{
-		mActorsList[i]->Update();
-	}*/
 }
 
 void Scene::RemoveActor(Actor* deadActor)
@@ -94,15 +89,6 @@ void Scene::RemoveActor(Actor* deadActor)
 		std::iter_swap(it, mActorsList.end() - 1);
 		mActorsList.pop_back();
 	}
-
-	/*for (int i = 0; i < mActorsList.size(); i++)
-	{
-		if (mActorsList[i] == deadActor)
-		{
-			mActorsList.erase(mActorsList.begin() + i);
-		}
-	}
-	deadActor->Destroy();*/
 }
 
 void Scene::Load()

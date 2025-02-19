@@ -60,7 +60,7 @@ void Platformer::Render()
 
 
 //Input key down
-void Platformer::OnInput(SDL_Event event)
+/*void Platformer::OnInput(SDL_Event event)
 {
 	for (Actor* actor : mActorsList)
 	{
@@ -114,7 +114,7 @@ void Platformer::OnInput(SDL_Event event)
 			}
 		}
 	}
-}
+}*/
 
 void Platformer::Close()
 {

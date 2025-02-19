@@ -40,7 +40,7 @@ public:
 	virtual void Start();
 	virtual void Update();
 	virtual void Render();
-	virtual void OnInput(SDL_Event) {}; //replace by MovingC and InputManager
+	//virtual void OnInput(SDL_Event) {}; //replace by MovingC and InputManager
 	virtual void Close() {};
 
 	//Actors
