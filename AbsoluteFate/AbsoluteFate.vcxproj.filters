@@ -54,7 +54,7 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ActorPokeball.cpp">
+    <ClCompile Include="DeathAngelA.cpp">
       <Filter>Source Files\Content</Filter>
     </ClCompile>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -135,9 +135,12 @@
     <ClCompile Include="Window.cpp">
       <Filter>Source Files\Manager</Filter>
     </ClCompile>
+    <ClCompile Include="Platformer.cpp">
+      <Filter>Source Files\Content</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ActorPokeball.h">
+    <ClInclude Include="DeathAngelA.h">
       <Filter>Header Files\Content</Filter>
     </ClInclude>
     <ClInclude Include="AnimatedSpriteC.h">
@@ -217,6 +220,9 @@
     </ClInclude>
     <ClInclude Include="InputManager.h">
       <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Platformer.h">
+      <Filter>Header Files\Content</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

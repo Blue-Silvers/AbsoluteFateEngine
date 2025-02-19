@@ -24,13 +24,16 @@ void Pong::Start()
 
 		//Actor
 	//Asset::LoadTexture(*mRenderer, "Ressources/meme.png", "yes");
-
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Idle/FrontIdle", "FrontIdle");
 	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk", "FrontWalk");
-	ActorPokeball* actor = new ActorPokeball();/*new ActorPokeball(( (800.f,800.f),(0.5 ,0.5),0 ), this);*/
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/BackWalk", "BackWalk");
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/LeftWalk", "LeftWalk");
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/RightWalk", "RightWalk");
+	DeathAngelA* actor = new DeathAngelA();/*new ActorPokeball(( (800.f,800.f),(0.5 ,0.5),0 ), this);*/
 	actor->AttachScene(this);
 	actor->SetScale(Vector2D{ 1, 1 });
 	//SpriteC* sprite = new SpriteC(actor, Asset::GetTexture("yes"));
-	AnimatedSpriteC* animation = new AnimatedSpriteC(actor, Asset::GetAnimation("FrontWalk"));
+	AnimatedSpriteC* animation = new AnimatedSpriteC(actor, Asset::GetAnimation("FrontIdle"));
 	animation->SetAnimationFps(10);
 	actor->SetPosition(Vector2D{ 500, 500 });
 	actor->AddComponent(animation);

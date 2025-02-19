@@ -5,7 +5,7 @@
 #include "Color.h"
 #include "BigBool.h"
 
-#include "ActorPokeball.h"
+#include "DeathAngelA.h"
 
 class Pong : public Scene
 {
@@ -25,8 +25,6 @@ public:
 	Rectangle rRectAi = { aiPaddle.mPaddlePositions, aiPaddle.mPaddleDimension };
 	Rectangle rBall = { {pongBall.mBallCenter},{pongBall.mBallRadius,pongBall.mBallRadius} };
 
-
-	//ActorPokeball test;
 
 	Pong() :Scene("Pong") {};
 	void SetRenderer(Renderer* pRenderer) override;
