@@ -5,6 +5,13 @@ C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>' : incompatibilité signed/unsigned
   (compiler le fichier source 'Actor.cpp')
   
+  BoxCollider2DC.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>' : incompatibilité signed/unsigned
+  (compiler le fichier source 'BoxCollider2DC.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>' : incompatibilité signed/unsigned
+  (compiler le fichier source 'BoxCollider2DC.cpp')
+  
   DeathAngelA.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>' : incompatibilité signed/unsigned
   (compiler le fichier source 'DeathAngelA.cpp')
@@ -16,6 +23,13 @@ C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DeathAn
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DeathAngelA.cpp(37,60): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DeathAngelA.cpp(36,61): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DeathAngelA.cpp(35,68): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+  MovingC.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>' : incompatibilité signed/unsigned
+  (compiler le fichier source 'MovingC.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>' : incompatibilité signed/unsigned
+  (compiler le fichier source 'MovingC.cpp')
+  
   TheWallA.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>' : incompatibilité signed/unsigned
   (compiler le fichier source 'TheWallA.cpp')

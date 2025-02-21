@@ -90,11 +90,17 @@ public :
     virtual void Update() {};
     virtual void Draw(Renderer& pRenderer) //debug
     {
-        //Debug draw sqr//
-        Rectangle rBox = { {mColliderBox.GetPosition().x,mColliderBox.GetPosition().y},{mColliderBox.GetScale().x*2,mColliderBox.GetScale().y*2} };
-        SDL_SetRenderDrawColor(pRenderer.GetSdlRenderer(), 255, 255, 255, 255);
-        SDL_Rect sdlRect = rBox.ToSdlRect();
-        SDL_RenderFillRect(pRenderer.GetSdlRenderer(), &sdlRect);
+        //Transform2D destinationRect = Transform2D( //debug box
+        //    Vector2D(static_cast<int>(GetTransform2D().GetPosition().x - animation->GetTexWidth() / 2.0f),
+        //        static_cast<int>(GetTransform2D().GetPosition().y - animation->GetTexHeight() / 2.0f)),
+        //    Vector2D(static_cast<int>(animation->GetTexWidth() * GetTransform2D().GetScale().x),
+        //        static_cast<int>(animation->GetTexHeight() * GetTransform2D().GetScale().y)),
+        //    GetTransform2D().GetRotation());
+        ////Debug draw sqr//
+        //Rectangle rBox = Rectangle(destinationRect.GetPosition(), destinationRect.GetScale(), destinationRect.GetRotation());
+        //SDL_SetRenderDrawColor(pRenderer.GetSdlRenderer(), 255, 255, 255, 255);
+        //SDL_Rect sdlRect = rBox.ToSdlRect();
+        //SDL_RenderFillRect(pRenderer.GetSdlRenderer(), &sdlRect);
 
     };
     virtual void OnEnd() {};
