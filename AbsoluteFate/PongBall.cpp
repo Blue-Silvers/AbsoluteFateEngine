@@ -1,6 +1,6 @@
 #include "PongBall.h"
 #include <SDL.h>
-#include "Renderer.h"
+#include "RendererSDL.h"
 
 PongBall::PongBall()
 {

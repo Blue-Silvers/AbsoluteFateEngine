@@ -36,7 +36,7 @@ public:
 	//SpriteComponent
 	virtual void Draw();
 	virtual void DrawAllSprites();
-	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const ;
+	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2 pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const ;
 	void AddSprite(SpriteC* pSprite);
 	void RemoveSprite(SpriteC* pSprite);
 

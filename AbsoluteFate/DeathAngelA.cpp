@@ -19,15 +19,15 @@ void DeathAngelA::Start()
 	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Walk/RightWalk", "RightWalk");
 
 	//Actor
-	SetScale(Vector2D{ 1, 1 }); //scale
-	SetPosition(Vector2D{ 400, 400 }); //location
+	SetScale(Vector2{ 1, 1 }); //scale
+	SetPosition(Vector2{ 400, 400 }); //location
 	//anim component
 	AnimatedSpriteC* animation = new AnimatedSpriteC(this, Asset::GetAnimation("FrontIdle"));
-	animation->SetAnimationFps(10);
+	animation->SetAnimationFps(5);
 	AddComponent(animation);
 	//move component
 	PlayerController* movement = new PlayerController(this);
-	movement->SetSpeed(Vector2D{ 0, 0 });
+	movement->SetSpeed(Vector2{ 0, 0 });
 	AddComponent(movement);
 	//Box collider component
 

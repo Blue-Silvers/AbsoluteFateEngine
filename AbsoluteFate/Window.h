@@ -1,18 +1,18 @@
 #pragma once
-#include "Vector2D.h"
+#include "Vector2.h"
 #include <SDL.h>
 class Window
 {
 private:
 	SDL_Window* mSdlWindow;
-	Vector2D mDimensions;
+	Vector2 mDimensions;
 
 public:
 	Window(float width = 800, float pHeight = 800);
 	Window(const Window&) = delete;
 	Window& operator=(const Window&) = delete;
 
-	inline Vector2D GetDimensions() const 
+	inline Vector2 GetDimensions() const 
 	{
 		return mDimensions;
 	}

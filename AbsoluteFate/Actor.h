@@ -58,11 +58,11 @@ public:
 	{
 		mState = pState;
 	};
-	virtual void SetPosition(Vector2D pNewPosition) //set position
+	virtual void SetPosition(Vector2 pNewPosition) //set position
 	{
 		mTransform2D = Transform2D(pNewPosition, mTransform2D.GetScale(), mTransform2D.GetRotation());
 	};
-	virtual void SetScale(Vector2D pNewScale) //set scale
+	virtual void SetScale(Vector2 pNewScale) //set scale
 	{
 		mTransform2D = Transform2D(mTransform2D.GetPosition(), pNewScale, mTransform2D.GetRotation());
 	};

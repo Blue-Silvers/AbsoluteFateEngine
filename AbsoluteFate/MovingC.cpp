@@ -1,7 +1,7 @@
 #include "MovingC.h"
 #include "Actor.h"
 #include "Time.h"
-#include "Vector2D.h"
+#include "Vector2.h"
 #include "Maths.h"
 #include "BoxCollider2DC.h"
 
@@ -10,7 +10,7 @@ MovingC::MovingC(Actor* pOwner, int pUpdateOrder) : Components(pOwner, pUpdateOr
 {
 }
 
-void MovingC::SetSpeed(Vector2D pSpeed)
+void MovingC::SetSpeed(Vector2 pSpeed)
 {
     mSpeed = pSpeed;
     lastDirection = currentDirection;
@@ -37,19 +37,19 @@ void MovingC::Update()
     if (!Maths::NearZero(mSpeed.GetMagnitude()))
     {
         // add right
-        Vector2D rightVector = mOwner->GetTransform2D().Right();
+        Vector2 rightVector = mOwner->GetTransform2D().Right();
         rightVector *= mSpeed.x;
         rightVector *= Time::deltaTime;
         // add up
-        Vector2D upVector = mOwner->GetTransform2D().Up();
+        Vector2 upVector = mOwner->GetTransform2D().Up();
         upVector *= mSpeed.y;
         upVector *= Time::deltaTime;
         // add new coordonate
-        Vector2D newPosition = mOwner->GetTransform2D().GetPosition();
+        Vector2 newPosition = mOwner->GetTransform2D().GetPosition();
         newPosition += rightVector; // add right
         newPosition += upVector; // add up
         //keep last position 
-        Vector2D lastPosition = mOwner->GetTransform2D().GetPosition();
+        Vector2 lastPosition = mOwner->GetTransform2D().GetPosition();
         lastPosition -= rightVector; // add right
         lastPosition -= upVector; // add up
 

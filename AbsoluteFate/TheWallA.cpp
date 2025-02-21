@@ -10,8 +10,8 @@ void TheWallA::Start()
 	//load texture
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Ressources/meme.png", "yes");
 	//Actor
-	SetScale(Vector2D{ 1, 1 }); //scale
-	SetPosition(Vector2D{ 1000, 400}); //location
+	SetScale(Vector2{ 1, 1 }); //scale
+	SetPosition(Vector2{ 1000, 400}); //location
 	//sprite component
 	SpriteC* sprite = new SpriteC(this, Asset::GetTexture("yes"));
 	AddComponent(sprite);

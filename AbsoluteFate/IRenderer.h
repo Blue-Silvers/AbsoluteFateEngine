@@ -28,7 +28,7 @@ public:
     virtual void BeginDraw() = 0;
     virtual void Draw() = 0;
     virtual void DrawAllSprites() = 0;
-    virtual void DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip = Flip::None) const = 0;
+    virtual void DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip = Flip::None) const = 0;
     virtual void EndDraw() = 0;
     virtual void Close() = 0;
     virtual RendererType GetType() = 0;

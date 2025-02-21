@@ -69,7 +69,7 @@
     <ClCompile Include="SpriteC.cpp">
       <Filter>Source Files\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Vector2D.cpp">
+    <ClCompile Include="Vector2.cpp">
       <Filter>Source Files\Parameter</Filter>
     </ClCompile>
     <ClCompile Include="Transform2D.cpp">
@@ -141,11 +141,11 @@
     <ClCompile Include="PlayerController.cpp">
       <Filter>Source Files\Content</Filter>
     </ClCompile>
-    <ClCompile Include="TheWallA.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="IRenderer.cpp">
       <Filter>Source Files\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="TheWallA.cpp">
+      <Filter>Source Files\Content</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -170,7 +170,7 @@
     <ClInclude Include="Transform2D.h">
       <Filter>Header Files\Parameter</Filter>
     </ClInclude>
-    <ClInclude Include="Vector2D.h">
+    <ClInclude Include="Vector2.h">
       <Filter>Header Files\Parameter</Filter>
     </ClInclude>
     <ClInclude Include="Color.h">
@@ -236,11 +236,11 @@
     <ClInclude Include="PlayerController.h">
       <Filter>Header Files\Content</Filter>
     </ClInclude>
-    <ClInclude Include="TheWallA.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="IRenderer.h">
       <Filter>Header Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TheWallA.h">
+      <Filter>Header Files\Content</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

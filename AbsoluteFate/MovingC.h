@@ -1,7 +1,7 @@
 #pragma once
 #pragma once
 #include "Components.h"
-#include "Vector2D.h"
+#include "Vector2.h"
 
 enum Direction
 {
@@ -15,7 +15,7 @@ enum Direction
 class MovingC : public Components
 {
 protected:
-	Vector2D mSpeed;
+	Vector2 mSpeed;
 	Direction currentDirection = MOVE_STOP;
 	Direction lastDirection = MOVE_STOP;
 
@@ -25,9 +25,9 @@ public:
 	MovingC(const MovingC&) = delete;
 	MovingC& operator= (const MovingC&) = delete;
 
-	Vector2D GetSpeed() const { return mSpeed; }
+	Vector2 GetSpeed() const { return mSpeed; }
 	Direction GetCurrentDirection() const { return currentDirection; }
-	void SetSpeed(Vector2D pSpeed);
+	void SetSpeed(Vector2 pSpeed);
 
 	void Update() override;
 	virtual void OnStart() {};

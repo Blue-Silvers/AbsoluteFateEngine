@@ -1,6 +1,6 @@
 #pragma once
 #include <SDL_rect.h>
-#include "Vector2D.h"
+#include "Vector2.h"
 
 //Enum of rectangle face
 enum FaceHit 
@@ -14,10 +14,10 @@ enum FaceHit
 
 struct Rectangle
 {
-    Rectangle(Vector2D pPosition = Vector2D::Zero, Vector2D pDimensions = Vector2D::One);
+    Rectangle(Vector2 pPosition = Vector2::Zero, Vector2 pDimensions = Vector2::One);
 
-    Vector2D position;
-    Vector2D dimensions;
+    Vector2 position;
+    Vector2 dimensions;
 
 
     //Operators

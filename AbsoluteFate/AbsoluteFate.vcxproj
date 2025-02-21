@@ -168,7 +168,7 @@
     <ClCompile Include="TheWallA.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="Transform2D.cpp" />
-    <ClCompile Include="Vector2D.cpp" />
+    <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -201,7 +201,7 @@
     <ClInclude Include="TheWallA.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Transform2D.h" />
-    <ClInclude Include="Vector2D.h" />
+    <ClInclude Include="Vector2.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

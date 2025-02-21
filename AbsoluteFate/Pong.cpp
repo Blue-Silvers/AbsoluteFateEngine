@@ -31,15 +31,15 @@ void Pong::Start()
 	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/RightWalk", "RightWalk");
 	DeathAngelA* actor = new DeathAngelA();/*new ActorPokeball(( (800.f,800.f),(0.5 ,0.5),0 ), this);*/
 	actor->AttachScene(this);
-	actor->SetScale(Vector2D{ 1, 1 });
+	actor->SetScale(Vector2{ 1, 1 });
 	//SpriteC* sprite = new SpriteC(actor, Asset::GetTexture("yes"));
 	AnimatedSpriteC* animation = new AnimatedSpriteC(actor, Asset::GetAnimation("FrontIdle"));
 	animation->SetAnimationFps(10);
-	actor->SetPosition(Vector2D{ 500, 500 });
+	actor->SetPosition(Vector2{ 500, 500 });
 	actor->AddComponent(animation);
 
 	MovingC* movement = new MovingC(actor);
-	movement->SetSpeed(Vector2D{ 10, 0 });
+	movement->SetSpeed(Vector2{ 10, 0 });
 	actor->AddComponent(movement);
 
 	AddActor(actor);

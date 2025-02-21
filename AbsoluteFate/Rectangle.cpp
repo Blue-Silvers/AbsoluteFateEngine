@@ -2,7 +2,7 @@
 
 const Rectangle Rectangle::NullRect({ 0.0f,0.0f }, { 0.0f,0.0f });
 
-Rectangle::Rectangle(Vector2D pPosition, Vector2D pDimensions)
+Rectangle::Rectangle(Vector2 pPosition, Vector2 pDimensions)
 {
 	position = pPosition;
 	dimensions = pDimensions;

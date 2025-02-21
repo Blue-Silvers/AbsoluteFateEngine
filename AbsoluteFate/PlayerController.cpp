@@ -24,16 +24,16 @@ void PlayerController::OnNotify(SDL_Event& pEvent)
 		switch (pEvent.key.keysym.sym)
 		{
 		case SDLK_UP:
-			SetSpeed(Vector2D{ 0, 50 });
+			SetSpeed(Vector2{ 0, 50 });
 			break;
 		case SDLK_DOWN:
-			SetSpeed(Vector2D{ 0, -50 });
+			SetSpeed(Vector2{ 0, -50 });
 			break;
 		case SDLK_RIGHT:
-			SetSpeed(Vector2D{ 50, 0 });
+			SetSpeed(Vector2{ 50, 0 });
 			break;
 		case SDLK_LEFT:
-			SetSpeed(Vector2D{ -50, 0 });
+			SetSpeed(Vector2{ -50, 0 });
 			break;
 		default:
 
@@ -58,7 +58,7 @@ void PlayerController::OnNotify(SDL_Event& pEvent)
 		break;
 	case SDL_KEYUP:
 
-		SetSpeed(Vector2D{ 0, 0 });
+		SetSpeed(Vector2{ 0, 0 });
 		break;
 	default:
 		break;

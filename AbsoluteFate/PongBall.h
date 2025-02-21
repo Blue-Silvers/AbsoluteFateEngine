@@ -1,6 +1,6 @@
 #pragma once
 #include "Paddle.h"
-#include "Vector2D.h"
+#include "Vector2.h"
 
 class PongBall/* : public Actor*/
 {
@@ -14,7 +14,7 @@ private:
 
 public:
 	bool mBallLunch = false;
-	Vector2D mBallCenter = { 400,400 };
+	Vector2 mBallCenter = { 400,400 };
 	float mBallRadius = 20;
 	bool mBallAlive = true;
 	PongBall();

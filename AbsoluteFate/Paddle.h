@@ -1,9 +1,9 @@
 #pragma once
-#include "Vector2D.h"
+#include "Vector2.h"
 class Paddle
 {
 public:
-	Vector2D mPaddlePositions = { 700,300 };
-	Vector2D mPaddleDimension = { 35,200 };
+	Vector2 mPaddlePositions = { 700,300 };
+	Vector2 mPaddleDimension = { 35,200 };
 };
 
