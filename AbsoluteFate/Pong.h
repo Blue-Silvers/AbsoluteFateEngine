@@ -29,7 +29,7 @@ public:
 
 
 	Pong() :Scene("Pong") {};
-	void SetRenderer(RendererSDL* pRenderer) override;
+	void SetRenderer(IRenderer* pRenderer) override;
 	void Start() override;
 	void Update()override;
 	void Render() override;

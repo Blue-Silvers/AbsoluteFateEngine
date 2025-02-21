@@ -6,7 +6,7 @@
 #include "Asset.h"
 #include "Actor.h"
 
-void Pong::SetRenderer(RendererSDL* pRenderer)
+void Pong::SetRenderer(IRenderer* pRenderer)
 {
 	mRenderer = pRenderer;
 }
@@ -135,15 +135,19 @@ void Pong::Render()
 {
 	//Square in middle of the screen and disappear only if ball is in collider zone
 	Rectangle rBox = { {380,380},{40,40} };
-	if (rBox.RectCollide(rBall) == false) 
+	if (RendererSDL* pRendererSDL = dynamic_cast<RendererSDL*>(mRenderer))
 	{
-		mRenderer->DrawRect(rBox);
+		if (rBox.RectCollide(rBall) == false)
+		{
+			pRendererSDL->DrawRect(rBox);
+		}
+
+		//Draw paddles and ball
+		pRendererSDL->DrawRect(rRectPlayer);
+		pRendererSDL->DrawRect(rRectAi);
+		pRendererSDL->DrawRectColor(rBall, redBall);
 	}
 
-	//Draw paddles and ball
-	mRenderer->DrawRect(rRectPlayer);
-	mRenderer->DrawRect(rRectAi);
-	mRenderer->DrawRectColor(rBall, redBall);
 
 	for (Actor* actor : mActorsList)
 	{

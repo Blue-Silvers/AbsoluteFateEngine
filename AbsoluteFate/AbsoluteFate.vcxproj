@@ -164,6 +164,7 @@
     <ClCompile Include="PongBall.cpp" />
     <ClCompile Include="Quaternion.cpp" />
     <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="RendererGl.cpp" />
     <ClCompile Include="RendererSDL.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SpriteC.cpp" />
@@ -174,6 +175,7 @@
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="Vector3.cpp" />
     <ClCompile Include="Vector4.cpp" />
+    <ClCompile Include="VertexArray.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -202,6 +204,7 @@
     <ClInclude Include="PongBall.h" />
     <ClInclude Include="Quaternion.h" />
     <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="RendererGl.h" />
     <ClInclude Include="RendererSDL.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SpriteC.h" />
@@ -212,6 +215,7 @@
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Vector4.h" />
+    <ClInclude Include="VertexArray.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

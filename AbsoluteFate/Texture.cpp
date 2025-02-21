@@ -1,5 +1,5 @@
 #include "Texture.h"
-#include "Renderer.h"
+#include "RendererSDL.h"
 
 const Texture Texture::Default = {};
 
@@ -10,7 +10,7 @@ Texture::Texture() : mFilepathString(""),
 {
 }
 
-bool Texture::LoadTexture(RendererSDL& pRenderer, const string& filename)
+bool Texture::LoadTexture(IRenderer* pRenderer, const string& filename)
 {
 	mFilepathString = filename;
 
@@ -23,8 +23,13 @@ bool Texture::LoadTexture(RendererSDL& pRenderer, const string& filename)
 	mTextureWidth = surface->w;
 	mTextureHeight = surface->h;
 
+	IRenderer* test = pRenderer;
 	//Create texture from surface
-	mSdlTexture = SDL_CreateTextureFromSurface(pRenderer.GetSdlRenderer(), surface); // get mSdlRenderer to Renderer
+	if (RendererSDL* pRendererSDL = dynamic_cast<RendererSDL*>(test))
+	{
+		mSdlTexture = SDL_CreateTextureFromSurface(pRendererSDL->GetSdlRenderer(), surface); // get mSdlRenderer to Renderer	
+	}
+
 	SDL_FreeSurface(surface);
 	if (!mSdlTexture)
 	{

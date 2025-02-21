@@ -1,11 +1,13 @@
-#include <iostream>
-#include <SDL.h>
-#include <glew.h>
 #include "Vector2.h"
 #include "Log.h"
 #include "Game.h"
 #include "Pong.h"
 #include "Platformer.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <SDL.h>
+#include <glew.h>
 using namespace std;
 
 Pong* scenePong = new Pong();

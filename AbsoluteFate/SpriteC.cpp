@@ -6,12 +6,18 @@ SpriteC::SpriteC(Actor* pOwner, const Texture& pTexture, int pDrawOrder) :Compon
 																	mTextureWidth(pTexture.GetWidth()),
 																	mTextureHeight(pTexture.GetHeight())
 {
-	mOwner->GetScene()->GetRenderer()->AddSprite(this);
+	if (RendererSDL* pRendererSDL = dynamic_cast<RendererSDL*>(mOwner->GetScene()->GetRenderer()))
+	{
+		pRendererSDL->AddSprite(this);
+	}
 }
 
 SpriteC::~SpriteC()
 {
-	mOwner->GetScene()->GetRenderer()->RemoveSprite(this);
+	if (RendererSDL* pRendererSDL = dynamic_cast<RendererSDL*>(mOwner->GetScene()->GetRenderer()))
+	{
+		pRendererSDL->RemoveSprite(this);
+	}
 }
 
 void SpriteC::SetTexture(const Texture& pTexture)
@@ -20,7 +26,7 @@ void SpriteC::SetTexture(const Texture& pTexture)
 	mTexture.UpdateInfo(mTextureWidth, mTextureHeight);
 }
 
-void SpriteC::Draw(RendererSDL& pRenderer)
+void SpriteC::Draw(IRenderer& pRenderer)
 {
 	Vector2 origin{ mTextureWidth / 2.0f, mTextureHeight / 2.0f };
 	pRenderer.DrawSprite(*mOwner, mTexture, Rectangle((0,0), ((float)mTextureWidth, (float)mTextureHeight)), origin, RendererSDL::Flip::None);

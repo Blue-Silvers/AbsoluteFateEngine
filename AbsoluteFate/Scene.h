@@ -5,7 +5,7 @@
 #include <algorithm>
 
 class Actor;
-class RendererSDL;
+class IRenderer;
 
 class Scene
 {
@@ -17,7 +17,7 @@ protected:
 	std::vector<Actor*> mDeadActors{};
 
 protected:
-	RendererSDL* mRenderer;
+	IRenderer* mRenderer;
 
 public:
 	static Scene* ActiveScene;//handling actors
@@ -25,11 +25,11 @@ public:
 	Scene(std::string pTitle = "Scene") : mTitle(pTitle), mUpdatingActors(false) {};
 	virtual ~Scene();
 
-	virtual void SetRenderer(RendererSDL* pRenderer)
+	virtual void SetRenderer(IRenderer* pRenderer)
 	{
 		mRenderer = pRenderer;
 	};
-	virtual RendererSDL* GetRenderer()
+	virtual IRenderer* GetRenderer()
 	{
 		return mRenderer;
 	};

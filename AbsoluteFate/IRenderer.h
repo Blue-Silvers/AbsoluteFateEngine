@@ -3,6 +3,13 @@
 #include "Rectangle.h"
 #include "Window.h"
 
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <SDL.h>
+#include <glew.h>
+using namespace std;
+
 class Texture;
 
 class IRenderer

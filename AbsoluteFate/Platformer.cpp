@@ -7,7 +7,7 @@
 #include "Actor.h"
 #include "TheWallA.h"
 
-void Platformer::SetRenderer(RendererSDL* pRenderer)
+void Platformer::SetRenderer(IRenderer* pRenderer)
 {
 	mRenderer = pRenderer;
 }

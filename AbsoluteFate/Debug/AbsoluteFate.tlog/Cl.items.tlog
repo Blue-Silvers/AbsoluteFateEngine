@@ -24,6 +24,7 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Pong.cpp;C
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\PongBall.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\PongBall.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Quaternion.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Quaternion.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Rectangle.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Rectangle.obj
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\RendererGl.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererSDL.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\RendererSDL.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Scene.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Scene.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SpriteC.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\SpriteC.obj
@@ -34,4 +35,5 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Transform2
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Vector2.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Vector2.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Vector3.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Vector3.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Vector4.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Vector4.obj
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\VertexArray.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\VertexArray.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Window.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Window.obj

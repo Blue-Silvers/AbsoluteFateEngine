@@ -22,10 +22,10 @@ public:
 	RendererSDL(const RendererSDL&) = delete;
 	RendererSDL& operator= (const RendererSDL&) = delete;
 
-	virtual bool Initialize(Window& rWindow);
-	virtual void BeginDraw();
-	virtual void EndDraw();
-	virtual void Close();
+	bool Initialize(Window& rWindow) override;
+	void BeginDraw() override;
+	void EndDraw() override;
+	void Close() override;
 
 	void DrawRect(Rectangle& rRect);
 	void DrawRectColor(Rectangle& rRect, Color& rColor);
@@ -34,14 +34,14 @@ public:
 	SDL_Renderer* GetSdlRenderer() { return mSdlRenderer; };
 
 	//SpriteComponent
-	virtual void Draw();
-	virtual void DrawAllSprites();
-	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2 pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const ;
+	void Draw() override;
+	void DrawAllSprites() override;
+	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2 pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const;
 	void AddSprite(SpriteC* pSprite);
 	void RemoveSprite(SpriteC* pSprite);
 
 
-	virtual IRenderer::RendererType GetType();
+	IRenderer::RendererType GetType() override;
 };
 
 

@@ -144,9 +144,6 @@
     <ClCompile Include="TheWallA.cpp">
       <Filter>Source Files\Content</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files\Parameter</Filter>
-    </ClCompile>
     <ClCompile Include="Matrix4.cpp">
       <Filter>Source Files\Parameter</Filter>
     </ClCompile>
@@ -161,6 +158,15 @@
     </ClCompile>
     <ClCompile Include="Vector4.cpp">
       <Filter>Source Files\Parameter</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexArray.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="RendererGl.cpp">
+      <Filter>Source Files\Manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -271,6 +277,12 @@
     </ClInclude>
     <ClInclude Include="Vector4.h">
       <Filter>Header Files\Parameter</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexArray.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererGl.h">
+      <Filter>Header Files\Manager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
