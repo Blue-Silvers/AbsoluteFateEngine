@@ -102,7 +102,7 @@ public :
             }
         }
     };
-    virtual void Draw(Renderer& pRenderer) //debug
+    virtual void Draw(RendererSDL& pRenderer) //debug
     {
         ////Debug draw sqr//
         Rectangle rBox = { {(float)mColliderBox.GetPosition().x,(float)mColliderBox.GetPosition().y},{(float)mColliderBox.GetScale().x,(float)mColliderBox.GetScale().y} };

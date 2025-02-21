@@ -6,20 +6,20 @@
 map<string, Texture> Asset::mTexturesMap = {};
 map<string, vector<Texture> > Asset::mAnimationMap = {};
 
-Texture Asset::LoadTextureFromFile(Renderer& pRenderer, const string& pFileName)
+Texture Asset::LoadTextureFromFile(RendererSDL& pRenderer, const string& pFileName)
 {
 	Texture texture;
 	texture.LoadTexture(pRenderer, pFileName);
 	return texture;
 }
 
-Texture Asset::LoadTexture(Renderer& pRenderer, const string& pFileName, const string& pTextureName)
+Texture Asset::LoadTexture(RendererSDL& pRenderer, const string& pFileName, const string& pTextureName)
 {
 	mTexturesMap[pTextureName] = LoadTextureFromFile(pRenderer, pFileName);
 	return mTexturesMap[pTextureName];
 }
 
-vector<Texture> Asset::LoadAllTextureFromFolder(Renderer& pRenderer, const string& pFileName, const string& pAnimationName)
+vector<Texture> Asset::LoadAllTextureFromFolder(RendererSDL& pRenderer, const string& pFileName, const string& pAnimationName)
 {
 	filesystem::directory_iterator it(pFileName);
 

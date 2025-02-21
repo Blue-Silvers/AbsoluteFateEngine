@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class Renderer;
+class RendererSDL;
 
 class Texture
 {
@@ -18,7 +18,7 @@ protected:
 
 public:
 	Texture();
-	bool LoadTexture(Renderer& pRenderer, const string& filename); //filenam = "Picture/pokeball.png"
+	bool LoadTexture(RendererSDL& pRenderer, const string& filename); //filenam = "Picture/pokeball.png"
 	void UnloadTexture();
 	void UpdateInfo(int& pIntInfoWidth, int& pIntInfoHeight) const; // Using references to get two informations out
 	int GetWidth() const;

@@ -144,6 +144,9 @@
     <ClCompile Include="TheWallA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DeathAngelA.h">
@@ -234,6 +237,9 @@
       <Filter>Header Files\Content</Filter>
     </ClInclude>
     <ClInclude Include="TheWallA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

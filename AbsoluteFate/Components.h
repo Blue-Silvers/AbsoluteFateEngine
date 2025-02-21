@@ -1,7 +1,7 @@
 #pragma once
 
 class Actor;
-class Renderer;
+class RendererSDL;
 
 class Components
 {

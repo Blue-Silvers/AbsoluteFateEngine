@@ -10,7 +10,7 @@ Texture::Texture() : mFilepathString(""),
 {
 }
 
-bool Texture::LoadTexture(Renderer& pRenderer, const string& filename)
+bool Texture::LoadTexture(RendererSDL& pRenderer, const string& filename)
 {
 	mFilepathString = filename;
 

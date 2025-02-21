@@ -6,7 +6,7 @@
 #include "Asset.h"
 #include "Actor.h"
 
-void Pong::SetRenderer(Renderer* pRenderer)
+void Pong::SetRenderer(RendererSDL* pRenderer)
 {
 	mRenderer = pRenderer;
 }

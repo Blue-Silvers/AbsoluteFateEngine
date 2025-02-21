@@ -22,7 +22,7 @@ Game::Game(std::string gameTitle, Scene* newScene): mTitle(gameTitle),mIsRunning
 void Game::Init(Scene* newScene)
 {
     mWindow = new Window{ 800,800 };
-    mRenderer = new Renderer;
+    mRenderer = new RendererSDL;
     mScene[0] = newScene;
     mScene[0]->SetRenderer(mRenderer);
     if (mWindow->Open(mTitle) && mRenderer->Initialize(*mWindow))

@@ -1,11 +1,16 @@
 #include "Renderer.h"
 
-Renderer::Renderer() :mSdlRenderer(nullptr)
+RendererSDL::RendererSDL() :mSdlRenderer(nullptr)
 {
 }
 
+IRenderer::RendererType RendererSDL::GetType()
+{
+    return RendererType::SDL;
+}
+
 //Initialize render variable
-bool Renderer::Initialize(Window& rWindow)
+bool RendererSDL::Initialize(Window& rWindow)
 {
     mSdlRenderer = SDL_CreateRenderer(rWindow.GetSdlWindow(), -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
@@ -24,27 +29,27 @@ bool Renderer::Initialize(Window& rWindow)
 }
 
 //Start drawing whith render variable
-void Renderer::BeginDraw()
+void RendererSDL::BeginDraw()
 {
     SDL_SetRenderDrawColor(mSdlRenderer, 120, 120, 255, 255);
     SDL_RenderClear(mSdlRenderer);
 }
 
 //Stop drawing whith render variable
-void Renderer::EndDraw()
+void RendererSDL::EndDraw()
 {
     SDL_RenderPresent(mSdlRenderer);
 }
 
 
 //Destroy renderer contain render variable
-void Renderer::Close()
+void RendererSDL::Close()
 {
     SDL_DestroyRenderer(mSdlRenderer);
 }
 
 //Draw white rectangle (no color) whith rectangle class
-void Renderer::DrawRect(Rectangle& rRect)
+void RendererSDL::DrawRect(Rectangle& rRect)
 {
     SDL_SetRenderDrawColor(mSdlRenderer, 255, 255, 255, 255);
     SDL_Rect sdlRect = rRect.ToSdlRect();
@@ -52,22 +57,22 @@ void Renderer::DrawRect(Rectangle& rRect)
 }
 
 //Draw rectangle whith rectangle class and set color whith color class
-void Renderer::DrawRectColor(Rectangle& rRect, Color& rColor)
+void RendererSDL::DrawRectColor(Rectangle& rRect, Color& rColor)
 {
     SDL_SetRenderDrawColor(mSdlRenderer, (Uint8)rColor.r, (Uint8)rColor.g, (Uint8)rColor.b, (Uint8)rColor.a);
     SDL_Rect sdlRect = rRect.ToSdlRect();
     SDL_RenderFillRect(mSdlRenderer, &sdlRect);
 }
 
-void Renderer::Draw()
+void RendererSDL::Draw()
 {
 }
 
-void Renderer::DrawAllSprites()
+void RendererSDL::DrawAllSprites()
 {
 }
 
-void Renderer::DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip) const
+void RendererSDL::DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip) const
 {
 
     SDL_Rect destinationRect;
@@ -101,7 +106,7 @@ void Renderer::DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSou
 }
 
 
-void Renderer::AddSprite(SpriteC* pSprite)
+void RendererSDL::AddSprite(SpriteC* pSprite)
 {
     int spriteDrawOrder = pSprite->GetDrawOrder();
     vector<SpriteC*>::iterator spriteComponent;
@@ -115,7 +120,7 @@ void Renderer::AddSprite(SpriteC* pSprite)
     mSpritesList.insert (spriteComponent, pSprite);
 }
 
-void Renderer::RemoveSprite(SpriteC* pSprite)
+void RendererSDL::RemoveSprite(SpriteC* pSprite)
 {
     vector<SpriteC*>::iterator spriteComponent;
     spriteComponent = find(mSpritesList.begin(), mSpritesList.end(), pSprite);

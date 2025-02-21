@@ -9,7 +9,7 @@ class Game
 private:
 	std::string mTitle = "Fate Engine";
 	Window* mWindow;
-	Renderer* mRenderer;
+	RendererSDL* mRenderer;
 	Scene* mScene[1] = {nullptr};
 	int mLoadedScene = 0;
 	bool mIsRunning;

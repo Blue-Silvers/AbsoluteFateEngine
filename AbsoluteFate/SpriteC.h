@@ -26,7 +26,7 @@ public:
 	SpriteC& operator= (const SpriteC&) = delete;
 
 	virtual void SetTexture(const Texture& pTexture);
-	virtual void Draw(Renderer& pRenderer);
+	virtual void Draw(RendererSDL& pRenderer);
 
 	//Getters
 	int GetDrawOrder() const { return mDrawOrder; }

@@ -9,7 +9,7 @@ public:
 
 
 	Platformer() :Scene("Platformer") {};
-	void SetRenderer(Renderer* pRenderer) override;
+	void SetRenderer(RendererSDL* pRenderer) override;
 	void Start() override;
 	void Update()override;
 	void Render() override;

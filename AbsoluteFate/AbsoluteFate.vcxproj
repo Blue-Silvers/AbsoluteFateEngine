@@ -150,6 +150,7 @@
     <ClCompile Include="IInputListener.cpp" />
     <ClCompile Include="InputEvent.cpp" />
     <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="IRenderer.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Maths.cpp" />
@@ -183,6 +184,7 @@
     <ClInclude Include="IInputListener.h" />
     <ClInclude Include="InputEvent.h" />
     <ClInclude Include="InputManager.h" />
+    <ClInclude Include="IRenderer.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="Maths.h" />
     <ClInclude Include="MovingC.h" />
