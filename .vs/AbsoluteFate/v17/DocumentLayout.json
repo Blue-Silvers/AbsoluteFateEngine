@@ -233,8 +233,7 @@
               "ViewState": "AQIAADYAAAAAAAAAAAAAADwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-15T08:59:08.105Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -247,8 +246,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-10T15:49:43.732Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -352,8 +350,7 @@
               "ViewState": "AQIAAD8AAAAAAAAAAAAAAFwAAACAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-12T13:33:47.218Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -366,8 +363,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-16T13:12:18.317Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -433,8 +429,7 @@
               "ViewState": "AQIAABIAAAAAAAAAAAAAADQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-14T10:03:15.301Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -525,8 +520,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-19T17:46:37.513Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -538,8 +532,7 @@
               "RelativeToolTip": "AbsoluteFate\\PlayerController.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-19T17:49:21.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T17:49:21.039Z"
             },
             {
               "$type": "Document",
@@ -575,8 +568,7 @@
               "RelativeToolTip": "AbsoluteFate\\Transform2D.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-12T08:26:36.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T08:26:36.751Z"
             },
             {
               "$type": "Document",
@@ -588,8 +580,7 @@
               "RelativeToolTip": "AbsoluteFate\\Game.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-12T12:46:33.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:46:33.507Z"
             },
             {
               "$type": "Document",
@@ -625,8 +616,7 @@
               "RelativeToolTip": "AbsoluteFate\\Window.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-12T12:40:43.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T12:40:43.03Z"
             },
             {
               "$type": "Document",
@@ -638,8 +628,7 @@
               "RelativeToolTip": "AbsoluteFate\\Vector2D.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-16T13:20:11.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T13:20:11.235Z"
             },
             {
               "$type": "Document",
@@ -663,8 +652,7 @@
               "RelativeToolTip": "AbsoluteFate\\BoxCollider2DC.h",
               "ViewState": "AQIAAEgAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-15T10:20:37.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T10:20:37.786Z"
             },
             {
               "$type": "Document",
@@ -676,8 +664,7 @@
               "RelativeToolTip": "AbsoluteFate\\SpriteC.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-21T00:40:34.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T00:40:34.427Z"
             },
             {
               "$type": "Document",
@@ -689,8 +676,7 @@
               "RelativeToolTip": "AbsoluteFate\\BoxCollider2DC.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-10T14:20:22.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T14:20:22.666Z"
             },
             {
               "$type": "Document",
@@ -786,8 +772,7 @@
               "RelativeToolTip": "AbsoluteFate\\Rectangle.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-15T21:42:51.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T21:42:51.14Z"
             }
           ]
         }
