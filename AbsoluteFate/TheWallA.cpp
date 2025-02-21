@@ -16,7 +16,14 @@ void TheWallA::Start()
 	SpriteC* sprite = new SpriteC(this, Asset::GetTexture("yes"));
 	AddComponent(sprite);
 	//Box collider component
-	BoxCollider2DC* boxCollider2DC = new BoxCollider2DC(GetTransform2D(), this);
+	Transform2D destinationRect = Transform2D( //debug box
+		Vector2D(static_cast<int>(GetTransform2D().GetPosition().x - sprite->GetTexWidth() / 2.0f),
+			static_cast<int>(GetTransform2D().GetPosition().y - sprite->GetTexHeight() / 2.0f)),
+		Vector2D(static_cast<int>(sprite->GetTexWidth() * GetTransform2D().GetScale().x),
+			static_cast<int>(sprite->GetTexHeight() * GetTransform2D().GetScale().y)),
+		GetTransform2D().GetRotation());
+
+	BoxCollider2DC* boxCollider2DC = new BoxCollider2DC(destinationRect, this);
 	AddComponent(boxCollider2DC);
 }
 
