@@ -164,6 +164,7 @@
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SpriteC.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TheWallA.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="Transform2D.cpp" />
     <ClCompile Include="Vector2D.cpp" />
@@ -195,6 +196,7 @@
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SpriteC.h" />
     <ClInclude Include="Texture.h" />
+    <ClInclude Include="TheWallA.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="Transform2D.h" />
     <ClInclude Include="Vector2D.h" />

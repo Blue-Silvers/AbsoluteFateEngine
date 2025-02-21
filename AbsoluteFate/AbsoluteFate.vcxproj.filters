@@ -139,6 +139,9 @@
       <Filter>Source Files\Content</Filter>
     </ClCompile>
     <ClCompile Include="PlayerController.cpp">
+      <Filter>Source Files\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="TheWallA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -228,6 +231,9 @@
       <Filter>Header Files\Content</Filter>
     </ClInclude>
     <ClInclude Include="PlayerController.h">
+      <Filter>Header Files\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="TheWallA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

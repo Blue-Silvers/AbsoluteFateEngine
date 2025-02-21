@@ -1,7 +1,10 @@
 #include "Actor.h"
+
 #include"Scene.h"
 #include "Transform2D.h"
 #include"AnimatedSpriteC.h"
+
+#include"BoxCollider2DC.h"
 
 Actor::Actor() :mState(ActorState::Active),
 				mTransform2D(0, 1, 0),
@@ -28,5 +31,9 @@ void Actor::Render()
 		{
 			animatedSprite->Update();
 		}
+		/*if (BoxCollider2DC* boxCollider2DC = dynamic_cast<BoxCollider2DC*>(sprite))//debug box
+		{
+			boxCollider2DC->Draw(*mSceneAttached->GetRenderer());
+		}*/
 	}
 }

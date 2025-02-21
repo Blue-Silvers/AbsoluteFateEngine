@@ -3,6 +3,8 @@
 #include "Time.h"
 #include "Vector2D.h"
 #include "Maths.h"
+#include "BoxCollider2DC.h"
+
 MovingC::MovingC(Actor* pOwner, int pUpdateOrder) : Components(pOwner, pUpdateOrder), 
                                                     mSpeed(0.0f)
 {
@@ -46,8 +48,23 @@ void MovingC::Update()
         Vector2D newPosition = mOwner->GetTransform2D().GetPosition();
         newPosition += rightVector; // add right
         newPosition += upVector; // add up
+        //keep last position 
+        Vector2D lastPosition = mOwner->GetTransform2D().GetPosition();
 
         mOwner->SetPosition(newPosition);
+
+        //teleport to the last position if collide another collider box
+        for (Components* component : mOwner->GetAllComponent())
+        {
+            if (BoxCollider2DC* pBoxCollider2DC = dynamic_cast<BoxCollider2DC*>(component))
+            {
+                if (pBoxCollider2DC->OnCollide() == true)
+                {
+                    mOwner->SetPosition(lastPosition);
+                }
+            }
+        }
+
     }
 
 }

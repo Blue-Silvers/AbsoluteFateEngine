@@ -2,7 +2,6 @@
 #include "Components.h"
 #include "Transform2D.h"
 #include "Actor.h"
-class Actor;
 
 class BoxCollider2DC : public Components
 {
@@ -11,6 +10,10 @@ private:
 	Actor* mParentActor;
 
 public :
+    BoxCollider2DC(Transform2D pColliderBox, Actor* pParentActor);
+    BoxCollider2DC() = delete;
+    BoxCollider2DC(const BoxCollider2DC&) = delete;
+
 	virtual void OnStart() 
 	{ 
 		mParentActor = mOwner;
@@ -24,14 +27,17 @@ public :
     {
         for (Actor* actor : mOwner->GetScene()->GetAllActor())
         {
-            for (Components* component : actor->GetAllComponent())
+            if (mParentActor != actor)
             {
-                if (BoxCollider2DC* pBoxCollider2DC = dynamic_cast<BoxCollider2DC*>(component))
+                for (Components* component : actor->GetAllComponent())
                 {
-                    if (mColliderBox.GetPosition().y < pBoxCollider2DC->GetColliderBox().GetPosition().y + pBoxCollider2DC->GetColliderBox().GetScale().y && mColliderBox.GetPosition().y + mColliderBox.GetScale().y > pBoxCollider2DC->GetColliderBox().GetPosition().y
-                        && mColliderBox.GetPosition().x < pBoxCollider2DC->GetColliderBox().GetPosition().x + pBoxCollider2DC->GetColliderBox().GetScale().x && mColliderBox.GetPosition().x + mColliderBox.GetScale().x > pBoxCollider2DC->GetColliderBox().GetPosition().x)
+                    if (BoxCollider2DC* pBoxCollider2DC = dynamic_cast<BoxCollider2DC*>(component))
                     {
-                        return true;
+                        if (mColliderBox.GetPosition().y < pBoxCollider2DC->GetColliderBox().GetPosition().y + pBoxCollider2DC->GetColliderBox().GetScale().y && mColliderBox.GetPosition().y + mColliderBox.GetScale().y > pBoxCollider2DC->GetColliderBox().GetPosition().y
+                            && mColliderBox.GetPosition().x < pBoxCollider2DC->GetColliderBox().GetPosition().x + pBoxCollider2DC->GetColliderBox().GetScale().x && mColliderBox.GetPosition().x + mColliderBox.GetScale().x > pBoxCollider2DC->GetColliderBox().GetPosition().x)
+                        {
+                            return true;
+                        }
                     }
                 }
             }
@@ -80,5 +86,17 @@ public :
 
         return NONE;
     };
+
+    virtual void Update() {};
+    virtual void Draw(Renderer& pRenderer) //debug
+    {
+        //Debug draw sqr//
+        Rectangle rBox = { {mColliderBox.GetPosition().x,mColliderBox.GetPosition().y},{mColliderBox.GetScale().x*2,mColliderBox.GetScale().y*2} };
+        SDL_SetRenderDrawColor(pRenderer.GetSdlRenderer(), 255, 255, 255, 255);
+        SDL_Rect sdlRect = rBox.ToSdlRect();
+        SDL_RenderFillRect(pRenderer.GetSdlRenderer(), &sdlRect);
+
+    };
+    virtual void OnEnd() {};
 };
 
