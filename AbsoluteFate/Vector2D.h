@@ -40,7 +40,16 @@ public:
 		x /= scalar;
 		y /= scalar;
 	}
-
+	inline void operator=(Vector2D& other)
+	{
+		x = other.x;
+		y = other.y;
+	};
+	//inline void operator=(const Vector2D& other) const
+	//{
+	//	x = other.x;
+	//	y = other.y;
+	//};
 
 	//2 vectors calculs
 	friend Vector2D operator+(Vector2D& left, Vector2D& right) 
