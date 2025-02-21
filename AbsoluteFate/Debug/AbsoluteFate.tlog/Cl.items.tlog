@@ -14,12 +14,15 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\IRenderer.
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Log.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Log.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Main.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Main.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Maths.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Maths.obj
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Matrix4.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Matrix4.obj
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Matrix4Row.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Matrix4Row.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\MovingC.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\MovingC.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Paddle.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Paddle.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Platformer.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Platformer.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\PlayerController.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\PlayerController.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Pong.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Pong.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\PongBall.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\PongBall.obj
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Quaternion.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Quaternion.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Rectangle.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Rectangle.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererSDL.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\RendererSDL.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Scene.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Scene.obj
@@ -29,4 +32,6 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\TheWallA.c
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Time.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Time.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Transform2D.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Transform2D.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Vector2.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Vector2.obj
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Vector3.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Vector3.obj
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Vector4.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Vector4.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Window.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Window.obj

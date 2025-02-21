@@ -51,9 +51,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DeathAngelA.cpp">
       <Filter>Source Files\Content</Filter>
     </ClCompile>
@@ -146,6 +143,24 @@
     </ClCompile>
     <ClCompile Include="TheWallA.cpp">
       <Filter>Source Files\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\Parameter</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix4.cpp">
+      <Filter>Source Files\Parameter</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix4Row.cpp">
+      <Filter>Source Files\Parameter</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaternion.cpp">
+      <Filter>Source Files\Parameter</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Source Files\Parameter</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4.cpp">
+      <Filter>Source Files\Parameter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -241,6 +256,21 @@
     </ClInclude>
     <ClInclude Include="TheWallA.h">
       <Filter>Header Files\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4.h">
+      <Filter>Header Files\Parameter</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4Row.h">
+      <Filter>Header Files\Parameter</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Header Files\Parameter</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files\Parameter</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Header Files\Parameter</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
