@@ -206,6 +206,7 @@
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="RendererGl.h" />
     <ClInclude Include="RendererSDL.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SpriteC.h" />
     <ClInclude Include="Texture.h" />
@@ -217,6 +218,10 @@
     <ClInclude Include="Vector4.h" />
     <ClInclude Include="VertexArray.h" />
     <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleFrag.shader" />
+    <None Include="SimpleVert.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
