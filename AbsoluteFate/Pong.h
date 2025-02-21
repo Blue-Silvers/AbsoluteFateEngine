@@ -7,6 +7,8 @@
 
 #include "DeathAngelA.h"
 
+#include "Rectangle.h"
+
 class Pong : public Scene
 {
 private:
@@ -31,7 +33,7 @@ public:
 	void Start() override;
 	void Update()override;
 	void Render() override;
-	void OnInput(SDL_Event) /*override*/;
+	//void OnInput(SDL_Event) /*override*/;
 	void  Close() override;
 
 	void Restart();

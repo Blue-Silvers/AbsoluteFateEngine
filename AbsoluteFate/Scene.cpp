@@ -1,7 +1,7 @@
 #include "Scene.h"
 #include "Actor.h"
 #include "Asset.h"
-
+#include "RendererSDL.h"
 
 //Reset scene
 Scene::~Scene()

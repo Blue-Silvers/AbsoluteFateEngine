@@ -161,7 +161,7 @@
     <ClCompile Include="Pong.cpp" />
     <ClCompile Include="PongBall.cpp" />
     <ClCompile Include="Rectangle.cpp" />
-    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RendererSDL.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SpriteC.cpp" />
     <ClCompile Include="Texture.cpp" />
@@ -194,7 +194,7 @@
     <ClInclude Include="Pong.h" />
     <ClInclude Include="PongBall.h" />
     <ClInclude Include="Rectangle.h" />
-    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RendererSDL.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SpriteC.h" />
     <ClInclude Include="Texture.h" />

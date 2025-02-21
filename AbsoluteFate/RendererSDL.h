@@ -3,14 +3,11 @@
 #include "Texture.h"
 #include "Log.h"
 #include "Maths.h"
-#include "SpriteC.h"
+
 #include "SDL_image.h"
 #include "IRenderer.h"
 #include <vector>
-//in IRenderer
-#include "Actor.h"
-#include "Rectangle.h"
-#include "Window.h"
+
 class SpriteC;
 
 class RendererSDL : public IRenderer
@@ -39,11 +36,12 @@ public:
 	//SpriteComponent
 	virtual void Draw();
 	virtual void DrawAllSprites();
-	virtual void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip = Flip::None) const;
+	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const ;
 	void AddSprite(SpriteC* pSprite);
 	void RemoveSprite(SpriteC* pSprite);
 
-	virtual RendererType GetType();
+
+	virtual IRenderer::RendererType GetType();
 };
 
 

@@ -153,7 +153,7 @@ void Pong::Render()
 
 
 //Input key down
-void Pong::OnInput(SDL_Event event)
+/*void Pong::OnInput(SDL_Event event)
 {
 	if (event.key.keysym.sym == SDLK_UP) //Go up if key up is down
 	{
@@ -171,7 +171,7 @@ void Pong::OnInput(SDL_Event event)
 	{
 		pongBall.mBallLunch = true;
 	}
-}
+}*/
 
 void Pong::Close()
 {

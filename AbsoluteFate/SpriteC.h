@@ -1,7 +1,7 @@
 #pragma once
 #include "Texture.h"
 #include "Components.h"
-#include "Renderer.h"
+#include "RendererSDL.h"
 #include "Actor.h"
 #include "Scene.h"
 #include <vector>

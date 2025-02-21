@@ -31,14 +31,7 @@ void DeathAngelA::Start()
 	AddComponent(movement);
 	//Box collider component
 
-	Transform2D destinationRect = Transform2D( //debug box
-								Vector2D(static_cast<int>(GetTransform2D().GetPosition().x - animation->GetTexWidth()/2.0f),
-										static_cast<int>(GetTransform2D().GetPosition().y - animation->GetTexHeight() / 2.0f)),
-								Vector2D(static_cast<int>(animation->GetTexWidth() * GetTransform2D().GetScale().x),
-											static_cast<int>(animation->GetTexHeight() * GetTransform2D().GetScale().y)),
-								GetTransform2D().GetRotation());
-
-	BoxCollider2DC* boxCollider2DC = new BoxCollider2DC(destinationRect, this);//get sprite transform
+	BoxCollider2DC* boxCollider2DC = new BoxCollider2DC(this);//get sprite transform
 	AddComponent(boxCollider2DC);
 }
 

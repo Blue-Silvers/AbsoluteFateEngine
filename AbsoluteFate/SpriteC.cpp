@@ -23,6 +23,6 @@ void SpriteC::SetTexture(const Texture& pTexture)
 void SpriteC::Draw(RendererSDL& pRenderer)
 {
 	Vector2D origin{ mTextureWidth / 2.0f, mTextureHeight / 2.0f };
-	pRenderer.DrawSprite(*mOwner, mTexture, Rectangle((0,0), (mTextureWidth, mTextureHeight)), origin, RendererSDL::Flip::None);
+	pRenderer.DrawSprite(*mOwner, mTexture, Rectangle((0,0), ((float)mTextureWidth, (float)mTextureHeight)), origin, RendererSDL::Flip::None);
 }
 

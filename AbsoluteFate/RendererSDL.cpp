@@ -1,12 +1,8 @@
-#include "Renderer.h"
+#include "RendererSDL.h"
+#include "SpriteC.h"
 
-RendererSDL::RendererSDL() :mSdlRenderer(nullptr)
+RendererSDL::RendererSDL() :IRenderer(),mSdlRenderer(nullptr)
 {
-}
-
-IRenderer::RendererType RendererSDL::GetType()
-{
-    return RendererType::SDL;
 }
 
 //Initialize render variable
@@ -125,4 +121,9 @@ void RendererSDL::RemoveSprite(SpriteC* pSprite)
     vector<SpriteC*>::iterator spriteComponent;
     spriteComponent = find(mSpritesList.begin(), mSpritesList.end(), pSprite);
     mSpritesList.erase(spriteComponent);
+}
+
+IRenderer::RendererType RendererSDL::GetType()
+{
+    return IRenderer::RendererType::SDL;
 }

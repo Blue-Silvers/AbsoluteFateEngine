@@ -10,6 +10,7 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Game.cpp;C
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\IInputListener.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\IInputListener.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\InputEvent.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\InputEvent.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\InputManager.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\InputManager.obj
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\IRenderer.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\IRenderer.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Log.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Log.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Main.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Main.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Maths.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Maths.obj
@@ -20,7 +21,7 @@ C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\PlayerCont
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Pong.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Pong.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\PongBall.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\PongBall.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Rectangle.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Rectangle.obj
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Renderer.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Renderer.obj
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererSDL.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\RendererSDL.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Scene.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Scene.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SpriteC.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\SpriteC.obj
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Texture.cpp;C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Debug\Texture.obj

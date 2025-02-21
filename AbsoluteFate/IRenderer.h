@@ -23,7 +23,7 @@ public:
         OPENGL
     };
     virtual ~IRenderer() = default;
-    //Bas fonction
+    //Base fonction
     virtual bool Initialize(Window& rWindow) = 0;
     virtual void BeginDraw() = 0;
     virtual void Draw() = 0;
