@@ -31,9 +31,9 @@ void Actor::Render()
 		{
 			animatedSprite->Update();
 		}
-		/*if (BoxCollider2DC* boxCollider2DC = dynamic_cast<BoxCollider2DC*>(sprite))//debug box
-		{
-			boxCollider2DC->Draw(*mSceneAttached->GetRenderer());
-		}*/
+		//if (BoxCollider2DC* boxCollider2DC = dynamic_cast<BoxCollider2DC*>(sprite))//debug box
+		//{
+		//	boxCollider2DC->Draw(*mSceneAttached->GetRenderer());
+		//}
 	}
 }

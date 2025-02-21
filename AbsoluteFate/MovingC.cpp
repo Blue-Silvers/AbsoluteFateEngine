@@ -50,6 +50,8 @@ void MovingC::Update()
         newPosition += upVector; // add up
         //keep last position 
         Vector2D lastPosition = mOwner->GetTransform2D().GetPosition();
+        lastPosition -= rightVector; // add right
+        lastPosition -= upVector; // add up
 
         mOwner->SetPosition(newPosition);
 

@@ -50,6 +50,7 @@ void DeathAngelA::Update()
 		{
 			movementComponent->Update();
 		}
+		move->Update();
 	}
 }
 

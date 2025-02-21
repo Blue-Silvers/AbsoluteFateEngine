@@ -87,20 +87,28 @@ public :
         return NONE;
     };
 
-    virtual void Update() {};
+    virtual void Update() 
+    {
+        for (Components* component : mOwner->GetAllComponent())
+        {
+            if (SpriteC* sprite = dynamic_cast<SpriteC*>(component))
+            {
+                mColliderBox = Transform2D( //debug box
+                    Vector2D(static_cast<int>(mOwner->GetTransform2D().GetPosition().x - sprite->GetTexWidth() / 2.0f),
+                        static_cast<int>(mOwner->GetTransform2D().GetPosition().y - sprite->GetTexHeight() / 2.0f)),
+                    Vector2D(static_cast<int>(sprite->GetTexWidth() * mOwner->GetTransform2D().GetScale().x),
+                        static_cast<int>(sprite->GetTexHeight() * mOwner->GetTransform2D().GetScale().y)),
+                    mOwner->GetTransform2D().GetRotation());
+            }
+        }
+    };
     virtual void Draw(Renderer& pRenderer) //debug
     {
-        //Transform2D destinationRect = Transform2D( //debug box
-        //    Vector2D(static_cast<int>(GetTransform2D().GetPosition().x - animation->GetTexWidth() / 2.0f),
-        //        static_cast<int>(GetTransform2D().GetPosition().y - animation->GetTexHeight() / 2.0f)),
-        //    Vector2D(static_cast<int>(animation->GetTexWidth() * GetTransform2D().GetScale().x),
-        //        static_cast<int>(animation->GetTexHeight() * GetTransform2D().GetScale().y)),
-        //    GetTransform2D().GetRotation());
         ////Debug draw sqr//
-        //Rectangle rBox = Rectangle(destinationRect.GetPosition(), destinationRect.GetScale(), destinationRect.GetRotation());
-        //SDL_SetRenderDrawColor(pRenderer.GetSdlRenderer(), 255, 255, 255, 255);
-        //SDL_Rect sdlRect = rBox.ToSdlRect();
-        //SDL_RenderFillRect(pRenderer.GetSdlRenderer(), &sdlRect);
+        Rectangle rBox = { {(float)mColliderBox.GetPosition().x,(float)mColliderBox.GetPosition().y},{(float)mColliderBox.GetScale().x,(float)mColliderBox.GetScale().y} };
+        SDL_SetRenderDrawColor(pRenderer.GetSdlRenderer(), 255, 255, 255, 255);
+        SDL_Rect sdlRect = rBox.ToSdlRect();
+        SDL_RenderFillRect(pRenderer.GetSdlRenderer(), &sdlRect);
 
     };
     virtual void OnEnd() {};
