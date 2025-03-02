@@ -45,6 +45,11 @@ bool RendererGl::Initialize(Window& rWindow)
 	return true;
 }
 
+void RendererGl::SetShaderProgram(ShaderProgram* pShaderProgram)
+{
+	mShaderProgram = pShaderProgram;
+}
+
 void RendererGl::BeginDraw()
 {
 	glClearColor(0.45f, 0.45f, 1.0f, 1.0f);

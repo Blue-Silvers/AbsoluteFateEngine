@@ -21,11 +21,11 @@ public:
 	RendererGl& operator=(const RendererGl&) = delete;
 
 	bool Initialize(Window& rWindow) override;
+	void SetShaderProgram(ShaderProgram* pShaderProgram);
 	void BeginDraw() override;
 	void Draw() override;
 	void DrawAllSprites() override;
 	void EndDraw() override;
-
 
 	void DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip = Flip::None) const;
 	void AddSprite(SpriteC* pSprite);

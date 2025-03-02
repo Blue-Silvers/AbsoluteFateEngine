@@ -43,6 +43,7 @@ void Game::Init(Scene* newScene)
         mRenderer = new RendererSDL;
         break;
     case IRenderer::RendererType::OPENGL: //OpenGl
+        mRenderer = new RendererGl;
         break;
     default:
         mRenderer = new RendererSDL;
