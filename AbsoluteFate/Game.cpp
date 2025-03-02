@@ -1,19 +1,33 @@
 #include "Game.h"
 #include "InputManager.h"
+#include "RendererSDL.h"
+#include "RendererGl.h"
 #include <iostream>
 
 //Initialize SDL at start of the game
-Game::Game(std::string gameTitle, Scene* newScene): mTitle(gameTitle),mIsRunning(true)
+Game::Game(std::string gameTitle, Scene* newScene, IRenderer::RendererType pRendererType): mTitle(gameTitle),
+                                                                                            mIsRunning(true), 
+                                                                                            mRendererType(pRendererType)
 {
-    if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
+    switch (mRendererType)
     {
-        std::cout << "SDL initialization failed. SDL Error: " << SDL_GetError();
+    case IRenderer::RendererType::SDL: //SDL
+
+        if (SDL_Init(SDL_INIT_EVERYTHING) < 0)
+        {
+            std::cout << "SDL initialization failed. SDL Error: " << SDL_GetError();
+        }
+        else
+        {
+            std::cout << "SDL initialization succeeded!";
+        }
+        break;
+    case IRenderer::RendererType::OPENGL: //OpenGl
+        break;
+    default:
+        break;
     }
-    else
-    {
-        std::cout << "SDL initialization succeeded!";
-    }
-    mTitle = gameTitle;
+
 
     Init(newScene);
 }
@@ -22,7 +36,18 @@ Game::Game(std::string gameTitle, Scene* newScene): mTitle(gameTitle),mIsRunning
 void Game::Init(Scene* newScene)
 {
     mWindow = new Window{ 800,800 };
-    mRenderer = new RendererSDL;
+    //Choose good renderer
+    switch (mRendererType)
+    {
+    case IRenderer::RendererType::SDL: //SDL
+        mRenderer = new RendererSDL;
+        break;
+    case IRenderer::RendererType::OPENGL: //OpenGl
+        break;
+    default:
+        mRenderer = new RendererSDL;
+        break;
+    }
     mScene[0] = newScene;
     mScene[0]->SetRenderer(mRenderer);
     if (mWindow->Open(mTitle) && mRenderer->Initialize(*mWindow))

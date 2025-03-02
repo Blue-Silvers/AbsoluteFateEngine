@@ -1,6 +1,7 @@
 #pragma once
 #include "IRenderer.h"
 #include "VertexArray.h"
+#include "ShaderProgram.h"
 
 class SpriteC;
 
@@ -11,6 +12,8 @@ private:
 	VertexArray* mVao;
 	SDL_GLContext mContext;
 	std::vector<SpriteC*> mSprites;
+	ShaderProgram* mShaderProgram;
+
 public:
 	RendererGl();
 	virtual ~RendererGl();

@@ -1,6 +1,6 @@
 #pragma once
 #include "Window.h"
-#include "RendererSDL.h"
+#include "IRenderer.h"
 #include "Scene.h"
 #include "Time.h"
 
@@ -9,16 +9,17 @@ class Game
 private:
 	std::string mTitle = "Fate Engine";
 	Window* mWindow;
-	RendererSDL* mRenderer;
+	IRenderer* mRenderer;
 	Scene* mScene[1] = {nullptr};
 	int mLoadedScene = 0;
 	bool mIsRunning;
+	IRenderer::RendererType mRendererType;
 
 public:
 	
 	SDL_Event event;
 
-	Game(std::string gameTitle, Scene* newScene);
+	Game(std::string gameTitle, Scene* newScene, IRenderer::RendererType pRendererType);
 	Game(const Game&) = delete;
 	Game& operator= (const Game&) = delete;
 

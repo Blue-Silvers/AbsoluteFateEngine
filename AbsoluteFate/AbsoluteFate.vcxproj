@@ -147,6 +147,7 @@
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Components.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GlTestScene.cpp" />
     <ClCompile Include="IInputListener.cpp" />
     <ClCompile Include="InputEvent.cpp" />
     <ClCompile Include="InputManager.cpp" />
@@ -167,6 +168,8 @@
     <ClCompile Include="RendererGl.cpp" />
     <ClCompile Include="RendererSDL.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
     <ClCompile Include="SpriteC.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TheWallA.cpp" />
@@ -188,6 +191,7 @@
     <ClInclude Include="Color.h" />
     <ClInclude Include="Components.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GlTestScene.h" />
     <ClInclude Include="IInputListener.h" />
     <ClInclude Include="InputEvent.h" />
     <ClInclude Include="InputManager.h" />
@@ -208,6 +212,8 @@
     <ClInclude Include="RendererSDL.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShaderProgram.h" />
     <ClInclude Include="SpriteC.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TheWallA.h" />

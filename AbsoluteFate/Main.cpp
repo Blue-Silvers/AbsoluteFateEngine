@@ -1,5 +1,3 @@
-#include "Vector2.h"
-#include "Log.h"
 #include "Game.h"
 #include "Pong.h"
 #include "Platformer.h"
@@ -15,7 +13,7 @@ Platformer* scene = new Platformer();
 
 int main(int argc, char** argv) {
 	//Game myGame("My Pong Game", scene);
-	Game myGame("Absolute Fate Engine", scene);
+	Game myGame("Absolute Fate Engine", scene, IRenderer::RendererType::SDL);
 	//myGame.Init();
 	return 0;
 }
