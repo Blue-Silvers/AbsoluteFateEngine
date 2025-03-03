@@ -43,6 +43,7 @@ bool RendererGl::Initialize(Window& rWindow)
 	}
 
 	mVao = new VertexArray(vertices, 4, indices, 6);
+	mViewProj = Matrix4Row::CreateSimpleViewProj(mWindow->GetDimensions().x, mWindow->GetDimensions().y);
 	return true;
 }
 
