@@ -83,7 +83,7 @@ public:
 		mTransform = Transform(mTransform.GetPosition(), pNewScale, mTransform.GetRotation());
 		mTransform.ComputeWorldTransform();
 	};
-	virtual void SetRotation(Vector3 pNewRotation) //set rotation
+	virtual void SetRotation(Quaternion pNewRotation) //set rotation
 	{
 		mTransform = Transform(mTransform.GetPosition(), mTransform.GetScale(), pNewRotation);
 		mTransform.ComputeWorldTransform();

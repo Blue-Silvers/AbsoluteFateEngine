@@ -8,9 +8,19 @@ void Transform::ComputeWorldTransform()
 	}
 	mNeedsUpdate = false;
 	mWorldTransform = Matrix4Row::CreateScale(mScale);
-	mWorldTransform *= Matrix4Row::CreateRotationX(mRotation.x);
-	mWorldTransform *= Matrix4Row::CreateRotationY(mRotation.y);
-	mWorldTransform *= Matrix4Row::CreateRotationZ(mRotation.z);
+	mWorldTransform *= Matrix4Row::CreateFromQuaternion(mRotation);
 	mWorldTransform *= Matrix4Row::CreateTranslation(mPosition);
 	//mOwner->UpdateComponentsTransform();
+}
+
+void Transform::RotateXInDegrees(float pDegrees)
+{
+}
+
+void Transform::RotateYInDegrees(float pDegrees)
+{
+}
+
+void Transform::RotateZInDegrees(float pDegrees)
+{
 }
