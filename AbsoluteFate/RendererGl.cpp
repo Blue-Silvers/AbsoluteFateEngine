@@ -86,10 +86,9 @@ void RendererGl::DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourc
 	glDrawArrays(GL_TRIANGLE_FAN, 0, 4);*/
 	mShaderProgram->Use();
 	pActor.GetTransform().ComputeWorldTransform();
-	Matrix4Row scaleMat = Matrix4Row::CreateScale(
-		pTex.GetWidth(),
-		pTex.GetHeight(),
-		0.0f);
+	Matrix4Row scaleMat = Matrix4Row::CreateScale(  pTex.GetWidth(),
+													pTex.GetHeight(),
+													0.0f);
 	Matrix4Row world = scaleMat * pActor.GetTransform().GetWorldTransform();
 	mShaderProgram->setMatrix4Row("uWorldTransform", world);
 	pTex.SetActive();

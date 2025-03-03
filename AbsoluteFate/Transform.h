@@ -11,7 +11,7 @@ private:
 	Vector3 mScale;
 	Vector3 mRotation;
 
-	bool mNeedsUpdate;
+	bool mNeedsUpdate = true;
 	Matrix4Row mWorldTransform;
 
 public:
@@ -30,7 +30,7 @@ public:
 
 	//Directions
 	Vector3 Right() const { return Vector3(Maths::Cos(mRotation.z), -Maths::Sin(mRotation.z), 0); }
-	Vector3 Up() const { return Vector3(Maths::Sin(mRotation.z), -Maths::Cos(mRotation.z), 0); }
+	Vector3 Up() const { return Vector3(-Maths::Sin(mRotation.z), Maths::Cos(mRotation.z), 0); }
 
 	//Getter
 	Vector3 GetScale() const { return mScale; };

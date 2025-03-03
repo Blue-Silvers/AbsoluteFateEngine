@@ -19,8 +19,8 @@ void DeathAngelA::Start()
 	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Walk/RightWalk", "RightWalk");
 
 	//Actor
-	SetScale(Vector2{ 1, 1 }); //scale
-	SetPosition(Vector2{ 400, 400 }); //location
+	SetScale2D(Vector2{ 1, 1 }); //scale
+	SetPosition2D(Vector2{ 100, 100 }); //location
 	//anim component
 	AnimatedSpriteC* animation = new AnimatedSpriteC(this, Asset::GetAnimation("FrontIdle"));
 	animation->SetAnimationFps(5);

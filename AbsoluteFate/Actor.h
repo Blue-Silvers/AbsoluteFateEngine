@@ -58,21 +58,25 @@ public:
 	{
 		mState = pState;
 	};
-	virtual void SetPosition(Vector2 pNewPosition) //set position 2D
+	virtual void SetPosition2D(Vector2 pNewPosition) //set position 2D
 	{
 		mTransform = Transform(Vector3{ pNewPosition.x, pNewPosition.y, 0 }, mTransform.GetScale(), mTransform.GetRotation());
+		mTransform.ComputeWorldTransform();
 	};
-	virtual void SetScale(Vector2 pNewScale) //set scale 2D
+	virtual void SetScale2D(Vector2 pNewScale) //set scale 2D
 	{
 		mTransform = Transform(mTransform.GetPosition(), Vector3{ pNewScale.x, pNewScale.y, 1 }, mTransform.GetRotation());
+		mTransform.ComputeWorldTransform();
 	};
 	virtual void SetPosition(Vector3 pNewPosition) //set position
 	{
 		mTransform = Transform(pNewPosition, mTransform.GetScale(), mTransform.GetRotation());
+		mTransform.ComputeWorldTransform();
 	};
 	virtual void SetScale(Vector3 pNewScale) //set scale
 	{
 		mTransform = Transform(mTransform.GetPosition(), pNewScale, mTransform.GetRotation());
+		mTransform.ComputeWorldTransform();
 	};
 	virtual void SetTags(std::string pTag) //add tag
 	{

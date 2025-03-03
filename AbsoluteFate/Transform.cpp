@@ -2,7 +2,10 @@
 
 void Transform::ComputeWorldTransform()
 {
-	if (!mNeedsUpdate) return;
+	if (!mNeedsUpdate) 
+	{
+		return;
+	}
 	mNeedsUpdate = false;
 	mWorldTransform = Matrix4Row::CreateScale(mScale);
 	mWorldTransform *= Matrix4Row::CreateRotationX(mRotation.x);
