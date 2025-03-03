@@ -1,6 +1,7 @@
 #include "GlTestScene.h"
 #include "RendererGl.h"
 #include "PlaneTextureOpenGlA.h"
+#include "DeathAngelA.h"
 
 void GlTestScene::SetRenderer(IRenderer* pRenderer)
 {
@@ -21,10 +22,14 @@ void GlTestScene::Start()
 		renderer->SetShaderProgram(mShaderProgram);
 	}
 
+	//Actor
 	PlaneTextureOpenGlA* planeTextureOpenGlA = new PlaneTextureOpenGlA();
 	planeTextureOpenGlA->AttachScene(this);
-
 	AddActor(planeTextureOpenGlA);
+
+	DeathAngelA* actor = new DeathAngelA();
+	actor->AttachScene(this);
+	AddActor(actor);
 
 	for (Actor* actor : mActorsList)
 	{
