@@ -60,12 +60,17 @@ public:
 	};
 	virtual void SetPosition2D(Vector2 pNewPosition) //set position 2D
 	{
-		mTransform = Transform(Vector3{ pNewPosition.x, pNewPosition.y, 0 }, mTransform.GetScale(), mTransform.GetRotation());
+		mTransform = Transform(pNewPosition, mTransform.GetScale2D(), mTransform.GetRotation2D());
 		mTransform.ComputeWorldTransform();
 	};
 	virtual void SetScale2D(Vector2 pNewScale) //set scale 2D
 	{
-		mTransform = Transform(mTransform.GetPosition(), Vector3{ pNewScale.x, pNewScale.y, 1 }, mTransform.GetRotation());
+		mTransform = Transform(mTransform.GetPosition2D(), pNewScale, mTransform.GetRotation2D());
+		mTransform.ComputeWorldTransform();
+	};
+	virtual void SetRotation2D(float pNewRotation) //set rotation 2D
+	{
+		mTransform = Transform(mTransform.GetPosition2D(), mTransform.GetScale2D(), pNewRotation);
 		mTransform.ComputeWorldTransform();
 	};
 	virtual void SetPosition(Vector3 pNewPosition) //set position
@@ -76,6 +81,11 @@ public:
 	virtual void SetScale(Vector3 pNewScale) //set scale
 	{
 		mTransform = Transform(mTransform.GetPosition(), pNewScale, mTransform.GetRotation());
+		mTransform.ComputeWorldTransform();
+	};
+	virtual void SetRotation(Vector3 pNewRotation) //set rotation
+	{
+		mTransform = Transform(mTransform.GetPosition(), mTransform.GetScale(), pNewRotation);
 		mTransform.ComputeWorldTransform();
 	};
 	virtual void SetTags(std::string pTag) //add tag

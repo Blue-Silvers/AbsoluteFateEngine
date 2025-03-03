@@ -18,7 +18,6 @@ public:
 	AnimatedSpriteC& operator=(const AnimatedSpriteC&) = delete;
 
 	float GetAnimationFps() const { return mAnimFps; }
-	//vector<Texture> GetCurrentAnimation() const { return mAnimationTextures; }
 	void SetAnimationTextures(const vector<Texture>& pTextures);
 	void SetAnimationFps(float pFps);
 

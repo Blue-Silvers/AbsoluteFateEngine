@@ -42,7 +42,7 @@ void Scene::AddActor(Actor* newActor)
 {
 	//Add actor in the scene
 	newActor->AttachScene(this);
-	//newActor->Start();
+	
 	if (mUpdatingActors) 
 	{
 		mActorsPending.emplace_back(newActor);

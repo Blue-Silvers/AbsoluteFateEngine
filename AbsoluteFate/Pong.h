@@ -13,7 +13,6 @@ class Pong : public Scene
 {
 private:
 	float mPaddleSpeed = 2;
-	//int mPlayerMove = 0;
 	BigBool mPlayerMove = BigBool::MAYBE;
 	int mPoint[2] = { 0,0 };
 

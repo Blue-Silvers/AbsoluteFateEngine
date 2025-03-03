@@ -17,6 +17,5 @@ int main(int argc, char** argv) {
 	//Game myGame("My Pong Game", scene);
 	//Game myGame("Absolute Fate Engine", scene, IRenderer::RendererType::SDL);
 	Game myGame("Absolute Fate Engine", sceneOpenGl, IRenderer::RendererType::OPENGL);
-	//myGame.Init();
 	return 0;
 }

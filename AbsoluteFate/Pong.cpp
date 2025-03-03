@@ -23,16 +23,14 @@ void Pong::Start()
 	pongBall.Start(playerPaddle, aiPaddle);
 
 		//Actor
-	//Asset::LoadTexture(*mRenderer, "Ressources/meme.png", "yes");
 	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Idle/FrontIdle", "FrontIdle");
 	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk", "FrontWalk");
 	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/BackWalk", "BackWalk");
 	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/LeftWalk", "LeftWalk");
 	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/RightWalk", "RightWalk");
-	DeathAngelA* actor = new DeathAngelA();/*new ActorPokeball(( (800.f,800.f),(0.5 ,0.5),0 ), this);*/
+	DeathAngelA* actor = new DeathAngelA();
 	actor->AttachScene(this);
 	actor->SetScale2D(Vector2{ 1, 1 });
-	//SpriteC* sprite = new SpriteC(actor, Asset::GetTexture("yes"));
 	AnimatedSpriteC* animation = new AnimatedSpriteC(actor, Asset::GetAnimation("FrontIdle"));
 	animation->SetAnimationFps(10);
 	actor->SetPosition2D(Vector2{ 500, 500 });
@@ -154,28 +152,6 @@ void Pong::Render()
 		actor->Render();
 	}
 }
-
-
-//Input key down
-/*void Pong::OnInput(SDL_Event event)
-{
-	if (event.key.keysym.sym == SDLK_UP) //Go up if key up is down
-	{
-		mPlayerMove = BigBool::TRUE; 
-	}
-	else if (event.key.keysym.sym == SDLK_DOWN) //Go down if key down is down
-	{
-		mPlayerMove = BigBool::FALSE;
-	}
-	//else 
-	//{
-	//	mPlayerMove = BigBool::MAYBE; //Stop movement
-	//}
-	if (event.key.keysym.sym == SDLK_SPACE) //Lunch ball when key space is pressed
-	{
-		pongBall.mBallLunch = true;
-	}
-}*/
 
 void Pong::Close()
 {

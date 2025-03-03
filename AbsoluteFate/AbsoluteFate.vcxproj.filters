@@ -98,9 +98,6 @@
     <ClCompile Include="Transform.cpp">
       <Filter>Source Files\Parameter</Filter>
     </ClCompile>
-    <ClCompile Include="BigBool.cpp">
-      <Filter>Source Files\Parameter</Filter>
-    </ClCompile>
     <ClCompile Include="Texture.cpp">
       <Filter>Source Files\Graphics</Filter>
     </ClCompile>
@@ -110,17 +107,11 @@
     <ClCompile Include="Rectangle.cpp">
       <Filter>Source Files\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="IInputListener.cpp">
-      <Filter>Source Files\Input</Filter>
-    </ClCompile>
     <ClCompile Include="InputEvent.cpp">
       <Filter>Source Files\Input</Filter>
     </ClCompile>
     <ClCompile Include="InputManager.cpp">
       <Filter>Source Files\Input</Filter>
-    </ClCompile>
-    <ClCompile Include="Maths.cpp">
-      <Filter>Source Files\Parameter</Filter>
     </ClCompile>
     <ClCompile Include="Actor.cpp">
       <Filter>Source Files\Manager</Filter>
@@ -152,9 +143,6 @@
     <ClCompile Include="PlayerController.cpp">
       <Filter>Source Files\Content</Filter>
     </ClCompile>
-    <ClCompile Include="IRenderer.cpp">
-      <Filter>Source Files\Manager</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -174,9 +162,6 @@
       <Filter>Source Files\Content\Pong</Filter>
     </ClCompile>
     <ClCompile Include="PongBall.cpp">
-      <Filter>Source Files\Content\Pong</Filter>
-    </ClCompile>
-    <ClCompile Include="Paddle.cpp">
       <Filter>Source Files\Content\Pong</Filter>
     </ClCompile>
     <ClCompile Include="Platformer.cpp">

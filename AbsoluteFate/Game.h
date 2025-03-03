@@ -24,7 +24,7 @@ public:
 	Game& operator= (const Game&) = delete;
 
 	void Init(Scene* newScene);
-	void Loop();//chore
+	void Loop();//core
 	void Render();
 	void Update();//gameplay
 	void CheckInput();

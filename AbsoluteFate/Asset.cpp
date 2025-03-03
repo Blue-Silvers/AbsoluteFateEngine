@@ -31,7 +31,6 @@ vector<Texture> Asset::LoadAllTextureFromFolder(IRenderer& pRenderer, const stri
 			continue;
 		}
 		Texture texture = LoadTexture(pRenderer, filePath.string(), filePath.filename().replace_extension().string());
-		//mAnimationMap[pAnimationName].push_back(&texture);
 		mAnimationMap[pAnimationName].push_back(texture);
 	}
 

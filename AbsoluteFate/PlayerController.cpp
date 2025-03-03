@@ -39,22 +39,6 @@ void PlayerController::OnNotify(SDL_Event& pEvent)
 
 			break;
 		}
-		/*if (pEvent.key.keysym.sym == SDLK_UP)
-		{
-			SetSpeed(Vector2D{ 0, 50 });
-		}
-		else if (pEvent.key.keysym.sym == SDLK_DOWN)
-		{
-			SetSpeed(Vector2D{ 0, -50 });
-		}
-		else if (pEvent.key.keysym.sym == SDLK_RIGHT)
-		{
-			SetSpeed(Vector2D{ 50, 0 });
-		}
-		else if (pEvent.key.keysym.sym == SDLK_LEFT)
-		{
-			SetSpeed(Vector2D{ -50, 0 });
-		}*/
 		break;
 	case SDL_KEYUP:
 

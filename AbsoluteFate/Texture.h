@@ -27,7 +27,7 @@ public:
 	Texture();
 	~Texture() = default;
 
-	bool LoadTexture(IRenderer* pRenderer, const string& pFileName); //filenam = "Picture/pokeball.png"
+	bool LoadTexture(IRenderer* pRenderer, const string& pFileName); //filenam = "Ressources/imageName.png"
 	void UnloadTexture();
 
 	void SetActive() const;
