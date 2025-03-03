@@ -24,6 +24,10 @@ private:
 	unsigned int mVboId;
 
 public:
+	VertexArray();
+	VertexArray(unsigned int pVerticeCount,
+				unsigned int pIndexCount);
+
 	VertexArray(const float* pVertices, 
 				unsigned int pVerticeCount, 
 				const unsigned int* pIndices, 

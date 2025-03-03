@@ -1,37 +1,8 @@
-﻿  Game.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Game.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Game.cpp')
-  
-  GlTestScene.cpp
+﻿  GlTestScene.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
   (compiling source file 'GlTestScene.cpp')
   
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
   (compiling source file 'GlTestScene.cpp')
   
-  Main.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Main.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Main.cpp')
-  
-  RendererGl.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'RendererGl.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'RendererGl.cpp')
-  
-  Shader.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Shader.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(75,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Shader.cpp')
-  
-  Generating Code...
   AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

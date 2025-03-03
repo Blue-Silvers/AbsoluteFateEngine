@@ -15,6 +15,7 @@ void GlTestScene::Start()
 	{
 		renderer->SetShaderProgram(mShaderProgram);
 	}
+	mVertexArray = VertexArray(0, 4);
 }
 
 void GlTestScene::Update()
@@ -24,6 +25,8 @@ void GlTestScene::Update()
 //Drawing
 void GlTestScene::Render()
 {
+	mVertexArray.SetActive();
+	//glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
 }
 
 void GlTestScene::Close()
