@@ -2,7 +2,7 @@
 
 #include "SpriteC.h"
 
-RendererGl::RendererGl() : mWindow(nullptr), mVao(nullptr), mContext(nullptr), mShaderProgram(0), mSprites({nullptr}), mViewProj()
+RendererGl::RendererGl() : mWindow(nullptr), mVao(nullptr), mContext(nullptr), mShaderProgram(0), mSprites({nullptr})
 {
 }
 
@@ -62,7 +62,6 @@ void RendererGl::BeginDraw()
 	{
 		mShaderProgram->Use();
 	}
-	mShaderProgram->setMatrix4Row("uViewProj", mViewProj);
 	mVao->SetActive();
 }
 
@@ -81,18 +80,9 @@ void RendererGl::EndDraw()
 
 void RendererGl::DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip) const
 {
-	/*pTex.SetActive();
-	glDrawArrays(GL_TRIANGLE_FAN, 0, 4);*/
-	mShaderProgram->Use();
-	pActor.GetTransform().ComputeWorldTransform();
-	Matrix4Row scaleMat = Matrix4Row::CreateScale(
-		pTex.GetWidth(),
-		pTex.GetHeight(),
-		0.0f);
-	Matrix4Row world = scaleMat * pActor.GetTransform().GetWorldTransform();
-	mShaderProgram->setMatrix4Row("uWorldTransform", world);
 	pTex.SetActive();
-	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+	glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+
 }
 
 void RendererGl::AddSprite(SpriteC* pSprite)
