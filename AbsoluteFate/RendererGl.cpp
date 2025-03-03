@@ -41,6 +41,7 @@ bool RendererGl::Initialize(Window& rWindow)
 	{
 		Log::Error(LogType::Video, "Failed to initialize SDL_Image");
 	}
+
 	mVao = new VertexArray(vertices, 4, indices, 6);
 	return true;
 }

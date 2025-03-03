@@ -25,6 +25,7 @@ Game::Game(std::string gameTitle, Scene* newScene, IRenderer::RendererType pRend
     case IRenderer::RendererType::OPENGL: //OpenGl
         break;
     default:
+        Log::Error(LogType::Render, "This render is not set.");
         break;
     }
 
@@ -47,6 +48,7 @@ void Game::Init(Scene* newScene)
         break;
     default:
         mRenderer = new RendererSDL;
+        Log::Error(LogType::Render, "The render type is not set.");
         break;
     }
     mScene[0] = newScene;
