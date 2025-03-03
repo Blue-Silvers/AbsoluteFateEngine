@@ -37,19 +37,19 @@ void MovingC::Update()
     if (!Maths::NearZero(mSpeed.GetMagnitude()))
     {
         // add right
-        Vector2 rightVector = mOwner->GetTransform2D().Right();
+        Vector3 rightVector = mOwner->GetTransform().Right();
         rightVector *= mSpeed.x;
         rightVector *= Time::deltaTime;
         // add up
-        Vector2 upVector = mOwner->GetTransform2D().Up();
+        Vector3 upVector = mOwner->GetTransform().Up();
         upVector *= mSpeed.y;
         upVector *= Time::deltaTime;
         // add new coordonate
-        Vector2 newPosition = mOwner->GetTransform2D().GetPosition();
+        Vector3 newPosition = mOwner->GetTransform().GetPosition();
         newPosition += rightVector; // add right
         newPosition += upVector; // add up
         //keep last position 
-        Vector2 lastPosition = mOwner->GetTransform2D().GetPosition();
+        Vector3 lastPosition = mOwner->GetTransform().GetPosition();
         lastPosition -= rightVector; // add right
         lastPosition -= upVector; // add up
 

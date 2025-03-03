@@ -14,7 +14,6 @@ protected:
 	std::string mCode;
 	unsigned int mId;
 	ShaderType mType;
-	const char* mSource;
 
 public:
 	//For change the shader path

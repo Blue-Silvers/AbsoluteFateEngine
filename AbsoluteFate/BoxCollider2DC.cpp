@@ -76,12 +76,12 @@ void BoxCollider2DC::Update()
     {
         if (SpriteC* sprite = dynamic_cast<SpriteC*>(component))
         {
-            mColliderBox = Transform2D( //debug box
-                Vector2((mOwner->GetTransform2D().GetPosition().x - sprite->GetTexWidth() / 2.0f),
-                    (mOwner->GetTransform2D().GetPosition().y - sprite->GetTexHeight() / 2.0f)),
-                Vector2((sprite->GetTexWidth() * mOwner->GetTransform2D().GetScale().x),
-                    (sprite->GetTexHeight() * mOwner->GetTransform2D().GetScale().y)),
-                mOwner->GetTransform2D().GetRotation());
+            mColliderBox = Transform( //debug box
+                Vector2((mOwner->GetTransform().GetPosition().x - sprite->GetTexWidth() / 2.0f),
+                    (mOwner->GetTransform().GetPosition().y - sprite->GetTexHeight() / 2.0f)),
+                Vector2((sprite->GetTexWidth() * mOwner->GetTransform().GetScale().x),
+                    (sprite->GetTexHeight() * mOwner->GetTransform().GetScale().y)),
+                mOwner->GetTransform().GetRotation2D());
         }
     }
 }

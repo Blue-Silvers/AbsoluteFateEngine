@@ -1,6 +1,6 @@
 #pragma once
 #include "Scene.h"
-#include "Transform2D.h"
+#include "Transform.h"
 #include "Components.h"
 #include <vector>
 
@@ -22,12 +22,12 @@ private:
 protected:
 	Scene* mSceneAttached;
 	ActorState mState;
-	Transform2D mTransform2D;
+	Transform mTransform;
 	std::vector<Components*> mComponentsList; //DrawSprite(Actor& pActor, Texture& pTexture, Rectangle pSourceRect, Vector2D pOrigin, Flip pFlip)
 
 public:
 	Actor();
-	Actor(Transform2D pTransform2D, Scene* pScene);
+	Actor(Transform pTransform2D, Scene* pScene);
 	
 	virtual void Start() = 0;
 	void Render();
@@ -58,13 +58,21 @@ public:
 	{
 		mState = pState;
 	};
-	virtual void SetPosition(Vector2 pNewPosition) //set position
+	virtual void SetPosition(Vector2 pNewPosition) //set position 2D
 	{
-		mTransform2D = Transform2D(pNewPosition, mTransform2D.GetScale(), mTransform2D.GetRotation());
+		mTransform = Transform(Vector3{ pNewPosition.x, pNewPosition.y, 0 }, mTransform.GetScale(), mTransform.GetRotation());
 	};
-	virtual void SetScale(Vector2 pNewScale) //set scale
+	virtual void SetScale(Vector2 pNewScale) //set scale 2D
 	{
-		mTransform2D = Transform2D(mTransform2D.GetPosition(), pNewScale, mTransform2D.GetRotation());
+		mTransform = Transform(mTransform.GetPosition(), Vector3{ pNewScale.x, pNewScale.y, 1 }, mTransform.GetRotation());
+	};
+	virtual void SetPosition(Vector3 pNewPosition) //set position
+	{
+		mTransform = Transform(pNewPosition, mTransform.GetScale(), mTransform.GetRotation());
+	};
+	virtual void SetScale(Vector3 pNewScale) //set scale
+	{
+		mTransform = Transform(mTransform.GetPosition(), pNewScale, mTransform.GetRotation());
 	};
 	virtual void SetTags(std::string pTag) //add tag
 	{
@@ -89,9 +97,9 @@ public:
 	{
 		return mSceneAttached;
 	};	
-	virtual Transform2D GetTransform2D()
+	virtual Transform GetTransform()
 	{
-		return mTransform2D;
+		return mTransform;
 	};
 	virtual std::vector<std::string> GetTags()
 	{

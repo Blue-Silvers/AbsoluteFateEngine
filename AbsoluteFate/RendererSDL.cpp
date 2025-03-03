@@ -72,7 +72,7 @@ void RendererSDL::DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle p
 {
 
     SDL_Rect destinationRect;
-    Transform2D transform = pActor.GetTransform2D();
+    Transform transform = pActor.GetTransform();
     destinationRect.w = static_cast<int>(pTexture.GetWidth() * transform.GetScale().x);
     destinationRect.h = static_cast<int>(pTexture.GetHeight() * transform.GetScale().y);
     destinationRect.x = static_cast<int>(transform.GetPosition().x - pOrigin.x);
@@ -97,7 +97,7 @@ void RendererSDL::DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle p
     //SDL_RenderFillRect(mSdlRenderer, &sdlRect);
 
 
-    SDL_RenderCopyEx(mSdlRenderer, pTexture.GetSdlTexture(), sourceSDL,  &destinationRect, -Maths::ToDeg(transform.GetRotation()), nullptr, SDL_FLIP_NONE);
+    SDL_RenderCopyEx(mSdlRenderer, pTexture.GetSdlTexture(), sourceSDL,  &destinationRect, -Maths::ToDeg(transform.GetRotation2D()), nullptr, SDL_FLIP_NONE);
     delete sourceSDL;
 }
 

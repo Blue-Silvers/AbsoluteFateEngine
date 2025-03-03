@@ -1,6 +1,6 @@
 #pragma once
 #include "Components.h"
-#include "Transform2D.h"
+#include "Transform.h"
 #include "Actor.h"
 
 #include "Rectangle.h"
@@ -8,7 +8,7 @@
 class BoxCollider2DC : public Components
 {
 private:
-	Transform2D mColliderBox;
+	Transform mColliderBox;
 	Actor* mParentActor;
 
 public :
@@ -19,10 +19,10 @@ public :
 	virtual void OnStart() 
 	{ 
 		mParentActor = mOwner;
-		mColliderBox = mOwner->GetTransform2D();
+		mColliderBox = mOwner->GetTransform();
 	};
 
-    Transform2D GetColliderBox() const { return mColliderBox; };
+    Transform GetColliderBox() const { return mColliderBox; };
 
     //Check if this collider box hit another collider box
     bool OnCollide() const;

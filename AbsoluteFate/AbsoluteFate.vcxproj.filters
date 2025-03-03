@@ -95,7 +95,7 @@
     <ClCompile Include="SpriteC.cpp">
       <Filter>Source Files\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Transform2D.cpp">
+    <ClCompile Include="Transform.cpp">
       <Filter>Source Files\Parameter</Filter>
     </ClCompile>
     <ClCompile Include="BigBool.cpp">
@@ -229,7 +229,7 @@
     <ClInclude Include="BigBool.h">
       <Filter>Header Files\Parameter</Filter>
     </ClInclude>
-    <ClInclude Include="Transform2D.h">
+    <ClInclude Include="Transform.h">
       <Filter>Header Files\Parameter</Filter>
     </ClInclude>
     <ClInclude Include="Color.h">
@@ -352,6 +352,9 @@
       <Filter>Shader</Filter>
     </None>
     <None Include="SpriteVert.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="TransformVert.shader">
       <Filter>Shader</Filter>
     </None>
   </ItemGroup>

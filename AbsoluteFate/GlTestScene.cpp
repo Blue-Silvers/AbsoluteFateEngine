@@ -12,7 +12,7 @@ void GlTestScene::Start()
 {
 	mShaderProgram = new ShaderProgram();
 
-	mVertexShader.Load("SpriteVert.shader", ShaderType::VERTEX);
+	mVertexShader.Load("TransformVert.shader", ShaderType::VERTEX);
 	mFragmentShader.Load("SpriteFrag.shader", ShaderType::FRAGMENT);
 
 	mShaderProgram->Compose({ &mVertexShader , &mFragmentShader });

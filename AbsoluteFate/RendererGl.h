@@ -13,6 +13,7 @@ private:
 	SDL_GLContext mContext;
 	std::vector<SpriteC*> mSprites;
 	ShaderProgram* mShaderProgram;
+	Matrix4Row mViewProj;
 
 public:
 	RendererGl();
