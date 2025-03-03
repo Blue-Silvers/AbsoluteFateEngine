@@ -45,6 +45,9 @@
     <Filter Include="Source Files\Input">
       <UniqueIdentifier>{d41b9c96-d08c-426f-b5d8-329c94dfb218}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{4f16f947-c136-4a2e-a1d2-c080056dcd07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DeathAngelA.cpp">
@@ -172,6 +175,9 @@
     </ClCompile>
     <ClCompile Include="GlTestScene.cpp">
       <Filter>Source Files\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneTextureOpenGlA.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -301,9 +307,22 @@
     <ClInclude Include="ShaderProgram.h">
       <Filter>Header Files\Manager</Filter>
     </ClInclude>
+    <ClInclude Include="PlaneTextureOpenGlA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimpleVert.shader" />
-    <None Include="SimpleFrag.shader" />
+    <None Include="SimpleFrag.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="SimpleVert.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="SpriteFrag.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="SpriteVert.shader">
+      <Filter>Shader</Filter>
+    </None>
   </ItemGroup>
 </Project>

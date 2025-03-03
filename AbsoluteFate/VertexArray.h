@@ -1,10 +1,12 @@
 #pragma once
 
-constexpr float vertices[] = {
--0.5f, 0.5f, 0.0f,		//A
-0.5f, 0.5f, 0.0f,		//B
-0.5f, -0.5f, 0.0f,		//C
--0.5f, -0.5f, 0.0f };	//D
+constexpr float vertices[] = 
+{//Coordonate:        Uv pos: R/L   T/B
+-0.5f, 0.5f, 0.0f,            0.0f, 0.0f,     //top left
+0.5f, 0.5f, 0.0f,             1.0f, 0.0f,     //top right
+0.5f, -0.5f, 0.0f,            1.0f, 1.0f,     //bottom right
+-0.5f, -0.5f, 0.0f,           0.0f, 1.0f	  //bottom left
+};
 
 constexpr unsigned int indices[] = {
 0, 1, 2,
@@ -25,9 +27,6 @@ private:
 
 public:
 	VertexArray();
-	VertexArray(unsigned int pVerticeCount,
-				unsigned int pIndexCount);
-
 	VertexArray(const float* pVertices, 
 				unsigned int pVerticeCount, 
 				const unsigned int* pIndices, 

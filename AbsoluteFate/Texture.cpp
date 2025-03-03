@@ -4,7 +4,6 @@
 
 const Texture Texture::Default = {};
 
-
 bool Texture::LoadSDL(RendererSDL* pRenderer, const string& pFileName, SDL_Surface* pSurface)
 {
 	//Create texture from surface
@@ -41,6 +40,7 @@ bool Texture::LoadGL(RendererGl* pRenderer, const string& pFileName, SDL_Surface
 
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
 
 	return true;
 }

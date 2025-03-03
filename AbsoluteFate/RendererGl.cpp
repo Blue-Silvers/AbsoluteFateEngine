@@ -2,7 +2,7 @@
 
 #include "SpriteC.h"
 
-RendererGl::RendererGl() : mWindow(nullptr), mVao(nullptr), mContext(nullptr)
+RendererGl::RendererGl() : mWindow(nullptr), mVao(nullptr), mContext(nullptr), mShaderProgram(0), mSprites({nullptr})
 {
 }
 
@@ -80,6 +80,9 @@ void RendererGl::EndDraw()
 
 void RendererGl::DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip) const
 {
+	pTex.SetActive();
+	glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+
 }
 
 void RendererGl::AddSprite(SpriteC* pSprite)

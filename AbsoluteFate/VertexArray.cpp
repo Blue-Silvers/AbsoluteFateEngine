@@ -6,27 +6,6 @@ VertexArray::VertexArray() :
 {
 }
 
-VertexArray::VertexArray(unsigned int pVerticeCount, unsigned int pIndexCount) :
-	mVerticeCount(pVerticeCount), mIndexCount(pIndexCount), mVertexArrayId(0), mVboId(0), mIndexBufferId(0)
-{
-	//Generate VAO
-	glGenVertexArrays(1, &mVertexArrayId);
-	glBindVertexArray(mVertexArrayId);
-
-	//Generate VBO
-	glGenBuffers(1, &mVboId);
-	glBindBuffer(GL_ARRAY_BUFFER, mVboId);
-	glBufferData(GL_ARRAY_BUFFER, mVerticeCount * 3 * sizeof(float), vertices, GL_STATIC_DRAW);
-
-	//Generate Index Buffer
-	glGenBuffers(1, &mIndexBufferId);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mIndexBufferId);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, mIndexCount * sizeof(float), indices, GL_STATIC_DRAW);
-
-	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, (void*)0);
-}
-
 VertexArray::VertexArray(const float* pVertices, unsigned int pVerticeCount, const unsigned int* pIndices, unsigned int pIndexCount) :
 	mVerticeCount(pVerticeCount), mIndexCount(pIndexCount), mVertexArrayId(0), mVboId(0), mIndexBufferId(0)
 {
@@ -37,7 +16,7 @@ VertexArray::VertexArray(const float* pVertices, unsigned int pVerticeCount, con
 	//Generate VBO
 	glGenBuffers(1, &mVboId);
 	glBindBuffer(GL_ARRAY_BUFFER, mVboId);
-	glBufferData(GL_ARRAY_BUFFER, mVerticeCount * 3 * sizeof(float), pVertices, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, mVerticeCount * 5 * sizeof(float), pVertices, GL_STATIC_DRAW);
 
 	//Generate Index Buffer
 	glGenBuffers(1, &mIndexBufferId);
@@ -45,7 +24,9 @@ VertexArray::VertexArray(const float* pVertices, unsigned int pVerticeCount, con
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, mIndexCount * sizeof(float), pIndices, GL_STATIC_DRAW);
 
 	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, (void*)0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)0);
+	glEnableVertexAttribArray(1);
+	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)(sizeof(float) * 3));
 }
 
 
