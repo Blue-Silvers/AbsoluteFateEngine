@@ -195,6 +195,9 @@
       <Filter>Source Files\Parameter\Matrix</Filter>
     </ClCompile>
     <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -329,6 +332,9 @@
       <Filter>Header Files\Parameter\Matrix</Filter>
     </ClInclude>
     <ClInclude Include="Mesh.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -346,6 +352,12 @@
       <Filter>Shader</Filter>
     </None>
     <None Include="TransformVert.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="BasicFrag.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="BasicVert.shader">
       <Filter>Shader</Filter>
     </None>
   </ItemGroup>

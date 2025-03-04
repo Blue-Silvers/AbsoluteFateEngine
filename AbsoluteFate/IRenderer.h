@@ -2,6 +2,7 @@
 #include "Actor.h"
 #include "Rectangle.h"
 #include "Window.h"
+#include "MeshC.h"
 
 #include <iostream>
 #include <fstream>
@@ -15,6 +16,10 @@ class Texture;
 class IRenderer
 {
 private:
+    
+protected:
+    std::vector<MeshC*> MeshComponentList = { nullptr };
+    Matrix4Row mSpriteViewProj = Matrix4Row();
 
 public:
     enum class Flip //flip renderer
@@ -32,8 +37,11 @@ public:
     virtual ~IRenderer() = default;
     //Base fonction
     virtual bool Initialize(Window& rWindow) = 0;
+    virtual void AddMesh(MeshC*) = 0;
+    virtual void RemoveMesh(MeshC*) = 0;
     virtual void BeginDraw() = 0;
     virtual void Draw() = 0;
+    virtual void DrawMeshes() =0;
     virtual void DrawAllSprites() = 0;
     virtual void DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip = Flip::None) const = 0;
     virtual void EndDraw() = 0;

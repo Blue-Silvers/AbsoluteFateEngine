@@ -36,6 +36,7 @@ public:
 	//SpriteComponent
 	void Draw() override;
 	void DrawAllSprites() override;
+	void DrawMeshes() override {};
 	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2 pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const;
 	void AddSprite(SpriteC* pSprite);
 	void RemoveSprite(SpriteC* pSprite);

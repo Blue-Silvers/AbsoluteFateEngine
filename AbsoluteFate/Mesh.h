@@ -68,6 +68,7 @@ public:
 	Shader GetVertexShader() { return mVertexShader; }
 	Shader GetFragmentShader() { return mFragmentShader; }
 	ShaderProgram& GetShaderProgram() { return *mShaderProgram; }
+	Texture* GetTexture(size_t pTextureIndex) { return mTexturesList[pTextureIndex]; };
 
 	//Setters
 	void SetTextureList(std::vector<Texture*> pTextureList) 

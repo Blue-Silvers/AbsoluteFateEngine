@@ -36,4 +36,13 @@ void Actor::Render()
 		//	boxCollider2DC->Draw(*mSceneAttached->GetRenderer());
 		//}
 	}
+
+	//for (Components* sprite : mComponentsList)
+	//{
+	//	if (MeshC* meshComponent = dynamic_cast<MeshC*>(sprite))//DrawMeshes()
+	//	{
+	//		meshComponent->Draw(mSceneAttached->GetRenderer());
+	//	}
+	//}
+	
 }

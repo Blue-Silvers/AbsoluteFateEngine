@@ -154,6 +154,7 @@
     <ClCompile Include="Matrix4.cpp" />
     <ClCompile Include="Matrix4Row.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshC.cpp" />
     <ClCompile Include="MovingC.cpp" />
     <ClCompile Include="PlaneTextureOpenGlA.cpp" />
     <ClCompile Include="Platformer.cpp" />
@@ -198,6 +199,7 @@
     <ClInclude Include="Matrix4.h" />
     <ClInclude Include="Matrix4Row.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshC.h" />
     <ClInclude Include="MovingC.h" />
     <ClInclude Include="Paddle.h" />
     <ClInclude Include="PlaneTextureOpenGlA.h" />
@@ -225,6 +227,8 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BasicFrag.shader" />
+    <None Include="BasicVert.shader" />
     <None Include="SimpleFrag.shader" />
     <None Include="SimpleVert.shader" />
     <None Include="SpriteFrag.shader" />
