@@ -21,28 +21,31 @@ public:
 	RendererSDL(const RendererSDL&) = delete;
 	RendererSDL& operator= (const RendererSDL&) = delete;
 
-	bool Initialize(Window& rWindow) override;
-	void BeginDraw() override;
-	void EndDraw() override;
-	void Close() override;
-
+	//Draw rectancle
 	void DrawRect(Rectangle& rRect);
 	void DrawRectColor(Rectangle& rRect, Color& rColor);
 
 	//Texture
 	SDL_Renderer* GetSdlRenderer() { return mSdlRenderer; };
 
-	//SpriteComponent
+				//Base fonction//
+	bool Initialize(Window& rWindow) override;
+	//Draw fonction
+	void BeginDraw() override;
 	void Draw() override;
+	void EndDraw() override;
+	//Draw Sprites
 	void DrawAllSprites() override;
-	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2 pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const;
-	void AddSprite(SpriteC* pSprite);
-	void RemoveSprite(SpriteC* pSprite);
-
-	void DrawMeshes() override {};
+	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2 pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const override;
+	void AddSprite(SpriteC* pSprite) override;
+	void RemoveSprite(SpriteC* pSprite) override;
+	//Draw Meshs
+	void DrawAllMeshes() override {};
 	void AddMesh(MeshC* pMesh) override {};
 	void RemoveMesh(MeshC* pMesh) override {};
-
+	//Close
+	void Close() override;
+	//Getter
 	IRenderer::RendererType GetType() override;
 };
 

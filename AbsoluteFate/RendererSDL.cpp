@@ -113,7 +113,7 @@ void RendererSDL::AddSprite(SpriteC* pSprite)
     vector<SpriteC*>::iterator spriteComponent;
     for (spriteComponent = mSpritesList.begin(); spriteComponent != mSpritesList.end(); ++spriteComponent) 
     {
-        if (spriteDrawOrder < (*spriteComponent)->GetDrawOrder()) 
+        if (spriteDrawOrder < distance(mSpritesList.begin(), spriteComponent)/*(*spriteComponent)->GetDrawOrder()*/)
         {
             break;
         }

@@ -1,4 +1,5 @@
 #include "SpriteC.h"
+#include "RendererGl.h"
 
 SpriteC::SpriteC(Actor* pOwner, const Texture& pTexture, int pDrawOrder) :Components(pOwner),
 																	mTexture(pTexture),
@@ -10,6 +11,10 @@ SpriteC::SpriteC(Actor* pOwner, const Texture& pTexture, int pDrawOrder) :Compon
 	{
 		pRendererSDL->AddSprite(this);
 	}
+	else if (RendererGl* pRendererGl = dynamic_cast<RendererGl*>(mOwner->GetScene()->GetRenderer()))
+	{
+		pRendererGl->AddSprite(this);
+	}
 }
 
 SpriteC::~SpriteC()
@@ -17,6 +22,10 @@ SpriteC::~SpriteC()
 	if (RendererSDL* pRendererSDL = dynamic_cast<RendererSDL*>(mOwner->GetScene()->GetRenderer()))
 	{
 		pRendererSDL->RemoveSprite(this);
+	}
+	else if (RendererGl* pRendererGl = dynamic_cast<RendererGl*>(mOwner->GetScene()->GetRenderer()))
+	{
+		pRendererGl->RemoveSprite(this);
 	}
 }
 

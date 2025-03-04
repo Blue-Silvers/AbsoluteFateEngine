@@ -22,22 +22,26 @@ public:
 	RendererGl(const RendererGl&) = delete;
 	RendererGl& operator=(const RendererGl&) = delete;
 
-	bool Initialize(Window& rWindow) override;
 	void SetShaderProgram(ShaderProgram* pShaderProgram);
+
+					//Base fonction//
+	bool Initialize(Window& rWindow) override;
+	//Draw fonction
 	void BeginDraw() override;
 	void Draw() override;
 	void DrawAllSprites() override;
 	void EndDraw() override;
-
-	void DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip = Flip::None) const;
-	void AddSprite(SpriteC* pSprite);
-	void RemoveSprite(SpriteC* pSprite);
-
-	void DrawMeshes() override;
+	//Draw Sprites
+	void DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip = Flip::None) const override;
+	void AddSprite(SpriteC* pSprite) override;
+	void RemoveSprite(SpriteC* pSprite) override;
+	//Draw Meshs
+	void DrawAllMeshes() override;
 	void AddMesh(MeshC* pMesh) override;
 	void RemoveMesh(MeshC* pMesh) override;
-
+	//Close
 	void Close() override;
+	//Getter
 	RendererType GetType() override;
 };
 

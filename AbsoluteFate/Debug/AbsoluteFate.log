@@ -1,10 +1,131 @@
-﻿  RendererGl.cpp
+﻿  Actor.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Actor.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Actor.cpp')
+  
+  AnimatedSpriteC.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'AnimatedSpriteC.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'AnimatedSpriteC.cpp')
+  
+  BoxCollider2DC.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'BoxCollider2DC.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'BoxCollider2DC.cpp')
+  
+  DeathAngelA.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'DeathAngelA.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'DeathAngelA.cpp')
+  
+  Game.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Game.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Game.cpp')
+  
+  GlTestScene.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'GlTestScene.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'GlTestScene.cpp')
+  
+  MeshC.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'MeshC.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'MeshC.cpp')
+  
+  PlaneTextureOpenGlA.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'PlaneTextureOpenGlA.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'PlaneTextureOpenGlA.cpp')
+  
+  Platformer.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Platformer.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Platformer.cpp')
+  
+  PlayerController.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'PlayerController.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'PlayerController.cpp')
+  
+  Pong.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Pong.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Pong.cpp')
+  
+  PongBall.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'PongBall.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'PongBall.cpp')
+  
+  RendererGl.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
   (compiling source file 'RendererGl.cpp')
   
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
   (compiling source file 'RendererGl.cpp')
   
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(110,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(109,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(116,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(115,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  RendererSDL.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'RendererSDL.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'RendererSDL.cpp')
+  
+  Shader.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Shader.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Shader.cpp')
+  
+  SpriteC.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'SpriteC.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'SpriteC.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SpriteC.cpp(41,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Texture.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Texture.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'Texture.cpp')
+  
+  TheWallA.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'TheWallA.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'TheWallA.cpp')
+  
+  Generating Code...
   AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

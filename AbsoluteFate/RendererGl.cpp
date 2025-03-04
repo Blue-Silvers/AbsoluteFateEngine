@@ -2,6 +2,7 @@
 
 #include "SpriteC.h"
 
+//Constructor
 RendererGl::RendererGl() :  mWindow(nullptr), 
 							mSpriteVao(nullptr), 
 							mContext(nullptr), 
@@ -18,6 +19,7 @@ RendererGl::~RendererGl()
 	delete mSpriteVao;
 }
 
+//Initialize render variable
 bool RendererGl::Initialize(Window& rWindow)
 {
 	mWindow = &rWindow;
@@ -58,20 +60,23 @@ bool RendererGl::Initialize(Window& rWindow)
 	return true;
 }
 
+//Set shader program
 void RendererGl::SetShaderProgram(ShaderProgram* pShaderProgram)
 {
 	mSpriteShaderProgram = pShaderProgram;
 }
 
+//Start drawing whith render variable
 void RendererGl::BeginDraw()
 {
 	glClearColor(0.45f, 0.45f, 1.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
+//Draw all Meshs before all Sprites
 void RendererGl::Draw()
 {
-	DrawMeshes();
+	DrawAllMeshes();
 	DrawAllSprites();
 }
 
@@ -97,6 +102,7 @@ void RendererGl::DrawAllSprites()
 
 }
 
+//Stop drawing whith render variable
 void RendererGl::EndDraw()
 {
 	SDL_GL_SwapWindow(mWindow->GetSdlWindow());
@@ -118,22 +124,22 @@ void RendererGl::DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourc
 void RendererGl::AddSprite(SpriteC* pSprite)
 {
 	int spriteDrawOrder = pSprite->GetDrawOrder();
-	std::vector<SpriteC*>::iterator sc;
-	for (sc = mSpritesList.begin(); sc != mSpritesList.end(); ++sc)
+	std::vector<SpriteC*>::iterator spriteComponent;
+	for (spriteComponent = mSpritesList.begin(); spriteComponent != mSpritesList.end(); ++spriteComponent)
 	{
-		if (spriteDrawOrder < (*sc)->GetDrawOrder()) break;
+		if (spriteDrawOrder < std::distance(mSpritesList.begin(), spriteComponent)) break;
 	}
-	mSpritesList.insert(sc, pSprite);
+	mSpritesList.insert(spriteComponent, pSprite);
 }
 
 void RendererGl::RemoveSprite(SpriteC* pSprite)
 {
-	std::vector<SpriteC*>::iterator sc;
-	sc = std::find(mSpritesList.begin(), mSpritesList.end(), pSprite);
-	mSpritesList.erase(sc);
+	std::vector<SpriteC*>::iterator spriteComponent;
+	spriteComponent = std::find(mSpritesList.begin(), mSpritesList.end(), pSprite);
+	mSpritesList.erase(spriteComponent);
 }
 
-void RendererGl::DrawMeshes()
+void RendererGl::DrawAllMeshes()
 {
 	glEnable(GL_DEPTH_TEST);
 	glDisable(GL_BLEND);
@@ -158,12 +164,14 @@ void RendererGl::RemoveMesh(MeshC* pMesh)
 	MeshComponentList.erase(sc);
 }
 
+//Destroy renderer contain render variable
 void RendererGl::Close()
 {
 	SDL_GL_DeleteContext(mContext);
 	delete mSpriteVao;
 }
 
+//Get renderer type
 IRenderer::RendererType RendererGl::GetType()
 {
 	return RendererType::OPENGL;

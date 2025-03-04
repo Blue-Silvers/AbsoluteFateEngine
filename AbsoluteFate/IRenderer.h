@@ -37,16 +37,24 @@ public:
         OPENGL
     };
     virtual ~IRenderer() = default;
-    //Base fonction
+
+                //Base fonction//
     virtual bool Initialize(Window& rWindow) = 0;
-    virtual void AddMesh(MeshC*) = 0;
-    virtual void RemoveMesh(MeshC*) = 0;
+    //Mesh fonction
+    virtual void AddMesh(MeshC* pMesh) = 0;
+    virtual void RemoveMesh(MeshC* pMesh) = 0;
+    //Sprite fonction
+    virtual void AddSprite(SpriteC* pSprite) = 0;
+    virtual void RemoveSprite(SpriteC* pSprite) = 0;
+    virtual void DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip = Flip::None) const = 0;
+    //Draw fonction
     virtual void BeginDraw() = 0;
     virtual void Draw() = 0;
-    virtual void DrawMeshes() =0;
+    virtual void DrawAllMeshes() = 0;
     virtual void DrawAllSprites() = 0;
-    virtual void DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip = Flip::None) const = 0;
     virtual void EndDraw() = 0;
+    //Close
     virtual void Close() = 0;
+    //Getter
     virtual RendererType GetType() = 0;
 };
