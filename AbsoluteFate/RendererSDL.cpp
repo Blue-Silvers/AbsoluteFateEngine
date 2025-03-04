@@ -1,7 +1,7 @@
 #include "RendererSDL.h"
 #include "SpriteC.h"
 
-RendererSDL::RendererSDL() :IRenderer(),mSdlRenderer(nullptr)
+RendererSDL::RendererSDL() : mSdlRenderer(nullptr)
 {
 }
 
@@ -62,10 +62,15 @@ void RendererSDL::DrawRectColor(Rectangle& rRect, Color& rColor)
 
 void RendererSDL::Draw()
 {
+    DrawAllSprites();
 }
 
 void RendererSDL::DrawAllSprites()
 {
+    for (SpriteC* sprite : mSpritesList)
+    {
+        sprite->Draw(*this);
+    }
 }
 
 void RendererSDL::DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip) const

@@ -12,12 +12,14 @@
 using namespace std;
 
 class Texture;
+class SpriteC;
 
 class IRenderer
 {
 private:
     
 protected:
+    std::vector<SpriteC*> mSpritesList = { nullptr };
     std::vector<MeshC*> MeshComponentList = { nullptr };
     Matrix4Row mSpriteViewProj = Matrix4Row();
 

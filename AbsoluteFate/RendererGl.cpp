@@ -2,14 +2,13 @@
 
 #include "SpriteC.h"
 
-RendererGl::RendererGl() : mWindow(nullptr), 
-mSpriteVao(nullptr), 
-mContext(nullptr), 
-mSpriteShaderProgram(nullptr),
-mSprites({nullptr}), 
-mSpriteViewProj(Matrix4Row::CreateSimpleViewProj(mWindow->GetDimensions().x, mWindow->GetDimensions().y)),
-mView(Matrix4Row::CreateLookAt(Vector3(0, 0, 5), Vector3::unitX, Vector3::unitZ)),
-mProj(Matrix4Row::CreatePerspectiveFOV(70.0f, mWindow->GetDimensions().x, mWindow->GetDimensions().y, 0.01f, 10000.0f))
+RendererGl::RendererGl() :  mWindow(nullptr), 
+							mSpriteVao(nullptr), 
+							mContext(nullptr), 
+							mSpriteShaderProgram(nullptr),
+							mSpriteViewProj(Matrix4Row::CreateSimpleViewProj(800, 800)),
+							mView(Matrix4Row::CreateLookAt(Vector3(0, 0, 5), Vector3::unitX, Vector3::unitZ)),
+							mProj(Matrix4Row::CreatePerspectiveFOV(70.0f, 800, 800, 0.01f, 10000.0f))
 
 {
 }
@@ -52,6 +51,10 @@ bool RendererGl::Initialize(Window& rWindow)
 
 	mSpriteVao = new VertexArray(vertices, 4, indices, 6);
 	mSpriteViewProj = Matrix4Row::CreateSimpleViewProj(mWindow->GetDimensions().x, mWindow->GetDimensions().y);
+
+	mView = Matrix4Row::CreateLookAt(Vector3(0, 0, 5), Vector3::unitX, Vector3::unitZ);
+	mProj = Matrix4Row::CreatePerspectiveFOV(70.0f, mWindow->GetDimensions().x, mWindow->GetDimensions().y, 0.01f, 10000.0f);
+
 	return true;
 }
 
@@ -86,7 +89,10 @@ void RendererGl::DrawAllSprites()
 
 	for (SpriteC* sprite : mSpritesList)
 	{
-		sprite->Draw(*this);
+		if (sprite != nullptr)
+		{
+			sprite->Draw(*this);
+		}
 	}
 
 }
@@ -133,7 +139,10 @@ void RendererGl::DrawMeshes()
 	glDisable(GL_BLEND);
 	for (MeshC* m : MeshComponentList)
 	{
-		m->Draw(mView * mProj);
+		if(m != nullptr)
+		{
+			m->Draw(mView * mProj);
+		}
 	}
 }
 
@@ -145,7 +154,7 @@ void RendererGl::AddMesh(MeshC* pMesh)
 void RendererGl::RemoveMesh(MeshC* pMesh)
 {
 	std::vector<MeshC*>::iterator sc;
-	sc = std::find(MeshComponentList.begin(), MeshComponentList.end(), pSprite);
+	sc = std::find(MeshComponentList.begin(), MeshComponentList.end(), pMesh);
 	MeshComponentList.erase(sc);
 }
 

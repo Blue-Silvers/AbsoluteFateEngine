@@ -11,7 +11,6 @@ private:
 	Window* mWindow;
 	VertexArray* mSpriteVao;
 	SDL_GLContext mContext;
-	std::vector<SpriteC*> mSpritesList;
 	ShaderProgram* mSpriteShaderProgram;
 	Matrix4Row mSpriteViewProj;
 	Matrix4Row mView;

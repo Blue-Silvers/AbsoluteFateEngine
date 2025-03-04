@@ -14,7 +14,6 @@ class RendererSDL : public IRenderer
 {
 private:
 	SDL_Renderer* mSdlRenderer;
-	std::vector<SpriteC*> mSpritesList;
 
 public:
 	RendererSDL();
@@ -36,11 +35,13 @@ public:
 	//SpriteComponent
 	void Draw() override;
 	void DrawAllSprites() override;
-	void DrawMeshes() override {};
 	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2 pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const;
 	void AddSprite(SpriteC* pSprite);
 	void RemoveSprite(SpriteC* pSprite);
 
+	void DrawMeshes() override {};
+	void AddMesh(MeshC* pMesh) override {};
+	void RemoveMesh(MeshC* pMesh) override {};
 
 	IRenderer::RendererType GetType() override;
 };

@@ -21,28 +21,17 @@ Actor::Actor(Transform pTransform2D, Scene* pScene) : mState(ActorState::Active)
 
 void Actor::Render()
 {
+	mSceneAttached->GetRenderer()->Draw();//draw in renderer
+
 	for (Components* sprite : mComponentsList)
 	{
-		if (SpriteC* spriteComponent = dynamic_cast<SpriteC*>(sprite))
+		/*if (SpriteC* spriteComponent = dynamic_cast<SpriteC*>(sprite))
 		{
 			spriteComponent->Draw(*mSceneAttached->GetRenderer());
-		}
+		}*/
 		if (AnimatedSpriteC* animatedSprite = dynamic_cast<AnimatedSpriteC*>(sprite))
 		{
 			animatedSprite->Update();
 		}
-		//if (BoxCollider2DC* boxCollider2DC = dynamic_cast<BoxCollider2DC*>(sprite))//debug box
-		//{
-		//	boxCollider2DC->Draw(*mSceneAttached->GetRenderer());
-		//}
 	}
-
-	//for (Components* sprite : mComponentsList)
-	//{
-	//	if (MeshC* meshComponent = dynamic_cast<MeshC*>(sprite))//DrawMeshes()
-	//	{
-	//		meshComponent->Draw(mSceneAttached->GetRenderer());
-	//	}
-	//}
-	
 }
