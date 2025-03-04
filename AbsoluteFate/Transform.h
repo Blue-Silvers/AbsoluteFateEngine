@@ -13,6 +13,7 @@ private:
 
 	bool mNeedsUpdate = true;
 	Matrix4Row mWorldTransform;
+	Vector3 mRotationDegrees = Vector3(0, 0, 0);
 
 public:
 	Transform() :mPosition(0, 0, 0), mScale(1, 1, 1), mRotation(0, 0, 0, 0), mNeedsUpdate(true) {};
@@ -36,15 +37,18 @@ public:
 	void RotateXInDegrees(float pDegrees);
 	void RotateYInDegrees(float pDegrees);
 	void RotateZInDegrees(float pDegrees);
+	void Rotate2dInDegrees(float pDegrees);
 
 	//Getter
 	Vector3 GetScale() const { return mScale; };
 	Vector3 GetPosition() const { return mPosition; };
 	Quaternion GetRotation() const { return mRotation; };
 	Matrix4Row GetWorldTransform() const { return mWorldTransform; };
+	Vector3 GetRotationInDegrees() const { return mRotationDegrees; };
 
 	Vector2 GetScale2D() const { return {mScale.x, mScale.y}; };
 	Vector2 GetPosition2D() const { return { mPosition.x, mPosition.y }; };
 	float GetRotation2D() const { return mRotation.z; };
+	float GetRotation2dInDegrees() const { return mRotationDegrees.z; };
 };
 

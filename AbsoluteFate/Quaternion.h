@@ -24,6 +24,7 @@ public:
 	// and the angle is in radians
 	explicit Quaternion(const Vector3& axis, float angle);
 
+	//void AddAngle(const Vector3& axis, float angle);
 	void Set(float inX, float inY, float inZ, float inW);
 	void Conjugate();
 	void Normalize();
