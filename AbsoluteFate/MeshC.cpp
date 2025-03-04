@@ -1,6 +1,8 @@
 #include "MeshC.h"
 
 #include "Scene.h"
+#include "IRenderer.h"
+#include "RendererGl.h"
 #include "VertexArray.h"
 
 MeshC::MeshC(Actor* pOwner) : Components(pOwner), 
@@ -8,19 +10,21 @@ MeshC::MeshC(Actor* pOwner) : Components(pOwner),
 							  mTextureIndex(0)
 {
 	mMesh = new Mesh();
-	Scene::ActiveScene->GetRenderer().AddMesh(this);
+	mOwner->GetScene()->ActiveScene->GetRenderer()->AddMesh(this);
+	//Scene::ActiveScene->GetRenderer().AddMesh(this);
 }
 
 MeshC::~MeshC()
 {
-	Scene::ActiveScene->GetRenderer().RemoveMesh(this);
+	mOwner->GetScene()->ActiveScene->GetRenderer()->RemoveMesh(this);
+	//Scene::ActiveScene->GetRenderer().RemoveMesh(this);
 }
 
 void MeshC::Draw(Matrix4Row viewProj)
 {
 	if (mMesh)
 	{
-		Matrix4Row wt = mOwner->GetWorldTransform();
+		Matrix4Row wt = mOwner->GetTransform().GetWorldTransform();
 		mMesh->GetShaderProgram().Use();
 		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", viewProj);
 		mMesh->GetShaderProgram().setMatrix4Row("uWorldTransform", wt);
