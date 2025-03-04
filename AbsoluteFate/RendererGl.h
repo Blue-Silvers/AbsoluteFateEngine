@@ -9,13 +9,11 @@ class RendererGl : public IRenderer
 {
 private:
 	Window* mWindow;
-	VertexArray* mSpriteVao;
+	VertexArray* mVao;
 	SDL_GLContext mContext;
-	std::vector<SpriteC*> mSpritesList;
-	ShaderProgram* mSpriteShaderProgram;
-	Matrix4Row mSpriteViewProj;
-	Matrix4Row mView;
-	Matrix4Row mProj;
+	std::vector<SpriteC*> mSprites;
+	ShaderProgram* mShaderProgram;
+	Matrix4Row mViewProj;
 
 public:
 	RendererGl();
@@ -33,11 +31,6 @@ public:
 	void DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourceRect, Vector2 pOrigin, Flip pFlip = Flip::None) const;
 	void AddSprite(SpriteC* pSprite);
 	void RemoveSprite(SpriteC* pSprite);
-
-	void DrawMeshes() override;
-	void AddMesh(MeshC* pMesh) override;
-	void RemoveMesh(MeshC* pMesh) override;
-
 	void Close() override;
 	RendererType GetType() override;
 };
