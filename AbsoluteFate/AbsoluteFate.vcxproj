@@ -153,6 +153,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Matrix4.cpp" />
     <ClCompile Include="Matrix4Row.cpp" />
+    <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="MovingC.cpp" />
     <ClCompile Include="PlaneTextureOpenGlA.cpp" />
     <ClCompile Include="Platformer.cpp" />
@@ -196,6 +197,7 @@
     <ClInclude Include="Maths.h" />
     <ClInclude Include="Matrix4.h" />
     <ClInclude Include="Matrix4Row.h" />
+    <ClInclude Include="Mesh.h" />
     <ClInclude Include="MovingC.h" />
     <ClInclude Include="Paddle.h" />
     <ClInclude Include="PlaneTextureOpenGlA.h" />
