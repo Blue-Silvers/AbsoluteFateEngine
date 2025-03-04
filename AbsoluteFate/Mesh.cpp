@@ -26,8 +26,3 @@ void Mesh::AddTexture(Texture* pTexture)
 {
 	mTexturesList.emplace_back(pTexture);
 }
-
-ShaderProgram& Mesh::GetShaderProgram()
-{
-	return *mShaderProgram;
-}

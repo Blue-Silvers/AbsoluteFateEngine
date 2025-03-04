@@ -78,15 +78,15 @@ public:
 	{
 		mVao = pVao;
 	};
-	void SetVao(Shader pVertexShader) 
+	void SetVertexShader(Shader pVertexShader)
 	{
 		mVertexShader = pVertexShader;
 	};
-	void SetVao(Shader pFragmentShader) 
+	void SetFragmentShader(Shader pFragmentShader)
 	{
 		mFragmentShader = pFragmentShader;
 	};
-	void SetVao(ShaderProgram& pShaderProgram) 
+	void SetShaderProgram(ShaderProgram& pShaderProgram)
 	{
 		mShaderProgram = &pShaderProgram;
 	};
