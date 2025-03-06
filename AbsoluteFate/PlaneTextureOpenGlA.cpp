@@ -9,8 +9,8 @@ void PlaneTextureOpenGlA::Start()
 	//load texture
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Ressources/meme.png", "yes");
 	//Actor
-	SetScale2D(Vector2{ 1, 1 }); //scale
-	SetPosition2D(Vector2{ 0, 0 }); //location
+	SetScale2D(Vector2{ 0.2, 0.2 }); //scale
+	SetPosition2D(Vector2{ -300, 300 }); //location
 	//sprite component
 	SpriteC* sprite = new SpriteC(this, Asset::GetTexture("yes"));
 	AddComponent(sprite);

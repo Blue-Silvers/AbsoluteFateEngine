@@ -200,6 +200,9 @@
     <ClCompile Include="MeshC.cpp">
       <Filter>Source Files\Component</Filter>
     </ClCompile>
+    <ClCompile Include="CubeTestA.cpp">
+      <Filter>Source Files\Content\OpenGlTest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DeathAngelA.h">
@@ -336,6 +339,9 @@
     </ClInclude>
     <ClInclude Include="MeshC.h">
       <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeTestA.h">
+      <Filter>Header Files\Content\OpenGlTest</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

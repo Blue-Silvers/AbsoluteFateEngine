@@ -6,13 +6,17 @@ class MeshC : public Components
 {
 protected:
 	Mesh* mMesh;
-	size_t mTextureIndex;
+	int mTextureIndex = 1;
 
 public:
 	MeshC(Actor* pOwner);
 	virtual ~MeshC();
 	virtual void Draw(Matrix4Row viewProj);
 	virtual void SetMesh(Mesh& pMesh);
-	void SetTextureIndex(size_t pTextureIndex);
+	void SetTextureIndex(int pTextureIndex);
+
+	void OnStart() override {};
+	void Update() override {};
+	void OnEnd() override {}
 };
 

@@ -2,6 +2,7 @@
 #include "RendererGl.h"
 #include "PlaneTextureOpenGlA.h"
 #include "DeathAngelA.h"
+#include "CubeTestA.h"
 
 void GlTestScene::SetRenderer(IRenderer* pRenderer)
 {
@@ -23,6 +24,10 @@ void GlTestScene::Start()
 	}
 
 	//Actor
+	/*CubeTestA* cubeTestA = new CubeTestA();
+	cubeTestA->AttachScene(this);
+	AddActor(cubeTestA);*/
+
 	PlaneTextureOpenGlA* planeTextureOpenGlA = new PlaneTextureOpenGlA();
 	planeTextureOpenGlA->AttachScene(this);
 	AddActor(planeTextureOpenGlA);

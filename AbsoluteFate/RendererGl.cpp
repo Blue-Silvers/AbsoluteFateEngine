@@ -154,7 +154,13 @@ void RendererGl::DrawAllMeshes()
 
 void RendererGl::AddMesh(MeshC* pMesh)
 {
-	MeshComponentList.emplace_back(pMesh);
+	MeshComponentList.push_back(pMesh);
+	//std::vector<MeshC*>::iterator spriteComponent;
+	//for (spriteComponent = MeshComponentList.begin(); spriteComponent != MeshComponentList.end(); ++spriteComponent)
+	//{
+	//	if (MeshComponentList.size() < std::distance(MeshComponentList.begin(), spriteComponent)) break;
+	//}
+	//MeshComponentList.insert(spriteComponent, pMesh);
 }
 
 void RendererGl::RemoveMesh(MeshC* pMesh)

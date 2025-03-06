@@ -8,7 +8,7 @@ Mesh::Mesh() : mVao(nullptr)
 	mVertexShader.Load("BasicVert.shader", ShaderType::VERTEX);
 	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
 	mShaderProgram->Compose({ &mVertexShader, &mFragmentShader });
-	mTexturesList.emplace_back(&Asset::GetTexture("wall"));
+	mTexturesList.emplace_back(&Asset::GetTexture("yes"));
 }
 
 Mesh::~Mesh()

@@ -5,12 +5,18 @@
 #include "RendererGl.h"
 #include "VertexArray.h"
 
+#include "Asset.h"
+
 MeshC::MeshC(Actor* pOwner) : Components(pOwner), 
 							  mMesh(nullptr), 
 							  mTextureIndex(0)
 {
 	mMesh = new Mesh();
-	mOwner->GetScene()->ActiveScene->GetRenderer()->AddMesh(this);
+	if (RendererGl* pRendererGl = dynamic_cast<RendererGl*>(pOwner->GetScene()->GetRenderer()))
+	{
+		pRendererGl->AddMesh(this);
+	}
+	//pOwner->GetScene()->ActiveScene->GetRenderer()->AddMesh(this);
 	//Scene::ActiveScene->GetRenderer().AddMesh(this);
 }
 
@@ -22,15 +28,22 @@ MeshC::~MeshC()
 
 void MeshC::Draw(Matrix4Row viewProj)
 {
-	if (mMesh)
+	if (mMesh != nullptr)
 	{
 		Matrix4Row wt = mOwner->GetTransform().GetWorldTransform();
 		mMesh->GetShaderProgram().Use();
 		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", viewProj);
 		mMesh->GetShaderProgram().setMatrix4Row("uWorldTransform", wt);
-		Texture* t = mMesh->GetTexture(mTextureIndex);
-		if (t) t->SetActive();
-		mMesh->GetVao()->SetActive();
+
+		/*Texture* t = mMesh->GetTexture(mTextureIndex);
+		if (t) 
+		{
+			t->SetActive();
+		}*/
+		/*Texture t = Asset::GetTexture("yes");
+		t.SetActive();
+
+		mMesh->GetVao()->SetActive();*/
 		glDrawElements(GL_TRIANGLES, mMesh->GetVao()->GetIndicesCount(), GL_UNSIGNED_INT, nullptr);
 	}
 }
@@ -40,7 +53,7 @@ void MeshC::SetMesh(Mesh& pMesh)
 	mMesh = &pMesh;
 }
 
-void MeshC::SetTextureIndex(size_t pTextureIndex)
+void MeshC::SetTextureIndex(int pTextureIndex)
 {
 	mTextureIndex = pTextureIndex;
 }
