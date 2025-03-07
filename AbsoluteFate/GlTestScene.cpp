@@ -24,9 +24,9 @@ void GlTestScene::Start()
 	}
 
 	//Actor
-	/*CubeTestA* cubeTestA = new CubeTestA();
+	CubeTestA* cubeTestA = new CubeTestA();
 	cubeTestA->AttachScene(this);
-	AddActor(cubeTestA);*/
+	AddActor(cubeTestA);
 
 	PlaneTextureOpenGlA* planeTextureOpenGlA = new PlaneTextureOpenGlA();
 	planeTextureOpenGlA->AttachScene(this);
@@ -35,6 +35,7 @@ void GlTestScene::Start()
 	DeathAngelA* actor = new DeathAngelA();
 	actor->AttachScene(this);
 	AddActor(actor);
+
 
 	for (Actor* actor : mActorsList)
 	{
@@ -45,33 +46,13 @@ void GlTestScene::Start()
 
 void GlTestScene::Update()
 {
-	mUpdatingActors = true;
-	for (Actor* actor : mActorsList)
-	{
-		actor->Update();
-	}
-	mUpdatingActors = false;
-
-	// Add pending actors to the pool
-	for (Actor* actor : mActorsPending)
-	{
-		mActorsList.emplace_back(actor);
-	}
-	mActorsPending.clear();
-	for (Actor* deadActor : mDeadActors)
-	{
-		delete deadActor;
-	}
+	Scene::Update();
 }
 
 //Drawing
 void GlTestScene::Render()
 {
-	
-	for (Actor* actor : mActorsList)
-	{
-		actor->Render();
-	}
+	Scene::Render();
 }
 
 void GlTestScene::Close()

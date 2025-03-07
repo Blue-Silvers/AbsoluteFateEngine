@@ -3,11 +3,11 @@
 
 Mesh::Mesh() : mVao(nullptr)
 {
-	mShaderProgram = new ShaderProgram();
+	//mShaderProgram = new ShaderProgram();
 	mVao = new VertexArray(cubeVertices, 28, cubeIndices, 36);
 	mVertexShader.Load("BasicVert.shader", ShaderType::VERTEX);
 	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
-	mShaderProgram->Compose({ &mVertexShader, &mFragmentShader });
+	mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
 	mTexturesList.emplace_back(&Asset::GetTexture("yes"));
 }
 

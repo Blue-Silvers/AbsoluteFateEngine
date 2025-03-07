@@ -12,9 +12,9 @@ MeshC::MeshC(Actor* pOwner) : Components(pOwner),
 							  mTextureIndex(0)
 {
 	mMesh = new Mesh();
-	if (RendererGl* pRendererGl = dynamic_cast<RendererGl*>(pOwner->GetScene()->GetRenderer()))
+	if (pOwner->GetScene()->GetRenderer()->GetType() == IRenderer::RendererType::OPENGL)
 	{
-		pRendererGl->AddMesh(this);
+		pOwner->GetScene()->GetRenderer()->AddMesh(this);
 	}
 	//pOwner->GetScene()->ActiveScene->GetRenderer()->AddMesh(this);
 	//Scene::ActiveScene->GetRenderer().AddMesh(this);
@@ -23,7 +23,6 @@ MeshC::MeshC(Actor* pOwner) : Components(pOwner),
 MeshC::~MeshC()
 {
 	mOwner->GetScene()->ActiveScene->GetRenderer()->RemoveMesh(this);
-	//Scene::ActiveScene->GetRenderer().RemoveMesh(this);
 }
 
 void MeshC::Draw(Matrix4Row viewProj)
@@ -35,15 +34,13 @@ void MeshC::Draw(Matrix4Row viewProj)
 		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", viewProj);
 		mMesh->GetShaderProgram().setMatrix4Row("uWorldTransform", wt);
 
-		/*Texture* t = mMesh->GetTexture(mTextureIndex);
+		Texture* t = mMesh->GetTexture(mTextureIndex);
 		if (t) 
 		{
 			t->SetActive();
-		}*/
-		/*Texture t = Asset::GetTexture("yes");
-		t.SetActive();
+		}
 
-		mMesh->GetVao()->SetActive();*/
+		mMesh->GetVao()->SetActive();
 		glDrawElements(GL_TRIANGLES, mMesh->GetVao()->GetIndicesCount(), GL_UNSIGNED_INT, nullptr);
 	}
 }

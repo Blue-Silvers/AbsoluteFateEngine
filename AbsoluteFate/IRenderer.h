@@ -41,8 +41,9 @@ public:
                 //Base fonction//
     virtual bool Initialize(Window& rWindow) = 0;
     //Mesh fonction
-    virtual void AddMesh(MeshC* pMesh) = 0;
-    virtual void RemoveMesh(MeshC* pMesh) = 0;
+    virtual void DrawAllMeshes() {}
+    virtual void AddMesh(MeshC* pMesh) {}
+    virtual void RemoveMesh(MeshC* pMesh) {}
     //Sprite fonction
     virtual void AddSprite(SpriteC* pSprite) = 0;
     virtual void RemoveSprite(SpriteC* pSprite) = 0;
@@ -50,7 +51,7 @@ public:
     //Draw fonction
     virtual void BeginDraw() = 0;
     virtual void Draw() = 0;
-    virtual void DrawAllMeshes() = 0;
+
     virtual void DrawAllSprites() = 0;
     virtual void EndDraw() = 0;
     //Close

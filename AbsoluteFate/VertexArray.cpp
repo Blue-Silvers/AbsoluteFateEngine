@@ -1,4 +1,5 @@
 #include "VertexArray.h"
+#include "Log.h"
 #include <glew.h>
 
 VertexArray::VertexArray() :

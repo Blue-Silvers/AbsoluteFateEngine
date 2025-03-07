@@ -12,18 +12,19 @@ void CubeTestA::Start()
 	SetScale(Vector3{ 1, 1, 1 }); //scale
 	SetPosition(Vector3{ 0, 0, 0 }); //location
 	//sprite component
-	MeshC* meshComponent = new MeshC(this);
-	Mesh mesh;
-	mesh.AddTexture(&Asset::GetTexture("yes"));
-	meshComponent->SetMesh(mesh);
-	AddComponent(meshComponent);
+	mMeshComponent = new MeshC(this);
+	//Mesh mesh = Mesh();
+	//mesh.AddTexture(&Asset::GetTexture("yes"));
+	//mMeshComponent->SetMesh(mesh);
+	AddComponent(mMeshComponent);
 }
 
 void CubeTestA::Update()
 {
-	GetTransform().RotateXInDegrees(GetTransform().GetRotationInDegrees().x + 1);
-	GetTransform().RotateYInDegrees(GetTransform().GetRotationInDegrees().y + 1);
-	GetTransform().RotateZInDegrees(GetTransform().GetRotationInDegrees().z +1);
+	mTransform.RotateXInDegrees(1);
+	mTransform.RotateYInDegrees(1);
+	mTransform.RotateZInDegrees(1);
+	
 }
 
 void CubeTestA::Destroy()

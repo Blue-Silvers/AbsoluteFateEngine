@@ -52,7 +52,7 @@ private:
 	VertexArray* mVao;
 	Shader mVertexShader;
 	Shader mFragmentShader;
-	ShaderProgram* mShaderProgram;
+	ShaderProgram mShaderProgram;
 
 public:
 
@@ -67,7 +67,7 @@ public:
 	VertexArray* GetVao() { return mVao; }
 	Shader GetVertexShader() { return mVertexShader; }
 	Shader GetFragmentShader() { return mFragmentShader; }
-	ShaderProgram& GetShaderProgram() { return *mShaderProgram; }
+	ShaderProgram& GetShaderProgram() { return mShaderProgram; }
 	Texture* GetTexture(int pTextureIndex) { return mTexturesList[pTextureIndex]; };
 
 	//Setters
@@ -89,7 +89,7 @@ public:
 	};
 	void SetShaderProgram(ShaderProgram& pShaderProgram)
 	{
-		mShaderProgram = &pShaderProgram;
+		mShaderProgram = pShaderProgram;
 	};
 };
 
