@@ -139,6 +139,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="CameraA.cpp" />
     <ClCompile Include="CubeTestA.cpp" />
     <ClCompile Include="DeathAngelA.cpp" />
     <ClCompile Include="AnimatedSpriteC.cpp" />
@@ -146,6 +147,7 @@
     <ClCompile Include="BoxCollider2DC.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Components.cpp" />
+    <ClCompile Include="FPSController.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GlTestScene.cpp" />
     <ClCompile Include="InputEvent.cpp" />
@@ -182,6 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
+    <ClInclude Include="CameraA.h" />
     <ClInclude Include="CubeTestA.h" />
     <ClInclude Include="DeathAngelA.h" />
     <ClInclude Include="AnimatedSpriteC.h" />
@@ -190,6 +193,7 @@
     <ClInclude Include="BoxCollider2DC.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Components.h" />
+    <ClInclude Include="FPSController.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GlTestScene.h" />
     <ClInclude Include="IInputListener.h" />

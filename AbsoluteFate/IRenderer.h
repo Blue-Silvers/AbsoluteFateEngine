@@ -44,6 +44,7 @@ public:
     virtual void DrawAllMeshes() {}
     virtual void AddMesh(MeshC* pMesh) {}
     virtual void RemoveMesh(MeshC* pMesh) {}
+    virtual void SetViewMatrix(Matrix4Row pView) {};
     //Sprite fonction
     virtual void AddSprite(SpriteC* pSprite) = 0;
     virtual void RemoveSprite(SpriteC* pSprite) = 0;

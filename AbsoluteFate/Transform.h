@@ -30,14 +30,19 @@ public:
 	void ComputeWorldTransform();
 
 	//Directions
-	Vector3 Right() const { return Vector3(Maths::Cos(mRotation.z), -Maths::Sin(mRotation.z), 0); }
-	Vector3 Up() const { return Vector3(-Maths::Sin(mRotation.z), Maths::Cos(mRotation.z), 0); }
+	Vector2 Right2D() const { return Vector2(Maths::Cos(mRotation.z), -Maths::Sin(mRotation.z)); }
+	Vector2 Up2D() const { return Vector2(-Maths::Sin(mRotation.z), Maths::Cos(mRotation.z)); }
+
+	Vector3 Right() const { return Vector3::Transform(Vector3::unitY, mRotation); }
+	Vector3 Up() const { return Vector3::Transform(Vector3::unitZ, mRotation); }
+	Vector3 Forward() const { return Vector3::Transform(Vector3::unitX, mRotation); }
 
 	//Rotator
 	void RotateXInDegrees(float pDegrees);
 	void RotateYInDegrees(float pDegrees);
 	void RotateZInDegrees(float pDegrees);
 	void Rotate2dInDegrees(float pDegrees);
+	void Rotate(float pRotation, Vector3 pAxis);
 
 	//Getter
 	Vector3 GetScale() const { return mScale; };

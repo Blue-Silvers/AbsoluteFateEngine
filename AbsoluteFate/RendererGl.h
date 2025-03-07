@@ -12,7 +12,7 @@ private:
 	VertexArray* mSpriteVao;
 	SDL_GLContext mContext;
 	ShaderProgram* mSpriteShaderProgram;
-	Matrix4Row mSpriteViewProj;
+	//Matrix4Row mSpriteViewProj;
 	Matrix4Row mView;
 	Matrix4Row mProj;
 
@@ -26,6 +26,7 @@ public:
 
 					//Base fonction//
 	bool Initialize(Window& rWindow) override;
+	void SetViewMatrix(Matrix4Row pView) override;
 	//Draw fonction
 	void BeginDraw() override;
 	void Draw() override;

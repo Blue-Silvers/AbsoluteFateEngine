@@ -1,10 +1,12 @@
 #pragma once
 #pragma once
 #include "Components.h"
-#include "Vector2.h"
+#include "Vector3.h"
 
 enum Direction
 {
+	MOVE_FORWARD,
+	MOVE_BACK,
 	MOVE_UP,
 	MOVE_DOWN,
 	MOVE_RIGHT,
@@ -15,7 +17,7 @@ enum Direction
 class MovingC : public Components
 {
 protected:
-	Vector2 mSpeed;
+	Vector3 mSpeed;
 	Direction currentDirection = MOVE_STOP;
 	Direction lastDirection = MOVE_STOP;
 
@@ -25,9 +27,9 @@ public:
 	MovingC(const MovingC&) = delete;
 	MovingC& operator= (const MovingC&) = delete;
 
-	Vector2 GetSpeed() const { return mSpeed; }
+	Vector3 GetSpeed() const { return mSpeed; }
 	Direction GetCurrentDirection() const { return currentDirection; }
-	void SetSpeed(Vector2 pSpeed);
+	void SetSpeed(Vector3 pSpeed);
 
 	void Update() override;
 	virtual void OnStart() {};

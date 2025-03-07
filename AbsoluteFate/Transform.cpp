@@ -44,3 +44,11 @@ void Transform::Rotate2dInDegrees(float pDegrees)
 	mNeedsUpdate = true;
 	ComputeWorldTransform();
 }
+
+void Transform::Rotate(float pRotation, Vector3 pAxis)
+{
+	Quaternion increment(pAxis, pRotation);
+	mRotation = Quaternion::Concatenate(mRotation, increment);
+	mNeedsUpdate = true;
+	ComputeWorldTransform();
+}

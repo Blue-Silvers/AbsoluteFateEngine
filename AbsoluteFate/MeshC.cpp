@@ -47,7 +47,14 @@ void MeshC::Draw(Matrix4Row viewProj)
 
 void MeshC::SetMesh(Mesh& pMesh)
 {
-	mMesh = &pMesh;
+	if (mOwner->GetScene()->GetRenderer()->GetType() == IRenderer::RendererType::OPENGL)
+	{
+		mOwner->GetScene()->GetRenderer()->RemoveMesh(this);//Delete obselet mesh
+	
+		mMesh = &pMesh;
+
+		mOwner->GetScene()->GetRenderer()->AddMesh(this);//Add new mesh in renderer queu
+	}
 }
 
 void MeshC::SetTextureIndex(int pTextureIndex)

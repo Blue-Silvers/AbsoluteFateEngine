@@ -10,12 +10,9 @@ void CubeTestA::Start()
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Ressources/meme.png", "yes");
 	//Actor
 	SetScale(Vector3{ 1, 1, 1 }); //scale
-	SetPosition(Vector3{ 0, 0, 0 }); //location
+	SetPosition(Vector3{ 0, 0, 2 }); //location
 	//sprite component
 	mMeshComponent = new MeshC(this);
-	//Mesh mesh = Mesh();
-	//mesh.AddTexture(&Asset::GetTexture("yes"));
-	//mMeshComponent->SetMesh(mesh);
 	AddComponent(mMeshComponent);
 }
 

@@ -30,7 +30,7 @@ void DeathAngelA::Start()
 	AddComponent(animation);
 	//move component
 	PlayerController* movement = new PlayerController(this);
-	movement->SetSpeed(Vector2{ 0, 0 });
+	movement->SetSpeed(Vector3{0, 0, 0 });
 	AddComponent(movement);
 	//Box collider component
 

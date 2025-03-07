@@ -1,4 +1,16 @@
-﻿  GlTestScene.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
-  AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
+﻿  CameraA.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'CameraA.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'CameraA.cpp')
+  
+  FPSController.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'FPSController.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file 'FPSController.cpp')
+  
+  Generating Code...
+  AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

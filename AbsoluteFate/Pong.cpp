@@ -37,7 +37,7 @@ void Pong::Start()
 	actor->AddComponent(animation);
 
 	MovingC* movement = new MovingC(actor);
-	movement->SetSpeed(Vector2{ 10, 0 });
+	movement->SetSpeed(Vector3{0, 10, 0 });
 	actor->AddComponent(movement);
 
 	AddActor(actor);

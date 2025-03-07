@@ -78,6 +78,12 @@
     <Filter Include="Source Files\Parameter\Matrix">
       <UniqueIdentifier>{bfc727fc-2fc2-433e-92d6-0eb6acd48c2b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Patern">
+      <UniqueIdentifier>{cd2f8ca2-ec66-40d6-964b-021b4e21760e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Patern">
+      <UniqueIdentifier>{1223140a-2734-4722-813a-c15d1d2e70ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DeathAngelA.cpp">
@@ -140,9 +146,6 @@
     <ClCompile Include="Window.cpp">
       <Filter>Source Files\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerController.cpp">
-      <Filter>Source Files\Content</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -202,6 +205,15 @@
     </ClCompile>
     <ClCompile Include="CubeTestA.cpp">
       <Filter>Source Files\Content\OpenGlTest</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Source Files\Patern</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FPSController.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -274,9 +286,6 @@
     <ClInclude Include="InputManager.h">
       <Filter>Header Files\Input</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerController.h">
-      <Filter>Header Files\Content</Filter>
-    </ClInclude>
     <ClInclude Include="IRenderer.h">
       <Filter>Header Files\Manager</Filter>
     </ClInclude>
@@ -342,6 +351,15 @@
     </ClInclude>
     <ClInclude Include="CubeTestA.h">
       <Filter>Header Files\Content\OpenGlTest</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Header Files\Patern</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FPSController.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

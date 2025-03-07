@@ -39,10 +39,6 @@ public:
 	void DrawSprite(Actor& pActor, const Texture& pTexture, Rectangle pSourceRect, Vector2 pOrigin, IRenderer::Flip pFlip = IRenderer::Flip::None) const override;
 	void AddSprite(SpriteC* pSprite) override;
 	void RemoveSprite(SpriteC* pSprite) override;
-	//Draw Meshs
-	void DrawAllMeshes() override {};
-	void AddMesh(MeshC* pMesh) override {};
-	void RemoveMesh(MeshC* pMesh) override {};
 	//Close
 	void Close() override;
 	//Getter

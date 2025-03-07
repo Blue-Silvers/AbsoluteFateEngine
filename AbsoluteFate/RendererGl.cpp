@@ -7,11 +7,12 @@ RendererGl::RendererGl() :  mWindow(nullptr),
 							mSpriteVao(nullptr), 
 							mContext(nullptr), 
 							mSpriteShaderProgram(nullptr),
-							mSpriteViewProj(Matrix4Row::CreateSimpleViewProj(800, 800)),
+							//mSpriteViewProj(Matrix4Row::CreateSimpleViewProj(800, 800)),
 							mView(Matrix4Row::CreateLookAt(Vector3(0, 0, 5), Vector3::unitX, Vector3::unitZ)),
 							mProj(Matrix4Row::CreatePerspectiveFOV(70.0f, 800, 800, 0.01f, 10000.0f))
 
 {
+	mSpriteViewProj = Matrix4Row::CreateSimpleViewProj(800, 800);
 }
 
 RendererGl::~RendererGl()
@@ -58,6 +59,11 @@ bool RendererGl::Initialize(Window& rWindow)
 	mProj = Matrix4Row::CreatePerspectiveFOV(70.0f, mWindow->GetDimensions().x, mWindow->GetDimensions().y, 0.01f, 10000.0f);
 
 	return true;
+}
+
+void RendererGl::SetViewMatrix(Matrix4Row pView)
+{
+	mView = pView;
 }
 
 //Set shader program
