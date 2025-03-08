@@ -210,10 +210,10 @@
       <Filter>Source Files\Patern</Filter>
     </ClCompile>
     <ClCompile Include="CameraA.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Patern</Filter>
     </ClCompile>
     <ClCompile Include="FPSController.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Patern</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -355,14 +355,14 @@
     <ClInclude Include="PlayerController.h">
       <Filter>Header Files\Patern</Filter>
     </ClInclude>
-    <ClInclude Include="CameraA.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FPSController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="tiny_obj_loader.h">
       <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraA.h">
+      <Filter>Header Files\Patern</Filter>
+    </ClInclude>
+    <ClInclude Include="FPSController.h">
+      <Filter>Header Files\Patern</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

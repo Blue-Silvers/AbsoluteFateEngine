@@ -23,11 +23,11 @@ void Pong::Start()
 	pongBall.Start(playerPaddle, aiPaddle);
 
 		//Actor
-	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Idle/FrontIdle", "FrontIdle");
-	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/FrontWalk", "FrontWalk");
-	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/BackWalk", "BackWalk");
-	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/LeftWalk", "LeftWalk");
-	Asset::LoadAllTextureFromFolder(*mRenderer, "Ressources/Anim/DeathAngel/Walk/RightWalk", "RightWalk");
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Resources/Anim/DeathAngel/Idle/FrontIdle", "FrontIdle");
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Resources/Anim/DeathAngel/Walk/FrontWalk", "FrontWalk");
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Resources/Anim/DeathAngel/Walk/BackWalk", "BackWalk");
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Resources/Anim/DeathAngel/Walk/LeftWalk", "LeftWalk");
+	Asset::LoadAllTextureFromFolder(*mRenderer, "Resources/Anim/DeathAngel/Walk/RightWalk", "RightWalk");
 	DeathAngelA* actor = new DeathAngelA();
 	actor->AttachScene(this);
 	actor->SetScale2D(Vector2{ 1, 1 });

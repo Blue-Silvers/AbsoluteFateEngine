@@ -9,14 +9,14 @@
 void DeathAngelA::Start()
 {
 	//load texture
-	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Idle/FrontIdle", "FrontIdle");
-	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Idle/BackIdle", "BackIdle");
-	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Idle/RightIdle", "RightIdle");
-	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Idle/LeftIdle", "LeftIdle");
-	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Walk/FrontWalk", "FrontWalk");
-	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Walk/BackWalk", "BackWalk");
-	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Walk/LeftWalk", "LeftWalk");
-	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Ressources/Anim/DeathAngel/Walk/RightWalk", "RightWalk");
+	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Resources/Anim/DeathAngel/Idle/FrontIdle", "FrontIdle");
+	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Resources/Anim/DeathAngel/Idle/BackIdle", "BackIdle");
+	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Resources/Anim/DeathAngel/Idle/RightIdle", "RightIdle");
+	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Resources/Anim/DeathAngel/Idle/LeftIdle", "LeftIdle");
+	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Resources/Anim/DeathAngel/Walk/FrontWalk", "FrontWalk");
+	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Resources/Anim/DeathAngel/Walk/BackWalk", "BackWalk");
+	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Resources/Anim/DeathAngel/Walk/LeftWalk", "LeftWalk");
+	Asset::LoadAllTextureFromFolder(*mSceneAttached->GetRenderer(), "Resources/Anim/DeathAngel/Walk/RightWalk", "RightWalk");
 
 	//Actor
 	SetScale2D(Vector2{ 1, 1 }); //scale

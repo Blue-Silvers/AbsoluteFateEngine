@@ -7,7 +7,7 @@
 void PlaneTextureOpenGlA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Ressources/meme.png", "yes");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/meme.png", "yes");
 	//Actor
 	SetScale2D(Vector2{ 0.2, 0.2 }); //scale
 	SetPosition2D(Vector2{ -300, 300 }); //location

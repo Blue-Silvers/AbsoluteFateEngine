@@ -7,7 +7,7 @@
 void CubeTestA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Ressources/meme.png", "yes");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/meme.png", "yes");
 	//Actor
 	SetScale(Vector3{ 1, 1, 1 }); //scale
 	SetPosition(Vector3{ 0, 0, 2 }); //location

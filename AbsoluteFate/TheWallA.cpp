@@ -8,7 +8,7 @@
 void TheWallA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Ressources/meme.png", "yes");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/meme.png", "yes");
 	//Actor
 	SetScale2D(Vector2{ 1, 1 }); //scale
 	SetPosition2D(Vector2{ 1000, 400}); //location
