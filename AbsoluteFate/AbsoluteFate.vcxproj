@@ -225,6 +225,7 @@
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TheWallA.h" />
     <ClInclude Include="Time.h" />
+    <ClInclude Include="tiny_obj_loader.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector3.h" />

@@ -4,7 +4,8 @@
 class CameraA : public Actor
 {
 private:
-
+	int mMouseDeltaX;
+	int mMouseDeltaY;
 public:
 	Scene* GetScene()
 	{

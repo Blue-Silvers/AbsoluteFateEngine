@@ -19,6 +19,10 @@ FPSController::FPSController(Actor* pActor) : MovingC(pActor)
 
 	InputManager::Instance().SubscribeTo(SDLK_SPACE, this);
 	InputManager::Instance().SubscribeTo(SDLK_LCTRL, this);
+
+	InputManager::Instance().SubscribeTo(SDLK_ESCAPE, this);
+	InputManager::Instance().SubscribeTo(SDLK_RETURN, this);
+	SDL_SetRelativeMouseMode(SDL_FALSE);
 }
 
 void FPSController::OnNotify(SDL_Event& pEvent)
@@ -62,14 +66,35 @@ void FPSController::OnNotify(SDL_Event& pEvent)
 		case SDLK_LCTRL:
 			SetSpeed(Vector3{ 0, 0, -mMoveSpeed });
 			break;
-
+			//Flip flop show mouse cursor
+		case SDLK_RETURN:
+			if (SDL_GetRelativeMouseMode() == SDL_TRUE) 
+			{
+				SDL_SetRelativeMouseMode(SDL_FALSE);
+			}
+			else
+			{
+				SDL_SetRelativeMouseMode(SDL_TRUE);
+			}
+			break;
+		case SDLK_ESCAPE:
+			if (SDL_GetRelativeMouseMode() == SDL_TRUE)
+			{
+				SDL_SetRelativeMouseMode(SDL_FALSE);
+			}
+			else
+			{
+				SDL_SetRelativeMouseMode(SDL_TRUE);
+			}
+			break;
 		default:
 
 			break;
 		}
 		break;
-	case SDL_KEYUP:
 
+	case SDL_KEYUP:
+		
 		SetSpeed(Vector3{ 0, 0, 0 });
 		break;
 	default:

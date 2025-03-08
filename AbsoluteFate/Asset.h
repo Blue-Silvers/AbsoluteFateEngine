@@ -1,8 +1,11 @@
 #pragma once
+#define TINYOBJLOADER_IMPLEMENTATION
+
 #include "Texture.h"
 #include <map>
 #include <string>
 #include <vector>
+
 using namespace std;
 
 //SINGLETON CLASS

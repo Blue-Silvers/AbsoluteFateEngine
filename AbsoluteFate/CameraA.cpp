@@ -2,6 +2,7 @@
 
 #include "IRenderer.h"
 #include "FPSController.h"
+#include "Time.h"
 
 #include "Log.h"
 
@@ -30,9 +31,18 @@ void CameraA::Update()
 	Vector3 target = mTransform.GetPosition() + mTransform.Forward() * 100.0f;
 	Vector3 up = Vector3::unitZ;
 	//Log::Info("" + std::to_string(camPosition.x) + ", " + std::to_string(camPosition.y) + ", " + std::to_string(camPosition.z));
+	SDL_GetRelativeMouseState(&mMouseDeltaX, &mMouseDeltaY);
+
+					//don't work//
+	if (mMouseDeltaX != 0) 
+	{
+		Log::Info("" + std::to_string(mMouseDeltaX) + ", " + std::to_string(mMouseDeltaY));
+		mTransform.Rotate(mMouseDeltaX, Vector3::unitY);
+		mTransform.ComputeWorldTransform();
+	}
+					/////////////
 
 	Matrix4Row view = Matrix4Row::CreateLookAt(camPosition, target, up);
-	//Matrix4Row::CreateLookAt(mTransform.GetPosition(), target, Vector3::unitZ);
 	if (GetScene()->GetRenderer()->GetType() == IRenderer::RendererType::OPENGL)
 	{
 		GetScene()->GetRenderer()->SetViewMatrix(view);
