@@ -64,7 +64,7 @@ private:
 	std::vector<Vertex> mVertices;
 
 public:
-
+	Mesh();
 	Mesh(std::vector<Vertex> pVertices);
 	~Mesh();
 

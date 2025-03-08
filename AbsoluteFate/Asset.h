@@ -2,6 +2,7 @@
 #define TINYOBJLOADER_IMPLEMENTATION
 
 #include "Texture.h"
+#include "Mesh.h"
 #include <map>
 #include <string>
 #include <vector>
@@ -14,7 +15,7 @@ class Asset
 private:
 	Asset() = default;
 	static Texture LoadTextureFromFile(IRenderer& pRenderer, const string& pFileName);
-
+	static Mesh LoadMeshFromFile(const string& pFileName);
 public:
 	//Storage for future References
 	static map<string, Texture> mTexturesMap;
