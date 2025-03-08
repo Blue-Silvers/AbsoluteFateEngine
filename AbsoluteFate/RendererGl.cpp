@@ -52,7 +52,8 @@ bool RendererGl::Initialize(Window& rWindow)
 		Log::Error(LogType::Video, "Failed to initialize SDL_Image");
 	}
 
-	mSpriteVao = new VertexArray(vertices, 4, indices, 6);
+	//mSpriteVao = new VertexArray(vertices, 4, indices, 6);
+	mSpriteVao = new VertexArray(spriteVertices, 4);
 	mSpriteViewProj = Matrix4Row::CreateSimpleViewProj(mWindow->GetDimensions().x, mWindow->GetDimensions().y);
 
 	mView = Matrix4Row::CreateLookAt(Vector3(0, 0, 5), Vector3::unitX, Vector3::unitZ);
@@ -124,7 +125,8 @@ void RendererGl::DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourc
 	Matrix4Row world = scaleMat * pActor.GetTransform().GetWorldTransform();
 	mSpriteShaderProgram->setMatrix4Row("uWorldTransform", world);
 	pTex.SetActive();
-	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+	//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
 }
 
 void RendererGl::AddSprite(SpriteC* pSprite)

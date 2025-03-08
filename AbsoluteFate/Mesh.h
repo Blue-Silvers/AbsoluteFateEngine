@@ -45,6 +45,14 @@ constexpr unsigned int cubeIndices[] = {
    20, 21, 22, 21, 23, 22	// FTop face
 };
 
+struct Vertex
+{
+	Vector3 position{ 0,0,0 };
+	Vector3 normal{ 0,0,0 };
+	Vector2 texCoord{ 0 ,0 };
+
+};
+
 class Mesh
 {
 private:
@@ -53,10 +61,11 @@ private:
 	Shader mVertexShader;
 	Shader mFragmentShader;
 	ShaderProgram mShaderProgram;
+	std::vector<Vertex> mVertices;
 
 public:
 
-	Mesh();
+	Mesh(std::vector<Vertex> pVertices);
 	~Mesh();
 
 	void Unload();
@@ -71,6 +80,8 @@ public:
 	Texture* GetTexture(int pTextureIndex) { return mTexturesList[pTextureIndex]; };
 
 	//Setters
+	float* ToVerticeArray();
+
 	void SetTextureList(std::vector<Texture*> pTextureList) 
 	{
 		mTexturesList = pTextureList;
