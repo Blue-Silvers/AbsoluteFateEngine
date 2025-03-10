@@ -126,7 +126,7 @@ void RendererGl::DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourc
 	mSpriteShaderProgram->setMatrix4Row("uWorldTransform", world);
 	pTex.SetActive();
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
-	//glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+	//glDrawArrays(GL_TRIANGLES, 0, 4);
 }
 
 void RendererGl::AddSprite(SpriteC* pSprite)

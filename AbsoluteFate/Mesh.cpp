@@ -3,7 +3,7 @@
 
 Mesh::Mesh() : mVao(nullptr)
 {
-	mVao = new VertexArray(cubeVertices, 28, cubeIndices, 36);
+	//mVao = new VertexArray(cubeVertices, 28, cubeIndices, 36);
 	mVertexShader.Load("BasicVert.shader", ShaderType::VERTEX);
 	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
 	mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
@@ -16,12 +16,7 @@ Mesh::Mesh(std::vector<Vertex> pVertices) : mVertices(std::move(pVertices)),mVao
 	mVertexShader.Load("BasicVert.shader", ShaderType::VERTEX);
 	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
 	mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
-	//mShaderProgram = new ShaderProgram();
-	/*mVao = new VertexArray(cubeVertices, 28, cubeIndices, 36);
-	mVertexShader.Load("BasicVert.shader", ShaderType::VERTEX);
-	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
-	mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });*/
-	//mTexturesList.emplace_back(&Asset::GetTexture("yes"));
+	mTexturesList.emplace_back(&Asset::GetTexture("yes"));
 }
 
 Mesh::~Mesh()
@@ -51,7 +46,7 @@ float* Mesh::ToVerticeArray()
 
 void Mesh::Unload()
 {
-	delete mVao;
+	//delete mVao;
 	mVao = nullptr;
 }
 

@@ -1,4 +1,4 @@
-#define TINYOBJLOADER_IMPLEMENTATION
+
 #include "Asset.h"
 #include "tiny_obj_loader.h"
 #include "Log.h"
@@ -7,6 +7,7 @@
 
 map<string, Texture> Asset::mTexturesMap = {};
 map<string, vector<Texture> > Asset::mAnimationMap = {};
+map<string, Mesh> Asset::mMeshMap = {};
 
 Texture Asset::LoadTextureFromFile(IRenderer& pRenderer, const string& pFileName)
 {
@@ -22,7 +23,7 @@ Mesh Asset::LoadMeshFromFile(const string& pFileName)
 	std::vector<tinyobj::shape_t> shapes;
 	std::vector<tinyobj::material_t> materials;
 	std::string warning, errors;
-	std::string dir = "Meshes/";
+	//std::string dir = "Meshes/";
 	bool success = tinyobj::LoadObj(&attributes, &shapes, &materials, &warning, &errors, +pFileName.c_str());
 	if (!success)
 	{
@@ -63,6 +64,23 @@ Mesh Asset::LoadMeshFromFile(const string& pFileName)
 
 	}
 	return Mesh(vertices);
+}
+
+Mesh Asset::LoadMesh(const string& pFileName, const string& pMeshName)
+{
+	mMeshMap[pMeshName] = LoadMeshFromFile(pFileName);
+	return mMeshMap[pMeshName];
+}
+
+Mesh& Asset::GetMesh(const string& pMeshName)
+{
+	if (mMeshMap.find(pMeshName) == mMeshMap.end())
+	{
+		ostringstream loadError;
+		loadError << "Texture " << pMeshName << " doesn't exist in assets manageer\n";
+		Log::Error(LogType::Application, loadError.str());
+	}
+	return mMeshMap[pMeshName];
 }
 
 Texture Asset::LoadTexture(IRenderer& pRenderer, const string& pFileName, const string& pTextureName)

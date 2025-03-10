@@ -26,17 +26,17 @@ void GlTestScene::Start()
 	}
 
 	//Actor
-	CubeTestA* cubeTestA = new CubeTestA();
+	/*CubeTestA* cubeTestA = new CubeTestA();
 	cubeTestA->AttachScene(this);
-	AddActor(cubeTestA);
+	AddActor(cubeTestA);*/
 
 	SphereTestA* sphereTestA = new SphereTestA();
 	sphereTestA->AttachScene(this);
 	AddActor(sphereTestA);
 
-	PlaneTextureOpenGlA* planeTextureOpenGlA = new PlaneTextureOpenGlA();
+	/*PlaneTextureOpenGlA* planeTextureOpenGlA = new PlaneTextureOpenGlA();
 	planeTextureOpenGlA->AttachScene(this);
-	AddActor(planeTextureOpenGlA);
+	AddActor(planeTextureOpenGlA);*/
 
 	CameraA* cam = new CameraA();
 	cam->AttachScene(this);
@@ -62,7 +62,11 @@ void GlTestScene::Update()
 //Drawing
 void GlTestScene::Render()
 {
-	Scene::Render();
+	//Scene::Render();
+	for (Actor* actor : mActorsList)
+	{
+		actor->Render();
+	}
 }
 
 void GlTestScene::Close()

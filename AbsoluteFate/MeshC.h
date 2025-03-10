@@ -14,6 +14,7 @@ public:
 	virtual ~MeshC();
 	virtual void Draw(Matrix4Row viewProj);
 	virtual void SetMesh(Mesh& pMesh);
+	virtual Mesh* GetMesh() { return mMesh; };
 	void SetTextureIndex(int pTextureIndex);
 
 	void OnStart() override {};

@@ -8,13 +8,17 @@ void SphereTestA::Start()
 {
 	//load texture
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/meme.png", "yes");
-	mMesh = Asset::LoadMeshFromFile("Resources/3D_Models/sphere.obj");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/pokeball.png", "Pokeball");
+	Asset::LoadMesh("Resources/3D_Models/sphere.obj", "sphere");
 	//Actor
 	SetScale(Vector3{ 1, 1, 1 }); //scale
 	SetPosition(Vector3{ 0, 4, 0 }); //location
-	//sprite component
+
 	//mMeshComponent = new MeshC(this);
-	mMeshComponent = new MeshC(this, &mMesh);
+
+	mMeshComponent = new MeshC(this, &Asset::GetMesh("sphere"));
+	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("Pokeball")});
+
 	AddComponent(mMeshComponent);
 }
 

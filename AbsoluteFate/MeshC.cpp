@@ -52,7 +52,8 @@ void MeshC::Draw(Matrix4Row viewProj)
 		}
 
 		mMesh->GetVao()->SetActive();
-		glDrawElements(GL_TRIANGLES, mMesh->GetVao()->GetIndicesCount(), GL_UNSIGNED_INT, nullptr);
+		glDrawArrays(GL_TRIANGLES, 0, mMesh->GetVerticeCount());
+		//glDrawElements(GL_TRIANGLES, mMesh->GetVao()->GetIndicesCount(), GL_UNSIGNED_INT, nullptr);
 	}
 }
 

@@ -3,7 +3,7 @@
 #include "Texture.h"
 #include "ShaderProgram.h"
 
-constexpr float cubeVertices[] = {
+/*constexpr float cubeVertices[] = {
 	//Coordonate:		  Uv pos: R/L   T/B
 	-0.5f, -0.5f, -0.5f,		  0.0f, 0.0f,   // Front face
 	 0.5f, -0.5f, -0.5f,		  1.0f, 0.0f,
@@ -43,7 +43,7 @@ constexpr unsigned int cubeIndices[] = {
    12, 13, 14, 13, 15, 14,	// Right face
    16, 17, 18, 17, 19, 18,	// Bottom face
    20, 21, 22, 21, 23, 22	// FTop face
-};
+};*/
 
 struct Vertex
 {
@@ -78,6 +78,9 @@ public:
 	Shader GetFragmentShader() { return mFragmentShader; }
 	ShaderProgram& GetShaderProgram() { return mShaderProgram; }
 	Texture* GetTexture(int pTextureIndex) { return mTexturesList[pTextureIndex]; };
+	int GetVerticeCount() {
+		return mVertices.size();
+	}
 
 	//Setters
 	float* ToVerticeArray();

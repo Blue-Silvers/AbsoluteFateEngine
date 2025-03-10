@@ -36,7 +36,7 @@ void CameraA::Update()
 					//don't work//
 	if (mMouseDeltaX != 0) 
 	{
-		Log::Info("" + std::to_string(mMouseDeltaX) + ", " + std::to_string(mMouseDeltaY));
+		//Log::Info("" + std::to_string(mMouseDeltaX) + ", " + std::to_string(mMouseDeltaY));
 		mTransform.Rotate(mMouseDeltaX, Vector3::unitY);
 		mTransform.ComputeWorldTransform();
 	}
