@@ -20,6 +20,17 @@ MeshC::MeshC(Actor* pOwner) : Components(pOwner),
 	//Scene::ActiveScene->GetRenderer().AddMesh(this);
 }
 
+MeshC::MeshC(Actor* pOwner, Mesh* pMesh) : Components(pOwner),
+										  mMesh(nullptr),
+										  mTextureIndex(0)
+{
+	mMesh = pMesh;
+	if (pOwner->GetScene()->GetRenderer()->GetType() == IRenderer::RendererType::OPENGL)
+	{
+		pOwner->GetScene()->GetRenderer()->AddMesh(this);
+	}
+}
+
 MeshC::~MeshC()
 {
 	mOwner->GetScene()->ActiveScene->GetRenderer()->RemoveMesh(this);

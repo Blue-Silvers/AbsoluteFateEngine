@@ -10,6 +10,7 @@ protected:
 
 public:
 	MeshC(Actor* pOwner);
+	MeshC(Actor* pOwner, Mesh* pMesh);
 	virtual ~MeshC();
 	virtual void Draw(Matrix4Row viewProj);
 	virtual void SetMesh(Mesh& pMesh);

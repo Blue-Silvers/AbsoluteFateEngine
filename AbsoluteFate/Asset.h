@@ -15,7 +15,7 @@ class Asset
 private:
 	Asset() = default;
 	static Texture LoadTextureFromFile(IRenderer& pRenderer, const string& pFileName);
-	static Mesh LoadMeshFromFile(const string& pFileName);
+	//static Mesh LoadMeshFromFile(const string& pFileName);
 public:
 	//Storage for future References
 	static map<string, Texture> mTexturesMap;
@@ -23,6 +23,7 @@ public:
 
 	static Texture LoadTexture(IRenderer& pRenderer, const string& pFileName, const string& pTextureName);
 	static vector<Texture> LoadAllTextureFromFolder(IRenderer& pRenderer, const string& pFileName, const string& pAnimationName);
+	static Mesh LoadMeshFromFile(const string& pFileName);
 	static Texture& GetTexture(const string& pTextureName);
 	static vector<Texture>& GetAnimation(const string& pAnimationName);
 	static void ClearMap();

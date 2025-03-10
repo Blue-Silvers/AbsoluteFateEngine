@@ -215,6 +215,9 @@
     <ClCompile Include="FPSController.cpp">
       <Filter>Source Files\Patern</Filter>
     </ClCompile>
+    <ClCompile Include="SphereTestA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DeathAngelA.h">
@@ -363,6 +366,9 @@
     </ClInclude>
     <ClInclude Include="FPSController.h">
       <Filter>Header Files\Patern</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereTestA.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
