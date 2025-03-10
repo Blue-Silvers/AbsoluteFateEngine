@@ -36,6 +36,9 @@ public:
 	Vector3 Right() const { return Vector3::Transform(Vector3::unitY, mRotation); }
 	Vector3 Up() const { return Vector3::Transform(Vector3::unitZ, mRotation); }
 	Vector3 Forward() const { return Vector3::Transform(Vector3::unitX, mRotation); }
+	//Vector3 Right() const { return Vector3(-mRotation.AsMatrixRow().mat[0][0], -mRotation.AsMatrixRow().mat[1][0], -mRotation.AsMatrixRow().mat[2][0]); }
+	//Vector3 Up() const { return Vector3(mRotation.AsMatrixRow().mat[0][2], mRotation.AsMatrixRow().mat[1][2], mRotation.AsMatrixRow().mat[2][2]); }
+	//Vector3 Forward() const { return Vector3(mRotation.AsMatrixRow().mat[0][1], mRotation.AsMatrixRow().mat[1][1], mRotation.AsMatrixRow().mat[2][1]); }
 
 	//Rotator
 	void RotateXInDegrees(float pDegrees);

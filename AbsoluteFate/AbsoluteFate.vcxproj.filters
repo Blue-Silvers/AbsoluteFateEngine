@@ -86,9 +86,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DeathAngelA.cpp">
-      <Filter>Source Files\Content</Filter>
-    </ClCompile>
     <ClCompile Include="AnimatedSpriteC.cpp">
       <Filter>Source Files\Component</Filter>
     </ClCompile>
@@ -215,14 +212,14 @@
     <ClCompile Include="FPSController.cpp">
       <Filter>Source Files\Patern</Filter>
     </ClCompile>
+    <ClCompile Include="DeathAngelA.cpp">
+      <Filter>Source Files\Content\Platformer</Filter>
+    </ClCompile>
     <ClCompile Include="SphereTestA.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\OpenGlTest</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DeathAngelA.h">
-      <Filter>Header Files\Content</Filter>
-    </ClInclude>
     <ClInclude Include="AnimatedSpriteC.h">
       <Filter>Header Files\Component</Filter>
     </ClInclude>
@@ -368,7 +365,10 @@
       <Filter>Header Files\Patern</Filter>
     </ClInclude>
     <ClInclude Include="SphereTestA.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\OpenGlTest</Filter>
+    </ClInclude>
+    <ClInclude Include="DeathAngelA.h">
+      <Filter>Header Files\Content\Platformer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

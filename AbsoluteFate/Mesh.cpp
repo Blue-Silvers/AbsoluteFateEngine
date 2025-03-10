@@ -16,7 +16,7 @@ Mesh::Mesh(std::vector<Vertex> pVertices) : mVertices(std::move(pVertices)),mVao
 	mVertexShader.Load("BasicVert.shader", ShaderType::VERTEX);
 	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
 	mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
-	mTexturesList.emplace_back(&Asset::GetTexture("yes"));
+	//mTexturesList.emplace_back(&Asset::GetTexture("yes"));
 }
 
 Mesh::~Mesh()

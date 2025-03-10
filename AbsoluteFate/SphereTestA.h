@@ -6,7 +6,8 @@ class SphereTestA : public Actor
 {
 private:
 	MeshC* mMeshComponent;
-	Mesh mMesh;
+	int mMouseDeltaX;
+	int mMouseDeltaY;
 public:
 	Scene* GetScene()
 	{
