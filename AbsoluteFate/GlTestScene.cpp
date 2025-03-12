@@ -1,6 +1,7 @@
 #include "GlTestScene.h"
 #include "RendererGl.h"
 #include "PlaneTextureOpenGlA.h"
+#include "FPSCameraA.h"
 #include "CubeTestA.h"
 #include "SphereTestA.h"
 #include "CameraA.h"
@@ -29,6 +30,10 @@ void GlTestScene::Start()
 	cubeTestA->AttachScene(this);
 	AddActor(cubeTestA);*/
 
+	CameraA* cam = new CameraA();
+	cam->AttachScene(this);
+	AddActor(cam);
+
 	SphereTestA* sphereTestA = new SphereTestA();
 	sphereTestA->AttachScene(this);
 	AddActor(sphereTestA);
@@ -37,9 +42,7 @@ void GlTestScene::Start()
 	planeTextureOpenGlA->AttachScene(this);
 	AddActor(planeTextureOpenGlA);
 
-	CameraA* cam = new CameraA();
-	cam->AttachScene(this);
-	AddActor(cam);
+
 
 	Scene::Start();
 }

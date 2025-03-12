@@ -1,6 +1,5 @@
 #include "SphereTestA.h"
 
-#include "MeshC.h"
 #include "Asset.h"
 #include <iostream>
 
@@ -26,26 +25,8 @@ void SphereTestA::Start()
 
 void SphereTestA::Update()
 {
-	SDL_GetRelativeMouseState(&mMouseDeltaX, &mMouseDeltaY);
-
-	//don't work//
-	if (mMouseDeltaX != 0)
-	{
-		//Log::Info("" + std::to_string(mMouseDeltaX) + ", " + std::to_string(mMouseDeltaY));
-		//mTransform.Rotate(1, Vector3::unitY);
-		mTransform.RotateXInDegrees(mMouseDeltaX);
-		mTransform.ComputeWorldTransform();
-	}
-	if (mMouseDeltaY != 0)
-	{
-		//Log::Info("" + std::to_string(mMouseDeltaX) + ", " + std::to_string(mMouseDeltaY));
-		//mTransform.Rotate(1, Vector3::unitY);
-		mTransform.RotateYInDegrees(mMouseDeltaY);
-		mTransform.ComputeWorldTransform();
-	}
 	//mTransform.RotateXInDegrees(1);
 	mTransform.RotateZInDegrees(1);
-	Log::Info("" + std::to_string(mTransform.GetRotation().x) + ", " + std::to_string(mTransform.GetRotation().y) + ", " + std::to_string(mTransform.GetRotation().z));
 }
 
 void SphereTestA::Destroy()

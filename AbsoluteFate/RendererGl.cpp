@@ -1,6 +1,7 @@
 #include "RendererGl.h"
 
 #include "SpriteC.h"
+#include "Asset.h"
 
 //Constructor
 RendererGl::RendererGl() :  mWindow(nullptr), 

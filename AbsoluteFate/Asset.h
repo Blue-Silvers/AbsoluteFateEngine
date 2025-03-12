@@ -16,6 +16,7 @@ private:
 	Asset() = default;
 	static Texture LoadTextureFromFile(IRenderer& pRenderer, const string& pFileName);
 	static Mesh LoadMeshFromFile(const string& pFileName);
+
 public:
 	//Storage for future References
 	static map<string, Texture> mTexturesMap;

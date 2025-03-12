@@ -24,10 +24,11 @@ void Scene::Start()
 
 void Scene::Update()
 {
-	for (Actor* actor : mActorsList)
+	UpdateAllActors();
+	/*for (Actor* actor : mActorsList)
 	{
 		actor->Update();
-	}
+	}*/
 }
 
 void Scene::Render()

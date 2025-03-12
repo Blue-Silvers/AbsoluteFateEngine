@@ -6,10 +6,20 @@
 
 #include "Log.h"
 
+void CameraA::SetSensitivity(float pSensi)
+{
+	mSensitivity = pSensi;
+}
+
+float CameraA::GetSensitivity()
+{
+	return mSensitivity;
+}
+
 void CameraA::Start()
 {
-	SetRotation(Quaternion(0, 0, 0, 1));
-	SetScale(Vector3{ 1, 1, 1 }); //scale
+	mCanVerticalMove = false;
+
 	SetPosition(Vector3{ -20,0,0 });
 	//move component
 	FPSController* movement = new FPSController(this);
@@ -19,9 +29,9 @@ void CameraA::Start()
 
 void CameraA::Update()
 {
-	for (Components* move : mComponentsList)
+	for (Components* component : mComponentsList)
 	{
-		if (FPSController* movementComponent = dynamic_cast<FPSController*>(move))
+		if (FPSController* movementComponent = dynamic_cast<FPSController*>(component))
 		{
 			movementComponent->Update();
 		}
@@ -30,27 +40,17 @@ void CameraA::Update()
 	Vector3 camPosition = mTransform.GetPosition();
 	Vector3 target = mTransform.GetPosition() + mTransform.Forward() * 400.0f;
 	Vector3 up = Vector3::unitZ;
-	//Log::Info("" + std::to_string(camPosition.x) + ", " + std::to_string(camPosition.y) + ", " + std::to_string(camPosition.z));
-	SDL_GetRelativeMouseState(&mMouseDeltaX, &mMouseDeltaY);
 
-					//don't work//
-	if (mMouseDeltaX != 0) 
+	SDL_GetRelativeMouseState(&mMouseDeltaX, &mMouseDeltaY);
+	if (mMouseDeltaX != 0 && SDL_GetRelativeMouseMode() == SDL_TRUE && mCanHorizontalMove == true)
 	{
-		//Log::Info("" + std::to_string(mMouseDeltaX) + ", " + std::to_string(mMouseDeltaY));
-		//mTransform.Rotate(1, Vector3::unitY);
-		mTransform.RotateXInDegrees(mMouseDeltaX);
-		mTransform.ComputeWorldTransform();
+		mTransform.RotateZInDegrees(mMouseDeltaX * mSensitivity);
 	}
-	if (mMouseDeltaY != 0)
+	if (mMouseDeltaY != 0 && SDL_GetRelativeMouseMode() == SDL_TRUE && mCanVerticalMove == true)
 	{
-		//Log::Info("" + std::to_string(mMouseDeltaX) + ", " + std::to_string(mMouseDeltaY));
-		//mTransform.Rotate(1, Vector3::unitY);
-		mTransform.RotateYInDegrees(mMouseDeltaY);
-		mTransform.ComputeWorldTransform();
+		mTransform.RotateYInDegrees(mMouseDeltaY * mSensitivity);
 	}
-	Log::Info("" + std::to_string(mTransform.GetRotation().x) + ", " + std::to_string(mTransform.GetRotation().y) + ", " + std::to_string(mTransform.GetRotation().z));
-	//Log::Info("" + std::to_string(target.x) + ", " + std::to_string(target.y) + ", " + std::to_string(target.z));
-					/////////////
+	//Log::Info("" + std::to_string(mTransform.GetRotation().x) + ", " + std::to_string(mTransform.GetRotation().y) + ", " + std::to_string(mTransform.GetRotation().z)); //DEBUG//
 
 	Matrix4Row view = Matrix4Row::CreateLookAt(camPosition, target, up);
 	if (GetScene()->GetRenderer()->GetType() == IRenderer::RendererType::OPENGL)
