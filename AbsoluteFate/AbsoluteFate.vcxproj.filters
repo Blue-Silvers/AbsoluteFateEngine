@@ -218,6 +218,9 @@
     <ClCompile Include="SphereTestA.cpp">
       <Filter>Source Files\Content\OpenGlTest</Filter>
     </ClCompile>
+    <ClCompile Include="BoxCollider3DC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedSpriteC.h">
@@ -369,6 +372,9 @@
     </ClInclude>
     <ClInclude Include="DeathAngelA.h">
       <Filter>Header Files\Content\Platformer</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider3DC.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

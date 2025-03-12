@@ -8,4 +8,5 @@ C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraA.h(9,23): warning C4305: 'initializing': truncation from 'double' to 'float'
   (compiling source file 'GlTestScene.cpp')
   
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\GlTestScene.cpp(56,90): warning C4305: 'argument': truncation from 'double' to 'float'
   AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

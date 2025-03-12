@@ -4,6 +4,13 @@
 #include "Shader.h"
 #include "VertexArray.h"
 
+//Actor.h
+#include "PlaneTextureOpenGlA.h"
+#include "FPSCameraA.h"
+#include "CubeTestA.h"
+#include "SphereTestA.h"
+#include "CameraA.h"
+
 class GlTestScene : public Scene
 {
 private:
@@ -11,6 +18,13 @@ private:
 	Shader mFragmentShader;
 	ShaderProgram* mShaderProgram;
 	VertexArray mVertexArray;
+
+	//actor
+	CameraA* cam;
+	SphereTestA* sphereTestA2;
+	SphereTestA* sphereTestA;
+	CubeTestA* cubeTestA;
+	PlaneTextureOpenGlA* planeTextureOpenGlA;
 
 public:
 

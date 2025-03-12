@@ -8,11 +8,8 @@
 void SphereTestA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/meme.png", "yes");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/pokeball.png", "Pokeball");
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Loader_car_Material_Base_Color.png", "forklift");
 	Asset::LoadMesh("Resources/3D_Models/sphere.obj", "sphere");
-	Asset::LoadMesh("Resources/3D_Models/Loader_car.obj", "Forklift");
 	//Actor
 	SetScale(Vector3{ 1, 1, 1 }); //scale
 	SetPosition(Vector3{ 0, 4, 0 }); //location
@@ -21,12 +18,22 @@ void SphereTestA::Start()
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("Pokeball")});
 
 	AddComponent(mMeshComponent);
+
+	mBoxCollider = new BoxCollider3DC(this);
+	AddComponent(mBoxCollider);
 }
 
 void SphereTestA::Update()
 {
+
+
 	//mTransform.RotateXInDegrees(1);
 	mTransform.RotateZInDegrees(1);
+
+	if (mBoxCollider->OnCollide() == true) 
+	{
+		//Log::Info("" + std::to_string(mTransform.GetRotation().x) + ", " + std::to_string(mTransform.GetRotation().y) + ", " + std::to_string(mTransform.GetRotation().z));
+	}
 }
 
 void SphereTestA::Destroy()

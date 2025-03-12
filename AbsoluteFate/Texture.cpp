@@ -103,6 +103,8 @@ void Texture::UpdateInfo(int& pIntInfoWidth, int& pIntInfoHeight) const
 {
 	pIntInfoWidth = mTextureWidth;
 	pIntInfoHeight = mTextureHeight;
+	/*mTextureWidth = pIntInfoWidth;
+	mTextureHeight = pIntInfoHeight;*/
 }
 
 int Texture::GetWidth() const
