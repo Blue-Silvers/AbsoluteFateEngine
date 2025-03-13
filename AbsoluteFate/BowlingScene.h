@@ -5,11 +5,14 @@
 #include "VertexArray.h"
 
 //Actor.h
+#include "CameraBowlingA.h"
 #include "BowlingHudA.h"
 #include "BowlingBallA.h"
-#include "CameraA.h"
-#include "CubeTestA.h"
+#include "BowlingBorderA.h"
+#include "BowlingPathA.h"
 #include "SphereTestA.h"
+#include "PinA.h"
+#include "SetOfPinA.h"
 
 class BowlingScene : public Scene
 {
@@ -20,12 +23,14 @@ private:
 	VertexArray mVertexArray;
 
 	//actor
-	CameraA* cam;
-	SphereTestA* sphereTestA2;
+	CameraBowlingA* cam;
 	SphereTestA* sphereTestA;
-	CubeTestA* cubeTestA;
+	BowlingBorderA* rightBorderA;
+	BowlingBorderA* leftBorderA;
+	BowlingPathA* pathA;
 	BowlingHudA* bowlingHudA;
 	BowlingBallA* bowlingBallA;
+	SetOfPinA* setOfPinA;
 
 public:
 

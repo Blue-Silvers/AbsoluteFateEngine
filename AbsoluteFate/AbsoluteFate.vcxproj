@@ -141,11 +141,14 @@
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="BowlingBallA.cpp" />
     <ClCompile Include="BowlingBallVisualA.cpp" />
+    <ClCompile Include="BowlingBorderA.cpp" />
     <ClCompile Include="BowlingControllerC.cpp" />
     <ClCompile Include="BowlingHudA.cpp" />
+    <ClCompile Include="BowlingPathA.cpp" />
     <ClCompile Include="BowlingScene.cpp" />
     <ClCompile Include="BoxCollider3DC.cpp" />
     <ClCompile Include="CameraA.cpp" />
+    <ClCompile Include="CameraBowlingA.cpp" />
     <ClCompile Include="CubeTestA.cpp" />
     <ClCompile Include="DeathAngelA.cpp" />
     <ClCompile Include="AnimatedSpriteC.cpp" />
@@ -165,6 +168,7 @@
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="MeshC.cpp" />
     <ClCompile Include="MovingC.cpp" />
+    <ClCompile Include="PinA.cpp" />
     <ClCompile Include="PlaneTextureOpenGlA.cpp" />
     <ClCompile Include="Platformer.cpp" />
     <ClCompile Include="PlayerController.cpp" />
@@ -175,6 +179,7 @@
     <ClCompile Include="RendererGl.cpp" />
     <ClCompile Include="RendererSDL.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SetOfPinA.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="ShaderProgram.cpp" />
     <ClCompile Include="SphereTestA.cpp" />
@@ -193,11 +198,14 @@
     <ClInclude Include="Actor.h" />
     <ClInclude Include="BowlingBallA.h" />
     <ClInclude Include="BowlingBallVisualA.h" />
+    <ClInclude Include="BowlingBorderA.h" />
     <ClInclude Include="BowlingControllerC.h" />
     <ClInclude Include="BowlingHudA.h" />
+    <ClInclude Include="BowlingPathA.h" />
     <ClInclude Include="BowlingScene.h" />
     <ClInclude Include="BoxCollider3DC.h" />
     <ClInclude Include="CameraA.h" />
+    <ClInclude Include="CameraBowlingA.h" />
     <ClInclude Include="CubeTestA.h" />
     <ClInclude Include="DeathAngelA.h" />
     <ClInclude Include="AnimatedSpriteC.h" />
@@ -221,6 +229,7 @@
     <ClInclude Include="MeshC.h" />
     <ClInclude Include="MovingC.h" />
     <ClInclude Include="Paddle.h" />
+    <ClInclude Include="PinA.h" />
     <ClInclude Include="PlaneTextureOpenGlA.h" />
     <ClInclude Include="Platformer.h" />
     <ClInclude Include="PlayerController.h" />
@@ -232,6 +241,7 @@
     <ClInclude Include="RendererSDL.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SetOfPinA.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="ShaderProgram.h" />
     <ClInclude Include="SphereTestA.h" />

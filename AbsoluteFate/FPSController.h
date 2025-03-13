@@ -6,7 +6,7 @@
 class FPSController : public MovingC, public IInputListener
 {
 private:
-	float mMoveSpeed = 6;
+	float mMoveSpeed = 12;
 public:
 	FPSController(Actor* pActor);
 	bool changeAnim = false;

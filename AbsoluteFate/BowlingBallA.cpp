@@ -87,6 +87,9 @@ void BowlingBallA::ChangeRotation()
 
 void BowlingBallA::LunchBall()
 {
+	if (mIsLunching == false)
+	{
+		mTransform.RotateZInDegrees(mStartRotation);
+	}
 	mIsLunching = true;
-	mTransform.RotateZInDegrees(mStartRotation);
 }

@@ -1,8 +1,8 @@
-﻿  SphereTestA.cpp
+﻿  SetOfPinA.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'SphereTestA.cpp')
+  (compiling source file 'SetOfPinA.cpp')
   
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'SphereTestA.cpp')
+  (compiling source file 'SetOfPinA.cpp')
   
   AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

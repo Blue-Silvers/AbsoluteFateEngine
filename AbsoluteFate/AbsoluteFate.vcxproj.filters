@@ -239,7 +239,22 @@
     <ClCompile Include="BowlingScene.cpp">
       <Filter>Source Files\Content\Bowling</Filter>
     </ClCompile>
+    <ClCompile Include="CameraBowlingA.cpp">
+      <Filter>Source Files\Content\Bowling</Filter>
+    </ClCompile>
     <ClCompile Include="BowlingHudA.cpp">
+      <Filter>Source Files\Content\Bowling</Filter>
+    </ClCompile>
+    <ClCompile Include="BowlingBorderA.cpp">
+      <Filter>Source Files\Content\Bowling</Filter>
+    </ClCompile>
+    <ClCompile Include="BowlingPathA.cpp">
+      <Filter>Source Files\Content\Bowling</Filter>
+    </ClCompile>
+    <ClCompile Include="PinA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetOfPinA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -410,6 +425,21 @@
       <Filter>Header Files\Content\Bowling</Filter>
     </ClInclude>
     <ClInclude Include="BowlingHudA.h">
+      <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraBowlingA.h">
+      <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="BowlingBorderA.h">
+      <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="BowlingPathA.h">
+      <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="PinA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetOfPinA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
