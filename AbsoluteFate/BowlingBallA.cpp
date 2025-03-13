@@ -35,17 +35,22 @@ void BowlingBallA::Update()
 
 		if (mChildSphere->GetBoxCollider()->OnCollide() == true)
 		{
+			bool hitPin = false;
 			for (string tag : mChildSphere->GetBoxCollider()->GetCollideActor()->GetTags())
 			{
 				if (tag == "bowlingPin")
 				{
-					mVelocity = 0;
-					Log::Info("" + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().x) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().y) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().z));
+					hitPin = true;
 				}
-				else
-				{
-					ChangeRotation();
-				}
+			}
+			if (hitPin == true)
+			{
+				mVelocity = 0;
+				Log::Info("" + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().x) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().y) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().z));
+			}
+			else
+			{
+				ChangeRotation();
 			}
 		}
 	}

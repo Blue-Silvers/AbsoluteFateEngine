@@ -39,19 +39,22 @@ void BowlingScene::Start()
 	cubeTestA->AttachScene(this);
 	AddActor(cubeTestA);
 
-	planeTextureOpenGlA = new PlaneTextureOpenGlA();
-	planeTextureOpenGlA->AttachScene(this);
-	AddActor(planeTextureOpenGlA);
+	bowlingHudA = new BowlingHudA();
+	bowlingHudA->AttachScene(this);
+	AddActor(bowlingHudA);
 
 	Scene::Start();
 	sphereTestA->SetPosition(Vector3(0, 4, 0));
-	bowlingBallA->SetPosition(Vector3(-20, 4, 0));
+	bowlingBallA->SetPosition(Vector3(-10, 0, 0));
 }
 
 void BowlingScene::Update()
 {
 	Scene::Update();
-	planeTextureOpenGlA->SetRotation2D(Maths::ToRad( bowlingBallA->GetStartRotation()));
+	if (bowlingBallA->GetIsLunch()==false)
+	{
+		bowlingHudA->SetRotation2D(Maths::ToRad(- bowlingBallA->GetStartRotation()));
+	}
 }
 
 void BowlingScene::Render()

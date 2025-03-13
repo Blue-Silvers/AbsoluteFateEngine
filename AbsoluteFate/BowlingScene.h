@@ -5,7 +5,7 @@
 #include "VertexArray.h"
 
 //Actor.h
-#include "PlaneTextureOpenGlA.h"
+#include "BowlingHudA.h"
 #include "BowlingBallA.h"
 #include "CameraA.h"
 #include "CubeTestA.h"
@@ -24,7 +24,7 @@ private:
 	SphereTestA* sphereTestA2;
 	SphereTestA* sphereTestA;
 	CubeTestA* cubeTestA;
-	PlaneTextureOpenGlA* planeTextureOpenGlA;
+	BowlingHudA* bowlingHudA;
 	BowlingBallA* bowlingBallA;
 
 public:

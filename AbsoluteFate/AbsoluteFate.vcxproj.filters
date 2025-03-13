@@ -239,6 +239,9 @@
     <ClCompile Include="BowlingScene.cpp">
       <Filter>Source Files\Content\Bowling</Filter>
     </ClCompile>
+    <ClCompile Include="BowlingHudA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedSpriteC.h">
@@ -405,6 +408,9 @@
     </ClInclude>
     <ClInclude Include="BowlingScene.h">
       <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="BowlingHudA.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

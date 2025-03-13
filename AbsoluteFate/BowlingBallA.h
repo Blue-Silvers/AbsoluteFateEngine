@@ -13,7 +13,7 @@ private:
 	BoxCollider3DC* mBoxCollider;
 
 	float mStartRotation = 0;
-	float mStartRotationSpeed = 0.2;
+	float mStartRotationSpeed = 0.3;
 	float mMaxStartRotation = 20;
 	float mMinStartRotation = -20;
 
@@ -25,5 +25,6 @@ public:
 	void ChangeRotation();
 	void LunchBall();
 	float GetStartRotation() { return mStartRotation; };
+	bool GetIsLunch() { return mIsLunching; };
 };
 
