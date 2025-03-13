@@ -12,31 +12,76 @@ void BowlingBallA::Start()
 	mChildSphere->AttachScene(GetScene());
 	mChildSphere->Start();
 	GetScene()->AddActor(mChildSphere);
-	mTransform.RotateZInDegrees(-20);
+	//mTransform.RotateZInDegrees(mStartRotation);
 	//mChildSphere->SetAngleRotationZ(-20);
+
+	mBowlingControllerC = new BowlingControllerC(this);
+	AddComponent(mBowlingControllerC);
+
+	mChildSphere->SetAngleRotationY(0);
+	
 }
 
 void BowlingBallA::Update()
 {
-	Log::Info("" + std::to_string(mTransform.GetRotation().x) + ", " + std::to_string(mTransform.GetRotation().y) + ", " + std::to_string(mTransform.GetRotation().z));
-	Log::Info("" + std::to_string(mTransform.GetRotationInDegrees().x) + ", " + std::to_string(mTransform.GetRotationInDegrees().y) + ", " + std::to_string(mTransform.GetRotationInDegrees().z));
-	if (mChildSphere->GetBoxCollider()->OnCollide() != true)
+	if (mIsLunching)
 	{
-            // add new coordonate
-        Vector3 newPosition = GetTransform().GetPosition() + ((GetTransform().Forward()* mVelocity)* 0.02);
-        SetPosition(newPosition);
+		// add Movement
+		Vector3 newPosition = GetTransform().GetPosition() + ((GetTransform().Forward() * mVelocity) * 0.02);
+		SetPosition(newPosition);
 		//Log::Info("" + std::to_string(mTransform.GetRotationInDegrees().z/* - mChildSphere->GetTransform().GetRotationInDegrees().z*/));
 		mChildSphere->SetAngleRotationY(mVelocity);
-		
-
 		mChildSphere->SetPosition(newPosition);
+
+		if (mChildSphere->GetBoxCollider()->OnCollide() == true)
+		{
+			for (string tag : mChildSphere->GetBoxCollider()->GetCollideActor()->GetTags())
+			{
+				if (tag == "bowlingPin")
+				{
+					mVelocity = 0;
+					Log::Info("" + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().x) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().y) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().z));
+				}
+				else
+				{
+					ChangeRotation();
+				}
+			}
+		}
 	}
-	else
+	else 
 	{
-		Log::Info("" + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().x) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().y) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().z));
+		mChildSphere->SetPosition(GetTransform().GetPosition());
+		mStartRotation += mStartRotationSpeed;
+		if (mStartRotation > mMaxStartRotation)
+		{
+			mStartRotation = mMaxStartRotation;
+			mStartRotationSpeed = -mStartRotationSpeed;
+		}
+		else if (mStartRotation < mMinStartRotation)
+		{
+			mStartRotation = mMinStartRotation;
+			mStartRotationSpeed = -mStartRotationSpeed;
+		}
+		Log::Info("" + std::to_string(mStartRotation));
 	}
 }
 
 void BowlingBallA::Destroy()
 {
+	delete mBowlingControllerC;
+	delete mChildSphere;
+}
+
+void BowlingBallA::ChangeRotation()
+{
+	mStartRotation = -mStartRotation;
+	mTransform.RotateZInDegrees(mStartRotation);
+	mTransform.RotateZInDegrees(mStartRotation);
+}
+
+void BowlingBallA::LunchBall()
+{
+	mIsLunching = true;
+	mTransform.RotateZInDegrees(mStartRotation);
 }

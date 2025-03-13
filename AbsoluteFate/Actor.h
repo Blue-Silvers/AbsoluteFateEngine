@@ -88,7 +88,11 @@ public:
 		mTransform = Transform(mTransform.GetPosition(), mTransform.GetScale(), pNewRotation);
 		mTransform.ComputeWorldTransform();
 	};
-	virtual void SetTags(std::string pTag) //add tag
+	virtual void SetTags(std::vector<std::string> pTags) //set tag list
+	{
+		mTagList = pTags;
+	};
+	virtual void AddTag(std::string pTag) //add tag
 	{
 		mTagList.push_back(pTag);
 	};

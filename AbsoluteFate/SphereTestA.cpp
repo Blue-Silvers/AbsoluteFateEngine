@@ -22,6 +22,8 @@ void SphereTestA::Start()
 	mBoxCollider = new BoxCollider3DC(this);
 	mBoxCollider->SetCustomSize(Vector3(2, 2, 2));
 	AddComponent(mBoxCollider);
+
+	AddTag("bowlingPin");
 }
 
 void SphereTestA::Update()

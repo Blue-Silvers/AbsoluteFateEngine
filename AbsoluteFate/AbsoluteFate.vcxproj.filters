@@ -231,7 +231,13 @@
       <Filter>Source Files\Content\Bowling</Filter>
     </ClCompile>
     <ClCompile Include="BowlingBallVisualA.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\Bowling</Filter>
+    </ClCompile>
+    <ClCompile Include="BowlingControllerC.cpp">
+      <Filter>Source Files\Content\Bowling</Filter>
+    </ClCompile>
+    <ClCompile Include="BowlingScene.cpp">
+      <Filter>Source Files\Content\Bowling</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -392,7 +398,13 @@
       <Filter>Header Files\Content\Bowling</Filter>
     </ClInclude>
     <ClInclude Include="BowlingBallVisualA.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="BowlingControllerC.h">
+      <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="BowlingScene.h">
+      <Filter>Header Files\Content\Bowling</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

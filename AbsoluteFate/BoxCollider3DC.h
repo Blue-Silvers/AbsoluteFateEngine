@@ -25,6 +25,7 @@ public:
     Vector3 GetDistance();
     void SetCustomSize(Vector3 pSize) { mCustomScale = pSize; }
     Vector3 GetCustomSize() { return mCustomScale; }
+    Actor* GetCollideActor();
 
     virtual void Update();
     virtual void Draw(RendererSDL& pRenderer);

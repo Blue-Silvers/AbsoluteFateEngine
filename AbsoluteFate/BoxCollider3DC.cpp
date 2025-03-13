@@ -52,6 +52,29 @@ Vector3 BoxCollider3DC::GetDistance()
     }
 }
 
+Actor* BoxCollider3DC::GetCollideActor()
+{
+    for (Actor* actor : mOwner->GetScene()->GetAllActor())
+    {
+        if (mParentActor != actor)
+        {
+            for (Components* component : actor->GetAllComponent())
+            {
+                if (BoxCollider3DC* boxCollider3DC = dynamic_cast<BoxCollider3DC*>(component))
+                {
+                    if (mParentActor->GetTransform().GetPosition().y < actor->GetTransform().GetPosition().y + actor->GetTransform().GetScale().y * boxCollider3DC->GetCustomSize().y && mParentActor->GetTransform().GetPosition().y + mParentActor->GetTransform().GetScale().y * mCustomScale.y > actor->GetTransform().GetPosition().y
+                        && mParentActor->GetTransform().GetPosition().x < actor->GetTransform().GetPosition().x + actor->GetTransform().GetScale().x * boxCollider3DC->GetCustomSize().x && mParentActor->GetTransform().GetPosition().x + mParentActor->GetTransform().GetScale().x * mCustomScale.x > actor->GetTransform().GetPosition().x
+                        && mParentActor->GetTransform().GetPosition().z < actor->GetTransform().GetPosition().z + actor->GetTransform().GetScale().z * boxCollider3DC->GetCustomSize().z && mParentActor->GetTransform().GetPosition().z + mParentActor->GetTransform().GetScale().z * mCustomScale.z > actor->GetTransform().GetPosition().z)
+                    {
+
+                        return actor;
+                    }
+                }
+            }
+        }
+    }
+}
+
 void BoxCollider3DC::Update()
 {
 }
