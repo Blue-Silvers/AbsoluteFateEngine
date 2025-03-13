@@ -139,6 +139,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="BowlingBallA.cpp" />
+    <ClCompile Include="BowlingBallVisualA.cpp" />
     <ClCompile Include="BoxCollider3DC.cpp" />
     <ClCompile Include="CameraA.cpp" />
     <ClCompile Include="CubeTestA.cpp" />
@@ -186,6 +188,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
+    <ClInclude Include="BowlingBallA.h" />
+    <ClInclude Include="BowlingBallVisualA.h" />
     <ClInclude Include="BoxCollider3DC.h" />
     <ClInclude Include="CameraA.h" />
     <ClInclude Include="CubeTestA.h" />

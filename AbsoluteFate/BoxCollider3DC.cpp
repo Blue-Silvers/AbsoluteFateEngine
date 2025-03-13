@@ -1,6 +1,6 @@
 #include "BoxCollider3DC.h"
 
-BoxCollider3DC::BoxCollider3DC(Actor* pParentActor) : Components(pParentActor, 0), mParentActor(pParentActor)
+BoxCollider3DC::BoxCollider3DC(Actor* pParentActor) : Components(pParentActor, 0), mParentActor(pParentActor), mCustomScale(pParentActor->GetTransform().GetScale())
 {
 
 }
@@ -15,9 +15,9 @@ bool BoxCollider3DC::OnCollide() const
             {
                 if (BoxCollider3DC* boxCollider3DC = dynamic_cast<BoxCollider3DC*>(component))
                 {
-                    if (mParentActor->GetTransform().GetPosition().y < actor->GetTransform().GetPosition().y + actor->GetTransform().GetScale().y*2 && mParentActor->GetTransform().GetPosition().y + mParentActor->GetTransform().GetScale().y * 2 > actor->GetTransform().GetPosition().y
-                        && mParentActor->GetTransform().GetPosition().x < actor->GetTransform().GetPosition().x + actor->GetTransform().GetScale().x * 2 && mParentActor->GetTransform().GetPosition().x + mParentActor->GetTransform().GetScale().x * 2 > actor->GetTransform().GetPosition().x
-                        && mParentActor->GetTransform().GetPosition().z < actor->GetTransform().GetPosition().z + actor->GetTransform().GetScale().z * 2 && mParentActor->GetTransform().GetPosition().z + mParentActor->GetTransform().GetScale().z * 2 > actor->GetTransform().GetPosition().z)
+                    if (mParentActor->GetTransform().GetPosition().y < actor->GetTransform().GetPosition().y + actor->GetTransform().GetScale().y * boxCollider3DC->GetCustomSize().y && mParentActor->GetTransform().GetPosition().y + mParentActor->GetTransform().GetScale().y * mCustomScale.y > actor->GetTransform().GetPosition().y
+                        && mParentActor->GetTransform().GetPosition().x < actor->GetTransform().GetPosition().x + actor->GetTransform().GetScale().x * boxCollider3DC->GetCustomSize().x && mParentActor->GetTransform().GetPosition().x + mParentActor->GetTransform().GetScale().x * mCustomScale.x > actor->GetTransform().GetPosition().x
+                        && mParentActor->GetTransform().GetPosition().z < actor->GetTransform().GetPosition().z + actor->GetTransform().GetScale().z * boxCollider3DC->GetCustomSize().z && mParentActor->GetTransform().GetPosition().z + mParentActor->GetTransform().GetScale().z * mCustomScale.z > actor->GetTransform().GetPosition().z)
                     {
                         return true;
                     }
@@ -39,10 +39,11 @@ Vector3 BoxCollider3DC::GetDistance()
             {
                 if (BoxCollider3DC* boxCollider3DC = dynamic_cast<BoxCollider3DC*>(component))
                 {
-                    if (mParentActor->GetTransform().GetPosition().y < actor->GetTransform().GetPosition().y + actor->GetTransform().GetScale().y * 2 && mParentActor->GetTransform().GetPosition().y + mParentActor->GetTransform().GetScale().y * 2 > actor->GetTransform().GetPosition().y
-                        && mParentActor->GetTransform().GetPosition().x < actor->GetTransform().GetPosition().x + actor->GetTransform().GetScale().x * 2 && mParentActor->GetTransform().GetPosition().x + mParentActor->GetTransform().GetScale().x * 2 > actor->GetTransform().GetPosition().x
-                        && mParentActor->GetTransform().GetPosition().z < actor->GetTransform().GetPosition().z + actor->GetTransform().GetScale().z * 2 && mParentActor->GetTransform().GetPosition().z + mParentActor->GetTransform().GetScale().z * 2 > actor->GetTransform().GetPosition().z)
+                    if (mParentActor->GetTransform().GetPosition().y < actor->GetTransform().GetPosition().y + actor->GetTransform().GetScale().y * boxCollider3DC->GetCustomSize().y && mParentActor->GetTransform().GetPosition().y + mParentActor->GetTransform().GetScale().y * mCustomScale.y > actor->GetTransform().GetPosition().y
+                        && mParentActor->GetTransform().GetPosition().x < actor->GetTransform().GetPosition().x + actor->GetTransform().GetScale().x * boxCollider3DC->GetCustomSize().x && mParentActor->GetTransform().GetPosition().x + mParentActor->GetTransform().GetScale().x * mCustomScale.x > actor->GetTransform().GetPosition().x
+                        && mParentActor->GetTransform().GetPosition().z < actor->GetTransform().GetPosition().z + actor->GetTransform().GetScale().z * boxCollider3DC->GetCustomSize().z && mParentActor->GetTransform().GetPosition().z + mParentActor->GetTransform().GetScale().z * mCustomScale.z > actor->GetTransform().GetPosition().z)
                     {
+                        
                         return mParentActor->GetTransform().GetPosition() - actor->GetTransform().GetPosition();
                     }
                 }

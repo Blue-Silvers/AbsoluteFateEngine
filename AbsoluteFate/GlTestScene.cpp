@@ -32,9 +32,13 @@ void GlTestScene::Start()
 	sphereTestA->AttachScene(this);
 	AddActor(sphereTestA);
 
-	sphereTestA2 = new SphereTestA();
+	/*sphereTestA2 = new SphereTestA();
 	sphereTestA2->AttachScene(this);
-	AddActor(sphereTestA2);
+	AddActor(sphereTestA2);*/
+
+	bowlingBallA = new BowlingBallA();
+	bowlingBallA->AttachScene(this);
+	AddActor(bowlingBallA);
 
 	cubeTestA = new CubeTestA();
 	cubeTestA->AttachScene(this);
@@ -46,20 +50,20 @@ void GlTestScene::Start()
 
 	Scene::Start();
 	sphereTestA->SetPosition(Vector3(0, 4, 0));
-	sphereTestA2->SetPosition(Vector3(0, 8, 0));
+	bowlingBallA->SetPosition(Vector3(-20, 4, 0));
 }
 
 void GlTestScene::Update()
 {
-	if (sphereTestA2->GetBoxCollider()->OnCollide() != true)
-	{
-		Vector3 newPosition = sphereTestA2->GetTransform().GetPosition() + Vector3::negUnitY * 0.05;
-		sphereTestA2->SetPosition(newPosition);
-	}
-	else
-	{
-		Log::Info("" + std::to_string(sphereTestA2->GetBoxCollider()->GetDistance().x) + ", " + std::to_string(sphereTestA2->GetBoxCollider()->GetDistance().y) + ", " + std::to_string(sphereTestA2->GetBoxCollider()->GetDistance().z));
-	}
+	//if (sphereTestA2->GetBoxCollider()->OnCollide() != true)
+	//{
+	//	Vector3 newPosition = sphereTestA2->GetTransform().GetPosition() + Vector3::negUnitY * 0.05;
+	//	sphereTestA2->SetPosition(newPosition);
+	//}
+	//else
+	//{
+	//	Log::Info("" + std::to_string(sphereTestA2->GetBoxCollider()->GetDistance().x) + ", " + std::to_string(sphereTestA2->GetBoxCollider()->GetDistance().y) + ", " + std::to_string(sphereTestA2->GetBoxCollider()->GetDistance().z));
+	//}
 	Scene::Update();
 }
 

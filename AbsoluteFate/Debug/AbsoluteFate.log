@@ -1,12 +1,9 @@
-﻿  GlTestScene.cpp
+﻿  BowlingBallA.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'GlTestScene.cpp')
+  (compiling source file 'BowlingBallA.cpp')
   
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(97,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'GlTestScene.cpp')
+  (compiling source file 'BowlingBallA.cpp')
   
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraA.h(9,23): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'GlTestScene.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\GlTestScene.cpp(56,90): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.cpp(26,102): warning C4305: 'argument': truncation from 'double' to 'float'
   AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

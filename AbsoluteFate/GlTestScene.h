@@ -6,6 +6,7 @@
 
 //Actor.h
 #include "PlaneTextureOpenGlA.h"
+#include "BowlingBallA.h"
 #include "FPSCameraA.h"
 #include "CubeTestA.h"
 #include "SphereTestA.h"
@@ -25,6 +26,7 @@ private:
 	SphereTestA* sphereTestA;
 	CubeTestA* cubeTestA;
 	PlaneTextureOpenGlA* planeTextureOpenGlA;
+	BowlingBallA* bowlingBallA;
 
 public:
 
