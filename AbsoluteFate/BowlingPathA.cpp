@@ -6,7 +6,7 @@
 void BowlingPathA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/meme.png", "BowlingPath");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank.png", "BowlingPath");
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "cube");
 	//Actor
 	SetScale(Vector3{ 50, 7, 1 }); //scale

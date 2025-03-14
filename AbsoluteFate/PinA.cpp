@@ -9,10 +9,10 @@
 void PinA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/White.png", "Pin_TEX");
-	Asset::LoadMesh("Resources/3D_Models/BowlingPin.obj", "pin");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/18924_pin.jpg", "Pin_TEX");
+	Asset::LoadMesh("Resources/3D_Models/pin.obj", "pin");
 	//Actor
-	SetScale(Vector3{ 0.75, 0.75, 0.75 }); //scale
+	SetScale(Vector3{ 0.5, 0.5, 0.5 }); //scale
 	SetPosition(Vector3{ 0, 0, 0 }); //location
 	mTransform.RotateXInDegrees(90);
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("pin"));
@@ -21,7 +21,7 @@ void PinA::Start()
 	AddComponent(mMeshComponent);
 
 	mBoxCollider = new BoxCollider3DC(this);
-	mBoxCollider->SetCustomSize(Vector3(0.1, 2, 0.1));
+	mBoxCollider->SetCustomSize(Vector3(2, 2, 3));
 	AddComponent(mBoxCollider);
 
 	AddTag("bowlingPin");
@@ -30,7 +30,7 @@ void PinA::Start()
 void PinA::Update()
 {
 				//NEED DEBUG//
-	if (mForce.x != 0 && mForce.y != 0) 
+	/*if (mForce.x != 0 && mForce.y != 0) 
 	{
 		Log::Info("" + std::to_string(mTransform.GetRotationInDegrees().x) + ", " + std::to_string(mTransform.GetRotationInDegrees().y) + ", " + std::to_string(mTransform.GetRotationInDegrees().z));
 
@@ -44,7 +44,7 @@ void PinA::Update()
 		{
 			mForce.y = 0;
 		}
-	}
+	}*/
 				////////////////
 
 	if (mBoxCollider->OnCollide() == true)
@@ -79,7 +79,7 @@ void PinA::AddForce(Vector3 pForce)
 {
 	mForce = pForce;
 	Vector3 newPos = mTransform.GetPosition() + (pForce * -1);
-	newPos.z = 1;
+	newPos.z = -1;
 	for (int x = 0; x <= 1000; x++)
 	{
 		SetPosition(Vector3::Lerp(mTransform.GetPosition(), newPos, 0.0002));

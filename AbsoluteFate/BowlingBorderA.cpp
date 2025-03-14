@@ -6,7 +6,7 @@
 void BowlingBorderA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/pokeball.png", "BowlingBorder");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank3.png", "BowlingBorder");
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "cubeBorder");
 	//Actor
 	SetScale(Vector3{ 50, 0.5, 2 }); //scale
