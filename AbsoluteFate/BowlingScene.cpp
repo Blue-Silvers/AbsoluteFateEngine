@@ -60,7 +60,6 @@ void BowlingScene::Start()
 
 	rightBorderA->SetPosition(Vector3{ 15, 7, -2 }); //location
 	leftBorderA->SetPosition(Vector3{ 15, -7, -2 }); //location
-	bowlingBallA->SetPosition(Vector3(0, 0, 0));
 }
 
 void BowlingScene::Update()
