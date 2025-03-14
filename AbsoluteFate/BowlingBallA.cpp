@@ -20,6 +20,9 @@ void BowlingBallA::Start()
 
 	mChildSphere->SetAngleRotationY(0);
 	
+	mBoxCollider = new BoxCollider3DBowlingC(this);
+	mBoxCollider->SetCustomSize(Vector3(2, 2, 2));
+	AddComponent(mBoxCollider);
 }
 
 void BowlingBallA::Update()
@@ -31,10 +34,10 @@ void BowlingBallA::Update()
 		SetPosition(newPosition);
 		mChildSphere->SetAngleRotationY(mVelocity);
 		mChildSphere->SetPosition(newPosition);
-		if (mChildSphere->GetBoxCollider()->OnCollide() == true)
+		if (GetBoxCollider()->OnCollide() == true)
 		{
 			bool hitPin = false;
-			for (string tag : mChildSphere->GetBoxCollider()->GetCollideActor()->GetTags())
+			for (string tag : GetBoxCollider()->GetCollideActor()->GetTags())
 			{
 				if (tag == "bowlingPin")
 				{
@@ -44,9 +47,9 @@ void BowlingBallA::Update()
 			}
 			if (hitPin == true)
 			{
-				if (PinA* pinA = dynamic_cast<PinA*>(mChildSphere->GetBoxCollider()->GetCollideActor()))
+				if (PinA* pinA = dynamic_cast<PinA*>(GetBoxCollider()->GetCollideActor()))
 				{
-					pinA->AddForce(mChildSphere->GetBoxCollider()->GetDistance());
+					pinA->AddForce(GetBoxCollider()->GetDistance());
 				}
 				//mVelocity = 0;
 				//Log::Info("" + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().x) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().y) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().z));

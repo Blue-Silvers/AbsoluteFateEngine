@@ -19,9 +19,9 @@ void BowlingBallVisualA::Start()
 
 	AddComponent(mMeshComponent);
 
-	mBoxCollider = new BoxCollider3DBowlingC(this);
+	/*mBoxCollider = new BoxCollider3DBowlingC(this);
 	mBoxCollider->SetCustomSize(Vector3(2, 2, 2));
-	AddComponent(mBoxCollider);
+	AddComponent(mBoxCollider);*/
 }
 
 void BowlingBallVisualA::Update()
@@ -31,5 +31,5 @@ void BowlingBallVisualA::Update()
 void BowlingBallVisualA::Destroy()
 {
 	delete mMeshComponent;
-	delete mBoxCollider;
+	//delete mBoxCollider;
 }

@@ -15,7 +15,7 @@ void BowlingHudA::Start()
 	Asset::LoadMesh("Resources/3D_Models/sphere.obj", "sphereSkin2");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Alive.png", "Skin3");
 	Asset::LoadMesh("Resources/3D_Models/sphere.obj", "sphereSkin3");
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Artifae.png", "Skin4");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/theBlock.png", "Skin4");
 	Asset::LoadMesh("Resources/3D_Models/sphere.obj", "sphereSkin4");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Fea.png", "Skin5");
 	Asset::LoadMesh("Resources/3D_Models/sphere.obj", "sphereSkin5");

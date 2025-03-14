@@ -5,4 +5,6 @@ out vec4 color;
 void main()
 {
    color = vec4(0.5f, 0.25f, 0.5f, 1.0f); 
+
+   if(outColor.a < 0.1) discard;
 }

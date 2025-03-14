@@ -1,5 +1,7 @@
 #include "SetOfPinA.h"
 
+#include "Log.h"
+
 void SetOfPinA::Start()
 {
 	mPinList.push_back(new PinA());
@@ -29,6 +31,36 @@ void SetOfPinA::Update()
 	{
 		actor->Update();
 	}
+
+	for (Actor* actor : mPinList)
+	{
+		if (PinA* pinA = dynamic_cast<PinA*>(actor))
+		{
+			if (pinA->GetBoxCollider()->OnCollide() == true)
+			{				Log::Info("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+
+				//Log::Info("" + std::to_string(GetBoxCollider()->GetDistance().x) + ", " + std::to_string(GetBoxCollider()->GetDistance().y) + ", " + std::to_string(GetBoxCollider()->GetDistance().z));
+
+				bool hitPin = false;
+				for (string tag : pinA->GetBoxCollider()->GetCollideActor()->GetTags())
+				{
+					if (tag == "bowlingPin")
+					{
+						hitPin = true;
+
+					}
+				}
+				if (hitPin == true)
+				{
+					if (PinA* colidePinA = dynamic_cast<PinA*>(pinA->GetBoxCollider()->GetCollideActor()))
+					{
+						colidePinA->AddForce(colidePinA->GetBoxCollider()->GetDistance());
+					}
+				}
+			}
+		}
+	}
+
 }
 
 void SetOfPinA::Destroy()

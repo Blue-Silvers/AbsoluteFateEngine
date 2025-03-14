@@ -8,7 +8,7 @@ class BowlingBallVisualA : public Actor
 {
 private:
 	MeshC* mMeshComponent;
-	BoxCollider3DBowlingC* mBoxCollider;
+	//BoxCollider3DBowlingC* mBoxCollider;
 
 public:
 	void Start()override;
@@ -16,7 +16,7 @@ public:
 	void Destroy()override;
 	void SetAngleRotationY(float angle) { mTransform.RotateYInDegrees(angle); };
 	void SetAngleRotationZ(float angle) { mTransform.RotateZInDegrees(angle);};
-	BoxCollider3DBowlingC* GetBoxCollider() { return mBoxCollider; };
+	//BoxCollider3DBowlingC* GetBoxCollider() { return mBoxCollider; };
 	MeshC* GetMeshC() { return mMeshComponent; };
 };
 

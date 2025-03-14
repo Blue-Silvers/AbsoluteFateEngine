@@ -21,7 +21,7 @@ void PinA::Start()
 	AddComponent(mMeshComponent);
 
 	mBoxCollider = new BoxCollider3DC(this);
-	mBoxCollider->SetCustomSize(Vector3(2, 2, 3));
+	mBoxCollider->SetCustomSize(Vector3(2, 3, 3));
 	AddComponent(mBoxCollider);
 
 	AddTag("bowlingPin");
@@ -30,9 +30,12 @@ void PinA::Start()
 void PinA::Update()
 {
 				//NEED DEBUG//
-	/*if (mForce.x != 0 && mForce.y != 0) 
+	if (mForce.x != 0 && mForce.y != 0) 
 	{
-		Log::Info("" + std::to_string(mTransform.GetRotationInDegrees().x) + ", " + std::to_string(mTransform.GetRotationInDegrees().y) + ", " + std::to_string(mTransform.GetRotationInDegrees().z));
+		SetPosition(mTransform.GetPosition() + mForce*0.1);
+		mTransform.RotateXInDegrees(mForce.y );
+		mTransform.RotateYInDegrees(mForce.x );
+		/*Log::Info("" + std::to_string(mTransform.GetRotationInDegrees().x) + ", " + std::to_string(mTransform.GetRotationInDegrees().y) + ", " + std::to_string(mTransform.GetRotationInDegrees().z));
 
 		mTransform.RotateXInDegrees(mForce.y);
 		mTransform.RotateYInDegrees(mForce.x);
@@ -43,12 +46,15 @@ void PinA::Update()
 		if (mTransform.GetRotationInDegrees().y < mForce.x || mTransform.GetRotationInDegrees().y > 360 - mForce.x)
 		{
 			mForce.y = 0;
-		}
-	}*/
+		}*/
+	}
 				////////////////
 
 	if (mBoxCollider->OnCollide() == true)
 	{
+		Log::Info("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+		//Log::Info("" + std::to_string(GetBoxCollider()->GetDistance().x) + ", " + std::to_string(GetBoxCollider()->GetDistance().y) + ", " + std::to_string(GetBoxCollider()->GetDistance().z));
+
 		bool hitPin = false;
 		for (string tag : GetBoxCollider()->GetCollideActor()->GetTags())
 		{
@@ -60,6 +66,7 @@ void PinA::Update()
 		}
 		if (hitPin == true)
 		{
+			Log::Info("" + std::to_string(GetBoxCollider()->GetDistance().x) + ", " + std::to_string(GetBoxCollider()->GetDistance().y) + ", " + std::to_string(GetBoxCollider()->GetDistance().z));
 			if (PinA* pinA = dynamic_cast<PinA*>(GetBoxCollider()->GetCollideActor()))
 			{
 				pinA->AddForce(GetBoxCollider()->GetDistance());
@@ -77,7 +84,8 @@ void PinA::Destroy()
 
 void PinA::AddForce(Vector3 pForce)
 {
-	mForce = pForce;
+	mForce = pForce * -2;
+	mForce.z *= -1;
 	Vector3 newPos = mTransform.GetPosition() + (pForce * -1);
 	newPos.z = -1;
 	for (int x = 0; x <= 1000; x++)
