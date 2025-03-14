@@ -16,7 +16,7 @@ void BowlingBorderA::Start()
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("BowlingBorder")});
 	AddComponent(mMeshComponent);
 
-	mBoxCollider = new BoxCollider3DC(this);
+	mBoxCollider = new BoxCollider3DBowlingC(this);
 	mBoxCollider->SetCustomSize(Vector3(1, 3, 2));
 	AddComponent(mBoxCollider);
 }

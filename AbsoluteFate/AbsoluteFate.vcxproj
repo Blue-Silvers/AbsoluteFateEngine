@@ -146,6 +146,8 @@
     <ClCompile Include="BowlingHudA.cpp" />
     <ClCompile Include="BowlingPathA.cpp" />
     <ClCompile Include="BowlingScene.cpp" />
+    <ClCompile Include="BowlingUISkinA.cpp" />
+    <ClCompile Include="BoxCollider3DBowlingC.cpp" />
     <ClCompile Include="BoxCollider3DC.cpp" />
     <ClCompile Include="CameraA.cpp" />
     <ClCompile Include="CameraBowlingA.cpp" />
@@ -168,6 +170,7 @@
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="MeshC.cpp" />
     <ClCompile Include="MovingC.cpp" />
+    <ClCompile Include="OpenGlPictureA.cpp" />
     <ClCompile Include="PinA.cpp" />
     <ClCompile Include="PlaneTextureOpenGlA.cpp" />
     <ClCompile Include="Platformer.cpp" />
@@ -203,6 +206,8 @@
     <ClInclude Include="BowlingHudA.h" />
     <ClInclude Include="BowlingPathA.h" />
     <ClInclude Include="BowlingScene.h" />
+    <ClInclude Include="BowlingUISkinA.h" />
+    <ClInclude Include="BoxCollider3DBowlingC.h" />
     <ClInclude Include="BoxCollider3DC.h" />
     <ClInclude Include="CameraA.h" />
     <ClInclude Include="CameraBowlingA.h" />
@@ -228,6 +233,7 @@
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="MeshC.h" />
     <ClInclude Include="MovingC.h" />
+    <ClInclude Include="OpenGlPictureA.h" />
     <ClInclude Include="Paddle.h" />
     <ClInclude Include="PinA.h" />
     <ClInclude Include="PlaneTextureOpenGlA.h" />

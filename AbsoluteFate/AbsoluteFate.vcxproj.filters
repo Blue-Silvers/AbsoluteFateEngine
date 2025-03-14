@@ -252,9 +252,18 @@
       <Filter>Source Files\Content\Bowling</Filter>
     </ClCompile>
     <ClCompile Include="PinA.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\Bowling</Filter>
     </ClCompile>
     <ClCompile Include="SetOfPinA.cpp">
+      <Filter>Source Files\Content\Bowling</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCollider3DBowlingC.cpp">
+      <Filter>Source Files\Content\Bowling</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGlPictureA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BowlingUISkinA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -437,9 +446,18 @@
       <Filter>Header Files\Content\Bowling</Filter>
     </ClInclude>
     <ClInclude Include="PinA.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\Bowling</Filter>
     </ClInclude>
     <ClInclude Include="SetOfPinA.h">
+      <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider3DBowlingC.h">
+      <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGlPictureA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BowlingUISkinA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

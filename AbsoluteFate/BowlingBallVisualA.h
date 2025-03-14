@@ -2,12 +2,13 @@
 #include "Actor.h"
 #include "MeshC.h"
 #include "BoxCollider3DC.h"
+#include "BoxCollider3DBowlingC.h"
 
 class BowlingBallVisualA : public Actor
 {
 private:
 	MeshC* mMeshComponent;
-	BoxCollider3DC* mBoxCollider;
+	BoxCollider3DBowlingC* mBoxCollider;
 
 public:
 	void Start()override;
@@ -15,6 +16,7 @@ public:
 	void Destroy()override;
 	void SetAngleRotationY(float angle) { mTransform.RotateYInDegrees(angle); };
 	void SetAngleRotationZ(float angle) { mTransform.RotateZInDegrees(angle);};
-	BoxCollider3DC* GetBoxCollider() { return mBoxCollider; };
+	BoxCollider3DBowlingC* GetBoxCollider() { return mBoxCollider; };
+	MeshC* GetMeshC() { return mMeshComponent; };
 };
 

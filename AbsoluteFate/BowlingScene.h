@@ -10,9 +10,9 @@
 #include "BowlingBallA.h"
 #include "BowlingBorderA.h"
 #include "BowlingPathA.h"
-#include "SphereTestA.h"
 #include "PinA.h"
 #include "SetOfPinA.h"
+#include "BowlingUISkinA.h"
 
 class BowlingScene : public Scene
 {
@@ -24,13 +24,13 @@ private:
 
 	//actor
 	CameraBowlingA* cam;
-	SphereTestA* sphereTestA;
 	BowlingBorderA* rightBorderA;
 	BowlingBorderA* leftBorderA;
 	BowlingPathA* pathA;
 	BowlingHudA* bowlingHudA;
 	BowlingBallA* bowlingBallA;
 	SetOfPinA* setOfPinA;
+	BowlingUISkinA* bowlingUISkinA;
 
 public:
 

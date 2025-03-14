@@ -19,7 +19,7 @@ void BowlingBallVisualA::Start()
 
 	AddComponent(mMeshComponent);
 
-	mBoxCollider = new BoxCollider3DC(this);
+	mBoxCollider = new BoxCollider3DBowlingC(this);
 	mBoxCollider->SetCustomSize(Vector3(2, 2, 2));
 	AddComponent(mBoxCollider);
 }

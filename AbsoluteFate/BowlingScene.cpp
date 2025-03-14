@@ -28,17 +28,17 @@ void BowlingScene::Start()
 	cam->AttachScene(this);
 	AddActor(cam);
 
-	sphereTestA = new SphereTestA();
-	sphereTestA->AttachScene(this);
-	AddActor(sphereTestA);
+	bowlingHudA = new BowlingHudA();
+	bowlingHudA->AttachScene(this);
+	AddActor(bowlingHudA);
+
+	bowlingUISkinA = new BowlingUISkinA();
+	bowlingUISkinA->AttachScene(this);
+	AddActor(bowlingUISkinA);
 
 	bowlingBallA = new BowlingBallA();
 	bowlingBallA->AttachScene(this);
 	AddActor(bowlingBallA);
-
-	bowlingHudA = new BowlingHudA();
-	bowlingHudA->AttachScene(this);
-	AddActor(bowlingHudA);
 
 	setOfPinA = new SetOfPinA();
 	setOfPinA->AttachScene(this);
@@ -60,7 +60,6 @@ void BowlingScene::Start()
 
 	rightBorderA->SetPosition(Vector3{ 15, 7, -2 }); //location
 	leftBorderA->SetPosition(Vector3{ 15, -7, -2 }); //location
-	sphereTestA->SetPosition(Vector3(30, 4, 12));
 	bowlingBallA->SetPosition(Vector3(0, 0, 0));
 }
 

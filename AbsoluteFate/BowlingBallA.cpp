@@ -41,6 +41,7 @@ void BowlingBallA::Update()
 				if (tag == "bowlingPin")
 				{
 					hitPin = true;
+
 				}
 			}
 			if (hitPin == true)

@@ -2,18 +2,19 @@
 #include "Actor.h"
 #include "BowlingBallVisualA.h"
 #include "BowlingControllerC.h"
+#include "MeshC.h"
 
 class BowlingBallA : public Actor
 {
 private:
 	BowlingControllerC* mBowlingControllerC;
 	BowlingBallVisualA* mChildSphere;
-	float mVelocity = 10;
+	float mVelocity = 13;
 	bool mIsLunching = false;
-	BoxCollider3DC* mBoxCollider;
+	BoxCollider3DBowlingC* mBoxCollider;
 
 	float mStartRotation = 0;
-	float mStartRotationSpeed = 0.3;
+	float mStartRotationSpeed = 0.4;
 	float mMaxStartRotation = 20;
 	float mMinStartRotation = -20;
 
@@ -21,10 +22,11 @@ public:
 	void Start()override;
 	void Update()override;
 	void Destroy()override;
-	BoxCollider3DC* GetBoxCollider() { return mBoxCollider; };
+	BoxCollider3DBowlingC* GetBoxCollider() { return mBoxCollider; };
 	void ChangeRotation();
 	void LunchBall();
 	float GetStartRotation() { return mStartRotation; };
 	bool GetIsLunch() { return mIsLunching; };
+	MeshC* GetMeshC() { return mChildSphere->GetMeshC(); };
 };
 

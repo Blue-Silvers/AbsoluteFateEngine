@@ -14,5 +14,6 @@ public:
 	void Update()override;
 	void Destroy()override;
 	BoxCollider3DC* GetBoxCollider() { return mBoxCollider; };
+	MeshC* GetMeshC() { return mMeshComponent; };
 };
 
