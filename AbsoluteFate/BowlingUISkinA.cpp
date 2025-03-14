@@ -85,4 +85,5 @@ void BowlingUISkinA::Update()
 
 void BowlingUISkinA::Destroy()
 {
+	mIconList.clear();
 }

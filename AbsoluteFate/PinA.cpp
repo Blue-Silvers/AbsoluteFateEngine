@@ -36,4 +36,6 @@ void PinA::Update()
 
 void PinA::Destroy()
 {
+	delete mBoxCollider;
+	delete mMeshComponent;
 }

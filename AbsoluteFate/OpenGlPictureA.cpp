@@ -21,4 +21,5 @@ void OpenGlPictureA::Update()
 
 void OpenGlPictureA::Destroy()
 {
+	GetAllComponent().clear();
 }

@@ -28,11 +28,8 @@ void BowlingBallA::Update()
 		// add Movement
 		Vector3 newPosition = GetTransform().GetPosition() + ((GetTransform().Forward() * mVelocity) * 0.02);
 		SetPosition(newPosition);
-		//Log::Info("" + std::to_string(mTransform.GetRotationInDegrees().z/* - mChildSphere->GetTransform().GetRotationInDegrees().z*/));
 		mChildSphere->SetAngleRotationY(mVelocity);
 		mChildSphere->SetPosition(newPosition);
-		Log::Info("" + std::to_string(mChildSphere->GetTransform().GetPosition().x) + ", " + std::to_string(mChildSphere->GetTransform().GetPosition().y) + ", " + std::to_string(mChildSphere->GetTransform().GetPosition().z));
-
 		if (mChildSphere->GetBoxCollider()->OnCollide() == true)
 		{
 			bool hitPin = false;

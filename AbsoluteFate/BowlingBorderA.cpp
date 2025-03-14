@@ -27,4 +27,6 @@ void BowlingBorderA::Update()
 
 void BowlingBorderA::Destroy()
 {
+	delete mMeshComponent;
+	delete mBoxCollider;
 }

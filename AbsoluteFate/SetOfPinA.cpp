@@ -29,4 +29,5 @@ void SetOfPinA::Update()
 
 void SetOfPinA::Destroy()
 {
+	mPinList.clear();
 }

@@ -24,5 +24,5 @@ void BowlingPathA::Update()
 
 void BowlingPathA::Destroy()
 {
-
+	delete mMeshComponent;
 }

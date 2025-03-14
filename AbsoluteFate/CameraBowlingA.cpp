@@ -10,6 +10,7 @@ void CameraBowlingA::Start()
 {
 	SetPosition(Vector3{ -10,0,10 });
 	mTransform.RotateYInDegrees(20);
+	//Render
 	Vector3 camPosition = mTransform.GetPosition();
 	Vector3 target = mTransform.GetPosition() + mTransform.Forward() * 400.0f;
 	Vector3 up = Vector3::unitZ;

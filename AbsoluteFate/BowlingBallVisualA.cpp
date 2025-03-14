@@ -30,4 +30,6 @@ void BowlingBallVisualA::Update()
 
 void BowlingBallVisualA::Destroy()
 {
+	delete mMeshComponent;
+	delete mBoxCollider;
 }

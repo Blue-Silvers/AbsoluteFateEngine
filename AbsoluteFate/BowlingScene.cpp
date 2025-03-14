@@ -23,7 +23,6 @@ void BowlingScene::Start()
 	}
 
 	//Actor
-
 	cam = new CameraBowlingA();
 	cam->AttachScene(this);
 	AddActor(cam);
@@ -78,4 +77,12 @@ void BowlingScene::Render()
 
 void BowlingScene::Close()
 {
+	delete leftBorderA;
+	delete rightBorderA;
+	delete pathA;
+	delete setOfPinA;
+	delete bowlingBallA;
+	delete bowlingUISkinA;
+	delete cam;
+	delete bowlingHudA;
 }

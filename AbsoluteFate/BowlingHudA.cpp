@@ -74,6 +74,6 @@ void BowlingHudA::Update()
 
 void BowlingHudA::Destroy()
 {
-	//RemoveComponent(mSprite);
-	//delete mSprite;
+	GetAllComponent().clear();
+	mSkinList.clear();
 }

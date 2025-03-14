@@ -28,16 +28,7 @@ void SphereTestA::Start()
 
 void SphereTestA::Update()
 {
-	//Log::Info("" + std::to_string(GetTransform().GetPosition().x) + ", " + std::to_string(GetTransform().GetPosition().y) + ", " + std::to_string(GetTransform().GetPosition().z));
-
-
-	//mTransform.RotateXInDegrees(1);
-	mTransform.RotateZInDegrees(5);
-
-	/*if (mBoxCollider->OnCollide() == true)
-	{
-		//Log::Info("" + std::to_string(mTransform.GetRotation().x) + ", " + std::to_string(mTransform.GetRotation().y) + ", " + std::to_string(mTransform.GetRotation().z));
-	}*/
+	mTransform.RotateZInDegrees(3);
 }
 
 void SphereTestA::Destroy()
