@@ -25,6 +25,10 @@ void SetOfPinA::Start()
 
 void SetOfPinA::Update()
 {
+	for (Actor* actor : mPinList)
+	{
+		actor->Update();
+	}
 }
 
 void SetOfPinA::Destroy()

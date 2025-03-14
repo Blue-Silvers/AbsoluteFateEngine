@@ -2,6 +2,7 @@
 
 #include "Asset.h"
 #include "Time.h"
+#include "PinA.h"
 #include <iostream>
 
 #include "Log.h"
@@ -43,6 +44,10 @@ void BowlingBallA::Update()
 			}
 			if (hitPin == true)
 			{
+				if (PinA* pinA = dynamic_cast<PinA*>(mChildSphere->GetBoxCollider()->GetCollideActor()))
+				{
+					pinA->AddForce(mChildSphere->GetBoxCollider()->GetDistance());
+				}
 				//mVelocity = 0;
 				//Log::Info("" + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().x) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().y) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().z));
 			}
