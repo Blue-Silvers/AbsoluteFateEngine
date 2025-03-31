@@ -222,6 +222,7 @@
     <ClInclude Include="FPSController.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GlTestScene.h" />
+    <ClInclude Include="gltext.h" />
     <ClInclude Include="IInputListener.h" />
     <ClInclude Include="InputEvent.h" />
     <ClInclude Include="InputManager.h" />

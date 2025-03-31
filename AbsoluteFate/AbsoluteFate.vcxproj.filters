@@ -260,11 +260,11 @@
     <ClCompile Include="BoxCollider3DBowlingC.cpp">
       <Filter>Source Files\Content\Bowling</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGlPictureA.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="BowlingUISkinA.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\Bowling</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGlPictureA.cpp">
+      <Filter>Source Files\Content\OpenGlTest</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -342,9 +342,6 @@
     </ClInclude>
     <ClInclude Include="RendererGl.h">
       <Filter>Header Files\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Shader.h">
       <Filter>Header Files\Graphics</Filter>
@@ -454,10 +451,16 @@
     <ClInclude Include="BoxCollider3DBowlingC.h">
       <Filter>Header Files\Content\Bowling</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGlPictureA.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="BowlingUISkinA.h">
+      <Filter>Header Files\Content\Bowling</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGlPictureA.h">
+      <Filter>Header Files\Content\OpenGlTest</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="gltext.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
