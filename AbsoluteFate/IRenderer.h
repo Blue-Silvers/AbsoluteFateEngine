@@ -59,4 +59,5 @@ public:
     virtual void Close() = 0;
     //Getter
     virtual RendererType GetType() = 0;
+    virtual Matrix4Row GetProj() { Matrix4Row t; return t; }
 };

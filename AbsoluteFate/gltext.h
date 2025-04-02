@@ -36,7 +36,6 @@
 // additionally means they can be removed, renamed
 // or changed between minor updates without notice.
 
-#ifndef GL_TEXT_H
 #define GL_TEXT_H
 
 #ifdef __cplusplus
@@ -44,7 +43,7 @@ extern "C" {
 #endif
 
 #if !defined(__gl_h_) && !defined(__glcorearb_h_)
-//#	error OpenGL header must be included prior to including glText header
+#	error OpenGL header must be included prior to including glText header
 #endif
 
 #include <stdlib.h> /* malloc(), calloc(), free() */
@@ -100,47 +99,47 @@ extern "C" {
 #define GLT_RIGHT 2
 #define GLT_BOTTOM 2
 
-	static bool gltInitialized = false;
+	static GLboolean gltInitialized = GL_FALSE;
 
 	typedef struct GLTtext GLTtext;
 
-	GLT_API bool gltInit(void);
+	GLT_API GLboolean gltInit(void);
 	GLT_API void gltTerminate(void);
 
 	GLT_API GLTtext* gltCreateText(void);
 	GLT_API void gltDeleteText(GLTtext* text);
 #define gltDestroyText gltDeleteText
 
-	GLT_API bool gltSetText(GLTtext* text, const char* string);
+	GLT_API GLboolean gltSetText(GLTtext* text, const char* string);
 	GLT_API const char* gltGetText(GLTtext* text);
 
-	GLT_API void gltViewport(float width, float height);
+	GLT_API void gltViewport(GLsizei width, GLsizei height);
 
 	GLT_API void gltBeginDraw();
 	GLT_API void gltEndDraw();
 
-	GLT_API void gltDrawText(GLTtext* text, const float mvp[16]);
+	GLT_API void gltDrawText(GLTtext* text, const GLfloat mvp[16]);
 
-	GLT_API void gltDrawText2D(GLTtext* text, float x, float y, float scale);
-	GLT_API void gltDrawText2DAligned(GLTtext* text, float x, float y, float scale, int horizontalAlignment, int verticalAlignment);
+	GLT_API void gltDrawText2D(GLTtext* text, GLfloat x, GLfloat y, GLfloat scale);
+	GLT_API void gltDrawText2DAligned(GLTtext* text, GLfloat x, GLfloat y, GLfloat scale, int horizontalAlignment, int verticalAlignment);
 
-	GLT_API void gltDrawText3D(GLTtext* text, float x, float y, float z, float scale, float view[16], float projection[16]);
+	GLT_API void gltDrawText3D(GLTtext* text, GLfloat x, GLfloat y, GLfloat z, GLfloat scale, GLfloat view[16], GLfloat projection[16]);
 
-	GLT_API void gltColor(float r, float g, float b, float a);
-	GLT_API void gltGetColor(float* r, float* g, float* b, float* a);
+	GLT_API void gltColor(GLfloat r, GLfloat g, GLfloat b, GLfloat a);
+	GLT_API void gltGetColor(GLfloat* r, GLfloat* g, GLfloat* b, GLfloat* a);
 
-	GLT_API float gltGetLineHeight(float scale);
+	GLT_API GLfloat gltGetLineHeight(GLfloat scale);
 
-	GLT_API float gltGetTextWidth(const GLTtext* text, float scale);
-	GLT_API float gltGetTextHeight(const GLTtext* text, float scale);
+	GLT_API GLfloat gltGetTextWidth(const GLTtext* text, GLfloat scale);
+	GLT_API GLfloat gltGetTextHeight(const GLTtext* text, GLfloat scale);
 
-	GLT_API bool gltIsCharacterSupported(const char c);
-	GLT_API int gltCountSupportedCharacters(const char* str);
+	GLT_API GLboolean gltIsCharacterSupported(const char c);
+	GLT_API GLint gltCountSupportedCharacters(const char* str);
 
-	GLT_API bool gltIsCharacterDrawable(const char c);
-	GLT_API int gltCountDrawableCharacters(const char* str);
+	GLT_API GLboolean gltIsCharacterDrawable(const char c);
+	GLT_API GLint gltCountDrawableCharacters(const char* str);
 
-	GLT_API int gltCountNewLines(const char* str);
+	GLT_API GLint gltCountNewLines(const char* str);
 
 	// After this point everything you'll see is the
 	// implementation and all the internal stuff.
@@ -173,13 +172,13 @@ extern "C" {
 	typedef struct _GLTglyph {
 		char c;
 
-		int x, y;
-		int w, h;
+		GLint x, y;
+		GLint w, h;
 
-		float u1, v1;
-		float u2, v2;
+		GLfloat u1, v1;
+		GLfloat u2, v2;
 
-		bool drawable;
+		GLboolean drawable;
 	} _GLTglyph;
 
 	typedef struct _GLTglyphdata {
@@ -197,35 +196,35 @@ extern "C" {
 #define _gltFontGlyphLength (_gltFontGlyphMaxChar - _gltFontGlyphMinChar + 1)
 	static _GLTglyph _gltFontGlyphs2[_gltFontGlyphLength];
 
-	static int _gltText2DShader = GLT_NULL_HANDLE;
-	static int _gltText2DFontTexture = GLT_NULL_HANDLE;
+	static GLuint _gltText2DShader = GLT_NULL_HANDLE;
+	static GLuint _gltText2DFontTexture = GLT_NULL_HANDLE;
 
-	static int _gltText2DShaderMVPUniformLocation = -1;
-	static int _gltText2DShaderColorUniformLocation = -1;
+	static GLint _gltText2DShaderMVPUniformLocation = -1;
+	static GLint _gltText2DShaderColorUniformLocation = -1;
 
-	static float _gltText2DProjectionMatrix[16];
+	static GLfloat _gltText2DProjectionMatrix[16];
 
 	struct GLTtext {
 		char* _text;
-		float _textLength;
+		GLsizei _textLength;
 
-		bool _dirty;
+		GLboolean _dirty;
 
-		float vertexCount;
-		float* _vertices;
+		GLsizei vertexCount;
+		GLfloat* _vertices;
 
-		int _vao;
-		int _vbo;
+		GLuint _vao;
+		GLuint _vbo;
 	};
 
-	GLT_API void _gltGetViewportSize(int* width, int* height);
+	GLT_API void _gltGetViewportSize(GLint* width, GLint* height);
 
-	GLT_API void _gltMat4Mult(const float lhs[16], const float rhs[16], float result[16]);
+	GLT_API void _gltMat4Mult(const GLfloat lhs[16], const GLfloat rhs[16], GLfloat result[16]);
 
 	GLT_API void _gltUpdateBuffers(GLTtext* text);
 
-	GLT_API bool _gltCreateText2DShader(void);
-	GLT_API bool _gltCreateText2DFontTexture(void);
+	GLT_API GLboolean _gltCreateText2DShader(void);
+	GLT_API GLboolean _gltCreateText2DFontTexture(void);
 
 	GLT_API GLTtext* gltCreateText(void)
 	{
@@ -234,7 +233,9 @@ extern "C" {
 		_GLT_ASSERT(text);
 
 		if (!text)
+		{
 			return GLT_NULL;
+		}
 
 		glGenVertexArrays(1, &text->_vao);
 		glGenBuffers(1, &text->_vbo);
@@ -253,10 +254,10 @@ extern "C" {
 		glBindBuffer(GL_ARRAY_BUFFER, text->_vbo);
 
 		glEnableVertexAttribArray(_GLT_TEXT2D_POSITION_LOCATION);
-		glVertexAttribPointer(_GLT_TEXT2D_POSITION_LOCATION, _GLT_TEXT2D_POSITION_SIZE, GL_FLOAT, GL_FALSE, (_GLT_TEXT2D_VERTEX_SIZE * sizeof(float)), (const void*)(_GLT_TEXT2D_POSITION_OFFSET * sizeof(float)));
+		glVertexAttribPointer(_GLT_TEXT2D_POSITION_LOCATION, _GLT_TEXT2D_POSITION_SIZE, GL_FLOAT, GL_FALSE, (_GLT_TEXT2D_VERTEX_SIZE * sizeof(GLfloat)), (const void*)(_GLT_TEXT2D_POSITION_OFFSET * sizeof(GLfloat)));
 
 		glEnableVertexAttribArray(_GLT_TEXT2D_TEXCOORD_LOCATION);
-		glVertexAttribPointer(_GLT_TEXT2D_TEXCOORD_LOCATION, _GLT_TEXT2D_TEXCOORD_SIZE, GL_FLOAT, GL_FALSE, (_GLT_TEXT2D_VERTEX_SIZE * sizeof(float)), (const void*)(_GLT_TEXT2D_TEXCOORD_OFFSET * sizeof(float)));
+		glVertexAttribPointer(_GLT_TEXT2D_TEXCOORD_LOCATION, _GLT_TEXT2D_TEXCOORD_SIZE, GL_FLOAT, GL_FALSE, (_GLT_TEXT2D_VERTEX_SIZE * sizeof(GLfloat)), (const void*)(_GLT_TEXT2D_TEXCOORD_OFFSET * sizeof(GLfloat)));
 
 		glBindVertexArray(0);
 
@@ -351,19 +352,19 @@ extern "C" {
 		return "\0";
 	}
 
-	GLT_API void gltViewport(float width, float height)
+	GLT_API void gltViewport(GLsizei width, GLsizei height)
 	{
 		_GLT_ASSERT(width > 0);
 		_GLT_ASSERT(height > 0);
 
-		const float left = 0.0f;
-		const float right = (GLfloat)width;
-		const float bottom = (GLfloat)height;
-		const float top = 0.0f;
-		const float zNear = -1.0f;
-		const float zFar = 1.0f;
+		const GLfloat left = 0.0f;
+		const GLfloat right = (GLfloat)width;
+		const GLfloat bottom = (GLfloat)height;
+		const GLfloat top = 0.0f;
+		const GLfloat zNear = -1.0f;
+		const GLfloat zFar = 1.0f;
 
-		const float projection[16] = {
+		const GLfloat projection[16] = {
 			(2.0f / (right - left)), 0.0f, 0.0f, 0.0f,
 			0.0f, (2.0f / (top - bottom)), 0.0f, 0.0f,
 			0.0f, 0.0f, (-2.0f / (zFar - zNear)), 0.0f,
@@ -374,7 +375,7 @@ extern "C" {
 			1.0f,
 		};
 
-		memcpy(_gltText2DProjectionMatrix, projection, 16 * sizeof(float));
+		memcpy(_gltText2DProjectionMatrix, projection, 16 * sizeof(GLfloat));
 	}
 
 	GLT_API void gltBeginDraw()
@@ -396,7 +397,7 @@ extern "C" {
 	glBindVertexArray(text->_vao); \
 	glDrawArrays(GL_TRIANGLES, 0, text->vertexCount);
 
-	GLT_API void gltDrawText(GLTtext* text, const float mvp[16])
+	GLT_API void gltDrawText(GLTtext* text, const GLfloat mvp[16])
 	{
 		if (!text)
 			return;
@@ -410,7 +411,7 @@ extern "C" {
 		_gltDrawText();
 	}
 
-	GLT_API void gltDrawText2D(GLTtext* text, float x, float y, float scale)
+	GLT_API void gltDrawText2D(GLTtext* text, GLfloat x, GLfloat y, GLfloat scale)
 	{
 		if (!text)
 			return;
@@ -422,25 +423,25 @@ extern "C" {
 			return;
 
 #ifndef GLT_MANUAL_VIEWPORT
-		int viewportWidth, viewportHeight;
+		GLint viewportWidth, viewportHeight;
 		_gltGetViewportSize(&viewportWidth, &viewportHeight);
 		gltViewport(viewportWidth, viewportHeight);
 #endif
 
-		const float model[16] = {
+		const GLfloat model[16] = {
 			scale, 0.0f, 0.0f, 0.0f,
 			0.0f, scale, 0.0f, 0.0f,
 			0.0f, 0.0f, scale, 0.0f,
 			x, y, 0.0f, 1.0f,
 		};
 
-		float mvp[16];
+		GLfloat mvp[16];
 		_gltMat4Mult(_gltText2DProjectionMatrix, model, mvp);
 
 		_gltDrawText();
 	}
 
-	GLT_API void gltDrawText2DAligned(GLTtext* text, float x, float y, float scale, int horizontalAlignment, int verticalAlignment)
+	GLT_API void gltDrawText2DAligned(GLTtext* text, GLfloat x, GLfloat y, GLfloat scale, int horizontalAlignment, int verticalAlignment)
 	{
 		if (!text)
 			return;
@@ -464,7 +465,7 @@ extern "C" {
 		gltDrawText2D(text, x, y, scale);
 	}
 
-	GLT_API void gltDrawText3D(GLTtext* text, float x, float y, float z, float scale, float view[16], float projection[16])
+	GLT_API void gltDrawText3D(GLTtext* text, GLfloat x, GLfloat y, GLfloat z, GLfloat scale, GLfloat view[16], GLfloat projection[16])
 	{
 		if (!text)
 			return;
@@ -475,15 +476,15 @@ extern "C" {
 		if (!text->vertexCount)
 			return;
 
-		const float model[16] = {
+		const GLfloat model[16] = {
 			scale, 0.0f, 0.0f, 0.0f,
 			0.0f, -scale, 0.0f, 0.0f,
 			0.0f, 0.0f, scale, 0.0f,
-			x, y + (float)_gltFontGlyphHeight * scale, z, 1.0f,
+			x, y + (GLfloat)_gltFontGlyphHeight * scale, z, 1.0f,
 		};
 
-		float mvp[16];
-		float vp[16];
+		GLfloat mvp[16];
+		GLfloat vp[16];
 
 		_gltMat4Mult(projection, view, vp);
 		_gltMat4Mult(vp, model, mvp);
@@ -491,14 +492,14 @@ extern "C" {
 		_gltDrawText();
 	}
 
-	GLT_API void gltColor(float r, float g, float b, float a)
+	GLT_API void gltColor(GLfloat r, GLfloat g, GLfloat b, GLfloat a)
 	{
 		glUniform4f(_gltText2DShaderColorUniformLocation, r, g, b, a);
 	}
 
-	GLT_API void gltGetColor(float* r, float* g, float* b, float* a)
+	GLT_API void gltGetColor(GLfloat* r, GLfloat* g, GLfloat* b, GLfloat* a)
 	{
-		float color[4];
+		GLfloat color[4];
 		glGetUniformfv(_gltText2DShader, _gltText2DShaderColorUniformLocation, color);
 
 		if (r) (*r) = color[0];
@@ -507,18 +508,18 @@ extern "C" {
 		if (a) (*a) = color[3];
 	}
 
-	GLT_API float gltGetLineHeight(GLfloat scale)
+	GLT_API GLfloat gltGetLineHeight(GLfloat scale)
 	{
-		return (float)_gltFontGlyphHeight * scale;
+		return (GLfloat)_gltFontGlyphHeight * scale;
 	}
 
-	GLT_API float gltGetTextWidth(const GLTtext* text, float scale)
+	GLT_API GLfloat gltGetTextWidth(const GLTtext* text, GLfloat scale)
 	{
 		if (!text || !text->_text)
 			return 0.0f;
 
-		float maxWidth = 0.0f;
-		float width = 0.0f;
+		GLfloat maxWidth = 0.0f;
+		GLfloat width = 0.0f;
 
 		_GLTglyph glyph;
 
@@ -560,36 +561,36 @@ extern "C" {
 		return maxWidth * scale;
 	}
 
-	GLT_API float gltGetTextHeight(const GLTtext* text, float scale)
+	GLT_API GLfloat gltGetTextHeight(const GLTtext* text, GLfloat scale)
 	{
 		if (!text || !text->_text)
 			return 0.0f;
 
-		return (float)(gltCountNewLines(text->_text) + 1) * gltGetLineHeight(scale);
+		return (GLfloat)(gltCountNewLines(text->_text) + 1) * gltGetLineHeight(scale);
 	}
 
-	GLT_API bool gltIsCharacterSupported(const char c)
+	GLT_API GLboolean gltIsCharacterSupported(const char c)
 	{
-		if (c == '\t') return true;
-		if (c == '\n') return true;
-		if (c == '\r') return true;
+		if (c == '\t') return GL_TRUE;
+		if (c == '\n') return GL_TRUE;
+		if (c == '\r') return GL_TRUE;
 
 		int i;
 		for (i = 0; i < _gltFontGlyphCount; i++)
 		{
 			if (_gltFontGlyphCharacters[i] == c)
-				return true;
+				return GL_TRUE;
 		}
 
-		return false;
+		return GL_FALSE;
 	}
 
-	GLT_API int gltCountSupportedCharacters(const char* str)
+	GLT_API GLint gltCountSupportedCharacters(const char* str)
 	{
 		if (!str)
 			return 0;
 
-		int count = 0;
+		GLint count = 0;
 
 		while ((*str) != '\0')
 		{
@@ -602,23 +603,23 @@ extern "C" {
 		return count;
 	}
 
-	GLT_API bool gltIsCharacterDrawable(const char c)
+	GLT_API GLboolean gltIsCharacterDrawable(const char c)
 	{
-		if (c < _gltFontGlyphMinChar) return false;
-		if (c > _gltFontGlyphMaxChar) return false;
+		if (c < _gltFontGlyphMinChar) return GL_FALSE;
+		if (c > _gltFontGlyphMaxChar) return GL_FALSE;
 
 		if (_gltFontGlyphs2[c - _gltFontGlyphMinChar].drawable)
-			return true;
+			return GL_TRUE;
 
-		return false;
+		return GL_FALSE;
 	}
 
-	GLT_API int gltCountDrawableCharacters(const char* str)
+	GLT_API GLint gltCountDrawableCharacters(const char* str)
 	{
 		if (!str)
 			return 0;
 
-		int count = 0;
+		GLint count = 0;
 
 		while ((*str) != '\0')
 		{
@@ -631,9 +632,9 @@ extern "C" {
 		return count;
 	}
 
-	GLT_API int gltCountNewLines(const char* str)
+	GLT_API GLint gltCountNewLines(const char* str)
 	{
-		int count = 0;
+		GLint count = 0;
 
 		while ((str = strchr(str, '\n')) != NULL)
 		{
@@ -644,16 +645,16 @@ extern "C" {
 		return count;
 	}
 
-	GLT_API void _gltGetViewportSize(int* width, int* height)
+	GLT_API void _gltGetViewportSize(GLint* width, GLint* height)
 	{
-		int dimensions[4];
+		GLint dimensions[4];
 		glGetIntegerv(GL_VIEWPORT, dimensions);
 
 		if (width) (*width) = dimensions[2];
 		if (height) (*height) = dimensions[3];
 	}
 
-	GLT_API void _gltMat4Mult(const GLfloat lhs[16], const GLfloat rhs[16], float result[16])
+	GLT_API void _gltMat4Mult(const GLfloat lhs[16], const GLfloat rhs[16], GLfloat result[16])
 	{
 		int c, r, i;
 
@@ -684,36 +685,36 @@ extern "C" {
 
 		if (!text->_text || !text->_textLength)
 		{
-			text->_dirty = false;
+			text->_dirty = GL_FALSE;
 			return;
 		}
 
-		const float countDrawable = gltCountDrawableCharacters(text->_text);
+		const GLsizei countDrawable = gltCountDrawableCharacters(text->_text);
 
 		if (!countDrawable)
 		{
-			text->_dirty = false;
+			text->_dirty = GL_FALSE;
 			return;
 		}
 
-		const float vertexCount = countDrawable * 2 * 3; // 3 vertices in a triangle, 2 triangles in a quad
+		const GLsizei vertexCount = countDrawable * 2 * 3; // 3 vertices in a triangle, 2 triangles in a quad
 
-		const float vertexSize = _GLT_TEXT2D_VERTEX_SIZE;
-		float* vertices = (float*)malloc(vertexCount * vertexSize * sizeof(float));
+		const GLsizei vertexSize = _GLT_TEXT2D_VERTEX_SIZE;
+		GLfloat* vertices = (GLfloat*)malloc(vertexCount * vertexSize * sizeof(GLfloat));
 
 		if (!vertices)
 			return;
 
-		float vertexElementIndex = 0;
+		GLsizei vertexElementIndex = 0;
 
-		float glyphX = 0.0f;
-		float glyphY = 0.0f;
+		GLfloat glyphX = 0.0f;
+		GLfloat glyphY = 0.0f;
 
-		float glyphWidth;
-		const float glyphHeight = (float)_gltFontGlyphHeight;
+		GLfloat glyphWidth;
+		const GLfloat glyphHeight = (GLfloat)_gltFontGlyphHeight;
 
-		const float glyphAdvanceX = 0.0f;
-		const float glyphAdvanceY = 0.0f;
+		const GLfloat glyphAdvanceX = 0.0f;
+		const GLfloat glyphAdvanceY = 0.0f;
 
 		_GLTglyph glyph;
 
@@ -792,24 +793,24 @@ extern "C" {
 		text->_vertices = vertices;
 
 		glBindBuffer(GL_ARRAY_BUFFER, text->_vbo);
-		glBufferData(GL_ARRAY_BUFFER, vertexCount * _GLT_TEXT2D_VERTEX_SIZE * sizeof(float), vertices, GL_DYNAMIC_DRAW);
+		glBufferData(GL_ARRAY_BUFFER, vertexCount * _GLT_TEXT2D_VERTEX_SIZE * sizeof(GLfloat), vertices, GL_DYNAMIC_DRAW);
 
-		text->_dirty = false;
+		text->_dirty = GL_FALSE;
 	}
 
-	GLT_API bool gltInit(void)
+	GLT_API GLboolean gltInit(void)
 	{
 		if (gltInitialized)
-			return true;
+			return GL_TRUE;
 
 		if (!_gltCreateText2DShader())
-			return false;
+			return GL_FALSE;
 
 		if (!_gltCreateText2DFontTexture())
-			return false;
+			return GL_FALSE;
 
-		gltInitialized = true;
-		return true;
+		gltInitialized = GL_TRUE;
+		return GL_TRUE;
 	}
 
 	GLT_API void gltTerminate(void)
@@ -826,7 +827,7 @@ extern "C" {
 			_gltText2DFontTexture = GLT_NULL_HANDLE;
 		}
 
-		gltInitialized = false;
+		gltInitialized = GL_FALSE;
 	}
 
 	static const GLchar* _gltText2DVertexShaderSource =
@@ -862,15 +863,15 @@ extern "C" {
 		"	fragColor = texture(diffuse, fTexCoord) * color;\n"
 		"}\n";
 
-	GLT_API bool _gltCreateText2DShader(void)
+	GLT_API GLboolean _gltCreateText2DShader(void)
 	{
-		int vertexShader, fragmentShader;
-		int compileStatus, linkStatus;
+		GLuint vertexShader, fragmentShader;
+		GLint compileStatus, linkStatus;
 
 #ifdef GLT_DEBUG_PRINT
-		int infoLogLength;
-		float infoLogSize;
-		char* infoLog;
+		GLint infoLogLength;
+		GLsizei infoLogSize;
+		GLchar* infoLog;
 #endif
 
 		vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -879,7 +880,7 @@ extern "C" {
 
 		glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &compileStatus);
 
-		if (compileStatus != true)
+		if (compileStatus != GL_TRUE)
 		{
 #ifdef GLT_DEBUG_PRINT
 			glGetShaderiv(vertexShader, GL_INFO_LOG_LENGTH, &infoLogLength);
@@ -888,8 +889,8 @@ extern "C" {
 			// string only containing the null termination char.
 			if (infoLogLength > 1)
 			{
-				infoLogSize = infoLogLength * sizeof(char);
-				infoLog = (char*)malloc(infoLogSize);
+				infoLogSize = infoLogLength * sizeof(GLchar);
+				infoLog = (GLchar*)malloc(infoLogSize);
 
 				glGetShaderInfoLog(vertexShader, infoLogSize, NULL, infoLog);
 
@@ -903,10 +904,10 @@ extern "C" {
 			gltTerminate();
 
 #ifdef GLT_DEBUG
-			_GLT_ASSERT(compileStatus == true);
-			return false;
+			_GLT_ASSERT(compileStatus == GL_TRUE);
+			return GL_FALSE;
 #else
-			return false;
+			return GL_FALSE;
 #endif
 		}
 
@@ -916,7 +917,7 @@ extern "C" {
 
 		glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &compileStatus);
 
-		if (compileStatus != true)
+		if (compileStatus != GL_TRUE)
 		{
 #ifdef GLT_DEBUG_PRINT
 			glGetShaderiv(fragmentShader, GL_INFO_LOG_LENGTH, &infoLogLength);
@@ -925,8 +926,8 @@ extern "C" {
 			// string only containing the null termination char.
 			if (infoLogLength > 1)
 			{
-				infoLogSize = infoLogLength * sizeof(char);
-				infoLog = (char*)malloc(infoLogSize);
+				infoLogSize = infoLogLength * sizeof(GLchar);
+				infoLog = (GLchar*)malloc(infoLogSize);
 
 				glGetShaderInfoLog(fragmentShader, infoLogSize, NULL, infoLog);
 
@@ -942,9 +943,9 @@ extern "C" {
 
 #ifdef GLT_DEBUG
 			_GLT_ASSERT(compileStatus == GL_TRUE);
-			return false;
+			return GL_FALSE;
 #else
-			return false;
+			return GL_FALSE;
 #endif
 		}
 
@@ -1334,6 +1335,4 @@ extern "C" {
 
 #ifdef __cplusplus
 }
-#endif
-
 #endif

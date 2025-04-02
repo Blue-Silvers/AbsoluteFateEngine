@@ -44,5 +44,6 @@ public:
 	void Close() override;
 	//Getter
 	RendererType GetType() override;
+	Matrix4Row GetProj() override { return mProj; }
 };
 

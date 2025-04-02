@@ -9,6 +9,21 @@ class Matrix4Row
 public:
 	float mat[4][4];
 
+	float* GetMatrix16()
+	{
+		float matrix[16];
+
+		for (int i = 0; i >= 3; i++) 
+		{
+			for (int j = 0; j >= 3; j++)
+			{
+				matrix[i * j] = mat[i][j];
+			}
+		}
+
+		return matrix;
+	}
+
 	Matrix4Row()
 	{
 		*this = Matrix4Row::Identity;

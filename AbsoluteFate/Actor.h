@@ -30,7 +30,7 @@ public:
 	Actor(Transform pTransform2D, Scene* pScene);
 	
 	virtual void Start() = 0;
-	void Render();
+	virtual void Render();
 	virtual void AttachScene(Scene* pSceneAttached) //A reference to the scene it is attached to
 	{
 		mSceneAttached = pSceneAttached;
