@@ -266,6 +266,9 @@
     <ClCompile Include="OpenGlPictureA.cpp">
       <Filter>Source Files\Content\OpenGlTest</Filter>
     </ClCompile>
+    <ClCompile Include="DrawTextGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedSpriteC.h">
@@ -461,6 +464,9 @@
       <Filter>Header Files\Manager</Filter>
     </ClInclude>
     <ClInclude Include="gltext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTextGL.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

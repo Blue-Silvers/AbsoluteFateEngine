@@ -5,6 +5,15 @@ C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
   (compiling source file 'BowlingScene.cpp')
   
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.h(11,9): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'BowlingScene.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.h(11,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'BowlingScene.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.h(11,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'BowlingScene.cpp')
+  
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.h(17,30): warning C4305: 'initializing': truncation from 'double' to 'float'
   (compiling source file 'BowlingScene.cpp')
   
@@ -15,9 +24,19 @@ C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
   (compiling source file 'CameraBowlingA.cpp')
   
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\gltext.h(46,1): error C1189: #error:  OpenGL header must be included prior to including glText header
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.h(11,9): error C2143: syntax error: missing ';' before '*'
   (compiling source file 'CameraBowlingA.cpp')
   
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.h(11,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'CameraBowlingA.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.h(11,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'CameraBowlingA.cpp')
+  
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.cpp(25,2): error C2065: 'text1': undeclared identifier
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.cpp(25,10): error C3861: 'gltCreateText': identifier not found
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.cpp(26,13): error C2065: 'text1': undeclared identifier
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.cpp(26,2): error C3861: 'gltSetText': identifier not found
   CubeTestA.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
   (compiling source file 'CubeTestA.cpp')
@@ -38,14 +57,14 @@ C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Bowling
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraA.h(9,23): warning C4305: 'initializing': truncation from 'double' to 'float'
   (compiling source file 'Main.cpp')
   
-  RendererGl.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'RendererGl.cpp')
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.h(11,9): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Main.cpp')
   
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'RendererGl.cpp')
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.h(11,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Main.cpp')
   
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(127,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(126,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraBowlingA.h(11,16): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'Main.cpp')
+  
   Transform.cpp
   Generating Code...

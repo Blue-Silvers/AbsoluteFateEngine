@@ -37,7 +37,7 @@ void CameraBowlingA::Destroy()
 
 void CameraBowlingA::Render()
 {
-	float* matrix;
+	/*float* matrix;
 	matrix = view.GetMatrix16();
 	GLfloat GLview[16];
 	for (int i = 0; i < 16; i++)
@@ -54,5 +54,5 @@ void CameraBowlingA::Render()
 	gltBeginDraw();
 	gltColor(1.0f, 1.0f, 1.0f, 1.0f);
 	gltDrawText3D(text1, 100, 200, 0, 10, GLview, GLproj);
-	gltEndDraw();
+	gltEndDraw();*/
 }

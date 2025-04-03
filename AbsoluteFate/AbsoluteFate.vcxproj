@@ -158,6 +158,7 @@
     <ClCompile Include="BoxCollider2DC.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Components.cpp" />
+    <ClCompile Include="DrawTextGL.cpp" />
     <ClCompile Include="FPSController.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GlTestScene.cpp" />
@@ -219,6 +220,7 @@
     <ClInclude Include="BoxCollider2DC.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Components.h" />
+    <ClInclude Include="DrawTextGL.h" />
     <ClInclude Include="FPSController.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GlTestScene.h" />

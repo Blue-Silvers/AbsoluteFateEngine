@@ -36,7 +36,7 @@
 // additionally means they can be removed, renamed
 // or changed between minor updates without notice.
 
-#define GL_TEXT_H
+/*#define GL_TEXT_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -46,23 +46,23 @@ extern "C" {
 #	error OpenGL header must be included prior to including glText header
 #endif
 
-#include <stdlib.h> /* malloc(), calloc(), free() */
-#include <string.h> /* memset(), memcpy(), strlen() */
-#include <stdint.h> /* uint8_t, uint16_t, uint32_t, uint64_t */
+#include <stdlib.h> 
+#include <string.h> 
+#include <stdint.h> 
 
 #if (defined(_DEBUG) || defined(DEBUG)) && !defined(GLT_DEBUG)
 #	define GLT_DEBUG 1
 #endif
 
 #ifdef GLT_DEBUG
-#	include <assert.h> /* assert() */
+#	include <assert.h> 
 #	define _GLT_ASSERT(expression) assert(expression)
 #else
 #	define _GLT_ASSERT(expression)
 #endif
 
 #ifdef GLT_DEBUG_PRINT
-#	include <stdio.h> /* printf */
+#	include <stdio.h> 
 #endif
 
 #define _GLT_STRINGIFY(str) #str
@@ -1335,4 +1335,4 @@ extern "C" {
 
 #ifdef __cplusplus
 }
-#endif
+#endif */

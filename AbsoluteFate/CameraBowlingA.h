@@ -1,10 +1,10 @@
 #pragma once
 #include "Actor.h"
 
-#include <stdlib.h>
-#include <stdio.h>
+//#include <stdlib.h>
+//#include <stdio.h>
 //#define GLT_IMPLEMENTATION
-#include "gltext.h"
+//#include "gltext.h"
 class CameraBowlingA : public Actor
 {
 private:
