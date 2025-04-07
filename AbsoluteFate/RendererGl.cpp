@@ -125,6 +125,7 @@ void RendererGl::DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourc
 													0.0f);
 	Matrix4Row world = scaleMat * pActor.GetTransform().GetWorldTransform();
 	mSpriteShaderProgram->setMatrix4Row("uWorldTransform", world);
+	mSpriteShaderProgram->setVector2f("uTiling", (1, 1));
 	pTex.SetActive();
 	//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);//DebugSprite

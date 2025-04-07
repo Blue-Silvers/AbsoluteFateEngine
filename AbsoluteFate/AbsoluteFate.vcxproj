@@ -151,6 +151,7 @@
     <ClCompile Include="BoxCollider3DC.cpp" />
     <ClCompile Include="CameraA.cpp" />
     <ClCompile Include="CameraBowlingA.cpp" />
+    <ClCompile Include="Corridor.cpp" />
     <ClCompile Include="CubeTestA.cpp" />
     <ClCompile Include="DeathAngelA.cpp" />
     <ClCompile Include="AnimatedSpriteC.cpp" />
@@ -212,6 +213,7 @@
     <ClInclude Include="BoxCollider3DC.h" />
     <ClInclude Include="CameraA.h" />
     <ClInclude Include="CameraBowlingA.h" />
+    <ClInclude Include="Corridor.h" />
     <ClInclude Include="CubeTestA.h" />
     <ClInclude Include="DeathAngelA.h" />
     <ClInclude Include="AnimatedSpriteC.h" />

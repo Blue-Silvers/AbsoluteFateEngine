@@ -7,6 +7,7 @@ class MeshC : public Components
 protected:
 	Mesh* mMesh;
 	int mTextureIndex = 1;
+	Vector2 mTilling{ 1,1 };
 
 public:
 	MeshC(Actor* pOwner);
@@ -16,6 +17,8 @@ public:
 	virtual void SetMesh(Mesh& pMesh);
 	virtual Mesh* GetMesh() { return mMesh; };
 	void SetTextureIndex(int pTextureIndex);
+	void AutoTile();
+	void SetTiling(Vector2 pTilling);
 
 	void OnStart() override {};
 	void Update() override {};

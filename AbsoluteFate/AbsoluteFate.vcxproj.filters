@@ -269,6 +269,9 @@
     <ClCompile Include="DrawTextGL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Corridor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedSpriteC.h">
@@ -467,6 +470,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DrawTextGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Corridor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

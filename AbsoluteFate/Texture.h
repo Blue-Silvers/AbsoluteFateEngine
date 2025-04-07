@@ -18,7 +18,7 @@ private:
 	unsigned int mTextureId;
 
 	bool LoadSDL(RendererSDL* pRenderer, const string& pFileName, SDL_Surface* pSurface);
-	bool LoadGL(RendererGl* pRenderer, const string& pFileName, SDL_Surface* pSurface);
+	bool LoadGL(RendererGl* pRenderer, const string& pFileName, SDL_Surface* pSurface, bool pMipmaps = true);
 
 protected:
 	static const Texture Default;

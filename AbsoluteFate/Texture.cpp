@@ -20,7 +20,7 @@ bool Texture::LoadSDL(RendererSDL* pRenderer, const string& pFileName, SDL_Surfa
 	return true;
 }
 
-bool Texture::LoadGL(RendererGl* pRenderer, const string& pFileName, SDL_Surface* pSurface)
+bool Texture::LoadGL(RendererGl* pRenderer, const string& pFileName, SDL_Surface* pSurface, bool pMipmaps)
 {
 	int format = 0;
 	if (pSurface->format->format == SDL_PIXELFORMAT_RGB24) 
@@ -34,14 +34,25 @@ bool Texture::LoadGL(RendererGl* pRenderer, const string& pFileName, SDL_Surface
 	glGenTextures(1, &mTextureId);
 	glBindTexture(GL_TEXTURE_2D, mTextureId);
 	glTexImage2D(GL_TEXTURE_2D, 0, format, mTextureWidth, mTextureHeight, 0, format, GL_UNSIGNED_BYTE, pSurface->pixels);
+
+	if (pMipmaps) glGenerateMipmap(GL_TEXTURE_2D); //Generate mipmap
+
 	SDL_FreeSurface(pSurface);
 
 	Log::Info("Loaded GL texture : " + mFilepathString);
 
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT); //u tiling
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT); //v tiling
+
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-
+	if (pMipmaps)
+	{
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	}
+	
 	return true;
 }
 

@@ -40,6 +40,10 @@ void GlTestScene::Start()
 	bowlingBallA->AttachScene(this);
 	AddActor(bowlingBallA);*/
 
+	corridor = new Corridor();
+	corridor->AttachScene(this);
+	AddActor(corridor);
+
 	cubeTestA = new CubeTestA();
 	cubeTestA->AttachScene(this);
 	AddActor(cubeTestA);

@@ -11,6 +11,7 @@
 #include "CubeTestA.h"
 #include "SphereTestA.h"
 #include "CameraA.h"
+#include "Corridor.h"
 
 class GlTestScene : public Scene
 {
@@ -25,6 +26,7 @@ private:
 	SphereTestA* sphereTestA2;
 	SphereTestA* sphereTestA;
 	CubeTestA* cubeTestA;
+	Corridor* corridor;
 	PlaneTextureOpenGlA* planeTextureOpenGlA;
 	BowlingBallA* bowlingBallA;
 

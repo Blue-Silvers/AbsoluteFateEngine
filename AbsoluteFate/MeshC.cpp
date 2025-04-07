@@ -44,6 +44,7 @@ void MeshC::Draw(Matrix4Row viewProj)
 		mMesh->GetShaderProgram().Use();
 		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", viewProj);
 		mMesh->GetShaderProgram().setMatrix4Row("uWorldTransform", wt);
+		mMesh->GetShaderProgram().setVector2f("uTiling", mTilling);
 
 		Texture* t = mMesh->GetTexture(mTextureIndex);
 		if (t) 
@@ -71,4 +72,14 @@ void MeshC::SetMesh(Mesh& pMesh)
 void MeshC::SetTextureIndex(int pTextureIndex)
 {
 	mTextureIndex = pTextureIndex;
+}
+
+void MeshC::AutoTile()
+{
+
+}
+
+void MeshC::SetTiling(Vector2 pTilling)
+{
+
 }
