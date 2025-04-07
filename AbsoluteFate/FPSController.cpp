@@ -1,5 +1,6 @@
 #include "FPSController.h"
 
+#include "IRenderer.h"
 #include "InputManager.h"
 #include "Actor.h"
 #include "Log.h"
@@ -23,6 +24,9 @@ FPSController::FPSController(Actor* pActor) : MovingC(pActor)
 	InputManager::Instance().SubscribeTo(SDLK_ESCAPE, this);
 	InputManager::Instance().SubscribeTo(SDLK_RETURN, this);
 	SDL_SetRelativeMouseMode(SDL_FALSE);
+
+	//debug
+	InputManager::Instance().SubscribeTo(SDLK_TAB, this);
 }
 
 void FPSController::OnNotify(SDL_Event& pEvent)
@@ -85,6 +89,20 @@ void FPSController::OnNotify(SDL_Event& pEvent)
 			else
 			{
 				SDL_SetRelativeMouseMode(SDL_TRUE);
+			}
+			break;
+		case SDLK_TAB:
+			if (wireframe)
+			{
+				glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+				wireframe = !wireframe;
+				Log::Info(" Debug mode : On");
+			}
+			else
+			{
+				glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+				wireframe = !wireframe;
+				Log::Info(" Debug mode : Off");
 			}
 			break;
 		default:

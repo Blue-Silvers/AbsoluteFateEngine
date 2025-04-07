@@ -36,9 +36,9 @@ void GlTestScene::Start()
 	sphereTestA2->AttachScene(this);
 	AddActor(sphereTestA2);*/
 
-	bowlingBallA = new BowlingBallA();
+	/*bowlingBallA = new BowlingBallA();
 	bowlingBallA->AttachScene(this);
-	AddActor(bowlingBallA);
+	AddActor(bowlingBallA);*/
 
 	cubeTestA = new CubeTestA();
 	cubeTestA->AttachScene(this);
@@ -50,7 +50,7 @@ void GlTestScene::Start()
 
 	Scene::Start();
 	sphereTestA->SetPosition(Vector3(0, 4, 0));
-	bowlingBallA->SetPosition(Vector3(-20, 4, 0));
+	//bowlingBallA->SetPosition(Vector3(-20, 4, 0));
 }
 
 void GlTestScene::Update()

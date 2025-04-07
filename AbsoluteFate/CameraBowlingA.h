@@ -8,7 +8,7 @@
 class CameraBowlingA : public Actor
 {
 private:
-	GLTtext* text1;
+	//GLTtext* text1;
 	Matrix4Row view;
 
 public:

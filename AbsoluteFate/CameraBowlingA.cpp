@@ -22,8 +22,8 @@ void CameraBowlingA::Start()
 		GetScene()->GetRenderer()->SetViewMatrix(view);
 	}
 
-	text1 = gltCreateText();
-	gltSetText(text1, "Hey");
+	/*text1 = gltCreateText();
+	gltSetText(text1, "Hey");*/
 }
 
 void CameraBowlingA::Update()

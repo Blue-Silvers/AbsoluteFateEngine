@@ -95,6 +95,7 @@ void Texture::UnloadTexture()
 
 void Texture::SetActive() const
 {
+	//m_shaderProgram.Use();
 	glBindTexture(GL_TEXTURE_2D, mTextureId);
 }
 
