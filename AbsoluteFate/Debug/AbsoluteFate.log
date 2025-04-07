@@ -1,4 +1,5 @@
-﻿  FPSController.cpp
+﻿  SpriteC.cpp
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\SpriteC.cpp(41,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
