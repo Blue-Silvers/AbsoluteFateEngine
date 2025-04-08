@@ -24,7 +24,16 @@ void Corridor::Start()
 	Shader newVertexShader;
 	newVertexShader.Load("TransformVert.shader", ShaderType::VERTEX);
 	mMeshComponent->GetMesh()->SetVertexShader(newVertexShader);
+
+	/*mTessVertexShader.Load("TessSimpleVert.shader", ShaderType::VERTEX);
+	mTessFragShader.Load("TessSimpleFrag.shader", ShaderType::FRAGMENT);
+	mTessControlShader.Load("TessSimpleTesc.shader", ShaderType::TESSELLATION_CONTROL);
+	mTessEvalShader.Load("TessSimpleTese.shader", ShaderType::TESSELLATION_EVALUATION);
+	mTessProgram.Compose({ &mTessVertexShader, &mTessFragShader, &mTessControlShader, &mTessEvalShader });
+	mMeshComponent->GetMesh()->SetShaderProgram(mTessProgram);*/
+
 	mMeshComponent->AutoTile();
+	//mMeshComponent->EnableTesselation();
 }
 
 void Corridor::Update()

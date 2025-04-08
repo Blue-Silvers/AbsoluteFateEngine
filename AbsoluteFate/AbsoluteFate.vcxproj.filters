@@ -504,5 +504,17 @@
     <None Include="BasicTese.shader">
       <Filter>Shader</Filter>
     </None>
+    <None Include="TessSimpleFrag.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="TessSimpleTesc.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="TessSimpleTese.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="TessSimpleVert.shader">
+      <Filter>Shader</Filter>
+    </None>
   </ItemGroup>
 </Project>

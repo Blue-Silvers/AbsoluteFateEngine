@@ -8,7 +8,6 @@ RendererGl::RendererGl() :  mWindow(nullptr),
 							mSpriteVao(nullptr), 
 							mContext(nullptr), 
 							mSpriteShaderProgram(nullptr),
-							//mSpriteViewProj(Matrix4Row::CreateSimpleViewProj(800, 800)),
 							mView(Matrix4Row::CreateLookAt(Vector3(0, 0, 5), Vector3::unitX, Vector3::unitZ)),
 							mProj(Matrix4Row::CreatePerspectiveFOV(70.0f, 800, 800, 0.01f, 10000.0f))
 
@@ -53,8 +52,7 @@ bool RendererGl::Initialize(Window& rWindow)
 		Log::Error(LogType::Video, "Failed to initialize SDL_Image");
 	}
 
-	//mSpriteVao = new VertexArray(vertices, 4, indices, 6);
-	mSpriteVao = new VertexArray(spriteVertices, 4); //DebugSprite
+	mSpriteVao = new VertexArray(spriteVertices, 4);
 	mSpriteViewProj = Matrix4Row::CreateSimpleViewProj(mWindow->GetDimensions().x, mWindow->GetDimensions().y);
 
 	mView = Matrix4Row::CreateLookAt(Vector3(0, 0, 5), Vector3::unitX, Vector3::unitZ);
@@ -127,8 +125,8 @@ void RendererGl::DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourc
 	mSpriteShaderProgram->setMatrix4Row("uWorldTransform", world);
 	mSpriteShaderProgram->setVector2f("uTiling", (1, 1));
 	pTex.SetActive();
-	//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
-	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);//DebugSprite
+
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
 }
 
 void RendererGl::AddSprite(SpriteC* pSprite)
@@ -165,12 +163,6 @@ void RendererGl::DrawAllMeshes()
 void RendererGl::AddMesh(MeshC* pMesh)
 {
 	MeshComponentList.push_back(pMesh);
-	//std::vector<MeshC*>::iterator spriteComponent;
-	//for (spriteComponent = MeshComponentList.begin(); spriteComponent != MeshComponentList.end(); ++spriteComponent)
-	//{
-	//	if (MeshComponentList.size() < std::distance(MeshComponentList.begin(), spriteComponent)) break;
-	//}
-	//MeshComponentList.insert(spriteComponent, pMesh);
 }
 
 void RendererGl::RemoveMesh(MeshC* pMesh)

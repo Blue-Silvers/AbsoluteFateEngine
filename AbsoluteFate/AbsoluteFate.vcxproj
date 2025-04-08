@@ -277,6 +277,10 @@
     <None Include="SimpleVert.shader" />
     <None Include="SpriteFrag.shader" />
     <None Include="SpriteVert.shader" />
+    <None Include="TessSimpleFrag.shader" />
+    <None Include="TessSimpleTesc.shader" />
+    <None Include="TessSimpleTese.shader" />
+    <None Include="TessSimpleVert.shader" />
     <None Include="TransformVert.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

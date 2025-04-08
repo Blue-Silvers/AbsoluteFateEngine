@@ -3,48 +3,6 @@
 #include "Texture.h"
 #include "ShaderProgram.h"
 
-/*constexpr float cubeVertices[] = {
-	//Coordonate:		  Uv pos: R/L   T/B
-	-0.5f, -0.5f, -0.5f,		  0.0f, 0.0f,   // Front face
-	 0.5f, -0.5f, -0.5f,		  1.0f, 0.0f,
-	-0.5f,  0.5f, -0.5f,		  0.0f, 1.0f,
-	 0.5f,  0.5f, -0.5f,		  1.0f, 1.0f,
-
-	-0.5f, -0.5f,  0.5f,		  0.0f, 0.0f,   // Back face
-	 0.5f, -0.5f,  0.5f,		  1.0f, 0.0f,
-	-0.5f,  0.5f,  0.5f,		  0.0f, 1.0f,
-	 0.5f,  0.5f,  0.5f,		  1.0f, 1.0f,
-
-	-0.5f, -0.5f, -0.5f,		  0.0f, 0.0f,   // Left face
-	-0.5f, -0.5f,  0.5f,		  1.0f, 0.0f,
-	-0.5f,  0.5f, -0.5f,		  0.0f, 1.0f,
-	-0.5f,  0.5f,  0.5f,		  1.0f, 1.0f,
-
-	 0.5f, -0.5f, -0.5f,		  0.0f, 0.0f,   // Right face
-	 0.5f, -0.5f,  0.5f,		  1.0f, 0.0f,
-	 0.5f,  0.5f, -0.5f,		  0.0f, 1.0f,
-	 0.5f,  0.5f,  0.5f,		  1.0f, 1.0f,
-
-	-0.5f, -0.5f, -0.5f,		  0.0f, 0.0f,   // Bottom face
-	 0.5f, -0.5f, -0.5f,		  1.0f, 0.0f,
-	-0.5f, -0.5f,  0.5f,		  0.0f, 1.0f,
-	 0.5f, -0.5f,  0.5f,		  1.0f, 1.0f,
-
-	-0.5f,  0.5f, -0.5f,		  0.0f, 0.0f,   // Top face
-	 0.5f,  0.5f, -0.5f,		  1.0f, 0.0f,
-	-0.5f,  0.5f,  0.5f,		  0.0f, 1.0f,
-	 0.5f,  0.5f,  0.5f,		  1.0f, 1.0f
-};
-
-constexpr unsigned int cubeIndices[] = {
-   0, 2, 1,  1, 2, 3,		// Front face
-   4, 5, 6,  5, 7, 6,		// Back face
-   8, 9, 10, 9, 11, 10,		// Left face
-   12, 13, 14, 13, 15, 14,	// Right face
-   16, 17, 18, 17, 19, 18,	// Bottom face
-   20, 21, 22, 21, 23, 22	// FTop face
-};*/
-
 struct Vertex
 {
 	Vector3 position{ 0,0,0 };
@@ -61,8 +19,8 @@ private:
 	Shader mVertexShader;
 	Shader mFragmentShader;
 
-	Shader mTessControlShader;
-	Shader mTessEvaluationShader;
+	/*Shader mTessControlShader;
+	Shader mTessEvaluationShader;*/
 
 	ShaderProgram mShaderProgram;
 	std::vector<Vertex> mVertices;
@@ -100,12 +58,12 @@ public:
 	void SetVertexShader(Shader pVertexShader)
 	{
 		mVertexShader = pVertexShader;
-		mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
+		mShaderProgram.Compose({ &mVertexShader, &mFragmentShader});
 	};
 	void SetFragmentShader(Shader pFragmentShader)
 	{
 		mFragmentShader = pFragmentShader;
-		mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
+		mShaderProgram.Compose({ &mVertexShader, &mFragmentShader});
 	};
 	void SetShaderProgram(ShaderProgram& pShaderProgram)
 	{

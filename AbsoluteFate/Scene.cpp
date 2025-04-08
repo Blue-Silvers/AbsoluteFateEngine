@@ -25,10 +25,6 @@ void Scene::Start()
 void Scene::Update()
 {
 	UpdateAllActors();
-	/*for (Actor* actor : mActorsList)
-	{
-		actor->Update();
-	}*/
 }
 
 void Scene::Render()

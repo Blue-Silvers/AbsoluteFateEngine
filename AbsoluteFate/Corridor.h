@@ -6,6 +6,8 @@ class Corridor : public Actor
 {
 private:
 	MeshC* mMeshComponent;
+	Shader mTessVertexShader, mTessFragShader, mTessControlShader, mTessEvalShader;
+	ShaderProgram mTessProgram;
 
 public:
 	void Start()override;
