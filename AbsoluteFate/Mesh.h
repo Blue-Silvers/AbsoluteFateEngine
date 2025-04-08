@@ -60,6 +60,10 @@ private:
 	VertexArray* mVao;
 	Shader mVertexShader;
 	Shader mFragmentShader;
+
+	Shader mTessControlShader;
+	Shader mTessEvaluationShader;
+
 	ShaderProgram mShaderProgram;
 	std::vector<Vertex> mVertices;
 
@@ -96,10 +100,12 @@ public:
 	void SetVertexShader(Shader pVertexShader)
 	{
 		mVertexShader = pVertexShader;
+		mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
 	};
 	void SetFragmentShader(Shader pFragmentShader)
 	{
 		mFragmentShader = pFragmentShader;
+		mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
 	};
 	void SetShaderProgram(ShaderProgram& pShaderProgram)
 	{

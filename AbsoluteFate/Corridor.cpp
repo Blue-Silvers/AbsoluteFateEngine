@@ -3,6 +3,7 @@
 #include "MeshC.h"
 #include "Asset.h"
 #include <iostream>
+#include "Shader.h"
 
 void Corridor::Start()
 {
@@ -18,6 +19,12 @@ void Corridor::Start()
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("corridor"));
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("Plank2"), &Asset::GetTexture("Plank1"), &Asset::GetTexture("Plank2"), &Asset::GetTexture("Plank3")});
 	AddComponent(mMeshComponent);
+
+	//change shader
+	Shader newVertexShader;
+	newVertexShader.Load("TransformVert.shader", ShaderType::VERTEX);
+	mMeshComponent->GetMesh()->SetVertexShader(newVertexShader);
+	mMeshComponent->AutoTile();
 }
 
 void Corridor::Update()

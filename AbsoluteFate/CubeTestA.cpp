@@ -16,6 +16,12 @@ void CubeTestA::Start()
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("cube"));
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("yes")});
 	AddComponent(mMeshComponent);
+
+	//change shader
+	Shader newVertexShader;
+	newVertexShader.Load("TransformVert.shader", ShaderType::VERTEX);
+	mMeshComponent->GetMesh()->SetVertexShader(newVertexShader);
+	mMeshComponent->SetTiling({ 4,4 });
 }
 
 void CubeTestA::Update()

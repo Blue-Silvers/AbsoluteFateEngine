@@ -16,8 +16,8 @@ MeshC::MeshC(Actor* pOwner) : Components(pOwner),
 	{
 		pOwner->GetScene()->GetRenderer()->AddMesh(this);
 	}
-	//pOwner->GetScene()->ActiveScene->GetRenderer()->AddMesh(this);
-	//Scene::ActiveScene->GetRenderer().AddMesh(this);
+
+	glPatchParameteri(GL_PATCH_VERTICES, 3);
 }
 
 MeshC::MeshC(Actor* pOwner, Mesh* pMesh) : Components(pOwner),
@@ -29,6 +29,8 @@ MeshC::MeshC(Actor* pOwner, Mesh* pMesh) : Components(pOwner),
 	{
 		pOwner->GetScene()->GetRenderer()->AddMesh(this);
 	}
+
+	glPatchParameteri(GL_PATCH_VERTICES, 3);
 }
 
 MeshC::~MeshC()
@@ -53,7 +55,9 @@ void MeshC::Draw(Matrix4Row viewProj)
 		}
 
 		mMesh->GetVao()->SetActive();
-		glDrawArrays(GL_TRIANGLES, 0, mMesh->GetVao()->GetVerticeCount());
+		glPointSize(5.0f);
+		glDrawArrays(mEnableTesselation ? GL_PATCHES : GL_TRIANGLES, 0, mMesh->GetVao()->GetVerticeCount());
+		//glDrawArrays(GL_TRIANGLES, 0, mMesh->GetVao()->GetVerticeCount());
 	}
 }
 
@@ -76,10 +80,10 @@ void MeshC::SetTextureIndex(int pTextureIndex)
 
 void MeshC::AutoTile()
 {
-
+	mTilling = (mOwner->GetTransform().GetScale().x, mOwner->GetTransform().GetScale().y);
 }
 
 void MeshC::SetTiling(Vector2 pTilling)
 {
-
+	mTilling = pTilling;
 }

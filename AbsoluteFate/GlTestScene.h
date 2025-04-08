@@ -37,6 +37,9 @@ public:
 	void Start() override;
 	void Update()override;
 	void Render() override;
-	void  Close() override;
+	void Close() override;
+
+	inline Shader GetMainVertexShader() { return mVertexShader; };
+	inline Shader GetMainFragmentShader() { return mFragmentShader; };
 };
 

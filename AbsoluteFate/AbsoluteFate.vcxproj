@@ -270,6 +270,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="BasicFrag.shader" />
+    <None Include="BasicTesc.shader" />
+    <None Include="BasicTese.shader" />
     <None Include="BasicVert.shader" />
     <None Include="SimpleFrag.shader" />
     <None Include="SimpleVert.shader" />

@@ -270,7 +270,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Corridor.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\OpenGlTest</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -473,7 +473,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Corridor.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\OpenGlTest</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -496,6 +496,12 @@
       <Filter>Shader</Filter>
     </None>
     <None Include="BasicVert.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="BasicTesc.shader">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="BasicTese.shader">
       <Filter>Shader</Filter>
     </None>
   </ItemGroup>

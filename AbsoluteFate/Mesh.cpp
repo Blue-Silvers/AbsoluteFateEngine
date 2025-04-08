@@ -6,6 +6,10 @@ Mesh::Mesh() : mVao(nullptr)
 	//mVao = new VertexArray(cubeVertices, 28, cubeIndices, 36);
 	mVertexShader.Load("BasicVert.shader", ShaderType::VERTEX);
 	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
+
+	mTessControlShader.Load("BasicTesc.shader", ShaderType::TESSELLATION_CONTROL);
+	mTessEvaluationShader.Load("BasicTese.shader", ShaderType::TESSELLATION_EVALUATION);
+
 	mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
 	mTexturesList.emplace_back(&Asset::GetTexture("yes"));
 }
@@ -15,6 +19,10 @@ Mesh::Mesh(std::vector<Vertex> pVertices) : mVertices(std::move(pVertices)),mVao
 	mVao = new VertexArray(ToVerticeArray(), mVertices.size());
 	mVertexShader.Load("BasicVert.shader", ShaderType::VERTEX);
 	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
+
+	mTessControlShader.Load("BasicTesc.shader", ShaderType::TESSELLATION_CONTROL);
+	mTessEvaluationShader.Load("BasicTese.shader", ShaderType::TESSELLATION_EVALUATION);
+
 	mShaderProgram.Compose({ &mVertexShader, &mFragmentShader });
 	//mTexturesList.emplace_back(&Asset::GetTexture("yes"));
 }

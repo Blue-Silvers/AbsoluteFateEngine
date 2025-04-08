@@ -57,10 +57,12 @@ void Shader::Load(std::string pFileName, ShaderType pShaderType)
         }
     case TESSELLATION_CONTROL:
     {
+        mId = glCreateShader(GL_TESS_CONTROL_SHADER);
         break;
     }
     case TESSELLATION_EVALUATION:
     {
+        mId = glCreateShader(GL_TESS_EVALUATION_SHADER);
         break;
     }
     case GEOMETRY:

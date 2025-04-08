@@ -1,4 +1,140 @@
-﻿  MeshC.cpp
+﻿  Actor.cpp
 C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
 C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  AnimatedSpriteC.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  BowlingBallA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.h(17,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.cpp(33,98): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.cpp(66,119): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  BowlingBallVisualA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  BowlingBorderA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  BowlingControllerC.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.h(17,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+  BowlingHudA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingHudA.cpp(26,27): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingHudA.cpp(26,22): warning C4305: 'argument': truncation from 'double' to 'float'
+  BowlingPathA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  BowlingScene.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.h(17,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+  BowlingUISkinA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingUISkinA.cpp(28,36): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingUISkinA.cpp(28,30): warning C4305: 'argument': truncation from 'double' to 'float'
+  BoxCollider2DC.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  BoxCollider3DBowlingC.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  CameraA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\CameraA.h(9,23): warning C4305: 'initializing': truncation from 'double' to 'float'
+  CameraBowlingA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  Corridor.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  CubeTestA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  DeathAngelA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  FPSController.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  Game.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  GlTestScene.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.h(17,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\CameraA.h(9,23): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Generating Code...
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BoxCollider3DBowlingC.cpp(89,1): warning C4715: 'BoxCollider3DBowlingC::GetDistance': not all control paths return a value
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BoxCollider3DBowlingC.cpp(128,1): warning C4715: 'BoxCollider3DBowlingC::GetCollideActor': not all control paths return a value
+  Compiling...
+  Main.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.h(17,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\CameraA.h(9,23): warning C4305: 'initializing': truncation from 'double' to 'float'
+  MeshC.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  OpenGlPictureA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  PinA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\PinA.cpp(35,49): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\PinA.cpp(93,63): warning C4305: 'argument': truncation from 'double' to 'float'
+  PlaneTextureOpenGlA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  Platformer.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  PlayerController.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  Pong.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  PongBall.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  RendererGl.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(124,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(123,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(128,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  RendererSDL.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  Scene.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  SetOfPinA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  Shader.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  SphereTestA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  SpriteC.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\SpriteC.cpp(41,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Texture.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  TheWallA.cpp
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  Generating Code...
   AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\AbsoluteFateEngine\Debug\AbsoluteFate.exe
