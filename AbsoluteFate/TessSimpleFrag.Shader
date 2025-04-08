@@ -4,13 +4,13 @@ in TESE_OUT
 {
 	vec4 color;
 	vec2 texCoord;
-} frag_in[];
+} frag_in;
 
 out vec4 outColor;
 
 uniform sampler2D uTexture;
 
-void main()
+void main(void)
 {
 	outColor = frag_in.color * texture(uTexture, frag_in.texCoord);
 }

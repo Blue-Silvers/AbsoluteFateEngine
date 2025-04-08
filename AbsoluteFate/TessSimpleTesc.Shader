@@ -1,13 +1,13 @@
 #version 450 core
 
-loayout(vertices = 3) out;
+layout(vertices = 3) out;
 
 in VS_OUT
 {
 	vec4 color;
 	vec2 texCoord;
 } tesc_in[];
-out VS_OUT
+out TESC_OUT
 {
 	vec4 color;
 	vec2 texCoord;

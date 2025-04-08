@@ -30,10 +30,10 @@ void Corridor::Start()
 	mTessControlShader.Load("TessSimpleTesc.shader", ShaderType::TESSELLATION_CONTROL);
 	mTessEvalShader.Load("TessSimpleTese.shader", ShaderType::TESSELLATION_EVALUATION);
 	mTessProgram.Compose({ &mTessVertexShader, &mTessFragShader, &mTessControlShader, &mTessEvalShader });
-	mMeshComponent->GetMesh()->SetShaderProgram(mTessProgram);*/
+	mMeshComponent->GetMesh()->SetShaderProgram(mTessProgram);
+	mMeshComponent->EnableTesselation();*/
 
 	mMeshComponent->AutoTile();
-	//mMeshComponent->EnableTesselation();
 }
 
 void Corridor::Update()

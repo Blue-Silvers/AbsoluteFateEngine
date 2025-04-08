@@ -47,6 +47,7 @@ void MeshC::Draw(Matrix4Row viewProj)
 		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", viewProj);
 		mMesh->GetShaderProgram().setMatrix4Row("uWorldTransform", wt);
 		mMesh->GetShaderProgram().setVector2f("uTiling", mTilling);
+		mMesh->GetShaderProgram().setVector2f("uOffset", mOffset);
 
 		Texture* t = mMesh->GetTexture(mTextureIndex);
 		if (t) 
@@ -86,4 +87,9 @@ void MeshC::AutoTile()
 void MeshC::SetTiling(Vector2 pTilling)
 {
 	mTilling = pTilling;
+}
+
+void MeshC::SetOffset(Vector2 pOffset)
+{
+	mOffset = pOffset;
 }

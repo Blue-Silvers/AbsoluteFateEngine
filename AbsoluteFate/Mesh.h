@@ -19,8 +19,8 @@ private:
 	Shader mVertexShader;
 	Shader mFragmentShader;
 
-	/*Shader mTessControlShader;
-	Shader mTessEvaluationShader;*/
+	Shader mTessControlShader;
+	Shader mTessEvaluationShader;
 
 	ShaderProgram mShaderProgram;
 	std::vector<Vertex> mVertices;

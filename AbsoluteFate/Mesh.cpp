@@ -7,6 +7,7 @@ Mesh::Mesh() : mVao(nullptr)
 	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
 
 	mShaderProgram.Compose({ &mVertexShader, &mFragmentShader/*, &mTessControlShader, &mTessEvaluationShader */});
+
 	mTexturesList.emplace_back(&Asset::GetTexture("yes"));
 }
 

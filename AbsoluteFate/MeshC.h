@@ -8,6 +8,7 @@ protected:
 	Mesh* mMesh;
 	int mTextureIndex = 1;
 	Vector2 mTilling{ 1,1 };
+	Vector2 mOffset{ 1,1 };
 	bool mEnableTesselation = false;
 
 public:
@@ -20,6 +21,7 @@ public:
 	void SetTextureIndex(int pTextureIndex);
 	void AutoTile();
 	void SetTiling(Vector2 pTilling);
+	void SetOffset(Vector2 pOffset);
 	inline void EnableTesselation() { mEnableTesselation = true; };
 	inline void DisableTesselation() { mEnableTesselation = false; };
 

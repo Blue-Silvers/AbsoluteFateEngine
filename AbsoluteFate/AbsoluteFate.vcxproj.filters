@@ -90,6 +90,15 @@
     <Filter Include="Source Files\Content\Bowling">
       <UniqueIdentifier>{170676db-52d9-41fb-82b7-054ad73a37e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader\Basic">
+      <UniqueIdentifier>{63ddde9c-7d2f-44db-bf9b-b88916fea59b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Simple">
+      <UniqueIdentifier>{394595ae-52cd-46b3-aa31-98dc2a474346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Sprite">
+      <UniqueIdentifier>{f1b8603b-a99a-4a01-9568-0f1d7801783a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -477,44 +486,44 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SimpleFrag.shader">
-      <Filter>Shader</Filter>
-    </None>
-    <None Include="SimpleVert.shader">
-      <Filter>Shader</Filter>
-    </None>
-    <None Include="SpriteFrag.shader">
-      <Filter>Shader</Filter>
-    </None>
-    <None Include="SpriteVert.shader">
-      <Filter>Shader</Filter>
-    </None>
     <None Include="TransformVert.shader">
       <Filter>Shader</Filter>
     </None>
     <None Include="BasicFrag.shader">
-      <Filter>Shader</Filter>
-    </None>
-    <None Include="BasicVert.shader">
-      <Filter>Shader</Filter>
+      <Filter>Shader\Basic</Filter>
     </None>
     <None Include="BasicTesc.shader">
-      <Filter>Shader</Filter>
+      <Filter>Shader\Basic</Filter>
     </None>
     <None Include="BasicTese.shader">
-      <Filter>Shader</Filter>
+      <Filter>Shader\Basic</Filter>
+    </None>
+    <None Include="BasicVert.shader">
+      <Filter>Shader\Basic</Filter>
+    </None>
+    <None Include="SimpleFrag.shader">
+      <Filter>Shader\Simple</Filter>
+    </None>
+    <None Include="SimpleVert.shader">
+      <Filter>Shader\Simple</Filter>
+    </None>
+    <None Include="SpriteFrag.shader">
+      <Filter>Shader\Sprite</Filter>
+    </None>
+    <None Include="SpriteVert.shader">
+      <Filter>Shader\Sprite</Filter>
     </None>
     <None Include="TessSimpleFrag.shader">
-      <Filter>Shader</Filter>
+      <Filter>Shader\Simple</Filter>
     </None>
     <None Include="TessSimpleTesc.shader">
-      <Filter>Shader</Filter>
+      <Filter>Shader\Simple</Filter>
     </None>
     <None Include="TessSimpleTese.shader">
-      <Filter>Shader</Filter>
+      <Filter>Shader\Simple</Filter>
     </None>
     <None Include="TessSimpleVert.shader">
-      <Filter>Shader</Filter>
+      <Filter>Shader\Simple</Filter>
     </None>
   </ItemGroup>
 </Project>

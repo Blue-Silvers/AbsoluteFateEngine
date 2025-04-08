@@ -67,6 +67,7 @@ void Shader::Load(std::string pFileName, ShaderType pShaderType)
         }
     case GEOMETRY:
         {
+            mId = glCreateShader(GL_GEOMETRY_SHADER);
             break;
         }
     default:

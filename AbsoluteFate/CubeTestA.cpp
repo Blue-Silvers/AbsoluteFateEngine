@@ -22,6 +22,7 @@ void CubeTestA::Start()
 	newVertexShader.Load("TransformVert.shader", ShaderType::VERTEX);
 	mMeshComponent->GetMesh()->SetVertexShader(newVertexShader);
 	mMeshComponent->SetTiling({ 4,4 });
+	mMeshComponent->SetOffset({ 0.5,0.5 });
 }
 
 void CubeTestA::Update()
