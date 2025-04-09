@@ -2,6 +2,8 @@
 
 layout(vertices = 3) out;
 
+uniform int uTessLevel;
+
 in VS_OUT{
     vec4 color;
     vec2 texCoord;
@@ -15,12 +17,12 @@ void main(void)
 {
     if (gl_InvocationID == 0)
     {
-        gl_TessLevelInner[0] = 5.0f;
-        gl_TessLevelInner[1] = 7.0;
-        gl_TessLevelOuter[0] = 5.0f;
-        gl_TessLevelOuter[1] = 5.0f;
-        gl_TessLevelOuter[2] = 5.0f;
-        gl_TessLevelOuter[3] = 5.0;
+        gl_TessLevelInner[0] = uTessLevel;
+        gl_TessLevelInner[1] = uTessLevel;
+        gl_TessLevelOuter[0] = uTessLevel;
+        gl_TessLevelOuter[1] = uTessLevel;
+        gl_TessLevelOuter[2] = uTessLevel;
+        gl_TessLevelOuter[3] = uTessLevel;
     }
     gl_out[gl_InvocationID].gl_Position = gl_in[gl_InvocationID].gl_Position;
     tesc_out[gl_InvocationID].color = tesc_in[gl_InvocationID].color;

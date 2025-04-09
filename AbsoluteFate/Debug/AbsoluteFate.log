@@ -1,1 +1,5 @@
-﻿  AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
+﻿  Corridor.cpp
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Corridor.cpp(16,28): warning C4305: 'argument': truncation from 'double' to 'float'
+  AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe

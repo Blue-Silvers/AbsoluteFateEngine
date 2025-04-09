@@ -1,6 +1,6 @@
 #version 450 core
 
-layout(triangles, fractional_even_spacing, cw) in;
+layout(triangles, fractional_even_spacing , cw) in;
 
 in TESC_OUT{
     vec4 color;

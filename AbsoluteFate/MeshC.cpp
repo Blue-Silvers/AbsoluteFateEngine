@@ -46,7 +46,8 @@ void MeshC::Draw(Matrix4Row viewProj)
 		mMesh->GetShaderProgram().setMatrix4Row("uWorldTransform", wt);
 		mMesh->GetShaderProgram().setVector2f("uTiling", mTilling);
 		mMesh->GetShaderProgram().setVector2f("uOffset", mOffset);
-
+		mMesh->GetShaderProgram().setInteger("uTessLevel", mTessLevel);
+		
 		Texture* t = mMesh->GetTexture(mTextureIndex);
 		if (t) 
 		{

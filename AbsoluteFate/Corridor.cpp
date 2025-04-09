@@ -13,7 +13,7 @@ void Corridor::Start()
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank3.png", "Plank3");
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "corridor");
 	//Actor
-	SetScale(Vector3{ 50, 50, 1 }); //scale
+	SetScale(Vector3{ 50, 50, 0.1 }); //scale
 	SetPosition(Vector3{ 50, 0, -10 }); //location
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("corridor"));
@@ -33,12 +33,15 @@ void Corridor::Start()
 	mTessProgram.Compose({ &mTessVertexShader, &mTessFragShader, &mTessControlShader, &mTessEvalShader });
 	mMeshComponent->GetMesh()->SetShaderProgram(mTessProgram);
 	mMeshComponent->EnableTesselation();
+	mMeshComponent->SetTesselationLevel(20);
 
 	mMeshComponent->AutoTile();
 }
 
 void Corridor::Update()
 {
+	/*panicFloat += 0.01;
+	mMeshComponent->SetTesselationLevel((int)panicFloat);*/
 }
 
 void Corridor::Destroy()
