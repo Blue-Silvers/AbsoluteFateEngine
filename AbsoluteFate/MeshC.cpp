@@ -17,7 +17,6 @@ MeshC::MeshC(Actor* pOwner) : Components(pOwner),
 		pOwner->GetScene()->GetRenderer()->AddMesh(this);
 	}
 
-	glPatchParameteri(GL_PATCH_VERTICES, 3);
 }
 
 MeshC::MeshC(Actor* pOwner, Mesh* pMesh) : Components(pOwner),
@@ -30,7 +29,6 @@ MeshC::MeshC(Actor* pOwner, Mesh* pMesh) : Components(pOwner),
 		pOwner->GetScene()->GetRenderer()->AddMesh(this);
 	}
 
-	glPatchParameteri(GL_PATCH_VERTICES, 3);
 }
 
 MeshC::~MeshC()

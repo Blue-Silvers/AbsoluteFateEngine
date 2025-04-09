@@ -18,7 +18,7 @@ void PlaneTextureOpenGlA::Start()
 	AddComponent(sprite);*/
 	//anim component
 	AnimatedSpriteC* animation = new AnimatedSpriteC(this, Asset::GetAnimation("FrontIdle"));
-	animation->SetAnimationFps(5);
+	animation->SetAnimationFps(2);
 	AddComponent(animation);
 }
 

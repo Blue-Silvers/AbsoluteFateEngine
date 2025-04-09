@@ -13,7 +13,7 @@ void Corridor::Start()
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank3.png", "Plank3");
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "corridor");
 	//Actor
-	SetScale(Vector3{ 100, 50, 1 }); //scale
+	SetScale(Vector3{ 50, 50, 1 }); //scale
 	SetPosition(Vector3{ 50, 0, -10 }); //location
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("corridor"));
@@ -21,17 +21,23 @@ void Corridor::Start()
 	AddComponent(mMeshComponent);
 
 	//change shader
-	Shader newVertexShader;
+	/*Shader newVertexShader;
 	newVertexShader.Load("TransformVert.shader", ShaderType::VERTEX);
 	mMeshComponent->GetMesh()->SetVertexShader(newVertexShader);
 
-	/*mTessVertexShader.Load("TessSimpleVert.shader", ShaderType::VERTEX);
+	mTessVertexShader.Load("TessSimpleVert.shader", ShaderType::VERTEX);
 	mTessFragShader.Load("TessSimpleFrag.shader", ShaderType::FRAGMENT);
 	mTessControlShader.Load("TessSimpleTesc.shader", ShaderType::TESSELLATION_CONTROL);
-	mTessEvalShader.Load("TessSimpleTese.shader", ShaderType::TESSELLATION_EVALUATION);
+	mTessEvalShader.Load("TessSimpleTese.shader", ShaderType::TESSELLATION_EVALUATION);*/
+
+	mTessVertexShader.Load("TessTest.vert", ShaderType::VERTEX);
+	mTessFragShader.Load("TessTest.frag", ShaderType::FRAGMENT);
+	mTessControlShader.Load("TessTest.tesc", ShaderType::TESSELLATION_CONTROL);
+	mTessEvalShader.Load("TessTest.tese", ShaderType::TESSELLATION_EVALUATION);
+
 	mTessProgram.Compose({ &mTessVertexShader, &mTessFragShader, &mTessControlShader, &mTessEvalShader });
 	mMeshComponent->GetMesh()->SetShaderProgram(mTessProgram);
-	mMeshComponent->EnableTesselation();*/
+	mMeshComponent->EnableTesselation();
 
 	mMeshComponent->AutoTile();
 }

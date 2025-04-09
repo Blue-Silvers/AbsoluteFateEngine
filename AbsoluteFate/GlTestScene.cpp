@@ -10,6 +10,7 @@ void GlTestScene::SetRenderer(IRenderer* pRenderer)
 
 void GlTestScene::Start()
 {
+	//Sprite shader
 	mShaderProgram = new ShaderProgram();
 
 	mVertexShader.Load("TransformVert.shader", ShaderType::VERTEX);

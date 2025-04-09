@@ -3,6 +3,7 @@
 
 Mesh::Mesh() : mVao(nullptr)
 {
+
 	mVertexShader.Load("BasicVert.shader", ShaderType::VERTEX);
 	mFragmentShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
 

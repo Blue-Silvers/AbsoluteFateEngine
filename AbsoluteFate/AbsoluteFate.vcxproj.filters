@@ -99,6 +99,9 @@
     <Filter Include="Shader\Sprite">
       <UniqueIdentifier>{f1b8603b-a99a-4a01-9568-0f1d7801783a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader\Tesselation">
+      <UniqueIdentifier>{aad7b3c0-fb13-4a24-b166-b17a5c681329}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -280,6 +283,9 @@
     </ClCompile>
     <ClCompile Include="Corridor.cpp">
       <Filter>Source Files\Content\OpenGlTest</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeScene.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -484,6 +490,9 @@
     <ClInclude Include="Corridor.h">
       <Filter>Header Files\Content\OpenGlTest</Filter>
     </ClInclude>
+    <ClInclude Include="CubeScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="TransformVert.shader">
@@ -524,6 +533,18 @@
     </None>
     <None Include="TessSimpleVert.shader">
       <Filter>Shader\Simple</Filter>
+    </None>
+    <None Include="TessTest.vert">
+      <Filter>Shader\Tesselation</Filter>
+    </None>
+    <None Include="TessTest.frag">
+      <Filter>Shader\Tesselation</Filter>
+    </None>
+    <None Include="TessTest.tesc">
+      <Filter>Shader\Tesselation</Filter>
+    </None>
+    <None Include="TessTest.tese">
+      <Filter>Shader\Tesselation</Filter>
     </None>
   </ItemGroup>
 </Project>

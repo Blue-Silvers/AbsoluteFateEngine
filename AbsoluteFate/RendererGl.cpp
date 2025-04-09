@@ -1,6 +1,7 @@
 #include "RendererGl.h"
 
 #include "SpriteC.h"
+#include"AnimatedSpriteC.h"
 #include "Asset.h"
 
 //Constructor
@@ -58,6 +59,8 @@ bool RendererGl::Initialize(Window& rWindow)
 	mView = Matrix4Row::CreateLookAt(Vector3(0, 0, 5), Vector3::unitX, Vector3::unitZ);
 	mProj = Matrix4Row::CreatePerspectiveFOV(70.0f, mWindow->GetDimensions().x, mWindow->GetDimensions().y, 0.01f, 10000.0f);
 
+	glPatchParameteri(GL_PATCH_VERTICES, 3);
+
 	return true;
 }
 
@@ -103,6 +106,11 @@ void RendererGl::DrawAllSprites()
 		if (sprite != nullptr)
 		{
 			sprite->Draw(*this);
+		}
+
+		if (AnimatedSpriteC* animatedSprite = dynamic_cast<AnimatedSpriteC*>(sprite))
+		{
+			animatedSprite->Update();
 		}
 	}
 

@@ -29,7 +29,7 @@ public:
 	Actor();
 	Actor(Transform pTransform2D, Scene* pScene);
 	
-	virtual void Start() = 0;
+	virtual void Start() {};
 	virtual void Render();
 	virtual void AttachScene(Scene* pSceneAttached) //A reference to the scene it is attached to
 	{
@@ -107,8 +107,8 @@ public:
 	{
 		mTagList.clear();
 	};
-	virtual void Update() = 0;
-	virtual void Destroy() = 0;
+	virtual void Update() {};
+	virtual void Destroy() {};
 
 	//Getter
 	virtual Scene* GetScene()
