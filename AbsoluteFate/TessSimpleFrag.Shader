@@ -1,16 +1,16 @@
-#version 450 core
+#version 330
 
-in TESE_OUT
-{
-	vec4 color;
-	vec2 texCoord;
+in TESE_OUT{
+    vec4 color;
+    vec2 texCoord;
+
 } frag_in;
 
-out vec4 outColor;
+out vec4 FragColor;
 
 uniform sampler2D uTexture;
 
-void main(void)
+void main()
 {
-	outColor = frag_in.color * texture(uTexture, frag_in.texCoord);
+    FragColor = frag_in.color * texture(uTexture, frag_in.texCoord);
 }
