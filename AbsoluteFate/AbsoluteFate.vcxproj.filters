@@ -102,6 +102,9 @@
     <Filter Include="Shader\DebugTesselation">
       <UniqueIdentifier>{aad7b3c0-fb13-4a24-b166-b17a5c681329}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader\Terrain">
+      <UniqueIdentifier>{0bd1e416-cb23-4cc2-91ab-4ec7a83798aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -539,6 +542,21 @@
     </None>
     <None Include="TessTest.tese">
       <Filter>Shader\DebugTesselation</Filter>
+    </None>
+    <None Include="terrainVert.shader" />
+    <None Include="terrainTesc.shader" />
+    <None Include="terrainTese.shader" />
+    <None Include="terrainTessControl.shader">
+      <Filter>Shader\Terrain</Filter>
+    </None>
+    <None Include="terrainTessEvaluation.shader">
+      <Filter>Shader\Terrain</Filter>
+    </None>
+    <None Include="terrainTessFragment.shader">
+      <Filter>Shader\Terrain</Filter>
+    </None>
+    <None Include="terrainTessVertex.shader">
+      <Filter>Shader\Terrain</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-#version 330
+#version 450 core
 
 in TESE_OUT{
     vec4 color;
@@ -8,7 +8,8 @@ in TESE_OUT{
 
 out vec4 FragColor;
 
-uniform sampler2D uTexture;
+layout(binding = 0)uniform sampler2D uTexture;
+//layout(binding = 1) uniform sampler2D uTest;
 
 void main()
 {

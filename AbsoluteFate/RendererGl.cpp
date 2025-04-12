@@ -163,7 +163,7 @@ void RendererGl::DrawAllMeshes()
 	{
 		if(m != nullptr)
 		{
-			m->Draw(mView * mProj);
+			m->Draw(mView, mProj);
 		}
 	}
 }

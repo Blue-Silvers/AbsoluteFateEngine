@@ -3,7 +3,7 @@
 layout(location = 0) in vec3 pos;
 layout(location = 1) in vec3 normal;
 layout(location = 2) in vec2 texCoord;
-
+//layout(binding = 2) uniform sampler2D tex_displacement;
 
 uniform mat4 uWorldTransform;
 uniform mat4 uViewProj;

@@ -15,6 +15,7 @@ class Mesh
 {
 private:
 	std::vector<Texture*> mTexturesList;
+	Texture* mNoise;
 	VertexArray* mVao;
 	Shader mVertexShader;
 	Shader mFragmentShader;

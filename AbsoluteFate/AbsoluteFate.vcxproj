@@ -277,6 +277,13 @@
     <None Include="SimpleVert.shader" />
     <None Include="SpriteFrag.shader" />
     <None Include="SpriteVert.shader" />
+    <None Include="terrainTesc.shader" />
+    <None Include="terrainTese.shader" />
+    <None Include="terrainTessControl.shader" />
+    <None Include="terrainTessEvaluation.shader" />
+    <None Include="terrainTessFragment.shader" />
+    <None Include="terrainTessVertex.shader" />
+    <None Include="terrainVert.shader" />
     <None Include="TessSimpleFrag.shader" />
     <None Include="TessSimpleTesc.shader" />
     <None Include="TessSimpleTese.shader" />

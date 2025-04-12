@@ -30,10 +30,17 @@ void Corridor::Start()
 	mTessControlShader.Load("TessSimpleTesc.shader", ShaderType::TESSELLATION_CONTROL);
 	mTessEvalShader.Load("TessSimpleTese.shader", ShaderType::TESSELLATION_EVALUATION);
 
+	/*mTessVertexShader.Load("terrainTessVertex.shader", ShaderType::VERTEX);
+	mTessFragShader.Load("terrainTessFragment.shader", ShaderType::FRAGMENT);
+	mTessControlShader.Load("terrainTessControl.shader", ShaderType::TESSELLATION_CONTROL);
+	mTessEvalShader.Load("terrainTessEvaluation.shader", ShaderType::TESSELLATION_EVALUATION);*/
+
 	mTessProgram.Compose({ &mTessVertexShader, &mTessFragShader, &mTessControlShader, &mTessEvalShader });
 	mMeshComponent->GetMesh()->SetShaderProgram(mTessProgram);
 	mMeshComponent->EnableTesselation();
 	mMeshComponent->SetTesselationLevel(20);
+
+	mMeshComponent->SetTextureIndex(1);
 
 	mMeshComponent->AutoTile();
 }

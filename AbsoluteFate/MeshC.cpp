@@ -36,20 +36,30 @@ MeshC::~MeshC()
 	mOwner->GetScene()->ActiveScene->GetRenderer()->RemoveMesh(this);
 }
 
-void MeshC::Draw(Matrix4Row viewProj)
+void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 {
 	if (mMesh != nullptr)
 	{
 		Matrix4Row wt = mOwner->GetTransform().GetWorldTransform();
 		mMesh->GetShaderProgram().Use();
-		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", viewProj);
+		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", pView * pProj);
 		mMesh->GetShaderProgram().setMatrix4Row("uWorldTransform", wt);
 		mMesh->GetShaderProgram().setVector2f("uTiling", mTilling);
 		mMesh->GetShaderProgram().setVector2f("uOffset", mOffset);
 		mMesh->GetShaderProgram().setInteger("uTessLevel", mTessLevel);
 		
-		Texture* t = mMesh->GetTexture(mTextureIndex);
+		//mMesh->GetShaderProgram().setMatrix4Row("uView", pView);
+		//mMesh->GetShaderProgram().setMatrix4Row("uProj", pProj);
+		mMesh->GetShaderProgram().setFloat("uDinMapDepth", 8.0f);
+
+		Texture* t = mMesh->GetTexture(0);
 		if (t) 
+		{
+			t->SetActive();
+		}
+		glActiveTexture(GL_TEXTURE1); // active noise texture
+		t = mMesh->GetTexture(mTextureIndex);
+		if (t)
 		{
 			t->SetActive();
 		}
@@ -57,7 +67,9 @@ void MeshC::Draw(Matrix4Row viewProj)
 		mMesh->GetVao()->SetActive();
 		glPointSize(5.0f);
 		glDrawArrays(mEnableTesselation ? GL_PATCHES : GL_TRIANGLES, 0, mMesh->GetVao()->GetVerticeCount());
-		//glDrawArrays(GL_TRIANGLES, 0, mMesh->GetVao()->GetVerticeCount());
+		//glDrawArraysInstanced(mEnableTesselation ? GL_PATCHES : GL_TRIANGLES, 0, 3, mMesh->GetVao()->GetVerticeCount());
+
+		glActiveTexture(GL_TEXTURE0); // active color texture
 	}
 }
 

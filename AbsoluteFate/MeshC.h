@@ -16,7 +16,7 @@ public:
 	MeshC(Actor* pOwner);
 	MeshC(Actor* pOwner, Mesh* pMesh);
 	virtual ~MeshC();
-	virtual void Draw(Matrix4Row viewProj);
+	virtual void Draw(Matrix4Row pView, Matrix4Row pProj);
 	virtual void SetMesh(Mesh& pMesh);
 	virtual Mesh* GetMesh() { return mMesh; };
 	void SetTextureIndex(int pTextureIndex);
