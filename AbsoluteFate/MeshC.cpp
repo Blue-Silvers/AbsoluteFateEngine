@@ -52,16 +52,16 @@ void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 		//mMesh->GetShaderProgram().setMatrix4Row("uProj", pProj);
 		mMesh->GetShaderProgram().setFloat("uDinMapDepth", 8.0f);
 
-		Texture* t = mMesh->GetTexture(0);
+		Texture* t = mMesh->GetTexture(mTextureIndex);
 		if (t) 
 		{
 			t->SetActive();
 		}
 		glActiveTexture(GL_TEXTURE1); // active noise texture
-		t = mMesh->GetTexture(mTextureIndex);
-		if (t)
+		
+		if (mMesh->GetNoiseTexture() != nullptr)
 		{
-			t->SetActive();
+			mMesh->GetNoiseTexture()->SetActive();
 		}
 
 		mMesh->GetVao()->SetActive();

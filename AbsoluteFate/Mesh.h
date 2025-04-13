@@ -15,7 +15,7 @@ class Mesh
 {
 private:
 	std::vector<Texture*> mTexturesList;
-	Texture* mNoise;
+	Texture* mNoise = nullptr;
 	VertexArray* mVao;
 	Shader mVertexShader;
 	Shader mFragmentShader;
@@ -41,6 +41,7 @@ public:
 	Shader GetFragmentShader() { return mFragmentShader; }
 	ShaderProgram& GetShaderProgram() { return mShaderProgram; }
 	Texture* GetTexture(int pTextureIndex) { return mTexturesList[pTextureIndex]; };
+	Texture* GetNoiseTexture() { return mNoise; };
 	int GetVerticeCount() {
 		return mVertices.size();
 	}
@@ -51,6 +52,10 @@ public:
 	void SetTextureList(std::vector<Texture*> pTextureList) 
 	{
 		mTexturesList = pTextureList;
+	};
+	void SetNoiseTexture(Texture* pTexture)
+	{
+		mNoise = pTexture;
 	};
 	void SetVao(VertexArray* pVao) 
 	{

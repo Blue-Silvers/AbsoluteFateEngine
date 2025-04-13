@@ -11,6 +11,7 @@ void Corridor::Start()
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank2.png", "Plank2");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank.png", "Plank1");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank3.png", "Plank3");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/TerrainNoise.png", "TerrainNoise");
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "corridor");
 	//Actor
 	SetScale(Vector3{ 50, 50, 0.1 }); //scale
@@ -18,6 +19,7 @@ void Corridor::Start()
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("corridor"));
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("Plank2"), &Asset::GetTexture("Plank1"), &Asset::GetTexture("Plank2"), &Asset::GetTexture("Plank3")});
+	mMeshComponent->GetMesh()->SetNoiseTexture(&Asset::GetTexture("TerrainNoise"));
 	AddComponent(mMeshComponent);
 
 	//change shader
@@ -39,8 +41,6 @@ void Corridor::Start()
 	mMeshComponent->GetMesh()->SetShaderProgram(mTessProgram);
 	mMeshComponent->EnableTesselation();
 	mMeshComponent->SetTesselationLevel(20);
-
-	mMeshComponent->SetTextureIndex(1);
 
 	mMeshComponent->AutoTile();
 }
