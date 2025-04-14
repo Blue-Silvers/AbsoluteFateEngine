@@ -4,6 +4,9 @@
 #include"AnimatedSpriteC.h"
 #include "Asset.h"
 
+// To Load TTF Files
+#include <ft2build.h>
+#include FT_FREETYPE_H
 #include "Maths.h"
 
 //Constructor
@@ -62,6 +65,8 @@ bool RendererGl::Initialize(Window& rWindow)
 	mProj = Matrix4Row::CreatePerspectiveFOV(70.0f, mWindow->GetDimensions().x, mWindow->GetDimensions().y, 0.01f, 10000.0f);
 
 	glPatchParameteri(GL_PATCH_VERTICES, 3);
+
+	load_font((char*)"Resources/Fonts/AtariClassic-gry3.ttf", 8);
 
 	return true;
 }
@@ -260,7 +265,7 @@ void RendererGl::load_font(char* filePath, int fontSize)
 	// Upload OpenGL Texture
 	{
 		glGenTextures(1, (GLuint*)&glContext.fontAtlasID);
-		glActiveTexture(GL_TEXTURE1); // Bound to binding = 1, see quad.frag
+		glActiveTexture(GL_TEXTURE1); // Bound to binding = 1, see SpriteFrag.shader
 		glBindTexture(GL_TEXTURE_2D, glContext.fontAtlasID);
 
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_R8, textureWidth, textureWidth, 0,
@@ -272,3 +277,58 @@ void RendererGl::load_font(char* filePath, int fontSize)
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	}
 }
+
+void RendererGl::draw_ui_text(char* text, Vector2 pos, TextData textData = {})
+{
+	if (!text)
+	{
+		return;
+	}
+
+	Vector2 origin = pos;
+	while (char c = *(text++))
+	{
+		if (c == '\n')
+		{
+			pos.y += renderData->fontHeight * textData.fontSize;
+			pos.x = origin.x;
+			continue;
+		}
+
+		Glyph glyph = renderData->glyphs[c];
+		ShaderTransform transform = {};
+		transform.materialIdx = get_material_idx(textData.material);
+		transform.pos.x = pos.x + glyph.offset.x * textData.fontSize;
+		transform.pos.y = pos.y - glyph.offset.y * textData.fontSize;
+		transform.atlasOffset = glyph.textureCoords;
+		transform.spriteSize = glyph.size;
+		transform.size = glyph.size * textData.fontSize;
+		transform.renderOptions = textData.renderOptions | RENDERING_OPTION_FONT;
+		transform.layer = textData.layer;
+
+		renderData->uiTransforms.push_back(transform);
+
+		// Advance the Glyph
+		pos.x += glyph.advance.x * textData.fontSize;
+	}
+}
+
+int RendererGl::get_material_idx(Material material = {})
+{
+	// Convert from SRGB to linear color space, to be used in the shader, poggies
+	material.color.x = powf(material.color.x, 2.2f);
+	material.color.y = powf(material.color.y, 2.2f);
+	material.color.z = powf(material.color.z, 2.2f);
+	material.color.w = powf(material.color.w, 2.2f);
+
+	for (int materialIdx = 0; materialIdx < renderData->materials.size(); materialIdx++)
+	{
+		if (renderData->materials[materialIdx] == &material)
+		{
+			return materialIdx;
+		}
+	}
+	renderData->materials.push_back(&material);
+	return 0;
+}
+//https://youtu.be/23x0nGzHQgY?si=7uZus4COJtWPWxut&t=1008

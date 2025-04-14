@@ -3,10 +3,6 @@
 #include "VertexArray.h"
 #include "ShaderProgram.h"
 
-// To Load TTF Files
-#include <ft2build.h>
-#include FT_FREETYPE_H
-
 class SpriteC;
 
 struct Glyph
@@ -21,6 +17,10 @@ struct RenderData
 {
 	int fontHeight;
 	Glyph glyphs[127];
+
+	vector<Material*> materials;
+	vector<ShaderTransform> transforms;
+	vector<ShaderTransform> uiTransforms;
 };
 
 struct GLContext
@@ -35,6 +35,14 @@ struct GLContext
 
 	long long textureTimestamp;
 	long long shaderTimestamp;
+};
+
+struct TextData
+{
+	Material material = {};
+	float fontSize = 1.0f;
+	int renderOptions;
+	float layer = 0.0f;
 };
 
 class RendererGl : public IRenderer
@@ -81,5 +89,7 @@ public:
 	Matrix4Row GetProj() override { return mProj; }
 
 	void load_font(char* filePath, int fontSize);
+	void draw_ui_text(char* text, Vector2 pos, TextData textData = {});
+	int get_material_idx(Material material = {});
 };
 

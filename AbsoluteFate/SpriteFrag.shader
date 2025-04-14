@@ -3,7 +3,8 @@
 in vec2 fragTexCoord;
 out vec4 outColor;
 
-uniform sampler2D uTexture;
+layout (binding = 0) uniform sampler2D uTexture;
+layout (binding = 1) uniform sampler2D fontAtlas;
 
 void main()
 {

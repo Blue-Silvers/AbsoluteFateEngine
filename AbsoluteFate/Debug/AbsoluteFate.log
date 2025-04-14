@@ -1,41 +1,4 @@
-﻿  BowlingScene.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'BowlingScene.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'BowlingScene.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.h(17,30): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'BowlingScene.cpp')
-  
-  Game.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Game.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Game.cpp')
-  
-  GlTestScene.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'GlTestScene.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'GlTestScene.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BowlingBallA.h(17,30): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'GlTestScene.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\CameraA.h(9,23): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'GlTestScene.cpp')
-  
-  MeshC.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'MeshC.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'MeshC.cpp')
-  
-  RendererGl.cpp
+﻿  RendererGl.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
   (compiling source file 'RendererGl.cpp')
   
@@ -45,35 +8,4 @@ C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(132,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(131,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(136,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Shader.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Shader.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Shader.cpp')
-  
-  SpriteC.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'SpriteC.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'SpriteC.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SpriteC.cpp(41,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Texture.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Texture.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'Texture.cpp')
-  
-  Generating Code...
-RendererGl.obj : error LNK2019: unresolved external symbol _FT_Init_FreeType referenced in function "public: void __thiscall RendererGl::load_font(char *,int)" (?load_font@RendererGl@@QAEXPADH@Z)
-RendererGl.obj : error LNK2019: unresolved external symbol _FT_Done_FreeType referenced in function "public: void __thiscall RendererGl::load_font(char *,int)" (?load_font@RendererGl@@QAEXPADH@Z)
-RendererGl.obj : error LNK2019: unresolved external symbol _FT_New_Face referenced in function "public: void __thiscall RendererGl::load_font(char *,int)" (?load_font@RendererGl@@QAEXPADH@Z)
-RendererGl.obj : error LNK2019: unresolved external symbol _FT_Done_Face referenced in function "public: void __thiscall RendererGl::load_font(char *,int)" (?load_font@RendererGl@@QAEXPADH@Z)
-RendererGl.obj : error LNK2019: unresolved external symbol _FT_Set_Pixel_Sizes referenced in function "public: void __thiscall RendererGl::load_font(char *,int)" (?load_font@RendererGl@@QAEXPADH@Z)
-RendererGl.obj : error LNK2019: unresolved external symbol _FT_Load_Glyph referenced in function "public: void __thiscall RendererGl::load_font(char *,int)" (?load_font@RendererGl@@QAEXPADH@Z)
-RendererGl.obj : error LNK2019: unresolved external symbol _FT_Render_Glyph referenced in function "public: void __thiscall RendererGl::load_font(char *,int)" (?load_font@RendererGl@@QAEXPADH@Z)
-RendererGl.obj : error LNK2019: unresolved external symbol _FT_Get_Char_Index referenced in function "public: void __thiscall RendererGl::load_font(char *,int)" (?load_font@RendererGl@@QAEXPADH@Z)
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe : fatal error LNK1120: 8 unresolved externals
+  AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

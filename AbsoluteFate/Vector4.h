@@ -144,4 +144,8 @@ public:
 		return v - 2.0f * Vector4::Dot(v, n) * n;
 	}
 
+	bool operator==(Vector4 other)
+	{
+		return x == other.x && y == other.y && z == other.z && w == other.w;
+	}
 };
