@@ -66,7 +66,7 @@ bool RendererGl::Initialize(Window& rWindow)
 
 	glPatchParameteri(GL_PATCH_VERTICES, 3);
 
-	load_font((char*)"Resources/Fonts/AtariClassic-gry3.ttf", 8);
+	//load_font((char*)"Resources/Fonts/AtariClassic-gry3.ttf", 8);
 
 	return true;
 }
@@ -200,7 +200,7 @@ IRenderer::RendererType RendererGl::GetType()
 	return RendererType::OPENGL;
 }
 
-void RendererGl::load_font(char* filePath, int fontSize)
+/*void RendererGl::load_font(char* filePath, int fontSize)
 {
 	FT_Library fontLibrary;
 	FT_Init_FreeType(&fontLibrary);
@@ -278,7 +278,7 @@ void RendererGl::load_font(char* filePath, int fontSize)
 	}
 }
 
-void RendererGl::draw_ui_text(char* text, Vector2 pos, TextData textData = {})
+void RendererGl::draw_ui_text(char* text, Vector2 pos, TextData textData)
 {
 	if (!text)
 	{
@@ -313,7 +313,7 @@ void RendererGl::draw_ui_text(char* text, Vector2 pos, TextData textData = {})
 	}
 }
 
-int RendererGl::get_material_idx(Material material = {})
+int RendererGl::get_material_idx(Material material)
 {
 	// Convert from SRGB to linear color space, to be used in the shader, poggies
 	material.color.x = powf(material.color.x, 2.2f);
@@ -331,4 +331,4 @@ int RendererGl::get_material_idx(Material material = {})
 	renderData->materials.push_back(&material);
 	return 0;
 }
-//https://youtu.be/23x0nGzHQgY?si=7uZus4COJtWPWxut&t=1008
+//https://youtu.be/23x0nGzHQgY?si=7uZus4COJtWPWxut&t=1008*/

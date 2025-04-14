@@ -159,6 +159,9 @@
     <ClCompile Include="BoxCollider2DC.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Components.cpp" />
+    <ClCompile Include="DoomController.cpp" />
+    <ClCompile Include="DoomPlayerA.cpp" />
+    <ClCompile Include="DoomScene.cpp" />
     <ClCompile Include="DrawTextGL.cpp" />
     <ClCompile Include="FPSController.cpp" />
     <ClCompile Include="Game.cpp" />
@@ -222,6 +225,9 @@
     <ClInclude Include="BoxCollider2DC.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Components.h" />
+    <ClInclude Include="DoomController.h" />
+    <ClInclude Include="DoomPlayerA.h" />
+    <ClInclude Include="DoomScene.h" />
     <ClInclude Include="DrawTextGL.h" />
     <ClInclude Include="FPSController.h" />
     <ClInclude Include="Game.h" />

@@ -105,6 +105,12 @@
     <Filter Include="Shader\Terrain">
       <UniqueIdentifier>{0bd1e416-cb23-4cc2-91ab-4ec7a83798aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Content\Doom">
+      <UniqueIdentifier>{6d21b7f9-f82b-4979-876c-63fc01897190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Content\Doom">
+      <UniqueIdentifier>{e09bad89-1648-4683-a1a1-b74d3668026e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -286,6 +292,15 @@
     </ClCompile>
     <ClCompile Include="Corridor.cpp">
       <Filter>Source Files\Content\OpenGlTest</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomScene.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomPlayerA.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomController.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -489,6 +504,15 @@
     </ClInclude>
     <ClInclude Include="Corridor.h">
       <Filter>Header Files\Content\OpenGlTest</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomScene.h">
+      <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomPlayerA.h">
+      <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomController.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

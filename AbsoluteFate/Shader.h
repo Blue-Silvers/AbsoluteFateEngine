@@ -3,15 +3,16 @@
 #include <fstream>
 #include "Color.h"
 #include "Vector2.h"
+#include "Vector4.h"
 
-#define BIT(i) 1 << i
+/*#define BIT(i) 1 << i
 
 // #############################################################################
 //                           Rendering Constants
 // #############################################################################
 int RENDERING_OPTION_FLIP_X = BIT(0);
 int RENDERING_OPTION_FLIP_Y = BIT(1);
-int RENDERING_OPTION_FONT = BIT(2);
+int RENDERING_OPTION_FONT = BIT(2);*/
 
 enum ShaderType 
 {
@@ -34,19 +35,15 @@ struct ShaderTransform
 	int padding;
 };
 
-struct Material
+/*struct Material
 {
 	// Operator inside the Engine to compare materials
-#ifdef ENGINE 
 	Vector4 color = Vector4{ Color::White.r, Color::White.g, Color::White.b, Color::White.a };
 	bool operator==(Material other)
 	{
 		return color == other.color;
-	}
-#else
-	Vector4 color;
-#endif
-};
+	};
+};*/
 
 class Shader
 {

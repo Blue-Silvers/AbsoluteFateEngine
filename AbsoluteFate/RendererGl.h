@@ -18,7 +18,7 @@ struct RenderData
 	int fontHeight;
 	Glyph glyphs[127];
 
-	vector<Material*> materials;
+	//vector<Material*> materials;
 	vector<ShaderTransform> transforms;
 	vector<ShaderTransform> uiTransforms;
 };
@@ -39,7 +39,7 @@ struct GLContext
 
 struct TextData
 {
-	Material material = {};
+	//Material material = {};
 	float fontSize = 1.0f;
 	int renderOptions;
 	float layer = 0.0f;
@@ -88,8 +88,8 @@ public:
 	RendererType GetType() override;
 	Matrix4Row GetProj() override { return mProj; }
 
-	void load_font(char* filePath, int fontSize);
+	/*void load_font(char* filePath, int fontSize);
 	void draw_ui_text(char* text, Vector2 pos, TextData textData = {});
-	int get_material_idx(Material material = {});
+	int get_material_idx(Material material = {});*/
 };
 
