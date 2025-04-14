@@ -32,4 +32,7 @@ namespace Maths
     inline float Sqrt(float val) { return sqrtf(val); }
     inline float Fmod(float numer, float denom) { return std::fmod(numer, denom); }
     inline int Round(float val) { return static_cast<int>(val); }
+
+    inline int min(int a, int b) { return (a < b) ? a : b; }
+    inline int max(int a, int b){ return (a > b) ? a : b; }
 }

@@ -3,7 +3,39 @@
 #include "VertexArray.h"
 #include "ShaderProgram.h"
 
+// To Load TTF Files
+#include <ft2build.h>
+#include FT_FREETYPE_H
+
 class SpriteC;
+
+struct Glyph
+{
+	Vector2 offset;
+	Vector2 advance;
+	Vector2 textureCoords;
+	Vector2 size;
+};
+
+struct RenderData
+{
+	int fontHeight;
+	Glyph glyphs[127];
+};
+
+struct GLContext
+{
+	GLuint programID;
+	GLuint textureID;
+	GLuint transformSBOID;
+	GLuint materialSBOID;
+	GLuint screenSizeID;
+	GLuint orthoProjectionID;
+	GLuint fontAtlasID;
+
+	long long textureTimestamp;
+	long long shaderTimestamp;
+};
 
 class RendererGl : public IRenderer
 {
@@ -14,6 +46,9 @@ private:
 	ShaderProgram* mSpriteShaderProgram;
 	Matrix4Row mView;
 	Matrix4Row mProj;
+
+	RenderData* renderData;
+	GLContext glContext;
 
 public:
 	RendererGl();
@@ -44,5 +79,7 @@ public:
 	//Getter
 	RendererType GetType() override;
 	Matrix4Row GetProj() override { return mProj; }
+
+	void load_font(char* filePath, int fontSize);
 };
 
