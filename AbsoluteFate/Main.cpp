@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
 	//Game myGame("My Pong Game", scene);
 	//Game myGame("Absolute Fate Engine", scene, IRenderer::RendererType::SDL);
 	//Game myGame("Absolute Fate Engine", sceneOpenGl, IRenderer::RendererType::OPENGL);
-	//Game myGame("Super Bowling 3D", sceneBowling, IRenderer::RendererType::OPENGL);
-	Game myGame("Doom", doomScene, IRenderer::RendererType::OPENGL);
+	Game myGame("Super Bowling 3D", sceneBowling, IRenderer::RendererType::OPENGL);
+	//Game myGame("Doom", doomScene, IRenderer::RendererType::OPENGL);
 	return 0;
 }

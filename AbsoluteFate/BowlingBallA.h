@@ -9,7 +9,7 @@ class BowlingBallA : public Actor
 private:
 	BowlingControllerC* mBowlingControllerC;
 	BowlingBallVisualA* mChildSphere;
-	float mVelocity = 13;
+	float mVelocity = 15;
 	bool mIsLunching = false;
 	BoxCollider3DBowlingC* mBoxCollider;
 

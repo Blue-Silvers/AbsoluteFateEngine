@@ -51,8 +51,6 @@ void BowlingBallA::Update()
 				{
 					pinA->AddForce(GetBoxCollider()->GetDistance());
 				}
-				//mVelocity = 0;
-				//Log::Info("" + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().x) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().y) + ", " + std::to_string(mChildSphere->GetBoxCollider()->GetDistance().z));
 			}
 			else
 			{

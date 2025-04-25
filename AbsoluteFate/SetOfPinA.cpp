@@ -27,40 +27,29 @@ void SetOfPinA::Start()
 
 void SetOfPinA::Update()
 {
+	restart = true;
 	for (Actor* actor : mPinList)
 	{
 		actor->Update();
-	}
-
-	for (Actor* actor : mPinList)
-	{
-		if (PinA* pinA = dynamic_cast<PinA*>(actor))
+		
+		if (PinA* pin = dynamic_cast<PinA*>(actor)) 
 		{
-			if (pinA->GetBoxCollider()->OnCollide() == true)
-			{				Log::Info("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-
-				//Log::Info("" + std::to_string(GetBoxCollider()->GetDistance().x) + ", " + std::to_string(GetBoxCollider()->GetDistance().y) + ", " + std::to_string(GetBoxCollider()->GetDistance().z));
-
-				bool hitPin = false;
-				for (string tag : pinA->GetBoxCollider()->GetCollideActor()->GetTags())
-				{
-					if (tag == "bowlingPin")
-					{
-						hitPin = true;
-
-					}
-				}
-				if (hitPin == true)
-				{
-					if (PinA* colidePinA = dynamic_cast<PinA*>(pinA->GetBoxCollider()->GetCollideActor()))
-					{
-						colidePinA->AddForce(colidePinA->GetBoxCollider()->GetDistance());
-					}
-				}
+			if (pin->IsHit() == false)
+			{
+				restart = false;
 			}
 		}
 	}
-
+	if (restart == true) 
+	{
+		timeBeforeRestart -= 0.1;
+		if (timeBeforeRestart <= 0)
+		{
+			timeBeforeRestart = 20;
+			Destroy();
+			Start();
+		}
+	}
 }
 
 void SetOfPinA::Destroy()

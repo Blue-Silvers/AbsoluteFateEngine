@@ -20,7 +20,7 @@ void PinA::Start()
 
 	AddComponent(mMeshComponent);
 
-	mBoxCollider = new BoxCollider3DC(this);
+	mBoxCollider = new BoxCollider3DBowlingC(this);
 	mBoxCollider->SetCustomSize(Vector3(2, 3, 3));
 	AddComponent(mBoxCollider);
 
@@ -29,32 +29,17 @@ void PinA::Start()
 
 void PinA::Update()
 {
-				//NEED DEBUG//
+
 	if (mForce.x != 0 && mForce.y != 0) 
 	{
 		SetPosition(mTransform.GetPosition() + mForce*0.1);
 		mTransform.RotateXInDegrees(mForce.y );
 		mTransform.RotateYInDegrees(mForce.x );
-		/*Log::Info("" + std::to_string(mTransform.GetRotationInDegrees().x) + ", " + std::to_string(mTransform.GetRotationInDegrees().y) + ", " + std::to_string(mTransform.GetRotationInDegrees().z));
-
-		mTransform.RotateXInDegrees(mForce.y);
-		mTransform.RotateYInDegrees(mForce.x);
-		if (mTransform.GetRotationInDegrees().x < mForce.y || mTransform.GetRotationInDegrees().x > 360 - mForce.y)
-		{
-			mForce.y = 0;
-		}
-		if (mTransform.GetRotationInDegrees().y < mForce.x || mTransform.GetRotationInDegrees().y > 360 - mForce.x)
-		{
-			mForce.y = 0;
-		}*/
 	}
-				////////////////
 
-	if (mBoxCollider->OnCollide() == true)
+				//NEED DEBUG//
+	if (GetBoxCollider()->OnCollide() == true)
 	{
-		Log::Info("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-		//Log::Info("" + std::to_string(GetBoxCollider()->GetDistance().x) + ", " + std::to_string(GetBoxCollider()->GetDistance().y) + ", " + std::to_string(GetBoxCollider()->GetDistance().z));
-
 		bool hitPin = false;
 		for (string tag : GetBoxCollider()->GetCollideActor()->GetTags())
 		{
@@ -66,20 +51,30 @@ void PinA::Update()
 		}
 		if (hitPin == true)
 		{
-			Log::Info("" + std::to_string(GetBoxCollider()->GetDistance().x) + ", " + std::to_string(GetBoxCollider()->GetDistance().y) + ", " + std::to_string(GetBoxCollider()->GetDistance().z));
 			if (PinA* pinA = dynamic_cast<PinA*>(GetBoxCollider()->GetCollideActor()))
 			{
+				Log::Info("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 				pinA->AddForce(GetBoxCollider()->GetDistance());
 			}
 		}
 	}
-
 }
 
 void PinA::Destroy()
 {
 	delete mBoxCollider;
 	delete mMeshComponent;
+}
+
+BoxCollider3DBowlingC* PinA::GetBoxCollider()
+{
+	for (Components* component : GetAllComponent())
+	{
+		if (BoxCollider3DBowlingC* boxCollider3DC = dynamic_cast<BoxCollider3DBowlingC*>(component))
+		{
+			return boxCollider3DC;
+		}
+	}
 }
 
 void PinA::AddForce(Vector3 pForce)
@@ -94,4 +89,5 @@ void PinA::AddForce(Vector3 pForce)
 		mTransform.RotateXInDegrees(pForce.y / 1000);
 		mTransform.RotateYInDegrees(pForce.x / 1000);
 	}
+	hit = true;
 }

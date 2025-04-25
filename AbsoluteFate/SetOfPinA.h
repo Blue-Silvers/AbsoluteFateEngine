@@ -6,6 +6,8 @@ class SetOfPinA : public Actor
 {
 private:
 	vector<PinA*> mPinList;
+	bool restart = true;
+	float timeBeforeRestart = 20;
 
 public:
 	void Start()override;
