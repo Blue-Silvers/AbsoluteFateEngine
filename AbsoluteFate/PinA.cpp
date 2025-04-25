@@ -9,7 +9,7 @@
 void PinA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/18924_pin.jpg", "Pin_TEX");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/pin2.png", "Pin_TEX");
 	Asset::LoadMesh("Resources/3D_Models/pin.obj", "pin");
 	//Actor
 	SetScale(Vector3{ 0.5, 0.5, 0.5 }); //scale
@@ -37,7 +37,6 @@ void PinA::Update()
 		mTransform.RotateYInDegrees(mForce.x );
 	}
 
-				//NEED DEBUG//
 	if (GetBoxCollider()->OnCollide() == true)
 	{
 		bool hitPin = false;
@@ -53,7 +52,6 @@ void PinA::Update()
 		{
 			if (PinA* pinA = dynamic_cast<PinA*>(GetBoxCollider()->GetCollideActor()))
 			{
-				Log::Info("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 				pinA->AddForce(GetBoxCollider()->GetDistance());
 			}
 		}
