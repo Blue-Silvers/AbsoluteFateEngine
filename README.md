@@ -3,3 +3,8 @@
 
 https://github.com/user-attachments/assets/574ba2e5-8d10-4c43-8957-8e5f01ebc4ac
 
+
+
+## Input :
+- Space : launch bowling balls
+- 1-2-3-4-5-6 : select skin
