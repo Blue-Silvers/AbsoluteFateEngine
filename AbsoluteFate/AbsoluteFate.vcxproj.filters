@@ -327,10 +327,10 @@
       <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
     <ClCompile Include="DoomBoxCollider3DC.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
     <ClCompile Include="DoomMovingC.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -569,10 +569,10 @@
       <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
     <ClInclude Include="DoomBoxCollider3DC.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
     <ClInclude Include="DoomMovingC.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
