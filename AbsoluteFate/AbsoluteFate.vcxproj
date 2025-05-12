@@ -159,6 +159,7 @@
     <ClCompile Include="BoxCollider2DC.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Components.cpp" />
+    <ClCompile Include="DoomBoxCollider3DC.cpp" />
     <ClCompile Include="DoomController.cpp" />
     <ClCompile Include="DoomDoor.cpp" />
     <ClCompile Include="DoomFloor.cpp" />
@@ -166,6 +167,7 @@
     <ClCompile Include="DoomHudA.cpp" />
     <ClCompile Include="DoomLevel.cpp" />
     <ClCompile Include="DoomLever.cpp" />
+    <ClCompile Include="DoomMovingC.cpp" />
     <ClCompile Include="DoomPlayerA.cpp" />
     <ClCompile Include="DoomRoof.cpp" />
     <ClCompile Include="DoomScene.cpp" />
@@ -233,6 +235,7 @@
     <ClInclude Include="BoxCollider2DC.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Components.h" />
+    <ClInclude Include="DoomBoxCollider3DC.h" />
     <ClInclude Include="DoomController.h" />
     <ClInclude Include="DoomDoor.h" />
     <ClInclude Include="DoomFloor.h" />
@@ -240,6 +243,7 @@
     <ClInclude Include="DoomHudA.h" />
     <ClInclude Include="DoomLevel.h" />
     <ClInclude Include="DoomLever.h" />
+    <ClInclude Include="DoomMovingC.h" />
     <ClInclude Include="DoomPlayerA.h" />
     <ClInclude Include="DoomRoof.h" />
     <ClInclude Include="DoomScene.h" />

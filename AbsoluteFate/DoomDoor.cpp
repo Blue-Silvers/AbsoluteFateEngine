@@ -19,7 +19,7 @@ void DoomDoor::Start()
 	AddComponent(mMeshComponent);
 
 	//box collider
-	mBoxCollider = new BoxCollider3DC(this);
+	mBoxCollider = new DoomBoxCollider3DC(this);
 	mBoxCollider->SetCustomSize(Vector3(1, 1, 1));
 	AddComponent(mBoxCollider);
 

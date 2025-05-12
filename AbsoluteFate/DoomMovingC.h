@@ -20,5 +20,3 @@ public:
 	virtual void OnStart() {};
 	virtual void OnEnd() {};
 };
-
-

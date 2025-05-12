@@ -1,7 +1,7 @@
 #pragma once
 #include "Actor.h"
 #include "MeshC.h" 
-#include "BoxCollider3DC.h"
+#include "DoomBoxCollider3DC.h"
 
 class DoomDoor : public Actor
 {
@@ -12,7 +12,7 @@ private:
 	bool mDoorOpen = false;
 	float mDoorSpeed = 0.05;
 
-	BoxCollider3DC* mBoxCollider;
+	DoomBoxCollider3DC* mBoxCollider;
 
 public:
 	void Start()override;

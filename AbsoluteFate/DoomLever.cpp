@@ -33,7 +33,7 @@ void DoomLever::Start()
 	mMeshComponent->SetTiling({ 5*0.8,5*0.8 });
 	mMeshComponent->SetOffset({ 0.5,0 });
 
-	mLeverActive = false;
+	mLeverActive = true;
 }
 
 void DoomLever::Update()

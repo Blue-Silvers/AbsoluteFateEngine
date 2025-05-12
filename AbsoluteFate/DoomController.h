@@ -1,9 +1,8 @@
 #pragma once
 #include "IInputListener.h"
-#include "MovingC.h"
-#include "MovingC.h"
+#include "DoomMovingC.h"
 
-class DoomController : public MovingC, public IInputListener
+class DoomController : public DoomMovingC, public IInputListener
 {
 private:
 	float mMoveSpeed = 12;

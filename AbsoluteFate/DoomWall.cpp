@@ -14,6 +14,11 @@ void DoomWall::Start()
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("DtextWall")});
 	AddComponent(mMeshComponent);
 
+	//box collider
+	mBoxCollider = new DoomBoxCollider3DC(this);
+	mBoxCollider->SetCustomSize(Vector3(1, 1, 1));
+	AddComponent(mBoxCollider);
+
 	//change shader
 	mTessVertexShader.Load("TessSimpleVert.shader", ShaderType::VERTEX);
 	mTessFragShader.Load("TessSimpleFrag.shader", ShaderType::FRAGMENT);

@@ -25,5 +25,7 @@ public:
 	void Start()override;
 	void Update()override;
 	void Destroy()override;
+
+	inline vector<Actor*> GetLevelElements(){ return mLevelElementList; };
 };
 

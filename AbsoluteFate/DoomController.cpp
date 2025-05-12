@@ -6,7 +6,7 @@
 #include "Log.h"
 #include <sstream>
 
-DoomController::DoomController(Actor* pActor) : MovingC(pActor)
+DoomController::DoomController(Actor* pActor) : DoomMovingC(pActor)
 {
 	InputManager::Instance().SubscribeTo(SDLK_UP, this);
 	InputManager::Instance().SubscribeTo(SDLK_DOWN, this);

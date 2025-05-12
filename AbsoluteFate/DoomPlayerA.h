@@ -3,7 +3,7 @@
 #include "DoomHudA.h"
 #include "AnimatedSpriteC.h"
 #include "DoomGunA.h"
-#include "BoxCollider3DC.h"
+#include "DoomBoxCollider3DC.h"
 
 enum class DoomAnimState
 {
@@ -31,7 +31,7 @@ private:
 
 	DoomAnimState mAnimState = DoomAnimState::Idle;
 
-	BoxCollider3DC* mBoxCollider;
+	DoomBoxCollider3DC* mBoxCollider;
 
 protected:
 	bool mCanHorizontalMove = true, mCanVerticalMove = true;

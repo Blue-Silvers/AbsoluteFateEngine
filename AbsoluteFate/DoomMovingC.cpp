@@ -1,9 +1,10 @@
 #include "DoomMovingC.h"
+
 #include "Actor.h"
 #include "Time.h"
 #include "Vector2.h"
 #include "Maths.h"
-#include "BoxCollider3DC.h"
+#include "DoomBoxCollider3DC.h"
 
 #include "Log.h"
 
@@ -41,7 +42,7 @@ void DoomMovingC::Update()
         //teleport to the last position if collide another collider box
         for (Components* component : mOwner->GetAllComponent())
         {
-            if (BoxCollider3DC* boxCollider = dynamic_cast<BoxCollider3DC*>(component))
+            if (DoomBoxCollider3DC* boxCollider = dynamic_cast<DoomBoxCollider3DC*>(component))
             {
                 if (boxCollider->OnCollide() == true)
                 {
