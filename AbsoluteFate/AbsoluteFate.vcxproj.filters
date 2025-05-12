@@ -317,14 +317,14 @@
     <ClCompile Include="DoomLevel.cpp">
       <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
-    <ClCompile Include="DoomRoof.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="DoomGunA.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
     <ClCompile Include="DoomHudA.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
-    <ClCompile Include="DoomGunA.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="DoomRoof.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -554,13 +554,13 @@
       <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
     <ClInclude Include="DoomRoof.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
     <ClInclude Include="DoomHudA.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
     <ClInclude Include="DoomGunA.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

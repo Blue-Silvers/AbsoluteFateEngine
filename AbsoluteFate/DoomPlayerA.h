@@ -4,6 +4,13 @@
 #include "AnimatedSpriteC.h"
 #include "DoomGunA.h"
 
+enum class DoomAnimState
+{
+	Idle,
+	Walk,
+	Shoot
+};
+
 class DoomPlayerA : public Actor
 {
 private:
@@ -20,7 +27,7 @@ private:
 	float mShootCooldown = 50;
 	float mActualShootCooldown = 50;
 	bool mCanShootAgain = true;
-
+	DoomAnimState mAnimState = DoomAnimState::Idle;
 protected:
 	bool mCanHorizontalMove = true, mCanVerticalMove = true;
 
@@ -33,6 +40,7 @@ public:
 
 	void Shoot();
 	void WalkAnim();
+	void IdleAnim();
 	inline bool GetCanShootAgain() { return mCanShootAgain; };
 	inline DoomGunA* GetGun() { return mGun; };
 };

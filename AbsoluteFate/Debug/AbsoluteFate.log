@@ -1,8 +1,12 @@
-﻿  DoomGunA.cpp
+﻿  RendererGl.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'DoomGunA.cpp')
+  (compiling source file 'RendererGl.cpp')
   
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'DoomGunA.cpp')
+  (compiling source file 'RendererGl.cpp')
   
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(137,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(136,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(141,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(142,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

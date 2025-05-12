@@ -44,11 +44,15 @@ void DoomPlayerA::Update()
 	{
 		mActualShootCooldown -= 1;
 		//change animation
-		for (Components* moveAnim : mGun->GetAllComponent())
+		if(mAnimState != DoomAnimState::Shoot)
 		{
-			if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
+			for (Components* moveAnim : mGun->GetAllComponent())
 			{
-				anim->SetAnimationTextures(Asset::GetAnimation("DoomShoot"));
+				if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
+				{
+					anim->SetAnimationTextures(Asset::GetAnimation("DoomShoot"));
+					mAnimState = DoomAnimState::Shoot;
+				}
 			}
 		}
 		if (mActualShootCooldown <= 0) 
@@ -60,6 +64,7 @@ void DoomPlayerA::Update()
 				if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
 				{
 					anim->SetAnimationTextures(Asset::GetAnimation("DoomIdle"));
+					mAnimState = DoomAnimState::Idle;
 				}
 			}
 		}
@@ -126,7 +131,7 @@ void DoomPlayerA::Shoot()
 
 void DoomPlayerA::WalkAnim()
 {
-	if (mCanShootAgain == true)
+	if (mCanShootAgain == true && mAnimState != DoomAnimState::Walk)
 	{
 		//change animation
 		for (Components* moveAnim : mGun->GetAllComponent())
@@ -134,6 +139,23 @@ void DoomPlayerA::WalkAnim()
 			if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
 			{
 				anim->SetAnimationTextures(Asset::GetAnimation("DoomWalk"));
+				mAnimState = DoomAnimState::Walk;
+			}
+		}
+	}
+}
+
+void DoomPlayerA::IdleAnim()
+{
+	if (mCanShootAgain == true && mAnimState != DoomAnimState::Idle)
+	{
+		//change animation
+		for (Components* moveAnim : mGun->GetAllComponent())
+		{
+			if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
+			{
+				anim->SetAnimationTextures(Asset::GetAnimation("DoomIdle"));
+				mAnimState = DoomAnimState::Idle;
 			}
 		}
 	}

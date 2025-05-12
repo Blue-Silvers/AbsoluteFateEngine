@@ -43,6 +43,7 @@ void DoomController::OnNotify(SDL_Event& pEvent)
 			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
 			{
 				doomPlayer->WalkAnim();
+				
 			}
 			break;
 		case SDLK_DOWN:
@@ -146,16 +147,9 @@ void DoomController::OnNotify(SDL_Event& pEvent)
 	case SDL_KEYUP:
 
 		SetSpeed(Vector3{ 0, 0, 0 });
-		//change animation
 		if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
 		{
-			for (Components* moveAnim : doomPlayer->GetGun()->GetAllComponent())
-			{
-				if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
-				{
-					anim->SetAnimationTextures(Asset::GetAnimation("DoomIdle"));
-				}
-			}
+			doomPlayer->IdleAnim();
 		}
 
 		break;
