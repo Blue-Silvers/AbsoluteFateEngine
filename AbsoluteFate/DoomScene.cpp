@@ -26,17 +26,24 @@ void DoomScene::Start()
 
 	//Actor
 
-	player = new DoomPlayerA();
-	player->AttachScene(this);
-	AddActor(player);
+	mPlayer = new DoomPlayerA();
+	mPlayer->AttachScene(this);
+	AddActor(mPlayer);
 
-	corridor = new Corridor();
-	corridor->AttachScene(this);
-	AddActor(corridor);
+	mLevel = new DoomLevel();
+	mLevel->AttachScene(this);
+	AddActor(mLevel);
 
+	mDoor = new DoomDoor();
+	mDoor->AttachScene(this);
+	AddActor(mDoor);
+
+	mLever = new DoomLever();
+	mLever->AttachScene(this);
+	mLever->SetDoorLinked(mDoor);
+	AddActor(mLever);
 
 	Scene::Start();
-	corridor->SetPosition(Vector3{ 10, 0, -5 });
 }
 
 void DoomScene::Update()

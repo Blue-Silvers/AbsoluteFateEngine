@@ -300,6 +300,24 @@
       <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
     <ClCompile Include="DoomController.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomDoor.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomFloor.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomLever.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomWall.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomLevel.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomRoof.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -512,6 +530,24 @@
       <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
     <ClInclude Include="DoomController.h">
+      <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomDoor.h">
+      <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomFloor.h">
+      <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomLever.h">
+      <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomWall.h">
+      <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomLevel.h">
+      <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomRoof.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

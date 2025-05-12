@@ -2,6 +2,7 @@
 #include "IRenderer.h"
 #include "InputManager.h"
 #include "Actor.h"
+#include "DoomPlayerA.h"
 #include "Log.h"
 #include <sstream>
 
@@ -19,7 +20,10 @@ DoomController::DoomController(Actor* pActor) : MovingC(pActor)
 
 	InputManager::Instance().SubscribeTo(SDLK_ESCAPE, this);
 	InputManager::Instance().SubscribeTo(SDLK_RETURN, this);
-	SDL_SetRelativeMouseMode(SDL_FALSE);
+
+	InputManager::Instance().SubscribeTo(SDLK_SPACE, this);
+
+	SDL_SetRelativeMouseMode(SDL_TRUE);
 
 	//debug
 	InputManager::Instance().SubscribeTo(SDLK_TAB, this);
@@ -78,6 +82,13 @@ void DoomController::OnNotify(SDL_Event& pEvent)
 			else
 			{
 				SDL_SetRelativeMouseMode(SDL_TRUE);
+			}
+			break;
+		case SDLK_SPACE:
+			//Shoot
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->Shoot();
 			}
 			break;
 		/*case SDLK_TAB:

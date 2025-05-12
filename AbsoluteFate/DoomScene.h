@@ -6,7 +6,9 @@
 
 //Actor.h
 #include "DoomPlayerA.h"
-#include "Corridor.h"
+#include "DoomLevel.h"
+#include "DoomDoor.h"
+#include "DoomLever.h"
 
 class DoomScene : public Scene
 {
@@ -17,8 +19,10 @@ private:
 	VertexArray mVertexArray;
 
 	//actor
-	DoomPlayerA* player;
-	Corridor* corridor;
+	DoomPlayerA* mPlayer;
+	DoomLevel* mLevel;
+	DoomDoor* mDoor;
+	DoomLever* mLever;
 
 public:
 

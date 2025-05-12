@@ -1,7 +1,7 @@
 #include "DoomPlayerA.h"
 
 #include "IRenderer.h"
-#include "FPSController.h"
+#include "DoomController.h"
 #include "Time.h"
 
 #include "Log.h"
@@ -20,9 +20,9 @@ void DoomPlayerA::Start()
 {
 	mCanVerticalMove = false;
 
-	SetPosition(Vector3{ -20,0,0 });
+	SetPosition(Vector3{ -30,0,0 });
 	//move component
-	FPSController* movement = new FPSController(this);
+	DoomController* movement = new DoomController(this);
 	movement->SetSpeed(Vector3{ 0, 0, 0 });
 	AddComponent(movement);
 }
@@ -31,7 +31,7 @@ void DoomPlayerA::Update()
 {
 	for (Components* component : mComponentsList)
 	{
-		if (FPSController* movementComponent = dynamic_cast<FPSController*>(component))
+		if (DoomController* movementComponent = dynamic_cast<DoomController*>(component))
 		{
 			movementComponent->Update();
 		}
@@ -61,4 +61,12 @@ void DoomPlayerA::Update()
 
 void DoomPlayerA::Destroy()
 {
+}
+
+void DoomPlayerA::Shoot()
+{
+	Vector3 startPoint = GetTransform().GetPosition();
+	Vector3 endPoint = startPoint + GetTransform().GetWorldTransform().GetXAxis() * mShootRange;
+	//Récupérer tout les acteurs collide entre le start et l'end et comparer leur distance du start, garder uniquement le plus proche et regarder si c'est un ennemy
+	Log::Info(to_string(endPoint.x) + " | " + to_string(endPoint.y));
 }
