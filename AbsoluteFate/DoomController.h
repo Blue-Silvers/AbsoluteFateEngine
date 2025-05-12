@@ -1,6 +1,7 @@
 #pragma once
 #include "IInputListener.h"
 #include "MovingC.h"
+#include "MovingC.h"
 
 class DoomController : public MovingC, public IInputListener
 {

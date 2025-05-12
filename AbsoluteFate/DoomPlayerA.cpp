@@ -18,6 +18,9 @@ float DoomPlayerA::GetSensitivity()
 
 void DoomPlayerA::Start()
 {
+	mBoxCollider = new BoxCollider3DC(this);
+	mBoxCollider->SetCustomSize(Vector3(5, 5, 3));
+	AddComponent(mBoxCollider);
 
 	mCanVerticalMove = false;
 

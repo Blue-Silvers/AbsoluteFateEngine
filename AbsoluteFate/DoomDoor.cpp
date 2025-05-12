@@ -12,10 +12,16 @@ void DoomDoor::Start()
 	//actor
 	SetScale(Vector3{ 0.99, 4, 4 }); //scale
 	SetPosition(Vector3{ -10, 0, 0 }); //location
+
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomDoor"));
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("DtextDoor")});
 	AddComponent(mMeshComponent);
+
+	//box collider
+	mBoxCollider = new BoxCollider3DC(this);
+	mBoxCollider->SetCustomSize(Vector3(1, 1, 1));
+	AddComponent(mBoxCollider);
 
 	//change shader
 	mTessVertexShader.Load("TessSimpleVert.shader", ShaderType::VERTEX);

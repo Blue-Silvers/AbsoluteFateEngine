@@ -3,7 +3,7 @@
 #include "Time.h"
 #include "Vector2.h"
 #include "Maths.h"
-#include "BoxCollider2DC.h"
+#include "BoxCollider3DC.h"
 
 #include "Log.h"
 
@@ -60,34 +60,24 @@ void MovingC::Update()
         // add up
         upVector *= mSpeed.z;
         upVector *= Time::deltaTime;
+        // keep last position 
+        Vector3 lastPosition = mOwner->GetTransform().GetPosition();
         // add new coordonate
         Vector3 newPosition = mOwner->GetTransform().GetPosition() + (forwardVector + rightVector + upVector);
-        //newPosition += (forwardVector + rightVector + upVector); // add forward
-        //newPosition += rightVector; // add right
-        //newPosition += upVector; // add up
+
         Log::Info("" + std::to_string(newPosition.x) + ", " + std::to_string(newPosition.y) + ", " + std::to_string(newPosition.z));
         mOwner->SetPosition(newPosition);
-        
-        //keep last position 
-        /*Vector3 lastPosition = mOwner->GetTransform().GetPosition();
-        newPosition -= forwardVector; // add forward
-        lastPosition -= rightVector; // add right
-        lastPosition -= upVector; // add up*/
-
-        //mOwner->SetPosition(newPosition);
 
         //teleport to the last position if collide another collider box
-        /*for (Components* component : mOwner->GetAllComponent())
+        for (Components* component : mOwner->GetAllComponent())
         {
-            if (BoxCollider2DC* pBoxCollider2DC = dynamic_cast<BoxCollider2DC*>(component))
+            if (BoxCollider3DC* boxCollider = dynamic_cast<BoxCollider3DC*>(component))
             {
-                if (pBoxCollider2DC->OnCollide() == true)
+                if (boxCollider->OnCollide() == true)
                 {
                     mOwner->SetPosition(lastPosition);
                 }
             }
-        }*/
-
+        }
     }
-
 }
