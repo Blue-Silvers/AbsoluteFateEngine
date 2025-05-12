@@ -2,6 +2,7 @@
 #include "Actor.h"
 #include "MeshC.h" 
 #include "DoomDoor.h"
+#include "DoomBoxCollider3DC.h"
 
 class DoomLever : public Actor
 {
@@ -11,6 +12,7 @@ private:
 	ShaderProgram mTessProgram;
 	bool mLeverActive = false;
 	DoomDoor* mDoorLinked;
+	DoomBoxCollider3DC* mBoxCollider;
 
 public:
 	void Start()override;

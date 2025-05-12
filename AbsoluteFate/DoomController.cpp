@@ -22,6 +22,7 @@ DoomController::DoomController(Actor* pActor) : DoomMovingC(pActor)
 	InputManager::Instance().SubscribeTo(SDLK_RETURN, this);
 
 	InputManager::Instance().SubscribeTo(SDLK_SPACE, this);
+	InputManager::Instance().SubscribeTo(SDLK_e, this);
 
 	SDL_SetRelativeMouseMode(SDL_TRUE);
 
@@ -122,6 +123,13 @@ void DoomController::OnNotify(SDL_Event& pEvent)
 			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
 			{
 				doomPlayer->Shoot();
+			}
+			break;
+		case SDLK_e:
+			//interact
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->Interact();
 			}
 			break;
 		/*case SDLK_TAB:

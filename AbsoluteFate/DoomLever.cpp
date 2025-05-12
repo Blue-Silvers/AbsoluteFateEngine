@@ -14,6 +14,13 @@ void DoomLever::Start()
 	SetScale(Vector3{ 0.2, 0.8, 0.8 }); //scale
 	SetPosition(Vector3{ -39, 0, 0 }); //location
 	mTransform.RotateXInDegrees(180);
+
+	//box collider
+	mBoxCollider = new DoomBoxCollider3DC(this);
+	mBoxCollider->SetCustomSize(Vector3(30, 5, 1));
+	mBoxCollider->SetIsOverlap(true);
+	AddComponent(mBoxCollider);
+
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomLever"));
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("DLeverOff")});
@@ -33,7 +40,7 @@ void DoomLever::Start()
 	mMeshComponent->SetTiling({ 5*0.8,5*0.8 });
 	mMeshComponent->SetOffset({ 0.5,0 });
 
-	mLeverActive = true;
+	mLeverActive = false;
 }
 
 void DoomLever::Update()

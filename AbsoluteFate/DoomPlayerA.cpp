@@ -3,6 +3,7 @@
 #include "IRenderer.h"
 #include "DoomController.h"
 #include "Time.h"
+#include "DoomLever.h"
 
 #include "Log.h"
 
@@ -129,6 +130,33 @@ void DoomPlayerA::Shoot()
 		//TakeDammage
 		/*lifePoint -= 1;
 		mHud->GetIconList()[lifePoint]->SetPosition2D(Vector2{ 0, 500 });*/
+	}
+}
+
+void DoomPlayerA::Interact()
+{
+	for (Components* component : GetAllComponent())
+	{
+		if (DoomBoxCollider3DC* boxCollider = dynamic_cast<DoomBoxCollider3DC*>(component))
+		{
+			HitCollider breakHitCollider = boxCollider->GetOnCollide();
+			if (breakHitCollider.isCollid == true)
+			{
+				for (Components* component : breakHitCollider.collideActor->GetAllComponent())
+				{
+					if (DoomBoxCollider3DC* boxCollider3DC = dynamic_cast<DoomBoxCollider3DC*>(component))
+					{
+						if (boxCollider3DC->GetIsOverlap() == true)
+						{
+							if (DoomLever* lever = dynamic_cast<DoomLever*>(mBoxCollider->GetCollideActor()))
+							{
+								lever->SetLeverActive(!lever->GetLeverActive());
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 

@@ -1,21 +1,13 @@
-﻿  DoomBoxCollider3DC.cpp
+﻿  DoomDoor.cpp
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'DoomBoxCollider3DC.cpp')
+  (compiling source file 'DoomDoor.cpp')
   
 C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'DoomBoxCollider3DC.cpp')
+  (compiling source file 'DoomDoor.cpp')
   
-  DoomPlayerA.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'DoomPlayerA.cpp')
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DoomDoor.h(13,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'DoomDoor.cpp')
   
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file 'DoomPlayerA.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DoomPlayerA.h(20,23): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'DoomPlayerA.cpp')
-  
-  Generating Code...
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DoomBoxCollider3DC.cpp(74,1): warning C4715: 'DoomBoxCollider3DC::GetDistance': not all control paths return a value
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DoomBoxCollider3DC.cpp(97,1): warning C4715: 'DoomBoxCollider3DC::GetCollideActor': not all control paths return a value
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DoomDoor.cpp(13,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DoomDoor.cpp(23,38): warning C4305: 'argument': truncation from 'double' to 'float'
   AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

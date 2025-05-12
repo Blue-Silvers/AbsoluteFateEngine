@@ -16,7 +16,7 @@ void DoomWall::Start()
 
 	//box collider
 	mBoxCollider = new DoomBoxCollider3DC(this);
-	mBoxCollider->SetCustomSize(Vector3(1, 1, 1));
+	mBoxCollider->SetCustomSize(Vector3(1.5, 1, 1));
 	AddComponent(mBoxCollider);
 
 	//change shader

@@ -44,13 +44,22 @@ void DoomMovingC::Update()
         {
             if (DoomBoxCollider3DC* boxCollider = dynamic_cast<DoomBoxCollider3DC*>(component))
             {
-                if (boxCollider->OnCollide() == true)
+                HitCollider breakHitCollider = boxCollider->GetOnCollide();
+                if (breakHitCollider.isCollid == true)
                 {
-                    mOwner->SetPosition(lastPosition);
+                    for (Components* component : breakHitCollider.collideActor->GetAllComponent())
+                    {
+                        if (DoomBoxCollider3DC* boxCollider3DC = dynamic_cast<DoomBoxCollider3DC*>(component))
+                        {
+                            if (boxCollider3DC->GetIsOverlap() == false) 
+                            {
+                                mOwner->SetPosition(lastPosition);
+                            }
+                        }
+                    }
                 }
             }
         }
-
     }
 
 }

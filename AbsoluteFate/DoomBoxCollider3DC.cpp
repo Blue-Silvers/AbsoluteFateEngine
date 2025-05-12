@@ -34,9 +34,9 @@ bool DoomBoxCollider3DC::OnCollide() const
             {
                 if (DoomBoxCollider3DC* boxCollider3DC = dynamic_cast<DoomBoxCollider3DC*>(component))
                 {
-                    if (mParentActor->GetTransform().GetWorldTransform().GetTranslation().y < actor->GetTransform().GetWorldTransform().GetTranslation().y + actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetCustomSize().y && mParentActor->GetTransform().GetWorldTransform().GetTranslation().y + mParentActor->GetTransform().GetWorldTransform().GetScale().y * mCustomScale.y > actor->GetTransform().GetWorldTransform().GetTranslation().y
-                        && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x < actor->GetTransform().GetWorldTransform().GetTranslation().x + actor->GetTransform().GetWorldTransform().GetScale().x * boxCollider3DC->GetCustomSize().x && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x + mParentActor->GetTransform().GetWorldTransform().GetScale().x * mCustomScale.x > actor->GetTransform().GetWorldTransform().GetTranslation().x
-                        && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z < actor->GetTransform().GetWorldTransform().GetTranslation().z + actor->GetTransform().GetWorldTransform().GetScale().z * boxCollider3DC->GetCustomSize().z && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z + mParentActor->GetTransform().GetWorldTransform().GetScale().z * mCustomScale.z > actor->GetTransform().GetWorldTransform().GetTranslation().z)
+                    if (mParentActor->GetTransform().GetWorldTransform().GetTranslation().y < actor->GetTransform().GetWorldTransform().GetTranslation().y + actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetCustomSize().y && mParentActor->GetTransform().GetWorldTransform().GetTranslation().y + mParentActor->GetTransform().GetWorldTransform().GetScale().y * mCustomScale.y > actor->GetTransform().GetWorldTransform().GetTranslation().y - actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().y
+                        && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x < actor->GetTransform().GetWorldTransform().GetTranslation().x + actor->GetTransform().GetWorldTransform().GetScale().x * boxCollider3DC->GetCustomSize().x && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x + mParentActor->GetTransform().GetWorldTransform().GetScale().x * mCustomScale.x > actor->GetTransform().GetWorldTransform().GetTranslation().x - actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().x
+                        && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z < actor->GetTransform().GetWorldTransform().GetTranslation().z + actor->GetTransform().GetWorldTransform().GetScale().z * boxCollider3DC->GetCustomSize().z && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z + mParentActor->GetTransform().GetWorldTransform().GetScale().z * mCustomScale.z > actor->GetTransform().GetWorldTransform().GetTranslation().z - actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().z)
                     {
                         return true;
                     }
@@ -94,6 +94,51 @@ Actor* DoomBoxCollider3DC::GetCollideActor()
             }
         }
     }
+}
+
+HitCollider DoomBoxCollider3DC::GetOnCollide()
+{
+    for (Actor* actor : mOwner->GetScene()->GetAllActor())
+    {
+        if (DoomLevel* doomLevel = dynamic_cast<DoomLevel*>(actor))
+        {
+            for (Actor* wall : doomLevel->GetLevelElements())
+            {
+                for (Components* component : wall->GetAllComponent())
+                {
+                    if (DoomBoxCollider3DC* boxCollider3DC = dynamic_cast<DoomBoxCollider3DC*>(component))
+                    {
+                        if (mParentActor->GetTransform().GetWorldTransform().GetTranslation().y < wall->GetTransform().GetWorldTransform().GetTranslation().y + wall->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().y && mParentActor->GetTransform().GetWorldTransform().GetTranslation().y + mParentActor->GetTransform().GetWorldTransform().GetScale().y * mCustomScale.y > wall->GetTransform().GetWorldTransform().GetTranslation().y - wall->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().y
+                            && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x < wall->GetTransform().GetWorldTransform().GetTranslation().x + wall->GetTransform().GetWorldTransform().GetScale().x * boxCollider3DC->GetBoxCollider()->GetCustomSize().x && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x + mParentActor->GetTransform().GetWorldTransform().GetScale().x * mCustomScale.x > wall->GetTransform().GetWorldTransform().GetTranslation().x - wall->GetTransform().GetWorldTransform().GetScale().x * boxCollider3DC->GetBoxCollider()->GetCustomSize().x
+                            && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z < wall->GetTransform().GetWorldTransform().GetTranslation().z + wall->GetTransform().GetWorldTransform().GetScale().z * boxCollider3DC->GetBoxCollider()->GetCustomSize().z && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z + mParentActor->GetTransform().GetWorldTransform().GetScale().z * mCustomScale.z > wall->GetTransform().GetWorldTransform().GetTranslation().z - wall->GetTransform().GetWorldTransform().GetScale().z * boxCollider3DC->GetBoxCollider()->GetCustomSize().z)
+                        {
+                            return HitCollider(true, mParentActor, wall, mIsOverlap, mParentActor->GetTransform().GetPosition() - wall->GetTransform().GetPosition());
+                        }
+                    }
+                }
+            }
+        }
+        if (mParentActor != actor)
+        {
+            for (Components* component : actor->GetAllComponent())
+            {
+                if (DoomBoxCollider3DC* boxCollider3DC = dynamic_cast<DoomBoxCollider3DC*>(component))
+                {
+                    if (mParentActor->GetTransform().GetWorldTransform().GetTranslation().y < actor->GetTransform().GetWorldTransform().GetTranslation().y + actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetCustomSize().y && mParentActor->GetTransform().GetWorldTransform().GetTranslation().y + mParentActor->GetTransform().GetWorldTransform().GetScale().y * mCustomScale.y > actor->GetTransform().GetWorldTransform().GetTranslation().y - actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().y
+                        && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x < actor->GetTransform().GetWorldTransform().GetTranslation().x + actor->GetTransform().GetWorldTransform().GetScale().x * boxCollider3DC->GetCustomSize().x && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x + mParentActor->GetTransform().GetWorldTransform().GetScale().x * mCustomScale.x > actor->GetTransform().GetWorldTransform().GetTranslation().x - actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().x
+                        && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z < actor->GetTransform().GetWorldTransform().GetTranslation().z + actor->GetTransform().GetWorldTransform().GetScale().z * boxCollider3DC->GetCustomSize().z && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z + mParentActor->GetTransform().GetWorldTransform().GetScale().z * mCustomScale.z > actor->GetTransform().GetWorldTransform().GetTranslation().z - actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().z)
+                    {
+                        return HitCollider(true, mParentActor, actor, mIsOverlap, mParentActor->GetTransform().GetPosition() - actor->GetTransform().GetPosition());
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    return HitCollider(false, mParentActor, mParentActor, mIsOverlap, Vector3(0,0,0));
+    
 }
 
 void DoomBoxCollider3DC::Update()

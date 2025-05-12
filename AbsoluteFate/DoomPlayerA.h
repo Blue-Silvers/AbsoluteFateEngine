@@ -44,6 +44,7 @@ public:
 	void Destroy()override;
 
 	void Shoot();
+	void Interact();
 	void WalkAnim();
 	void IdleAnim();
 	inline bool GetCanShootAgain() { return mCanShootAgain; };
