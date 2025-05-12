@@ -1,5 +1,8 @@
 #pragma once
 #include "Actor.h"
+#include "DoomHudA.h"
+#include "AnimatedSpriteC.h"
+#include "DoomGunA.h"
 
 class DoomPlayerA : public Actor
 {
@@ -8,6 +11,15 @@ private:
 	int mMouseDeltaY;
 	float mSensitivity = 0.05;
 	float mShootRange = 20;
+	int lifePoint = 3;
+
+	DoomHudA* mHud;
+	bool mSetHud = false;
+
+	DoomGunA* mGun;
+	float mShootCooldown = 50;
+	float mActualShootCooldown = 50;
+	bool mCanShootAgain = true;
 
 protected:
 	bool mCanHorizontalMove = true, mCanVerticalMove = true;
@@ -20,5 +32,8 @@ public:
 	void Destroy()override;
 
 	void Shoot();
+	void WalkAnim();
+	inline bool GetCanShootAgain() { return mCanShootAgain; };
+	inline DoomGunA* GetGun() { return mGun; };
 };
 

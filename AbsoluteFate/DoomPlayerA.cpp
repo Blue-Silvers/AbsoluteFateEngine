@@ -18,6 +18,7 @@ float DoomPlayerA::GetSensitivity()
 
 void DoomPlayerA::Start()
 {
+
 	mCanVerticalMove = false;
 
 	SetPosition(Vector3{ -30,0,0 });
@@ -25,10 +26,52 @@ void DoomPlayerA::Start()
 	DoomController* movement = new DoomController(this);
 	movement->SetSpeed(Vector3{ 0, 0, 0 });
 	AddComponent(movement);
+
+	mHud = new DoomHudA;
+	mHud->AttachScene(mSceneAttached);
+	
+	mHud->Start();
+
+	mGun = new DoomGunA;
+	mGun->AttachScene(mSceneAttached);
+
+	mGun->Start();
 }
 
 void DoomPlayerA::Update()
 {
+	if (mCanShootAgain == false) 
+	{
+		mActualShootCooldown -= 1;
+		//change animation
+		for (Components* moveAnim : mGun->GetAllComponent())
+		{
+			if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
+			{
+				anim->SetAnimationTextures(Asset::GetAnimation("DoomShoot"));
+			}
+		}
+		if (mActualShootCooldown <= 0) 
+		{
+			mCanShootAgain = true;
+			//change animation
+			for (Components* moveAnim : mGun->GetAllComponent())
+			{
+				if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
+				{
+					anim->SetAnimationTextures(Asset::GetAnimation("DoomIdle"));
+				}
+			}
+		}
+	}
+
+	if(mSetHud == false)
+	{
+		mSceneAttached->AddActor(mHud);
+		mSceneAttached->AddActor(mGun);
+		mSetHud = true;
+	}
+
 	for (Components* component : mComponentsList)
 	{
 		if (DoomController* movementComponent = dynamic_cast<DoomController*>(component))
@@ -65,8 +108,33 @@ void DoomPlayerA::Destroy()
 
 void DoomPlayerA::Shoot()
 {
-	Vector3 startPoint = GetTransform().GetPosition();
-	Vector3 endPoint = startPoint + GetTransform().GetWorldTransform().GetXAxis() * mShootRange;
-	//Récupérer tout les acteurs collide entre le start et l'end et comparer leur distance du start, garder uniquement le plus proche et regarder si c'est un ennemy
-	Log::Info(to_string(endPoint.x) + " | " + to_string(endPoint.y));
+	if (mCanShootAgain == true)
+	{
+		mCanShootAgain = false;
+		mActualShootCooldown = mShootCooldown;
+
+		Vector3 startPoint = GetTransform().GetPosition();
+		Vector3 endPoint = startPoint + GetTransform().GetWorldTransform().GetXAxis() * mShootRange;
+		//Récupérer tout les acteurs collide entre le start et l'end et comparer leur distance du start, garder uniquement le plus proche et regarder si c'est un ennemy
+		Log::Info(to_string(endPoint.x) + " | " + to_string(endPoint.y));
+
+		//TakeDammage
+		/*lifePoint -= 1;
+		mHud->GetIconList()[lifePoint]->SetPosition2D(Vector2{ 0, 500 });*/
+	}
+}
+
+void DoomPlayerA::WalkAnim()
+{
+	if (mCanShootAgain == true)
+	{
+		//change animation
+		for (Components* moveAnim : mGun->GetAllComponent())
+		{
+			if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
+			{
+				anim->SetAnimationTextures(Asset::GetAnimation("DoomWalk"));
+			}
+		}
+	}
 }

@@ -40,28 +40,60 @@ void DoomController::OnNotify(SDL_Event& pEvent)
 			//Directionnal input
 		case SDLK_UP:
 			SetSpeed(Vector3{ mMoveSpeed, 0, 0 });
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->WalkAnim();
+			}
 			break;
 		case SDLK_DOWN:
 			SetSpeed(Vector3{ -mMoveSpeed, 0, 0 });
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->WalkAnim();
+			}
 			break;
 		case SDLK_RIGHT:
 			SetSpeed(Vector3{ 0, mMoveSpeed, 0 });
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->WalkAnim();
+			}
 			break;
 		case SDLK_LEFT:
 			SetSpeed(Vector3{ 0, -mMoveSpeed, 0 });
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->WalkAnim();
+			}
 			break;
 			//keyboard input
 		case SDLK_z:
 			SetSpeed(Vector3{ mMoveSpeed, 0, 0 });
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->WalkAnim();
+			}
 			break;
 		case SDLK_s:
 			SetSpeed(Vector3{ -mMoveSpeed, 0, 0 });
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->WalkAnim();
+			}
 			break;
 		case SDLK_d:
 			SetSpeed(Vector3{ 0, mMoveSpeed, 0 });
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->WalkAnim();
+			}
 			break;
 		case SDLK_q:
 			SetSpeed(Vector3{ 0, -mMoveSpeed, 0 });
+			if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+			{
+				doomPlayer->WalkAnim();
+			}
 			break;
 			//Flip flop show mouse cursor
 		case SDLK_RETURN:
@@ -114,6 +146,18 @@ void DoomController::OnNotify(SDL_Event& pEvent)
 	case SDL_KEYUP:
 
 		SetSpeed(Vector3{ 0, 0, 0 });
+		//change animation
+		if (DoomPlayerA* doomPlayer = dynamic_cast<DoomPlayerA*>(mOwner))
+		{
+			for (Components* moveAnim : doomPlayer->GetGun()->GetAllComponent())
+			{
+				if (AnimatedSpriteC* anim = dynamic_cast<AnimatedSpriteC*>(moveAnim))
+				{
+					anim->SetAnimationTextures(Asset::GetAnimation("DoomIdle"));
+				}
+			}
+		}
+
 		break;
 	default:
 		break;
