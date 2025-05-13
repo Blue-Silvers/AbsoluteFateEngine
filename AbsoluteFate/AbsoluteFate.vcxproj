@@ -162,6 +162,7 @@
     <ClCompile Include="DoomBoxCollider3DC.cpp" />
     <ClCompile Include="DoomController.cpp" />
     <ClCompile Include="DoomDoor.cpp" />
+    <ClCompile Include="DoomEnemyA.cpp" />
     <ClCompile Include="DoomFloor.cpp" />
     <ClCompile Include="DoomGunA.cpp" />
     <ClCompile Include="DoomHudA.cpp" />
@@ -238,6 +239,7 @@
     <ClInclude Include="DoomBoxCollider3DC.h" />
     <ClInclude Include="DoomController.h" />
     <ClInclude Include="DoomDoor.h" />
+    <ClInclude Include="DoomEnemyA.h" />
     <ClInclude Include="DoomFloor.h" />
     <ClInclude Include="DoomGunA.h" />
     <ClInclude Include="DoomHudA.h" />

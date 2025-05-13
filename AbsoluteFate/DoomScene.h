@@ -9,6 +9,7 @@
 #include "DoomLevel.h"
 #include "DoomDoor.h"
 #include "DoomLever.h"
+#include "DoomEnemyA.h"
 
 class DoomScene : public Scene
 {
@@ -23,6 +24,8 @@ private:
 	DoomLevel* mLevel;
 	DoomDoor* mDoor;
 	DoomLever* mLever;
+	DoomEnemyA* mEnemy01;
+	DoomEnemyA* mEnemy02;
 
 public:
 

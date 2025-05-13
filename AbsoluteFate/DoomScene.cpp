@@ -43,7 +43,19 @@ void DoomScene::Start()
 	mLever->SetDoorLinked(mDoor);
 	AddActor(mLever);
 
+	mEnemy01 = new DoomEnemyA();
+	mEnemy01->AttachScene(this);
+	mEnemy01->SetTarget(mPlayer);
+	AddActor(mEnemy01);
+
+	mEnemy02 = new DoomEnemyA();
+	mEnemy02->AttachScene(this);
+	mEnemy02->SetTarget(mPlayer);
+	AddActor(mEnemy02);
+
 	Scene::Start();
+
+	mEnemy02->SetPosition(Vector3{ 20, 15, 0.5 });
 }
 
 void DoomScene::Update()

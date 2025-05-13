@@ -25,8 +25,8 @@ private:
 	bool mSetHud = false;
 
 	DoomGunA* mGun;
-	float mShootCooldown = 50;
-	float mActualShootCooldown = 50;
+	float mShootCooldown = 35;
+	float mActualShootCooldown = 35;
 	bool mCanShootAgain = true;
 
 	DoomAnimState mAnimState = DoomAnimState::Idle;
