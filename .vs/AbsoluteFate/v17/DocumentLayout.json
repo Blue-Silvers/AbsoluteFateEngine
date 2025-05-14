@@ -1,217 +1,217 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\",
+  "WorkspaceRootPath": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomEnemyA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomEnemyA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomEnemyA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomPlayerA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomPlayerA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomPlayerA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomPlayerA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Quaternion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Quaternion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Quaternion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Quaternion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomMovingC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomMovingC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomEnemyA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomEnemyA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Matrix4Row.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Matrix4Row.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomDoor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomDoor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomDoor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomDoor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\CubeTestA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\CubeTestA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\CubeTestA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Maths.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomEnemyA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomEnemyA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomPlayerA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomPlayerA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomPlayerA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomPlayerA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Quaternion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Quaternion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Quaternion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Quaternion.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomMovingC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomMovingC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Matrix4Row.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Matrix4Row.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomDoor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomDoor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomDoor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomDoor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Actor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Actor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Maths.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Maths.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomHudA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomHudA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomHudA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomWall.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomWall.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomWall.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomBoxCollider3DC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomBoxCollider3DC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomBoxCollider3DC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomBoxCollider3DC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomBoxCollider3DC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomBoxCollider3DC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLever.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLever.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomLever.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLever.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLever.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomLever.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLevel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLevel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomLevel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\CameraA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\CameraA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\CameraA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLevel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLevel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomLevel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomMovingC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomMovingC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomMovingC.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomWall.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomWall.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomWall.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomFloor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomFloor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomFloor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\CameraA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\CameraA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\CameraA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomGunA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomGunA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomGunA.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomGunA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomGunA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomGunA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomHudA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomHudA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomHudA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\RendererGl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\RendererGl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\RendererGl.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomRoof.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomRoof.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomRoof.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\IRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\IRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\IRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\RendererGl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\RendererGl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\RendererGl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomRoof.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomRoof.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomRoof.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomFloor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomFloor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\DoomFloor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Corridor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Corridor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Corridor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Corridor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Corridor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Corridor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Components.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Components.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Components.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\MeshC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\MeshC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\MeshC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Components.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Components.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Components.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E5469427-4FE8-4B32-BFB3-3318BACA65B5}|AbsoluteFate\\AbsoluteFate.vcxproj|solutionrelative:AbsoluteFate\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -228,9 +228,9 @@
               "$type": "Document",
               "DocumentIndex": 49,
               "Title": "Scene.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Scene.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Scene.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Scene.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Scene.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Scene.h",
               "RelativeToolTip": "AbsoluteFate\\Scene.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -241,9 +241,9 @@
               "$type": "Document",
               "DocumentIndex": 39,
               "Title": "Scene.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Scene.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Scene.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Scene.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Scene.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Scene.cpp",
               "RelativeToolTip": "AbsoluteFate\\Scene.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAADwvxQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -252,39 +252,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Actor.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Actor.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Actor.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Actor.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Actor.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Actor.h",
               "RelativeToolTip": "AbsoluteFate\\Actor.h",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAEYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-15T08:59:08.105Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Actor.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Actor.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Actor.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Actor.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Actor.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Actor.cpp",
               "RelativeToolTip": "AbsoluteFate\\Actor.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-10T15:49:43.732Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 46,
               "Title": "Components.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Components.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Components.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Components.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Components.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Components.h",
               "RelativeToolTip": "AbsoluteFate\\Components.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -295,9 +293,9 @@
               "$type": "Document",
               "DocumentIndex": 51,
               "Title": "Components.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Components.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Components.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Components.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Components.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Components.cpp",
               "RelativeToolTip": "AbsoluteFate\\Components.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -308,9 +306,9 @@
               "$type": "Document",
               "DocumentIndex": 38,
               "Title": "IRenderer.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\IRenderer.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\IRenderer.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\IRenderer.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\IRenderer.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\IRenderer.h",
               "RelativeToolTip": "AbsoluteFate\\IRenderer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -321,9 +319,9 @@
               "$type": "Document",
               "DocumentIndex": 40,
               "Title": "RendererGl.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\RendererGl.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\RendererGl.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\RendererGl.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\RendererGl.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\RendererGl.h",
               "RelativeToolTip": "AbsoluteFate\\RendererGl.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -334,9 +332,9 @@
               "$type": "Document",
               "DocumentIndex": 36,
               "Title": "RendererGl.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\RendererGl.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\RendererGl.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\RendererGl.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\RendererGl.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\RendererGl.cpp",
               "RelativeToolTip": "AbsoluteFate\\RendererGl.cpp",
               "ViewState": "AgIAAHkAAAAAAAAAAIAwwI0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -347,9 +345,9 @@
               "$type": "Document",
               "DocumentIndex": 48,
               "Title": "MeshC.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\MeshC.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\MeshC.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\MeshC.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\MeshC.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\MeshC.cpp",
               "RelativeToolTip": "AbsoluteFate\\MeshC.cpp",
               "ViewState": "AgIAABMAAAAAAAAAAAAowCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -360,9 +358,9 @@
               "$type": "Document",
               "DocumentIndex": 43,
               "Title": "Corridor.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Corridor.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Corridor.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Corridor.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Corridor.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Corridor.h",
               "RelativeToolTip": "AbsoluteFate\\Corridor.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -373,9 +371,9 @@
               "$type": "Document",
               "DocumentIndex": 44,
               "Title": "Corridor.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Corridor.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Corridor.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Corridor.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Corridor.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Corridor.cpp",
               "RelativeToolTip": "AbsoluteFate\\Corridor.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -386,9 +384,9 @@
               "$type": "Document",
               "DocumentIndex": 45,
               "Title": "Mesh.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Mesh.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Mesh.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Mesh.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Mesh.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Mesh.h",
               "RelativeToolTip": "AbsoluteFate\\Mesh.h",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -399,9 +397,9 @@
               "$type": "Document",
               "DocumentIndex": 50,
               "Title": "Mesh.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Mesh.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Mesh.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Mesh.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Mesh.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Mesh.cpp",
               "RelativeToolTip": "AbsoluteFate\\Mesh.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -410,67 +408,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DoomScene.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomScene.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomScene.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomScene.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomScene.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomScene.h",
               "RelativeToolTip": "AbsoluteFate\\DoomScene.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-14T09:36:18.055Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DoomScene.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomScene.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomScene.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomScene.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomScene.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomScene.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomScene.cpp",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAADkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-14T09:43:03.595Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DoomPlayerA.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomPlayerA.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomPlayerA.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomPlayerA.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomPlayerA.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomPlayerA.h",
               "RelativeToolTip": "AbsoluteFate\\DoomPlayerA.h",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-14T09:37:02.432Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DoomPlayerA.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomPlayerA.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomPlayerA.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomPlayerA.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomPlayerA.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomPlayerA.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomPlayerA.cpp",
               "ViewState": "AgIAAJwAAAAAAAAAAAAAAJ8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-14T09:49:57.13Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "CameraA.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\CameraA.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\CameraA.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\CameraA.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\CameraA.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\CameraA.h",
               "RelativeToolTip": "AbsoluteFate\\CameraA.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -481,9 +475,9 @@
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "CameraA.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\CameraA.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\CameraA.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\CameraA.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\CameraA.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\CameraA.cpp",
               "RelativeToolTip": "AbsoluteFate\\CameraA.cpp",
               "ViewState": "AgIAABsAAAAAAAAAAAAmwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -494,9 +488,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "DoomController.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomController.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomController.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomController.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomController.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomController.h",
               "RelativeToolTip": "AbsoluteFate\\DoomController.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -505,25 +499,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "DoomController.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomController.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomController.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomController.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomController.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomController.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomController.cpp",
               "ViewState": "AgIAAG8AAAAAAAAAAAAAAIMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-14T09:53:52.61Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "DoomFloor.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomFloor.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomFloor.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomFloor.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomFloor.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomFloor.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomFloor.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -534,9 +527,9 @@
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "DoomLevel.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLevel.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLevel.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomLevel.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLevel.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLevel.h",
               "RelativeToolTip": "AbsoluteFate\\DoomLevel.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -547,9 +540,9 @@
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "DoomLevel.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLevel.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLevel.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomLevel.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLevel.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLevel.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomLevel.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -558,39 +551,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "DoomDoor.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomDoor.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomDoor.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomDoor.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomDoor.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomDoor.h",
               "RelativeToolTip": "AbsoluteFate\\DoomDoor.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-11T21:47:43.229Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "DoomDoor.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomDoor.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomDoor.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomDoor.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomDoor.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomDoor.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomDoor.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-11T23:43:26.014Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "DoomHudA.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomHudA.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomHudA.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomHudA.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomHudA.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomHudA.h",
               "RelativeToolTip": "AbsoluteFate\\DoomHudA.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -601,9 +592,9 @@
               "$type": "Document",
               "DocumentIndex": 35,
               "Title": "DoomHudA.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomHudA.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomHudA.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomHudA.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomHudA.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomHudA.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomHudA.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -614,9 +605,9 @@
               "$type": "Document",
               "DocumentIndex": 33,
               "Title": "DoomGunA.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomGunA.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomGunA.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomGunA.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomGunA.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomGunA.h",
               "RelativeToolTip": "AbsoluteFate\\DoomGunA.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -627,9 +618,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "DoomBoxCollider3DC.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomBoxCollider3DC.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomBoxCollider3DC.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomBoxCollider3DC.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomBoxCollider3DC.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomBoxCollider3DC.h",
               "RelativeToolTip": "AbsoluteFate\\DoomBoxCollider3DC.h",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -640,9 +631,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "DoomBoxCollider3DC.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomBoxCollider3DC.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomBoxCollider3DC.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomBoxCollider3DC.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomBoxCollider3DC.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomBoxCollider3DC.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomBoxCollider3DC.cpp",
               "ViewState": "AgIAAFQAAAAAAAAAAAAAAGIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -653,9 +644,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "DoomLever.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLever.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLever.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomLever.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLever.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLever.h",
               "RelativeToolTip": "AbsoluteFate\\DoomLever.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -666,9 +657,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "DoomLever.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLever.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLever.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomLever.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomLever.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomLever.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomLever.cpp",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -677,27 +668,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DoomMovingC.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomMovingC.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomMovingC.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomMovingC.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomMovingC.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomMovingC.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomMovingC.cpp",
               "ViewState": "AgIAACEAAAAAAAAAAAAAwD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-12T21:53:04.565Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "DoomEnemyA.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomEnemyA.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomEnemyA.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomEnemyA.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomEnemyA.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomEnemyA.h",
               "RelativeToolTip": "AbsoluteFate\\DoomEnemyA.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-13T22:16:54.506Z",
               "IsPinned": true,
@@ -707,11 +697,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DoomEnemyA.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomEnemyA.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomEnemyA.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomEnemyA.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomEnemyA.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomEnemyA.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomEnemyA.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAD4AAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-13T22:21:43.499Z",
               "IsPinned": true,
@@ -719,89 +709,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Matrix4Row.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Matrix4Row.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Matrix4Row.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Matrix4Row.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Matrix4Row.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Matrix4Row.h",
               "RelativeToolTip": "AbsoluteFate\\Matrix4Row.h",
               "ViewState": "AgIAACABAAAAAAAAAAAAACkBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-13T23:01:42.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T23:01:42.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Quaternion.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Quaternion.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Quaternion.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Quaternion.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Quaternion.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Quaternion.h",
               "RelativeToolTip": "AbsoluteFate\\Quaternion.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-13T22:59:43.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T22:59:43.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Quaternion.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Quaternion.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Quaternion.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Quaternion.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Quaternion.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Quaternion.cpp",
               "RelativeToolTip": "AbsoluteFate\\Quaternion.cpp",
               "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-13T22:59:05.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T22:59:05.976Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Transform.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Transform.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Transform.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Transform.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Transform.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Transform.h",
               "RelativeToolTip": "AbsoluteFate\\Transform.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-13T22:37:06.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T22:37:06.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Transform.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Transform.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Transform.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Transform.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Transform.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Transform.cpp",
               "RelativeToolTip": "AbsoluteFate\\Transform.cpp",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAACoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-13T22:36:06.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T22:36:06.419Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "Maths.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Maths.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Maths.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\Maths.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Maths.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Maths.h",
               "RelativeToolTip": "AbsoluteFate\\Maths.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-13T19:54:44.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T19:54:44.546Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "DoomMovingC.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomMovingC.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomMovingC.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomMovingC.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomMovingC.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomMovingC.h",
               "RelativeToolTip": "AbsoluteFate\\DoomMovingC.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -811,9 +795,9 @@
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "DoomGunA.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomGunA.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomGunA.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomGunA.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomGunA.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomGunA.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomGunA.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -823,9 +807,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "DoomWall.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomWall.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomWall.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomWall.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomWall.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomWall.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomWall.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -835,9 +819,9 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "DoomWall.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomWall.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomWall.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomWall.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomWall.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomWall.h",
               "RelativeToolTip": "AbsoluteFate\\DoomWall.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -845,13 +829,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
               "Title": "CubeTestA.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\CubeTestA.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\CubeTestA.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\CubeTestA.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\CubeTestA.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\CubeTestA.cpp",
               "RelativeToolTip": "AbsoluteFate\\CubeTestA.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-05T18:34:48.25Z",
               "EditorCaption": ""
@@ -860,9 +844,9 @@
               "$type": "Document",
               "DocumentIndex": 37,
               "Title": "DoomRoof.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomRoof.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomRoof.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomRoof.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomRoof.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomRoof.h",
               "RelativeToolTip": "AbsoluteFate\\DoomRoof.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -872,9 +856,9 @@
               "$type": "Document",
               "DocumentIndex": 41,
               "Title": "DoomRoof.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomRoof.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomRoof.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomRoof.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomRoof.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomRoof.cpp",
               "RelativeToolTip": "AbsoluteFate\\DoomRoof.cpp",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -884,9 +868,9 @@
               "$type": "Document",
               "DocumentIndex": 42,
               "Title": "DoomFloor.h",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomFloor.h",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomFloor.h",
               "RelativeDocumentMoniker": "AbsoluteFate\\DoomFloor.h",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\DoomFloor.h",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\DoomFloor.h",
               "RelativeToolTip": "AbsoluteFate\\DoomFloor.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -896,9 +880,9 @@
               "$type": "Document",
               "DocumentIndex": 47,
               "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Main.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Main.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Main.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Main.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Main.cpp",
               "RelativeToolTip": "AbsoluteFate\\Main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -908,9 +892,9 @@
               "$type": "Document",
               "DocumentIndex": 52,
               "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Game.cpp",
+              "DocumentMoniker": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Game.cpp",
               "RelativeDocumentMoniker": "AbsoluteFate\\Game.cpp",
-              "ToolTip": "C:\\Users\\fury8\\OneDrive\\Documents\\GitHub\\AbsoluteFateEngine\\AbsoluteFate\\Game.cpp",
+              "ToolTip": "C:\\Users\\enzo.lahana\\Documents\\GitHub\\AbsoluteFate\\AbsoluteFate\\Game.cpp",
               "RelativeToolTip": "AbsoluteFate\\Game.cpp",
               "ViewState": "AQIAADwAAAAAAAAAAAAQwEgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",

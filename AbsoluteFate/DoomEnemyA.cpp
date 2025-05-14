@@ -8,16 +8,16 @@
 void DoomEnemyA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Doom/168.png", "DtextDoor");
-	Asset::LoadMesh("Resources/3D_Models/cube.obj", "doomDoor");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/theBlock.png", "DtextEn");
+	Asset::LoadMesh("Resources/3D_Models/cube.obj", "doomDEn");
 
 	//actor
 	SetScale(Vector3{ 0.5, 2, 3 }); //scale
 	SetPosition(Vector3{ 20, -15, 0.5 }); //location
 
 	//mesh component
-	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomDoor"));
-	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("DtextDoor")});
+	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomDEn"));
+	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("DtextEn")});
 	AddComponent(mMeshComponent);
 
 	//box collider
@@ -36,7 +36,8 @@ void DoomEnemyA::Start()
 	mMeshComponent->EnableTesselation();
 	mMeshComponent->SetTesselationLevel(10);
 
-	//mMeshComponent->SetTiling({ 4,4 });
+	mMeshComponent->SetTiling({ 3,4 });
+	mMeshComponent->SetOffset({ 1,1 });
 	mTransform.RotateZInDegrees(mTransform.GetRotationInDegrees().z - atan2(mTransform.GetPosition().y - mTarget->GetTransform().GetPosition().y, mTransform.GetPosition().x - mTarget->GetTransform().GetPosition().x) * (180 / Maths::PI));
 }
 
