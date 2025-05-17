@@ -12,6 +12,7 @@ public:
 	void Start()override;
 	void Update()override;
 	void Destroy()override;
+	void Restart();
 
 	inline vector<OpenGlPictureA*> GetIconList() { return mIconList; };
 };

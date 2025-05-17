@@ -16,6 +16,7 @@ private:
 
 public:
 	void Start()override;
+	void Restart();
 	void Update()override;
 	void Destroy()override;
 	void OpenDoor();

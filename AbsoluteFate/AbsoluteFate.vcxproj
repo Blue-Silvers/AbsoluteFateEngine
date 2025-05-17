@@ -163,6 +163,7 @@
     <ClCompile Include="DoomController.cpp" />
     <ClCompile Include="DoomDoor.cpp" />
     <ClCompile Include="DoomEnemyA.cpp" />
+    <ClCompile Include="DoomEnnemyProjectil.cpp" />
     <ClCompile Include="DoomFloor.cpp" />
     <ClCompile Include="DoomGunA.cpp" />
     <ClCompile Include="DoomHudA.cpp" />
@@ -240,6 +241,7 @@
     <ClInclude Include="DoomController.h" />
     <ClInclude Include="DoomDoor.h" />
     <ClInclude Include="DoomEnemyA.h" />
+    <ClInclude Include="DoomEnnemyProjectil.h" />
     <ClInclude Include="DoomFloor.h" />
     <ClInclude Include="DoomGunA.h" />
     <ClInclude Include="DoomHudA.h" />

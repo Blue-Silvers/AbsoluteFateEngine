@@ -43,6 +43,11 @@ void DoomLever::Start()
 	mLeverActive = false;
 }
 
+void DoomLever::Restart()
+{
+	mLeverActive = false;
+}
+
 void DoomLever::Update()
 {
 	mDoorLinked->SetDoorOpen(mLeverActive);

@@ -39,6 +39,12 @@ void DoomDoor::Start()
 	mDoorOpen = false;
 }
 
+void DoomDoor::Restart()
+{
+	SetPosition(Vector3{ -10, 0, 0.5 });
+	mDoorOpen = false;
+}
+
 void DoomDoor::Update()
 {
 	if (mDoorOpen == true) 

@@ -32,6 +32,7 @@ public:
 	DoomScene() :Scene("OpenGl") {};
 	void SetRenderer(IRenderer* pRenderer) override;
 	void Start() override;
+	void Retart();
 	void Update()override;
 	void Render() override;
 	void Close() override;

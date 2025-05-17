@@ -4,6 +4,7 @@
 #include "DoomController.h"
 #include "Time.h"
 #include "DoomLever.h"
+#include "DoomScene.h"
 
 #include "Log.h"
 
@@ -127,9 +128,7 @@ void DoomPlayerA::Shoot()
 		//Récupérer tout les acteurs collide entre le start et l'end et comparer leur distance du start, garder uniquement le plus proche et regarder si c'est un ennemy
 		Log::Info(to_string(endPoint.x) + " | " + to_string(endPoint.y));
 
-		//TakeDammage
-		/*lifePoint -= 1;
-		mHud->GetIconList()[lifePoint]->SetPosition2D(Vector2{ 0, 500 });*/
+
 	}
 }
 
@@ -148,7 +147,7 @@ void DoomPlayerA::Interact()
 					{
 						if (boxCollider3DC->GetIsOverlap() == true)
 						{
-							if (DoomLever* lever = dynamic_cast<DoomLever*>(mBoxCollider->GetCollideActor()))
+							if (DoomLever* lever = dynamic_cast<DoomLever*>(breakHitCollider.collideActor))
 							{
 								lever->SetLeverActive(!lever->GetLeverActive());
 							}
@@ -158,6 +157,30 @@ void DoomPlayerA::Interact()
 			}
 		}
 	}
+}
+
+void DoomPlayerA::TakeDamage()
+{
+	//TakeDamage
+	lifePoint -= 1;
+	if (lifePoint == -1)
+	{
+		lifePoint = 3;
+		SetPosition(Vector3{ -30,0,0 });
+		SetRotation(Quaternion::Identity);
+		mHud->Restart();
+
+		//Restart scene
+		if (DoomScene* doomScene = dynamic_cast<DoomScene*>(mSceneAttached))
+		{
+			doomScene->Retart();
+		}
+	}
+	else
+	{
+		mHud->GetIconList()[lifePoint]->SetPosition2D(Vector2{ 0, 500 });
+	}
+
 }
 
 void DoomPlayerA::WalkAnim()

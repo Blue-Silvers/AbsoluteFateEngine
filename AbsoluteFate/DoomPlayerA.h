@@ -45,6 +45,7 @@ public:
 
 	void Shoot();
 	void Interact();
+	void TakeDamage();
 	void WalkAnim();
 	void IdleAnim();
 	inline bool GetCanShootAgain() { return mCanShootAgain; };

@@ -53,3 +53,10 @@ void DoomHudA::Update()
 void DoomHudA::Destroy()
 {
 }
+
+void DoomHudA::Restart()
+{
+	mIconList[0]->SetPosition2D(Vector2{ -150, 350 });
+	mIconList[1]->SetPosition2D(Vector2{ 0, 350 });
+	mIconList[2]->SetPosition2D(Vector2{ 150, 350 });
+}

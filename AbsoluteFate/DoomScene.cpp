@@ -58,6 +58,15 @@ void DoomScene::Start()
 	mEnemy02->SetPosition(Vector3{ 20, 15, 0.5 });
 }
 
+void DoomScene::Retart()
+{
+	mDoor->Restart();
+	mLever->Restart();
+	mEnemy01->Restart();
+	mEnemy02->Restart();
+	mEnemy02->SetPosition(Vector3{ 20, 15, 0.5 });
+}
+
 void DoomScene::Update()
 {
 

@@ -39,6 +39,14 @@ void DoomEnemyA::Start()
 	mMeshComponent->SetTiling({ 3,4 });
 	mMeshComponent->SetOffset({ 1,1 });
 	mTransform.RotateZInDegrees(mTransform.GetRotationInDegrees().z - atan2(mTransform.GetPosition().y - mTarget->GetTransform().GetPosition().y, mTransform.GetPosition().x - mTarget->GetTransform().GetPosition().x) * (180 / Maths::PI));
+	
+	AddTag("Enemy");
+}
+
+void DoomEnemyA::Restart()
+{
+	mLife = 2;
+	SetPosition(Vector3{ 20, -15, 0.5 });
 }
 
 void DoomEnemyA::Update()
@@ -47,10 +55,27 @@ void DoomEnemyA::Update()
 	{
 		LookAt(mTarget);
 
-		/*if (distance to mTarget)
+		
+		float calculateDistance = std::sqrt(std::pow(mTarget->GetTransform().GetPosition().x - GetTransform().GetPosition().x, 2) + std::pow(mTarget->GetTransform().GetPosition().y - GetTransform().GetPosition().y, 2));
+		if (calculateDistance <= mShootingRange && mCanShootAgain == true)
 		{
-			Shoot()
-		}*/
+			mCanShootAgain = false;
+			Shoot();
+			mActualShootCooldown = mShootCooldown;
+		}
+		if (mCanShootAgain == false) 
+		{
+			mActualShootCooldown -= 1;
+			if (mActualShootCooldown <= 0) 
+			{
+				mCanShootAgain = true;
+			}
+		}
+	}
+	for (DoomEnnemyProjectil* projectil : mCurrentProjectils)
+	{
+		projectil->Update();
+		Log::Info(to_string(projectil->GetTransform().GetPosition().x) + " | " + to_string(projectil->GetTransform().GetPosition().y));
 	}
 }
 
@@ -68,4 +93,12 @@ void DoomEnemyA::LookAt(Actor* pTarget)
 
 void DoomEnemyA::Shoot()
 {
+	DoomEnnemyProjectil* newProj = new DoomEnnemyProjectil();
+	newProj->AttachScene(GetScene());
+	mCurrentProjectils.push_back(newProj);
+
+	newProj->Start();
+
+	newProj->SetPosition(mTransform.GetPosition());
+	newProj->SetForward(mTransform.Forward() * -1);
 }

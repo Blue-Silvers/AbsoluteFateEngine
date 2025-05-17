@@ -335,6 +335,9 @@
     <ClCompile Include="DoomEnemyA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DoomEnnemyProjectil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedSpriteC.h">
@@ -578,6 +581,9 @@
       <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
     <ClInclude Include="DoomEnemyA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomEnnemyProjectil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
