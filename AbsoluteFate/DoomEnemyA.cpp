@@ -8,45 +8,44 @@
 void DoomEnemyA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/theBlock.png", "DtextEn");
-	Asset::LoadMesh("Resources/3D_Models/cube.obj", "doomDEn");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Doom/tn397.png", "DtextEn");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Doom/396.png", "DtextEnHit");
+	Asset::LoadMesh("Resources/3D_Models/sphere.obj", "doomMeshEn");
 
 	//actor
-	SetScale(Vector3{ 0.5, 2, 3 }); //scale
+	SetScale(Vector3{ 0.1, 3, 3 }); //scale
 	SetPosition(Vector3{ 20, -15, 0.5 }); //location
 
 	//mesh component
-	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomDEn"));
+	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomMeshEn"));
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("DtextEn")});
 	AddComponent(mMeshComponent);
 
 	//box collider
 	mBoxCollider = new DoomBoxCollider3DC(this);
-	mBoxCollider->SetCustomSize(Vector3(0.5, 1, 1));
+	mBoxCollider->SetCustomSize(Vector3(1, 1, 1));
 	AddComponent(mBoxCollider);
 
 	//change shader
-	mTessVertexShader.Load("TessSimpleVert.shader", ShaderType::VERTEX);
-	mTessFragShader.Load("TessSimpleFrag.shader", ShaderType::FRAGMENT);
-	mTessControlShader.Load("TessSimpleTesc.shader", ShaderType::TESSELLATION_CONTROL);
-	mTessEvalShader.Load("TessSimpleTese.shader", ShaderType::TESSELLATION_EVALUATION);
-
-	mTessProgram.Compose({ &mTessVertexShader, &mTessFragShader, &mTessControlShader, &mTessEvalShader });
+	mTessVertexShader.Load("TransformVert.shader", ShaderType::VERTEX);
+	mTessFragShader.Load("BasicFrag.shader", ShaderType::FRAGMENT);
+	mTessProgram.Compose({ &mTessVertexShader, &mTessFragShader});
 	mMeshComponent->GetMesh()->SetShaderProgram(mTessProgram);
-	mMeshComponent->EnableTesselation();
-	mMeshComponent->SetTesselationLevel(10);
 
-	mMeshComponent->SetTiling({ 3,4 });
-	mMeshComponent->SetOffset({ 1,1 });
-	mTransform.RotateZInDegrees(mTransform.GetRotationInDegrees().z - atan2(mTransform.GetPosition().y - mTarget->GetTransform().GetPosition().y, mTransform.GetPosition().x - mTarget->GetTransform().GetPosition().x) * (180 / Maths::PI));
+	mMeshComponent->SetTiling({ 2,1 });
+	mMeshComponent->SetOffset({ 0.5,1 });
+
 	
+	mTransform.RotateZInDegrees(mTransform.GetRotationInDegrees().z - atan2(mTransform.GetPosition().y - mTarget->GetTransform().GetPosition().y, mTransform.GetPosition().x - mTarget->GetTransform().GetPosition().x) * (180 / Maths::PI));
 	AddTag("Enemy");
 }
 
-void DoomEnemyA::Restart()
+void DoomEnemyA::Restart() 
 {
-	mLife = 2;
+	mLife = 3;
 	SetPosition(Vector3{ 20, -15, 0.5 });
+	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("DtextEn")});
+
 }
 
 void DoomEnemyA::Update()
@@ -76,6 +75,16 @@ void DoomEnemyA::Update()
 	{
 		projectil->Update();
 	}
+
+	if (mHitAnimTime != 20) 
+	{
+		mHitAnimTime -= 1;
+		if(mHitAnimTime <= 0)
+		{
+			mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("DtextEn")});
+			mHitAnimTime = 20;
+		}
+	}
 }
 
 void DoomEnemyA::Destroy()
@@ -85,7 +94,7 @@ void DoomEnemyA::Destroy()
 void DoomEnemyA::LookAt(Actor* pTarget)
 {
 	SetRotation(Quaternion(Vector3(0,0,1), atan2(mTransform.GetPosition().y - pTarget->GetTransform().GetPosition().y, mTransform.GetPosition().x - pTarget->GetTransform().GetPosition().x)));
-	
+
 			//Debug Angle\\
 	//Log::Info(to_string(mTransform.GetRotationInDegrees().z - atan2(mTransform.GetPosition().y - pTarget->GetTransform().GetPosition().y, mTransform.GetPosition().x - pTarget->GetTransform().GetPosition().x) * (180 / Maths::PI)));
 }
@@ -105,9 +114,12 @@ void DoomEnemyA::Shoot()
 void DoomEnemyA::TakeDamage()
 {
 	mLife -= 1;
-	Log::Info("HIIIIIIIIIIIIIIIIIIIIIIIIIIT");
+	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("DtextEnHit")});
+	mHitAnimTime -= 1;
+
 	if (mLife <= 0) 
 	{
 		SetPosition(Vector3{ 0, 0, -50 });
 	}
+
 }

@@ -24,6 +24,8 @@ private:
 
 	int mLife = 3;
 
+	float mHitAnimTime = 20;
+
 public:
 	void Start()override;
 	void Restart();

@@ -111,6 +111,12 @@
     <Filter Include="Source Files\Content\Doom">
       <UniqueIdentifier>{e09bad89-1648-4683-a1a1-b74d3668026e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\WIP">
+      <UniqueIdentifier>{4ec5ae3d-a8f2-48ca-a830-143e7ce96e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WIP">
+      <UniqueIdentifier>{b2369992-5a64-4480-8f44-ba7bf88ef1ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -287,9 +293,6 @@
     <ClCompile Include="OpenGlPictureA.cpp">
       <Filter>Source Files\Content\OpenGlTest</Filter>
     </ClCompile>
-    <ClCompile Include="DrawTextGL.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Corridor.cpp">
       <Filter>Source Files\Content\OpenGlTest</Filter>
     </ClCompile>
@@ -332,11 +335,14 @@
     <ClCompile Include="DoomMovingC.cpp">
       <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
-    <ClCompile Include="DoomEnemyA.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DoomEnnemyProjectil.cpp">
       <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DoomEnemyA.cpp">
+      <Filter>Source Files\Content\Doom</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawTextGL.cpp">
+      <Filter>Source Files\WIP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -532,12 +538,6 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files\Manager</Filter>
     </ClInclude>
-    <ClInclude Include="gltext.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DrawTextGL.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Corridor.h">
       <Filter>Header Files\Content\OpenGlTest</Filter>
     </ClInclude>
@@ -580,11 +580,17 @@
     <ClInclude Include="DoomMovingC.h">
       <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
-    <ClInclude Include="DoomEnemyA.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DoomEnnemyProjectil.h">
       <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DoomEnemyA.h">
+      <Filter>Header Files\Content\Doom</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawTextGL.h">
+      <Filter>Header Files\WIP</Filter>
+    </ClInclude>
+    <ClInclude Include="gltext.h">
+      <Filter>Header Files\WIP</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -639,9 +645,6 @@
     <None Include="TessTest.tese">
       <Filter>Shader\DebugTesselation</Filter>
     </None>
-    <None Include="terrainVert.shader" />
-    <None Include="terrainTesc.shader" />
-    <None Include="terrainTese.shader" />
     <None Include="terrainTessControl.shader">
       <Filter>Shader\Terrain</Filter>
     </None>
@@ -652,6 +655,15 @@
       <Filter>Shader\Terrain</Filter>
     </None>
     <None Include="terrainTessVertex.shader">
+      <Filter>Shader\Terrain</Filter>
+    </None>
+    <None Include="terrainTesc.shader">
+      <Filter>Shader\Terrain</Filter>
+    </None>
+    <None Include="terrainTese.shader">
+      <Filter>Shader\Terrain</Filter>
+    </None>
+    <None Include="terrainVert.shader">
       <Filter>Shader\Terrain</Filter>
     </None>
   </ItemGroup>

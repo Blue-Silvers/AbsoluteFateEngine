@@ -45,6 +45,7 @@ void DoomPlayerA::Start()
 
 void DoomPlayerA::Update()
 {
+	//Shoot
 	if (mCanShootAgain == false) 
 	{
 		mActualShootCooldown -= 1;
@@ -75,6 +76,7 @@ void DoomPlayerA::Update()
 		}
 	}
 
+	//HUD
 	if(mSetHud == false)
 	{
 		mSceneAttached->AddActor(mHud);
@@ -82,6 +84,7 @@ void DoomPlayerA::Update()
 		mSetHud = true;
 	}
 
+	//Movement
 	for (Components* component : mComponentsList)
 	{
 		if (DoomController* movementComponent = dynamic_cast<DoomController*>(component))
@@ -90,6 +93,7 @@ void DoomPlayerA::Update()
 		}
 	}
 
+	//ViewProj
 	Vector3 camPosition = mTransform.GetPosition();
 	Vector3 target = mTransform.GetPosition() + mTransform.Forward() * 400.0f;
 	Vector3 up = Vector3::unitZ;
@@ -103,7 +107,6 @@ void DoomPlayerA::Update()
 	{
 		mTransform.RotateYInDegrees(mMouseDeltaY * mSensitivity);
 	}
-	//Log::Info("" + std::to_string(mTransform.GetRotation().x) + ", " + std::to_string(mTransform.GetRotation().y) + ", " + std::to_string(mTransform.GetRotation().z)); //DEBUG//
 
 	Matrix4Row view = Matrix4Row::CreateLookAt(camPosition, target, up);
 	if (GetScene()->GetRenderer()->GetType() == IRenderer::RendererType::OPENGL)
@@ -137,7 +140,6 @@ void DoomPlayerA::Shoot()
 				{
 					enemy->TakeDamage();
 				}
-				//continue;
 				break;
 			}
 		}
