@@ -123,12 +123,25 @@ void DoomPlayerA::Shoot()
 		mCanShootAgain = false;
 		mActualShootCooldown = mShootCooldown;
 
-		Vector3 startPoint = GetTransform().GetPosition();
-		Vector3 endPoint = startPoint + GetTransform().GetWorldTransform().GetXAxis() * mShootRange;
-		//Récupérer tout les acteurs collide entre le start et l'end et comparer leur distance du start, garder uniquement le plus proche et regarder si c'est un ennemy
-		Log::Info(to_string(endPoint.x) + " | " + to_string(endPoint.y));
-
-
+		//LINETRACE
+		Vector3 startPoint = GetTransform().GetPosition();		
+		Vector3 lineTraceDirection = GetTransform().GetWorldTransform().GetXAxis();
+		Vector3 endPoint = startPoint + lineTraceDirection * mShootRange;
+		for (int i = 1; i <= mShootRange; i++) 
+		{
+			HitCollider breakHitCollider = mBoxCollider->GetOnCollideByLineTrace(startPoint + lineTraceDirection * i);
+			if (breakHitCollider.isCollid == true && breakHitCollider.isOverlap == false)
+			{
+				endPoint = startPoint + lineTraceDirection * i;
+				if (DoomEnemyA* enemy = dynamic_cast<DoomEnemyA*>(breakHitCollider.collideActor))
+				{
+					enemy->TakeDamage();
+				}
+				//continue;
+				break;
+			}
+		}
+		//Log::Info(to_string(endPoint.x) + " | " + to_string(endPoint.y));
 	}
 }
 

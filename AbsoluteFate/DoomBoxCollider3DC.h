@@ -39,6 +39,7 @@ public:
     Actor* GetCollideActor();
 
     HitCollider GetOnCollide();
+    HitCollider GetOnCollideByLineTrace(Vector3 lineTraceEndPos);
 
     inline bool GetIsOverlap() { return mIsOverlap; };
     inline void SetIsOverlap(bool pIsOverlap) { mIsOverlap = pIsOverlap; };

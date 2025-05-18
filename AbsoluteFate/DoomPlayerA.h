@@ -18,7 +18,7 @@ private:
 	int mMouseDeltaX;
 	int mMouseDeltaY;
 	float mSensitivity = 0.05;
-	float mShootRange = 20;
+	float mShootRange = 50;
 	int lifePoint = 3;
 
 	DoomHudA* mHud;

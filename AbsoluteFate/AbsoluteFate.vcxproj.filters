@@ -336,7 +336,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DoomEnnemyProjectil.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\Doom</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -584,7 +584,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DoomEnnemyProjectil.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\Doom</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

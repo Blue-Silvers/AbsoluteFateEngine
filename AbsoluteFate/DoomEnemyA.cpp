@@ -75,7 +75,6 @@ void DoomEnemyA::Update()
 	for (DoomEnnemyProjectil* projectil : mCurrentProjectils)
 	{
 		projectil->Update();
-		Log::Info(to_string(projectil->GetTransform().GetPosition().x) + " | " + to_string(projectil->GetTransform().GetPosition().y));
 	}
 }
 
@@ -101,4 +100,14 @@ void DoomEnemyA::Shoot()
 
 	newProj->SetPosition(mTransform.GetPosition());
 	newProj->SetForward(mTransform.Forward() * -1);
+}
+
+void DoomEnemyA::TakeDamage()
+{
+	mLife -= 1;
+	Log::Info("HIIIIIIIIIIIIIIIIIIIIIIIIIIT");
+	if (mLife <= 0) 
+	{
+		SetPosition(Vector3{ 0, 0, -50 });
+	}
 }

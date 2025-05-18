@@ -16,6 +16,7 @@ void DoomEnnemyProjectil::Start()
 
 	mBoxCollider = new DoomBoxCollider3DC(this);
 	mBoxCollider->SetCustomSize(Vector3(2, 2, 2));
+	mBoxCollider->SetIsOverlap(true);
 	AddComponent(mBoxCollider);
 }
 

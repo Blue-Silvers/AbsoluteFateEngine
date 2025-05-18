@@ -10,7 +10,7 @@ private:
 	MeshC* mMeshComponent;
 	DoomBoxCollider3DC* mBoxCollider;
 	Vector3 mForward = Vector3(0,0,0);
-	float mVelocity = 50;
+	float mVelocity = 30;
 
 public:
 	void Start()override;

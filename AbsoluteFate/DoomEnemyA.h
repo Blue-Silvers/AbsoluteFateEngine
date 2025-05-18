@@ -16,13 +16,13 @@ private:
 	DoomBoxCollider3DC* mBoxCollider;
 
 	float mShootingRange = 30;
-	float mShootCooldown = 30;
+	float mShootCooldown = 50;
 	float mActualShootCooldown = 30;
 	bool mCanShootAgain = true;
 
 	vector<DoomEnnemyProjectil*> mCurrentProjectils;
 
-	int mLife = 2;
+	int mLife = 3;
 
 public:
 	void Start()override;
@@ -31,6 +31,7 @@ public:
 	void Destroy()override;
 	void LookAt(Actor* pTarget);
 	void Shoot();
+	void TakeDamage();
 
 	/*	Getter \ Setter	*/
 	inline Actor* GetTarget() { return mTarget; };
