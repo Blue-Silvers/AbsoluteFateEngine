@@ -132,7 +132,7 @@ void DoomPlayerA::Shoot()
 		Vector3 endPoint = startPoint + lineTraceDirection * mShootRange;
 		for (int i = 1; i <= mShootRange; i++) 
 		{
-			HitCollider breakHitCollider = mBoxCollider->GetOnCollideByLineTrace(startPoint + lineTraceDirection * i);
+			DoomHitCollider breakHitCollider = mBoxCollider->GetOnCollideByLineTrace(startPoint + lineTraceDirection * i);
 			if (breakHitCollider.isCollid == true && breakHitCollider.isOverlap == false)
 			{
 				endPoint = startPoint + lineTraceDirection * i;
@@ -153,7 +153,7 @@ void DoomPlayerA::Interact()
 	{
 		if (DoomBoxCollider3DC* boxCollider = dynamic_cast<DoomBoxCollider3DC*>(component))
 		{
-			HitCollider breakHitCollider = boxCollider->GetOnCollide();
+			DoomHitCollider breakHitCollider = boxCollider->GetOnCollide();
 			if (breakHitCollider.isCollid == true)
 			{
 				for (Components* component : breakHitCollider.collideActor->GetAllComponent())

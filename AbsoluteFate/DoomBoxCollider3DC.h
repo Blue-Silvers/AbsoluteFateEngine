@@ -3,7 +3,7 @@
 #include "Transform.h"
 #include "Actor.h"
 
-struct HitCollider
+struct DoomHitCollider
 {
     bool isCollid;
     Actor* parentActor;
@@ -18,7 +18,7 @@ private:
     Actor* mParentActor;
     Vector3 mCustomScale;
     bool mIsOverlap = false;
-    HitCollider mHitCollider;
+    DoomHitCollider mHitCollider;
 
 public:
     DoomBoxCollider3DC(Actor* pParentActor);
@@ -38,8 +38,8 @@ public:
     Vector3 GetCustomSize() { return mCustomScale; }
     Actor* GetCollideActor();
 
-    HitCollider GetOnCollide();
-    HitCollider GetOnCollideByLineTrace(Vector3 lineTraceEndPos);
+    DoomHitCollider GetOnCollide();
+    DoomHitCollider GetOnCollideByLineTrace(Vector3 lineTraceEndPos);
 
     inline bool GetIsOverlap() { return mIsOverlap; };
     inline void SetIsOverlap(bool pIsOverlap) { mIsOverlap = pIsOverlap; };

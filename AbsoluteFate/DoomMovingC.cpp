@@ -44,7 +44,7 @@ void DoomMovingC::Update()
         {
             if (DoomBoxCollider3DC* boxCollider = dynamic_cast<DoomBoxCollider3DC*>(component))
             {
-                HitCollider breakHitCollider = boxCollider->GetOnCollide();
+                DoomHitCollider breakHitCollider = boxCollider->GetOnCollide();
                 if (breakHitCollider.isCollid == true)
                 {
                     for (Components* component : breakHitCollider.collideActor->GetAllComponent())
