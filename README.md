@@ -1,45 +1,42 @@
 # AbsoluteFateEngine - DOOM
-AbsoluteFateEngine est un moteur de jeu 3D développé en C++ avec OpenGL, inspiré du gameplay classique de DOOM. Cette branche DOOM est dédiée à la création d'un prototype de jeu de tir à la première personne (FPS) en 3D.
+AbsoluteFateEngine is a 3D game engine developed in C++ using OpenGL, inspired by the classic DOOM gameplay. This DOOM branch focuses on building a prototype first-person shooter (FPS) in 3D.
 
-## 📌 Vidéo démo :
-
+## 📌 Demo Video:
 
 https://github.com/user-attachments/assets/c724594a-6b7e-4412-8e51-a658fac8b5d6
 
+## 🎮 Key Features
+- Real-time 3D rendering with OpenGL (immediate mode)
 
+- 3D raycasting system with collision detection using Axis-Aligned Bounding Boxes (AABB)
 
-## 🎮 Fonctionnalités principales
-- Rendu 3D en temps réel avec OpenGL (mode immédiat)
+- Basic player controls (movement, orientation)
 
-- Système de raycasting 3D avec détection de collision contre des boîtes axis-aligned (AABB)
+- Minimalist HUD display
 
-- Contrôles de base du joueur (déplacement, orientation)
+- Modular code structure for easy feature expansion
 
-- Affichage de HUD minimaliste
+## 🧰 Dependencies
+- GLFW for window management and keyboard/mouse input
 
-- Structure de code modulaire pour faciliter l'ajout de nouvelles fonctionnalités
+- OpenGL for rendering
 
-## 🧰 Dépendances
-- GLFW pour la gestion de la fenêtre et des entrées clavier/souris
-
-- OpenGL pour le rendu graphique
-
-- GLM pour les mathématiques 3D (facultatif, selon les besoins)
+- GLM for 3D math (optional, depending on your needs)
 
 ## 🕹️ Input
 
-| Touche(s)     | Action                        |
-|---------------|-------------------------------|
-| `Z`           | Avancer                       |
-| `S`           | Reculer                       |
-| `Q` / `D`     | Déplacement latéral gauche/droite |
-| Souris        | Orientation de la caméra      |
-| `Entrée`      | Prendre le contrôle du joueur |
-| `Échap`       | Quitter le jeu                |
+| Key(s)        | Action                          |
+|---------------|---------------------------------|
+| `Z`           | Move forward                    |
+| `S`           | Move backward                   |
+| `Q` / `D`     | Strafe left / right             |
+| Mouse         | Camera orientation              |
+| `Enter`       | Take control of the player      |
+| `Escape`      | Exit the game                   |
 
-## 🛠️ Structure du projet
-- AbsoluteFate/ : Contient les fichiers sources principaux du moteur
+## 🛠️ Project Structure
+- `AbsoluteFate/` : Contains the main source files of the engine
 
-- Dependencies/ : Bibliothèques tierces nécessaires au projet
+- `Dependencies/` : Third-party libraries required by the project
 
-- AbsoluteFate.sln : Fichier de solution pour Visual Studio
+- `AbsoluteFate.sln` : Visual Studio solution file
