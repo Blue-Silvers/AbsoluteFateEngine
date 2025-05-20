@@ -26,16 +26,16 @@ https://github.com/user-attachments/assets/c724594a-6b7e-4412-8e51-a658fac8b5d6
 
 - GLM pour les mathématiques 3D (facultatif, selon les besoins)
 
-## 🕹️ Utilisation
+## 🕹️ Input
 
-Utilise les touches suivantes pour contrôler le joueur :
-
-Z : Avancer
-S : Reculer
-Q / D : Déplacement latéral
-Souris : Orientation de la caméra
-Entre : prendre le contrôle du joueur
-Échap : Quitter le jeu
+| Touche(s)     | Action                        |
+|---------------|-------------------------------|
+| `Z`           | Avancer                       |
+| `S`           | Reculer                       |
+| `Q` / `D`     | Déplacement latéral gauche/droite |
+| Souris        | Orientation de la caméra      |
+| `Entrée`      | Prendre le contrôle du joueur |
+| `Échap`       | Quitter le jeu                |
 
 ## 🛠️ Structure du projet
 - AbsoluteFate/ : Contient les fichiers sources principaux du moteur
