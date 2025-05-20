@@ -1,7 +1,7 @@
 # AbsoluteFateEngine - DOOM
 AbsoluteFateEngine is a 3D game engine developed in C++ using OpenGL, inspired by the classic DOOM gameplay. This DOOM branch focuses on building a prototype first-person shooter (FPS) in 3D.
 
-## 📌 Demo Video:
+## 📌 Demo Video
 
 https://github.com/user-attachments/assets/c724594a-6b7e-4412-8e51-a658fac8b5d6
 
