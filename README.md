@@ -10,6 +10,8 @@ https://github.com/user-attachments/assets/c724594a-6b7e-4412-8e51-a658fac8b5d6
 
 - 3D raycasting system with collision detection using Axis-Aligned Bounding Boxes (AABB)
 
+- Look at fonction to focus another actor
+
 - Basic player controls (movement, orientation)
 
 - Minimalist HUD display
