@@ -22,7 +22,7 @@ void DoomEnnemyProjectil::Start()
 
 void DoomEnnemyProjectil::Update()
 {
-	Vector3 newPosition = GetTransform().GetPosition() + ((mForward * mVelocity) * 0.01);
+	Vector3 newPosition = GetTransform().GetPosition() + ((mForward * mVelocity) * 0.01F);
 	SetPosition(newPosition);
 
 	for (Components* component : GetAllComponent())

@@ -11,7 +11,7 @@ void DoomLever::Start()
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "doomLever");
 
 	//actor
-	SetScale(Vector3{ 0.2, 0.8, 0.8 }); //scale
+	SetScale(Vector3{ 0.2F, 0.8F, 0.8F }); //scale
 	SetPosition(Vector3{ -39, 0, 0 }); //location
 	mTransform.RotateXInDegrees(180);
 

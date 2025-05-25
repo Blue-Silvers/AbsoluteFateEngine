@@ -10,7 +10,7 @@ private:
 	Shader mTessVertexShader, mTessFragShader, mTessControlShader, mTessEvalShader;
 	ShaderProgram mTessProgram;
 	bool mDoorOpen = false;
-	float mDoorSpeed = 0.05;
+	float mDoorSpeed = 0.05F;
 
 	DoomBoxCollider3DC* mBoxCollider;
 

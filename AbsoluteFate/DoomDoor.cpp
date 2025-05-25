@@ -10,8 +10,8 @@ void DoomDoor::Start()
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "doomDoor");
 
 	//actor
-	SetScale(Vector3{ 0.95, 4, 4 }); //scale
-	SetPosition(Vector3{ -10, 0, 0.5 }); //location
+	SetScale(Vector3{ 0.95F, 4, 4 }); //scale
+	SetPosition(Vector3{ -10, 0, 0.5F }); //location
 
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomDoor"));
@@ -20,7 +20,7 @@ void DoomDoor::Start()
 
 	//box collider
 	mBoxCollider = new DoomBoxCollider3DC(this);
-	mBoxCollider->SetCustomSize(Vector3(0.4, 1, 1));
+	mBoxCollider->SetCustomSize(Vector3(0.4F, 1, 1));
 	AddComponent(mBoxCollider);
 
 	//change shader

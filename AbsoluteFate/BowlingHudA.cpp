@@ -23,7 +23,7 @@ void BowlingHudA::Start()
 	Asset::LoadMesh("Resources/3D_Models/sphere.obj", "sphereSkin6");
 
 	//Actor
-	SetScale2D(Vector2{ 0.2, 0.2 }); //scale
+	SetScale2D(Vector2{ 0.2F, 0.2F }); //scale
 	SetPosition2D(Vector2{ 0, -300 }); //location
 	//sprite component
 	SpriteC* mSprite = new SpriteC(this, Asset::GetTexture("arrow"));

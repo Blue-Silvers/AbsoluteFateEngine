@@ -6,7 +6,7 @@ class CameraA : public Actor
 private:
 	int mMouseDeltaX;
 	int mMouseDeltaY;
-	float mSensitivity = 0.05;
+	float mSensitivity = 0.05F;
 
 protected:
 	bool mCanHorizontalMove = true, mCanVerticalMove = true;

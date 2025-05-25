@@ -40,6 +40,7 @@ public:
 
     HitCollider GetOnCollide();
     HitCollider GetOnCollideByLineTrace(Vector3 lineTraceEndPos);
+    HitCollider Linetrace(Vector3 pStartPoint, Vector3 pLineTraceDirection,float pRange);
 
     inline bool GetIsOverlap() { return mIsOverlap; };
     inline void SetIsOverlap(bool pIsOverlap) { mIsOverlap = pIsOverlap; };

@@ -30,7 +30,7 @@ void BowlingBallA::Update()
 	if (mIsLunching)
 	{
 		// add Movement
-		Vector3 newPosition = GetTransform().GetPosition() + ((GetTransform().Forward() * mVelocity) * 0.02);
+		Vector3 newPosition = GetTransform().GetPosition() + ((GetTransform().Forward() * mVelocity) * 0.02F);
 		SetPosition(newPosition);
 		mChildSphere->SetAngleRotationY(mVelocity);
 		mChildSphere->SetPosition(newPosition);
@@ -61,7 +61,7 @@ void BowlingBallA::Update()
 		//Restart
 		if (mChildSphere->GetTransform().GetPosition().x > 65) 
 		{
-			SetPosition(Vector3(GetTransform().GetPosition().x, GetTransform().GetPosition().y, GetTransform().GetPosition().z - 0.2));
+			SetPosition(Vector3(GetTransform().GetPosition().x, GetTransform().GetPosition().y, GetTransform().GetPosition().z - 0.2F));
 			if (GetTransform().GetPosition().z < -15) 
 			{
 				mIsLunching = false;

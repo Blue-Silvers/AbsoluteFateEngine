@@ -9,7 +9,7 @@ void DoomFloor::Start()
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank2.png", "Plank2");
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "doomFloor");
 	//Actor
-	SetScale(Vector3{ 50, 50, 0.1 }); //scale
+	SetScale(Vector3{ 50, 50, 0.1F }); //scale
 	SetPosition(Vector3{ 10, 0, -3 }); //location
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomFloor"));

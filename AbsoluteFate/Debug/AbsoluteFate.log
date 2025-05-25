@@ -1,41 +1,37 @@
-﻿  Actor.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  CubeTestA.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  DeathAngelA.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+﻿  BowlingBallA.cpp
+  BowlingControllerC.cpp
+  BowlingHudA.cpp
+  BowlingScene.cpp
+  BowlingUISkinA.cpp
+  BoxCollider3DC.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BoxCollider3DC.cpp(135,100): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BoxCollider3DC.cpp(138,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CameraA.cpp
+  Corridor.cpp
+  DoomController.cpp
+  DoomDoor.cpp
+  DoomEnemyA.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DoomEnemyA.cpp(58,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   DoomEnnemyProjectil.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\DoomPlayerA.h(20,23): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\DoomEnnemyProjectil.cpp(25,81): warning C4305: 'argument': truncation from 'double' to 'float'
   DoomFloor.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\DoomFloor.cpp(12,28): warning C4305: 'argument': truncation from 'double' to 'float'
-  DoomMovingC.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
+  DoomHudA.cpp
+  DoomLever.cpp
   DoomPlayerA.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\DoomPlayerA.h(20,23): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\DoomDoor.h(13,21): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\DoomPlayerA.cpp(135,111): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\DoomPlayerA.cpp(138,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DoomPlayerA.cpp(135,111): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\DoomPlayerA.cpp(138,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  DoomRoof.cpp
+  DoomScene.cpp
   GlTestScene.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\BowlingBallA.h(17,30): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\CameraA.h(9,23): warning C4305: 'initializing': truncation from 'double' to 'float'
-  InputEvent.cpp
-  RendererSDL.cpp
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(48,44): warning C4018: '>': signed/unsigned mismatch
-C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\AbsoluteFate\Actor.h(101,37): warning C4018: '>': signed/unsigned mismatch
-  Window.cpp
+  Main.cpp
   Generating Code...
-  LINK : C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe not found or not built by the last incremental link; performing full link
-  AbsoluteFate.vcxproj -> C:\Users\enzo.lahana\Documents\GitHub\AbsoluteFate\Debug\AbsoluteFate.exe
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BoxCollider3DC.cpp(53,1): warning C4715: 'BoxCollider3DC::GetDistance': not all control paths return a value
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BoxCollider3DC.cpp(76,1): warning C4715: 'BoxCollider3DC::GetCollideActor': not all control paths return a value
+  Compiling...
+  PinA.cpp
+  RendererGl.cpp
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(137,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(136,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGl.cpp(141,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\PinA.cpp(76,1): warning C4715: 'PinA::GetBoxCollider': not all control paths return a value
+  AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

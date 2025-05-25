@@ -62,9 +62,9 @@ Actor* BoxCollider3DC::GetCollideActor()
             {
                 if (BoxCollider3DC* boxCollider3DC = dynamic_cast<BoxCollider3DC*>(component))
                 {
-                    if (mParentActor->GetTransform().GetPosition().y < actor->GetTransform().GetPosition().y + actor->GetTransform().GetScale().y * boxCollider3DC->GetCustomSize().y && mParentActor->GetTransform().GetPosition().y + mParentActor->GetTransform().GetScale().y * mCustomScale.y > actor->GetTransform().GetPosition().y
-                        && mParentActor->GetTransform().GetPosition().x < actor->GetTransform().GetPosition().x + actor->GetTransform().GetScale().x * boxCollider3DC->GetCustomSize().x && mParentActor->GetTransform().GetPosition().x + mParentActor->GetTransform().GetScale().x * mCustomScale.x > actor->GetTransform().GetPosition().x
-                        && mParentActor->GetTransform().GetPosition().z < actor->GetTransform().GetPosition().z + actor->GetTransform().GetScale().z * boxCollider3DC->GetCustomSize().z && mParentActor->GetTransform().GetPosition().z + mParentActor->GetTransform().GetScale().z * mCustomScale.z > actor->GetTransform().GetPosition().z)
+                    if (mParentActor->GetTransform().GetWorldTransform().GetTranslation().y < actor->GetTransform().GetWorldTransform().GetTranslation().y + actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().y && mParentActor->GetTransform().GetWorldTransform().GetTranslation().y + mParentActor->GetTransform().GetWorldTransform().GetScale().y * mCustomScale.y > actor->GetTransform().GetWorldTransform().GetTranslation().y - actor->GetTransform().GetWorldTransform().GetScale().y * boxCollider3DC->GetBoxCollider()->GetCustomSize().y
+                        && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x < actor->GetTransform().GetWorldTransform().GetTranslation().x + actor->GetTransform().GetWorldTransform().GetScale().x * boxCollider3DC->GetBoxCollider()->GetCustomSize().x && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x + mParentActor->GetTransform().GetWorldTransform().GetScale().x * mCustomScale.x > actor->GetTransform().GetWorldTransform().GetTranslation().x - actor->GetTransform().GetWorldTransform().GetScale().x * boxCollider3DC->GetBoxCollider()->GetCustomSize().x
+                        && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z < actor->GetTransform().GetWorldTransform().GetTranslation().z + actor->GetTransform().GetWorldTransform().GetScale().z * boxCollider3DC->GetBoxCollider()->GetCustomSize().z && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z + mParentActor->GetTransform().GetWorldTransform().GetScale().z * mCustomScale.z > actor->GetTransform().GetWorldTransform().GetTranslation().z - actor->GetTransform().GetWorldTransform().GetScale().z * boxCollider3DC->GetBoxCollider()->GetCustomSize().z)
                     {
 
                         return actor;
@@ -125,6 +125,22 @@ HitCollider BoxCollider3DC::GetOnCollideByLineTrace(Vector3 lineTraceEndPos)
     }
 
     return HitCollider(false, mParentActor, mParentActor, mIsOverlap, lineTraceEndPos);
+}
+
+HitCollider BoxCollider3DC::Linetrace(Vector3 pStartPoint, Vector3 pLineTraceDirection, float pRange)
+{
+    Vector3 endPoint = pStartPoint + pLineTraceDirection * pRange;
+    for (int i = 1; i <= pRange; i++)
+    {
+        HitCollider breakHitCollider = GetOnCollideByLineTrace(pStartPoint + pLineTraceDirection * i);
+        if (breakHitCollider.isCollid == true && breakHitCollider.isOverlap == false)
+        {
+            endPoint = pStartPoint + pLineTraceDirection * i;
+            return breakHitCollider;
+            break;
+        }
+    }
+    return HitCollider(false, mParentActor, mParentActor, mIsOverlap, endPoint);
 }
 
 void BoxCollider3DC::Update()

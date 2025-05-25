@@ -139,7 +139,7 @@ void RendererGl::DrawSprite(Actor& pActor, const Texture& pTex, Rectangle pSourc
 	Matrix4Row world = scaleMat * pActor.GetTransform().GetWorldTransform();
 	mSpriteShaderProgram->setMatrix4Row("uWorldTransform", world);
 	mSpriteShaderProgram->setVector2f("uTiling", (1, 1));
-	mSpriteShaderProgram->setVector2f("uOffset", (0.005, 0.005));
+	mSpriteShaderProgram->setVector2f("uOffset", (0.005F, 0.005F));
 	pTex.SetActive();
 
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);

@@ -17,7 +17,7 @@ class DoomPlayerA : public Actor
 private:
 	int mMouseDeltaX;
 	int mMouseDeltaY;
-	float mSensitivity = 0.05;
+	float mSensitivity = 0.05F;
 	float mShootRange = 50;
 	int lifePoint = 3;
 

@@ -9,7 +9,7 @@ void DoomRoof::Start()
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Doom/116.png", "DtextRoof");
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "doomRoof");
 	//Actor
-	SetScale(Vector3{ 50, 50, 0.1 }); //scale
+	SetScale(Vector3{ 50, 50, 0.1F }); //scale
 	SetPosition(Vector3{ 10, 0, 7 }); //location
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomRoof"));

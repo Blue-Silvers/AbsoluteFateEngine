@@ -13,8 +13,8 @@ void DoomEnemyA::Start()
 	Asset::LoadMesh("Resources/3D_Models/sphere.obj", "doomMeshEn");
 
 	//actor
-	SetScale(Vector3{ 0.1, 3, 3 }); //scale
-	SetPosition(Vector3{ 20, -15, 0.5 }); //location
+	SetScale(Vector3{ 0.1F, 3, 3 }); //scale
+	SetPosition(Vector3{ 20, -15, 0.5F }); //location
 
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("doomMeshEn"));

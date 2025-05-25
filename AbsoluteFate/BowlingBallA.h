@@ -14,7 +14,7 @@ private:
 	BoxCollider3DBowlingC* mBoxCollider;
 
 	float mStartRotation = 0;
-	float mStartRotationSpeed = 0.4;
+	float mStartRotationSpeed = 0.4F;
 	float mMaxStartRotation = 20;
 	float mMinStartRotation = -20;
 

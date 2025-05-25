@@ -25,7 +25,7 @@ void BowlingUISkinA::Start()
 	{
 		actor->AttachScene(GetScene());
 		actor->Start();
-		actor->SetScale2D(Vector2{ 0.45, 0.45 });
+		actor->SetScale2D(Vector2{ 0.45F, 0.45F });
 	}
 
 	mIconList[0]->SetPosition2D(Vector2{ -337, 350 }); //138px between two icon

@@ -42,7 +42,7 @@ void SetOfPinA::Update()
 	}
 	if (restart == true) 
 	{
-		timeBeforeRestart -= 0.1;
+		timeBeforeRestart -= 0.1F;
 		if (timeBeforeRestart <= 0)
 		{
 			timeBeforeRestart = 20;

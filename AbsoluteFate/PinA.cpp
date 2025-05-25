@@ -32,7 +32,7 @@ void PinA::Update()
 
 	if (mForce.x != 0 && mForce.y != 0) 
 	{
-		SetPosition(mTransform.GetPosition() + mForce*0.1);
+		SetPosition(mTransform.GetPosition() + mForce*0.1F);
 		mTransform.RotateXInDegrees(mForce.y );
 		mTransform.RotateYInDegrees(mForce.x );
 	}
@@ -83,7 +83,7 @@ void PinA::AddForce(Vector3 pForce)
 	newPos.z = -1;
 	for (int x = 0; x <= 1000; x++)
 	{
-		SetPosition(Vector3::Lerp(mTransform.GetPosition(), newPos, 0.0002));
+		SetPosition(Vector3::Lerp(mTransform.GetPosition(), newPos, 0.0002F));
 		mTransform.RotateXInDegrees(pForce.y / 1000);
 		mTransform.RotateYInDegrees(pForce.x / 1000);
 	}

@@ -14,7 +14,7 @@ void Corridor::Start()
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/TerrainNoise.png", "TerrainNoise");
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "corridor");
 	//Actor
-	SetScale(Vector3{ 50, 50, 0.1 }); //scale
+	SetScale(Vector3{ 50, 50, 0.1F }); //scale
 	SetPosition(Vector3{ 50, 0, -10 }); //location
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("corridor"));

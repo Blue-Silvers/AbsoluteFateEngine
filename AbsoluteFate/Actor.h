@@ -43,7 +43,7 @@ public:
 	{
 		return mComponentsList;
 	};
-	virtual void RemoveComponent(int index) //Remove one component
+	virtual void RemoveComponent(size_t index) //Remove one component
 	{
 		if (index >= 0 && mComponentsList.size() > index) 
 		{
@@ -96,7 +96,7 @@ public:
 	{
 		mTagList.push_back(pTag);
 	};
-	virtual void RemoveTag(int index) //Remove one tag
+	virtual void RemoveTag(size_t index) //Remove one tag
 	{
 		if (index >= 0 && mTagList.size() > index)
 		{
@@ -122,6 +122,11 @@ public:
 	virtual std::vector<std::string> GetTags()
 	{
 		return mTagList;
+	};
+
+	virtual void LookAt(Vector3 pAxis, Actor* pTarget) 
+	{
+		SetRotation(Quaternion(pAxis, atan2(mTransform.GetPosition().y - pTarget->GetTransform().GetPosition().y, mTransform.GetPosition().x - pTarget->GetTransform().GetPosition().x)));
 	};
 
 	//template fonction
