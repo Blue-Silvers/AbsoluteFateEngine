@@ -51,12 +51,9 @@ void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 		mMesh->GetShaderProgram().setVector2f("uOffset", mOffset);
 		mMesh->GetShaderProgram().setInteger("uTessLevel", mTessLevel);
 		
-		//float time = Time::deltaTime;
 		mTime += Time::deltaTime;
 		mMesh->GetShaderProgram().setFloat("uTime", mTime);
 
-		//mMesh->GetShaderProgram().setMatrix4Row("uView", pView);
-		//mMesh->GetShaderProgram().setMatrix4Row("uProj", pProj);
 		mMesh->GetShaderProgram().setFloat("uDinMapDepth", 8.0f);
 
 		Texture* t = mMesh->GetTexture(mTextureIndex);
@@ -74,7 +71,6 @@ void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 		mMesh->GetVao()->SetActive();
 		glPointSize(5.0f);
 		glDrawArrays(mEnableTesselation ? GL_PATCHES : GL_TRIANGLES, 0, mMesh->GetVao()->GetVerticeCount());
-		//glDrawArraysInstanced(mEnableTesselation ? GL_PATCHES : GL_TRIANGLES, 0, 3, mMesh->GetVao()->GetVerticeCount());
 
 		glActiveTexture(GL_TEXTURE0); // active color texture
 	}

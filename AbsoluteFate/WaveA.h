@@ -8,7 +8,11 @@ private:
 	MeshC* mMeshComponent;
 	Shader mTessVertexShader, mTessFragShader, mTessControlShader, mTessEvalShader;
 	ShaderProgram mTessProgram;
-	float panicFloat = 1;
+
+	float mDisplacement = 25;
+	float mAmplitude = 0.09;
+	float mFrequency = 1.5;
+	float mSpeed = 1;
 
 public:
 	void Start()override;

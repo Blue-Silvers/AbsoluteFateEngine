@@ -10,9 +10,9 @@ void WaveA::Start()
 	//load texture
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/White.png", "White");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Noise/PerlinNoise.png", "PerlinNoise");
-	Asset::LoadMesh("Resources/3D_Models/cube.obj", "wave");
+	Asset::LoadMesh("Resources/3D_Models/plane.obj", "wave");
 	//Actor
-	SetScale(Vector3{ 50, 50, 0.02F }); //scale
+	SetScale(Vector3{ 50, 50, 0.01F }); //scale
 	SetPosition(Vector3{ 50, 0, -10 }); //location
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("wave"));
@@ -34,12 +34,15 @@ void WaveA::Start()
 
 	mMeshComponent->AutoTile();
 
+	//Update shader uniform
+	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uDisplacement", mDisplacement);
+	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uAmplitude", mAmplitude);
+	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uFrequency", mFrequency);
+	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uSpeed", mSpeed);
 }
 
 void WaveA::Update()
 {
-	/*panicFloat += 0.01;
-	mMeshComponent->SetTesselationLevel((int)panicFloat);*/
 }
 
 void WaveA::Destroy()
