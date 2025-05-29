@@ -12,6 +12,8 @@ protected:
 	int mTessLevel = 5;
 	bool mEnableTesselation = false;
 
+	float mTime = 0;
+
 public:
 	MeshC(Actor* pOwner);
 	MeshC(Actor* pOwner, Mesh* pMesh);

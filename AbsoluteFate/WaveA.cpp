@@ -8,8 +8,7 @@
 void WaveA::Start()
 {
 	//load texture
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank2.png", "Plank2");
-	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Plank.png", "Plank1");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/White.png", "White");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Noise/PerlinNoise.png", "PerlinNoise");
 	Asset::LoadMesh("Resources/3D_Models/cube.obj", "wave");
 	//Actor
@@ -17,7 +16,7 @@ void WaveA::Start()
 	SetPosition(Vector3{ 50, 0, -10 }); //location
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("wave"));
-	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("Plank2"), & Asset::GetTexture("Plank1")});
+	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("White")});
 	mMeshComponent->GetMesh()->SetNoiseTexture(&Asset::GetTexture("PerlinNoise"));
 	AddComponent(mMeshComponent);
 
@@ -34,6 +33,7 @@ void WaveA::Start()
 	mMeshComponent->SetTesselationLevel(20);
 
 	mMeshComponent->AutoTile();
+
 }
 
 void WaveA::Update()

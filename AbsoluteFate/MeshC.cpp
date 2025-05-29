@@ -4,6 +4,7 @@
 #include "IRenderer.h"
 #include "RendererGl.h"
 #include "VertexArray.h"
+#include "Time.h"
 
 #include "Asset.h"
 
@@ -50,6 +51,10 @@ void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 		mMesh->GetShaderProgram().setVector2f("uOffset", mOffset);
 		mMesh->GetShaderProgram().setInteger("uTessLevel", mTessLevel);
 		
+		//float time = Time::deltaTime;
+		mTime += Time::deltaTime;
+		mMesh->GetShaderProgram().setFloat("uTime", mTime);
+
 		//mMesh->GetShaderProgram().setMatrix4Row("uView", pView);
 		//mMesh->GetShaderProgram().setMatrix4Row("uProj", pProj);
 		mMesh->GetShaderProgram().setFloat("uDinMapDepth", 8.0f);
