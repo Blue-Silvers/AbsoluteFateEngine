@@ -117,6 +117,15 @@
     <Filter Include="Source Files\WIP">
       <UniqueIdentifier>{b2369992-5a64-4480-8f44-ba7bf88ef1ac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Content\Beach">
+      <UniqueIdentifier>{38c9f912-0311-4a12-91a0-320ee6410fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Content\Beach">
+      <UniqueIdentifier>{5bcd2969-2209-4306-a576-13537e8fba5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Wave">
+      <UniqueIdentifier>{9d243596-4ebb-458e-b72f-5c6f5c482cf7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -343,6 +352,15 @@
     </ClCompile>
     <ClCompile Include="DrawTextGL.cpp">
       <Filter>Source Files\WIP</Filter>
+    </ClCompile>
+    <ClCompile Include="BeachScene.cpp">
+      <Filter>Source Files\Content\Beach</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BeachA.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -592,11 +610,17 @@
     <ClInclude Include="gltext.h">
       <Filter>Header Files\WIP</Filter>
     </ClInclude>
+    <ClInclude Include="BeachScene.h">
+      <Filter>Header Files\Content\Beach</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BeachA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="TransformVert.shader">
-      <Filter>Shader</Filter>
-    </None>
     <None Include="BasicFrag.shader">
       <Filter>Shader\Basic</Filter>
     </None>
@@ -665,6 +689,21 @@
     </None>
     <None Include="terrainVert.shader">
       <Filter>Shader\Terrain</Filter>
+    </None>
+    <None Include="TransformVert.shader">
+      <Filter>Shader\Basic</Filter>
+    </None>
+    <None Include="TessWaveVert.shader">
+      <Filter>Shader\Wave</Filter>
+    </None>
+    <None Include="TessWaveFrag.shader">
+      <Filter>Shader\Wave</Filter>
+    </None>
+    <None Include="TessWaveTesc.shader">
+      <Filter>Shader\Wave</Filter>
+    </None>
+    <None Include="TessWaveTese.shader">
+      <Filter>Shader\Wave</Filter>
     </None>
   </ItemGroup>
 </Project>

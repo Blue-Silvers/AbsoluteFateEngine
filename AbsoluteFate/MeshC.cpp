@@ -7,6 +7,8 @@
 
 #include "Asset.h"
 
+#include "Log.h"
+
 MeshC::MeshC(Actor* pOwner) : Components(pOwner), 
 							  mMesh(nullptr), 
 							  mTextureIndex(0)
@@ -57,8 +59,8 @@ void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 		{
 			t->SetActive();
 		}
+
 		glActiveTexture(GL_TEXTURE1); // active noise texture
-		
 		if (mMesh->GetNoiseTexture() != nullptr)
 		{
 			mMesh->GetNoiseTexture()->SetActive();

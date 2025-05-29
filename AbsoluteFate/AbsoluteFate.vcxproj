@@ -139,6 +139,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="BeachA.cpp" />
+    <ClCompile Include="BeachScene.cpp" />
     <ClCompile Include="BowlingBallA.cpp" />
     <ClCompile Include="BowlingBallVisualA.cpp" />
     <ClCompile Include="BowlingBorderA.cpp" />
@@ -212,10 +214,13 @@
     <ClCompile Include="Vector3.cpp" />
     <ClCompile Include="Vector4.cpp" />
     <ClCompile Include="VertexArray.cpp" />
+    <ClCompile Include="WaveA.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
+    <ClInclude Include="BeachA.h" />
+    <ClInclude Include="BeachScene.h" />
     <ClInclude Include="BowlingBallA.h" />
     <ClInclude Include="BowlingBallVisualA.h" />
     <ClInclude Include="BowlingBorderA.h" />
@@ -296,6 +301,7 @@
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Vector4.h" />
     <ClInclude Include="VertexArray.h" />
+    <ClInclude Include="WaveA.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
@@ -322,6 +328,10 @@
     <None Include="TessTest.tesc" />
     <None Include="TessTest.tese" />
     <None Include="TessTest.vert" />
+    <None Include="TessWaveFrag.shader" />
+    <None Include="TessWaveTesc.shader" />
+    <None Include="TessWaveTese.shader" />
+    <None Include="TessWaveVert.shader" />
     <None Include="TransformVert.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
