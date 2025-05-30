@@ -9,6 +9,7 @@ uniform float uDisplacement;
 uniform float uAmplitude;
 uniform float uFrequency;
 uniform float uSpeed;
+uniform bool uRightClamp = true;
 
 in TESC_OUT{
     vec4 color;
@@ -33,7 +34,7 @@ vec4 interpolate4D(vec4 v0, vec4 v1, vec4 v2) {
 
 float vertexAnimWave(vec2 uv, float noise)
 {
-    return sin((uv.x- uTime * uSpeed)* uFrequency) * (uAmplitude * noise);
+    return sin((uv.x - uTime * uSpeed)* uFrequency) * (uAmplitude * noise);
 }
 
 void main(void)
@@ -48,7 +49,14 @@ void main(void)
     wave *= mix(0.5, 1.5, noise);
 
     //Update pos
-    texPos.y += wave * 100 ;
+    if (uRightClamp == true)
+    {
+        texPos.y += wave * mix(1, 100, 1 - texPos.x/100);
+    }
+    else
+    {
+        texPos.y += wave * 100;
+    }
     gl_Position = texPos;
 
     //TESE_OUT
