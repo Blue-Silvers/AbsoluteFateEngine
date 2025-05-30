@@ -22,7 +22,7 @@ void CameraA::Start()
 
 	SetPosition(Vector3{ -20,0,0 });
 	//move component
-	FPSController* movement = new FPSController(this);
+	movement = new FPSController(this);
 	movement->SetSpeed(Vector3{ 0, 0, 0 });
 	AddComponent(movement);
 }

@@ -39,6 +39,7 @@ void WaveA::Start()
 	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uAmplitude", mAmplitude);
 	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uFrequency", mFrequency);
 	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uSpeed", mSpeed);
+	mMeshComponent->GetMesh()->GetShaderProgram().setBool("uRightClamp", true);
 }
 
 void WaveA::Update()

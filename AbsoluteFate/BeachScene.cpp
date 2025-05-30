@@ -34,6 +34,8 @@ void BeachScene::Start()
 	AddActor(mWave);
 
 	Scene::Start();
+
+	cam->GetMovementComponent()->SetMoveSpeed(25.0F);
 }
 
 void BeachScene::Update()

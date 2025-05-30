@@ -10,7 +10,7 @@ private:
 	ShaderProgram mTessProgram;
 
 	float mDisplacement = 25;
-	float mAmplitude = 0.09;
+	float mAmplitude = 0.12;
 	float mFrequency = 1.5;
 	float mSpeed = 1;
 

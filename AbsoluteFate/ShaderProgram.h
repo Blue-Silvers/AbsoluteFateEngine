@@ -23,6 +23,7 @@ public:
 
 	unsigned int GetID();
 	void Use();
+	void setBool(const GLchar* name, bool value);
 	void setFloat(const GLchar* name, GLfloat value);
 	void setInteger(const GLchar* name, GLint value);
 	void setVector2f(const GLchar* name, GLfloat x, GLfloat y);

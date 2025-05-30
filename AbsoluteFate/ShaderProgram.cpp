@@ -33,6 +33,11 @@ void ShaderProgram::Use()
 	glUseProgram(mId);
 }
 
+void ShaderProgram::setBool(const GLchar* name, bool value)
+{
+	glUniform1f(glGetUniformLocation(mId, name), value);
+}
+
 void ShaderProgram::setFloat(const GLchar* name, GLfloat value)
 {
 	glUniform1f(glGetUniformLocation(mId, name), value);

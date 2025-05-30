@@ -9,15 +9,13 @@ uniform float uDisplacement;
 uniform float uAmplitude;
 uniform float uFrequency;
 uniform float uSpeed;
-uniform bool uRightClamp = true;
+uniform bool uRightClamp; //set true if you woud like create a smootch clamp at the end of the wave
 
 in TESC_OUT{
-    vec4 color;
     vec2 texCoord;
 
 } tese_in[];
 out TESE_OUT{
-    vec4 color;
     vec2 texCoord;
     float diplacement;
 
@@ -37,6 +35,19 @@ float vertexAnimWave(vec2 uv, float noise)
     return sin((uv.x - uTime * uSpeed)* uFrequency) * (uAmplitude * noise);
 }
 
+float CustomClamp (float value, float min, float max)
+{
+    if(value >= max)
+    {
+        return max;
+    }
+    else if(value <= min)
+    {
+        return min;
+    }
+    return value;
+}
+
 void main(void)
 {
     //Interpolate
@@ -47,20 +58,20 @@ void main(void)
     float noise = texture(uNoise, uv * 10.0).r;
     float wave = vertexAnimWave(uv, noise);
     wave *= mix(0.5, 1.5, noise);
-
-    //Update pos
     if (uRightClamp == true)
     {
-        texPos.y += wave * mix(1, 100, 1 - texPos.x/100);
+        wave *= CustomClamp(mix(1, 100, 1 - texPos.x/100), 1, 100);
     }
     else
     {
-        texPos.y += wave * 100;
+        wave *= 100;
     }
+
+    //Update pos
+    texPos.y += wave;
     gl_Position = texPos;
 
     //TESE_OUT
-    tese_out.color = mix(tese_in[0].color, tese_in[1].color, gl_TessCoord.x);;
     tese_out.texCoord = uv;
-    tese_out.diplacement = wave * uDisplacement;
+    tese_out.diplacement = wave/100 * uDisplacement;
 }
