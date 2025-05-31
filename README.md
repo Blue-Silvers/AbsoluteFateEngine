@@ -28,12 +28,12 @@ This branch includes several shader examples, such as :
 
 `AbsoluteFate.sln` : Solution file for Visual Studio.
  
-`Header/CPP` :
+- **Header/CPP** :
 
 <img width="185" alt="image" src="https://github.com/user-attachments/assets/47ad79f6-687f-48ee-972b-9749bdd31615" /> <img width="190" alt="image" src="https://github.com/user-attachments/assets/9e270bbe-3a01-4a49-8eb3-4b1a0c5eb4f5" />
 
 
-`Shaders` :
+- **Shaders** :
 
 <img width="197" alt="image" src="https://github.com/user-attachments/assets/c9e32660-2dd0-4c63-aa4b-5e4ff0aa5ed3" />
 
