@@ -9,11 +9,12 @@ in TESE_OUT{
 out vec4 FragColor;
 
 layout(binding = 0)uniform sampler2D uTexture;
+uniform float uShadowFactor = 1;             //[0-1]
 //Normal
 layout(binding = 2)uniform sampler2D uNormalTexture;
 uniform vec3 uViewDir;
 uniform vec3 uLightDir;
-uniform float uNormalStrength = 0.5;
+uniform float uNormalStrength = 0.5;         //[0-1]
 uniform vec2 uNormalTiling;
 
 //Colors
@@ -49,7 +50,8 @@ void main()
     float spec = pow(max(dot(normal, halfwayDir), 0.0), 16.0);
 
     //Final color
-    vec3 color = vec4(uBaseColor * texture(uTexture, frag_in.texCoord)).rgb;
+    float depth = 1 - CustomClamp(frag_in.diplacement, 0, 1);
+    vec3 color = vec4(mix(uBaseColor, uBaseColor * (1-uShadowFactor), depth) * texture(uTexture, frag_in.texCoord)).rgb;
     vec3 lighting = mix(color, ((1.5 + diff + spec)) * color - vec3(0.2, 0.2, 0.2) , uNormalStrength);
     FragColor = vec4(lighting, 1.0);
 }

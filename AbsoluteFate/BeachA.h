@@ -9,7 +9,8 @@ private:
 	Shader mTessVertexShader, mTessFragShader, mTessControlShader, mTessEvalShader;
 	ShaderProgram mTessProgram;
 
-	float mDisplacement = 25;
+	float mHeightFactor = 0.05;
+	float mShadowFactor = 0.5;
 
 public:
 	void Start()override;

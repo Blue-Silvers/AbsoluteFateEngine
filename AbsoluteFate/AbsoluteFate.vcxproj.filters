@@ -359,13 +359,13 @@
     <ClCompile Include="BeachScene.cpp">
       <Filter>Source Files\Content\Beach</Filter>
     </ClCompile>
-    <ClCompile Include="BeachA.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="WaveA.cpp">
       <Filter>Source Files\Content\Beach</Filter>
     </ClCompile>
     <ClCompile Include="SecondWaveA.cpp">
+      <Filter>Source Files\Content\Beach</Filter>
+    </ClCompile>
+    <ClCompile Include="BeachA.cpp">
       <Filter>Source Files\Content\Beach</Filter>
     </ClCompile>
   </ItemGroup>
@@ -619,13 +619,13 @@
     <ClInclude Include="BeachScene.h">
       <Filter>Header Files\Content\Beach</Filter>
     </ClInclude>
-    <ClInclude Include="BeachA.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="WaveA.h">
       <Filter>Header Files\Content\Beach</Filter>
     </ClInclude>
     <ClInclude Include="SecondWaveA.h">
+      <Filter>Header Files\Content\Beach</Filter>
+    </ClInclude>
+    <ClInclude Include="BeachA.h">
       <Filter>Header Files\Content\Beach</Filter>
     </ClInclude>
   </ItemGroup>
