@@ -9,6 +9,8 @@ private:
 	Shader mTessVertexShader, mTessFragShader, mTessControlShader, mTessEvalShader;
 	ShaderProgram mTessProgram;
 
+	float mDisplacement = 25;
+
 public:
 	void Start()override;
 	void Update()override;

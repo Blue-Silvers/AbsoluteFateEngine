@@ -44,13 +44,15 @@ void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 	if (mMesh != nullptr)
 	{
 		Matrix4Row wt = mOwner->GetTransform().GetWorldTransform();
+		Matrix4Row viewProj = pView * pProj;
 		mMesh->GetShaderProgram().Use();
-		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", pView * pProj);
+		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", viewProj);
 		mMesh->GetShaderProgram().setMatrix4Row("uWorldTransform", wt);
 		mMesh->GetShaderProgram().setVector2f("uTiling", mTilling);
 		mMesh->GetShaderProgram().setVector2f("uOffset", mOffset);
 		mMesh->GetShaderProgram().setInteger("uTessLevel", mTessLevel);
-		
+		mMesh->GetShaderProgram().setVector3f("uViewDir", viewProj.GetTranslation());
+
 		mTime += Time::deltaTime;
 		mMesh->GetShaderProgram().setFloat("uTime", mTime);
 
@@ -66,6 +68,16 @@ void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 		if (mMesh->GetNoiseTexture() != nullptr)
 		{
 			mMesh->GetNoiseTexture()->SetActive();
+		}
+
+		glActiveTexture(GL_TEXTURE2); // active normal texture
+		if (mMesh->GetNormalTexture() != nullptr)
+		{
+			mMesh->GetNormalTexture()->SetActive();
+		}
+		else 
+		{
+			mMesh->GetShaderProgram().setFloat("uNormalStrength", 0);
 		}
 
 		mMesh->GetVao()->SetActive();

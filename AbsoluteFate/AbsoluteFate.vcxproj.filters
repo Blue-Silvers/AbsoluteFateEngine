@@ -126,6 +126,9 @@
     <Filter Include="Shader\Wave">
       <UniqueIdentifier>{9d243596-4ebb-458e-b72f-5c6f5c482cf7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader\Noise/Normal">
+      <UniqueIdentifier>{792f3ba3-1bcf-4894-970e-ab2c08fa3725}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">

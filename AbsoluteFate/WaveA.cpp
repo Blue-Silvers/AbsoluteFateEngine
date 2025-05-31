@@ -9,14 +9,16 @@ void WaveA::Start()
 	//load texture
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/White.png", "White");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Noise/PerlinNoise.png", "PerlinNoise");
+	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Normal/Water_Normal.png", "WaterNormal");
 	Asset::LoadMesh("Resources/3D_Models/plane.obj", "wave");
 	//Actor
-	SetScale(Vector3{ 50, 50, 0.01F }); //scale
+	SetScale(Vector3{ 50, 50, 1 }); //scale
 	SetPosition(Vector3{ 50, 0, -10 }); //location
 	//mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("wave"));
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("White")});
 	mMeshComponent->GetMesh()->SetNoiseTexture(&Asset::GetTexture("PerlinNoise"));
+	mMeshComponent->GetMesh()->SetNormalTexture(&Asset::GetTexture("WaterNormal"));
 	AddComponent(mMeshComponent);
 
 	//change shader
@@ -39,6 +41,9 @@ void WaveA::Start()
 	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uFrequency", mFrequency);
 	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uSpeed", mSpeed);
 	mMeshComponent->GetMesh()->GetShaderProgram().setBool("uRightClamp", true);
+	mMeshComponent->GetMesh()->GetShaderProgram().setVector3f("uLightDir",80,20,20);
+	mMeshComponent->GetMesh()->GetShaderProgram().setVector2f("uNormalTiling", 0.5, 0.5); 
+	mMeshComponent->GetMesh()->GetShaderProgram().setFloat("uNormalStrength", 0.5);
 }
 
 void WaveA::Update()
