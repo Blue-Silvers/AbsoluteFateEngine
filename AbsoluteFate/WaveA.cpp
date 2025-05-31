@@ -1,6 +1,5 @@
 #include "WaveA.h"
 
-#include "MeshC.h"
 #include "Asset.h"
 #include <iostream>
 #include "Shader.h"

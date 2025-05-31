@@ -7,6 +7,7 @@
 //Actor
 #include "CameraA.h"
 #include "WaveA.h"
+#include "SecondWaveA.h"
 
 class BeachScene : public Scene
 {
@@ -19,6 +20,7 @@ private:
 	//actor
 	CameraA* cam;
 	WaveA* mWave;
+	SecondWaveA* mWaveBack;
 
 public:
 

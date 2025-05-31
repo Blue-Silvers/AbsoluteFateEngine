@@ -362,6 +362,9 @@
     <ClCompile Include="WaveA.cpp">
       <Filter>Source Files\Content\Beach</Filter>
     </ClCompile>
+    <ClCompile Include="SecondWaveA.cpp">
+      <Filter>Source Files\Content\Beach</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimatedSpriteC.h">
@@ -617,6 +620,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="WaveA.h">
+      <Filter>Header Files\Content\Beach</Filter>
+    </ClInclude>
+    <ClInclude Include="SecondWaveA.h">
       <Filter>Header Files\Content\Beach</Filter>
     </ClInclude>
   </ItemGroup>

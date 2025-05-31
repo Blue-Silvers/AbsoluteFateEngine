@@ -32,6 +32,7 @@ vec4 interpolate4D(vec4 v0, vec4 v1, vec4 v2) {
 
 float vertexAnimWave(vec2 uv, float noise)
 {
+    //return noise;
     return sin((uv.x - uTime * uSpeed)* uFrequency) * (uAmplitude * noise);
 }
 
@@ -57,14 +58,13 @@ void main(void)
     //Calcul for wave with noise
     float noise = texture(uNoise, uv * 10.0).r;
     float wave = vertexAnimWave(uv, noise);
-    wave *= mix(0.5, 1.5, noise);
     if (uRightClamp == true)
     {
-        wave *= CustomClamp(mix(1, 100, 1 - texPos.x/100), 1, 100);
+        wave *= CustomClamp(mix(1, 100, 1 - texPos.x/100), 1, 100) * mix(0.5, 1.5, noise);
     }
     else
     {
-        wave *= 100;
+        wave *= mix(50, 150, noise);
     }
 
     //Update pos

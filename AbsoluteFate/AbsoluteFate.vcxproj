@@ -201,6 +201,7 @@
     <ClCompile Include="RendererGl.cpp" />
     <ClCompile Include="RendererSDL.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SecondWaveA.cpp" />
     <ClCompile Include="SetOfPinA.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="ShaderProgram.cpp" />
@@ -287,6 +288,7 @@
     <ClInclude Include="RendererSDL.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SecondWaveA.h" />
     <ClInclude Include="SetOfPinA.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="ShaderProgram.h" />
