@@ -37,14 +37,11 @@ float CustomClamp (float value, float min, float max)
 
 void main()
 {
-    //foam color + base
+    //Foam color + base
     float foam = CustomClamp(frag_in.diplacement, 0.0, 1.0);
     vec4 foamWave = mix(uBaseColor* texture(uTexture, frag_in.texCoord), uTopColor* texture(uTexture, frag_in.texCoord), foam);
-    //base color + depth
+    //Base color + depth
     float depth = 1 + CustomClamp(frag_in.diplacement, -1.0, 0.0);
-    //final color
-    //FragColor = mix(uBottomColor* texture(uTexture, frag_in.texCoord), foamWave, depth);
-
 
     //Read normal map
     vec3 normal = texture(uNormalTexture, frag_in.texCoord * uNormalTiling + vec2(-uTime*0.1,0)).rgb;

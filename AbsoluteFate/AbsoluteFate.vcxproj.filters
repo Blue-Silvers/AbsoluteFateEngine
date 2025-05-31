@@ -714,5 +714,17 @@
     <None Include="TessWaveTese.shader">
       <Filter>Shader\Wave</Filter>
     </None>
+    <None Include="TessNoiseNormalVert.shader">
+      <Filter>Shader\Noise/Normal</Filter>
+    </None>
+    <None Include="TessNoiseNormalFrag.shader">
+      <Filter>Shader\Noise/Normal</Filter>
+    </None>
+    <None Include="TessNoiseNormalTesc.shader">
+      <Filter>Shader\Noise/Normal</Filter>
+    </None>
+    <None Include="TessNoiseNormalTese.shader">
+      <Filter>Shader\Noise/Normal</Filter>
+    </None>
   </ItemGroup>
 </Project>

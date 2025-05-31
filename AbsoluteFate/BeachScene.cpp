@@ -37,6 +37,10 @@ void BeachScene::Start()
 	mWaveBack->AttachScene(this);
 	AddActor(mWaveBack);
 
+	mBeach = new BeachA();
+	mBeach->AttachScene(this);
+	AddActor(mBeach);
+
 	Scene::Start();
 
 	cam->GetMovementComponent()->SetMoveSpeed(25.0F);

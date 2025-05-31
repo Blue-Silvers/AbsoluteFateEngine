@@ -322,6 +322,10 @@
     <None Include="terrainTessFragment.shader" />
     <None Include="terrainTessVertex.shader" />
     <None Include="terrainVert.shader" />
+    <None Include="TessNoiseNormalFrag.shader" />
+    <None Include="TessNoiseNormalTesc.shader" />
+    <None Include="TessNoiseNormalTese.shader" />
+    <None Include="TessNoiseNormalVert.shader" />
     <None Include="TessSimpleFrag.shader" />
     <None Include="TessSimpleTesc.shader" />
     <None Include="TessSimpleTese.shader" />

@@ -8,6 +8,7 @@
 #include "CameraA.h"
 #include "WaveA.h"
 #include "SecondWaveA.h"
+#include "BeachA.h"
 
 class BeachScene : public Scene
 {
@@ -21,6 +22,7 @@ private:
 	CameraA* cam;
 	WaveA* mWave;
 	SecondWaveA* mWaveBack;
+	BeachA* mBeach;
 
 public:
 
