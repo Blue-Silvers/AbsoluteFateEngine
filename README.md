@@ -2,7 +2,11 @@
 This branch of the AbsoluteFateEngine project focuses on exploring and demonstrating advanced OpenGL techniques through the development of custom shaders. It serves as a sandbox for experimenting with modern rendering features.
 
 ## ✨ Showcase
-~~
+
+
+https://github.com/user-attachments/assets/ab258933-a56f-4b22-bc4d-26a1dc5bd420
+
+
 
 ## 🧪 Included Shaders
 This branch includes several shader examples, such as :
