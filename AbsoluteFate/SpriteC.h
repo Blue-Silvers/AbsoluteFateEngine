@@ -6,7 +6,6 @@
 #include "Scene.h"
 #include <vector>
 
-//class Texture;
 
 class SpriteC : public Components
 {
@@ -19,12 +18,14 @@ protected:
 	int mTextureHeight;
 
 public:
+	//Constructor
 	SpriteC(Actor* pOwner, const Texture& pTexture, int pDrawOrder = 100);
 	virtual ~SpriteC();
 	SpriteC() = delete;
 	SpriteC(const SpriteC&) = delete;
 	SpriteC& operator= (const SpriteC&) = delete;
 
+	//Define and draw texture
 	virtual void SetTexture(const Texture& pTexture);
 	virtual void Draw(IRenderer& pRenderer);
 
@@ -38,4 +39,3 @@ public:
 	virtual void Update() {};
 	virtual void OnEnd() {};
 };
-

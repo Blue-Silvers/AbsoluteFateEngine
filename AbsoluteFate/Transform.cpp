@@ -1,5 +1,5 @@
 #include "Transform.h"
-#include "Log.h"
+
 void Transform::ComputeWorldTransform()
 {
 	if (!mNeedsUpdate) 
@@ -10,7 +10,6 @@ void Transform::ComputeWorldTransform()
 	mWorldTransform = Matrix4Row::CreateScale(mScale);
 	mWorldTransform *= Matrix4Row::CreateFromQuaternion(mRotation);
 	mWorldTransform *= Matrix4Row::CreateTranslation(mPosition);
-	//mOwner->UpdateComponentsTransform();
 }
 
 void Transform::RotateXInDegrees(float pDegrees)

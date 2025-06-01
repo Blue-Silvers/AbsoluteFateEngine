@@ -18,4 +18,3 @@ class Components
 		virtual void Update() = 0;
 		virtual void OnEnd() = 0;
 };
-

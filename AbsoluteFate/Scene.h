@@ -7,6 +7,7 @@
 class Actor;
 class IRenderer;
 
+//Parent of all scenes
 class Scene
 {
 protected:
@@ -25,6 +26,7 @@ public:
 	Scene(std::string pTitle = "Scene") : mTitle(pTitle), mUpdatingActors(false) {};
 	virtual ~Scene();
 
+	//Getter & Setter
 	virtual void SetRenderer(IRenderer* pRenderer)
 	{
 		mRenderer = pRenderer;
@@ -48,7 +50,7 @@ public:
 	void UpdateAllActors();
 	void RemoveActor(Actor* deadActor);
 
+	//Loader/Unloader
 	void Load();
 	void Unload();
 };
-

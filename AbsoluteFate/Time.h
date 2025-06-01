@@ -1,16 +1,6 @@
 #pragma once
 class Time
 {
-public:
-	Time() = default;
-	Time(const Time&) = delete;
-	Time& operator=(const Time&) = delete;
-
-	static unsigned int ComputeDeltaTime();
-	static void DelayTime();
-
-	static float deltaTime;
-
 private:
 	const static unsigned int FPS = 60;
 	const static unsigned int FRAME_DELAY = 1000 / FPS;
@@ -23,6 +13,15 @@ private:
 	static unsigned int mLastFrame;
 	//Time needed to run the loop 
 	static unsigned int mFrameTime;
+
+public:
+	//Constructor
+	Time() = default;
+	Time(const Time&) = delete;
+	Time& operator=(const Time&) = delete;
+
+	//Delta time
+	static unsigned int ComputeDeltaTime();
+	static void DelayTime();
+	static float deltaTime;
 };
-
-

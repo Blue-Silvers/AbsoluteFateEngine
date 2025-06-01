@@ -10,8 +10,7 @@ protected:
 public:
 	InputEvent();
 	~InputEvent();
-	virtual void Subscribe(IInputListener* pListener);
-	virtual void Unsubscribe(IInputListener* pListener);
-	virtual void NotifyListeners(SDL_Event& pEvent) const;
+	virtual void Subscribe(IInputListener* pListener); //listen new input
+	virtual void Unsubscribe(IInputListener* pListener); //Stop listening specific input
+	virtual void NotifyListeners(SDL_Event& pEvent) const; 
 };
-

@@ -11,16 +11,17 @@ private:
 	float mAnimFps;
 
 public:
+	//Constructor
 	AnimatedSpriteC(Actor* pOwner, const vector<Texture>& pTexture, int pDrawOrder = 100);
 	virtual ~AnimatedSpriteC();
 	AnimatedSpriteC() = delete;
 	AnimatedSpriteC(const AnimatedSpriteC&) = delete;
 	AnimatedSpriteC& operator=(const AnimatedSpriteC&) = delete;
 
+	//Getter & Setter
 	float GetAnimationFps() const { return mAnimFps; }
 	void SetAnimationTextures(const vector<Texture>& pTextures);
 	void SetAnimationFps(float pFps);
 
 	void Update() override;
 };
-

@@ -1,4 +1,5 @@
 #include "RendererSDL.h"
+
 #include "SpriteC.h"
 
 RendererSDL::RendererSDL() : mSdlRenderer(nullptr)
@@ -36,7 +37,6 @@ void RendererSDL::EndDraw()
 {
     SDL_RenderPresent(mSdlRenderer);
 }
-
 
 //Destroy renderer contain render variable
 void RendererSDL::Close()
@@ -113,7 +113,7 @@ void RendererSDL::AddSprite(SpriteC* pSprite)
     vector<SpriteC*>::iterator spriteComponent;
     for (spriteComponent = mSpritesList.begin(); spriteComponent != mSpritesList.end(); ++spriteComponent) 
     {
-        if (spriteDrawOrder < distance(mSpritesList.begin(), spriteComponent)/*(*spriteComponent)->GetDrawOrder()*/)
+        if (spriteDrawOrder < distance(mSpritesList.begin(), spriteComponent))
         {
             break;
         }

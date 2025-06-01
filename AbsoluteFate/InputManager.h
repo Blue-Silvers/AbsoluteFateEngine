@@ -8,6 +8,7 @@ class InputManager
 	std::map<SDL_Keycode, InputEvent*> mInputEvents;
 
 public:
+	//Constructor
 	InputManager() = default;
 	~InputManager();
 	InputManager(const InputManager&) = delete;
@@ -17,6 +18,4 @@ public:
 	void HandleInputs(SDL_Event& pEvent);
 
 	void SubscribeTo(SDL_Keycode pKeyCode, IInputListener* pListener);
-
 };
-

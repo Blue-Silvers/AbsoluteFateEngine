@@ -3,21 +3,23 @@
 #include "Texture.h"
 #include "Log.h"
 #include "Maths.h"
-
 #include "SDL_image.h"
 #include "IRenderer.h"
+
 #include <vector>
 
 class SpriteC;
 
+
+//Renderer for SDL only
 class RendererSDL : public IRenderer
 {
 private:
 	SDL_Renderer* mSdlRenderer;
 
 public:
+	//Constructor
 	RendererSDL();
-
 	RendererSDL(const RendererSDL&) = delete;
 	RendererSDL& operator= (const RendererSDL&) = delete;
 
@@ -44,5 +46,3 @@ public:
 	//Getter
 	IRenderer::RendererType GetType() override;
 };
-
-

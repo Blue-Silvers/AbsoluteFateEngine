@@ -23,7 +23,6 @@ bool Window::Open(std::string gameTitle)
 
 }
 
-
 //Kill window
 void Window::Close()
 {

@@ -1,6 +1,7 @@
 # pragma once
 #include "Maths.h"
 #include "Quaternion.h"
+
 #include <array>
 
 using std::array;
@@ -9,13 +10,12 @@ using std::array;
 class Matrix4
 {
 public:
+	//Constructor
 	array<float, 16> mat;
-
 	Matrix4()
 	{
 		*this = Matrix4::Identity;
 	}
-
 	Matrix4(const array<float, 16>& that)
 	{
 		for (int n = 0; n < 16; ++n) {
@@ -28,6 +28,7 @@ public:
 		return reinterpret_cast<const float*>(&mat[0]);
 	}
 
+	//Operators
 	inline float& operator()(const int i, const int j)
 	{
 		return mat[i * 4 + j];
@@ -182,6 +183,7 @@ public:
 	// Invert the matrix - super slow
 	void Invert();
 
+	//Getters
 	Vector3 GetTranslation() const
 	{
 

@@ -5,6 +5,7 @@ class Vector4
 	friend class Matrix4;
 
 public:
+	//Vector value
 	float x;
 	float y;
 	float z;

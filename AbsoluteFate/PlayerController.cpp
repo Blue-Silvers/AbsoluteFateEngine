@@ -5,7 +5,6 @@
 #include "Asset.h"
 #include "AnimatedSpriteC.h"
 
-#include "Log.h"
 #include <sstream>
 
 PlayerController::PlayerController(Actor* pActor) : MovingC(pActor), mMoveSpeed(50)

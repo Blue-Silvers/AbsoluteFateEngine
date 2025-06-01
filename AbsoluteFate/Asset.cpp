@@ -1,5 +1,5 @@
-
 #include "Asset.h"
+
 #include "tiny_obj_loader.h"
 #include "Log.h"
 #include <sstream>

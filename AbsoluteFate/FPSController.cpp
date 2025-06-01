@@ -1,10 +1,11 @@
 #include "FPSController.h"
 
-#include "IRenderer.h"
 #include "InputManager.h"
 #include "Actor.h"
 #include "Log.h"
+
 #include <sstream>
+#include <glew.h>
 
 FPSController::FPSController(Actor* pActor) : MovingC(pActor)
 {

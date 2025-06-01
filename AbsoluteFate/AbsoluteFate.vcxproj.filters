@@ -129,6 +129,9 @@
     <Filter Include="Shader\Noise/Normal">
       <UniqueIdentifier>{792f3ba3-1bcf-4894-970e-ab2c08fa3725}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader\Transform">
+      <UniqueIdentifier>{575bacde-9ec7-420a-848e-c5385fcc31fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -699,9 +702,6 @@
     <None Include="terrainVert.shader">
       <Filter>Shader\Terrain</Filter>
     </None>
-    <None Include="TransformVert.shader">
-      <Filter>Shader\Basic</Filter>
-    </None>
     <None Include="TessWaveVert.shader">
       <Filter>Shader\Wave</Filter>
     </None>
@@ -725,6 +725,9 @@
     </None>
     <None Include="TessNoiseNormalTese.shader">
       <Filter>Shader\Noise/Normal</Filter>
+    </None>
+    <None Include="TransformVert.shader">
+      <Filter>Shader\Transform</Filter>
     </None>
   </ItemGroup>
 </Project>

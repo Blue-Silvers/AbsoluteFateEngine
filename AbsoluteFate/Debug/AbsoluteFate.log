@@ -1,27 +1,2 @@
-﻿  BeachA.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BeachA.h(12,24): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'BeachA.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BeachA.cpp(43,76): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  BeachScene.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\WaveA.h(13,21): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'BeachScene.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SecondWaveA.h(13,21): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'BeachScene.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BeachA.h(12,24): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'BeachScene.cpp')
-  
-  Main.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\WaveA.h(13,21): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'Main.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\SecondWaveA.h(13,21): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'Main.cpp')
-  
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\BeachA.h(12,24): warning C4305: 'initializing': truncation from 'double' to 'float'
-  (compiling source file 'Main.cpp')
-  
-  Generating Code...
+﻿  Actor.cpp
   AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe
