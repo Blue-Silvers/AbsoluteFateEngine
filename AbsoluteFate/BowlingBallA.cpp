@@ -1,7 +1,5 @@
 #include "BowlingBallA.h"
 
-#include "Asset.h"
-#include "Time.h"
 #include "PinA.h"
 #include <iostream>
 

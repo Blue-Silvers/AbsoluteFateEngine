@@ -132,20 +132,6 @@ void DoomController::OnNotify(SDL_Event& pEvent)
 				doomPlayer->Interact();
 			}
 			break;
-		/*case SDLK_TAB:
-			if (wireframe)
-			{
-				glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-				wireframe = !wireframe;
-				Log::Info(" Debug mode : On");
-			}
-			else
-			{
-				glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-				wireframe = !wireframe;
-				Log::Info(" Debug mode : Off");
-			}
-			break;*/
 		default:
 
 			break;

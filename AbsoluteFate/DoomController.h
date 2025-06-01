@@ -16,4 +16,3 @@ public:
 	float GetMoveSpeed() { return mMoveSpeed; }
 	void SetMoveSpeed(float pMoveSpeed) { mMoveSpeed = pMoveSpeed; }
 };
-

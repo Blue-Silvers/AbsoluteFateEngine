@@ -1,4 +1,5 @@
 #include "DoomBoxCollider3DC.h"
+
 #include "DoomLevel.h"
 
 DoomBoxCollider3DC::DoomBoxCollider3DC(Actor* pParentActor) : Components(pParentActor, 0), mParentActor(pParentActor), mCustomScale(pParentActor->GetTransform().GetScale())

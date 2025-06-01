@@ -28,4 +28,3 @@ public:
 
 	inline vector<Actor*> GetLevelElements(){ return mLevelElementList; };
 };
-

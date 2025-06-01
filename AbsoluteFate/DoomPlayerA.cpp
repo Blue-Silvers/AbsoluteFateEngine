@@ -2,7 +2,6 @@
 
 #include "IRenderer.h"
 #include "DoomController.h"
-#include "Time.h"
 #include "DoomLever.h"
 #include "DoomScene.h"
 
@@ -142,7 +141,8 @@ void DoomPlayerA::Shoot()
 				}
 				break;
 			}
-		}
+		} 
+				//DEBUG linetrace\\
 		//Log::Info(to_string(endPoint.x) + " | " + to_string(endPoint.y));
 	}
 }

@@ -97,4 +97,3 @@ void PongBall::Update()
 		mBallLunch = false;
 	}
 }
-

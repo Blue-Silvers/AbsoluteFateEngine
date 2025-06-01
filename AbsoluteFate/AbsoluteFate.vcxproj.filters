@@ -99,12 +99,6 @@
     <Filter Include="Shader\Sprite">
       <UniqueIdentifier>{f1b8603b-a99a-4a01-9568-0f1d7801783a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Shader\DebugTesselation">
-      <UniqueIdentifier>{aad7b3c0-fb13-4a24-b166-b17a5c681329}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shader\Terrain">
-      <UniqueIdentifier>{0bd1e416-cb23-4cc2-91ab-4ec7a83798aa}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Content\Doom">
       <UniqueIdentifier>{6d21b7f9-f82b-4979-876c-63fc01897190}</UniqueIdentifier>
     </Filter>
@@ -668,39 +662,6 @@
     </None>
     <None Include="TessSimpleVert.shader">
       <Filter>Shader\Simple</Filter>
-    </None>
-    <None Include="TessTest.vert">
-      <Filter>Shader\DebugTesselation</Filter>
-    </None>
-    <None Include="TessTest.frag">
-      <Filter>Shader\DebugTesselation</Filter>
-    </None>
-    <None Include="TessTest.tesc">
-      <Filter>Shader\DebugTesselation</Filter>
-    </None>
-    <None Include="TessTest.tese">
-      <Filter>Shader\DebugTesselation</Filter>
-    </None>
-    <None Include="terrainTessControl.shader">
-      <Filter>Shader\Terrain</Filter>
-    </None>
-    <None Include="terrainTessEvaluation.shader">
-      <Filter>Shader\Terrain</Filter>
-    </None>
-    <None Include="terrainTessFragment.shader">
-      <Filter>Shader\Terrain</Filter>
-    </None>
-    <None Include="terrainTessVertex.shader">
-      <Filter>Shader\Terrain</Filter>
-    </None>
-    <None Include="terrainTesc.shader">
-      <Filter>Shader\Terrain</Filter>
-    </None>
-    <None Include="terrainTese.shader">
-      <Filter>Shader\Terrain</Filter>
-    </None>
-    <None Include="terrainVert.shader">
-      <Filter>Shader\Terrain</Filter>
     </None>
     <None Include="TessWaveVert.shader">
       <Filter>Shader\Wave</Filter>

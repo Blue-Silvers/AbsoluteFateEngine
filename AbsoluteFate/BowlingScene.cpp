@@ -1,7 +1,6 @@
 #include "BowlingScene.h"
-#include "RendererGl.h"
 
-#include "Log.h"
+#include "RendererGl.h"
 
 void BowlingScene::SetRenderer(IRenderer* pRenderer)
 {
