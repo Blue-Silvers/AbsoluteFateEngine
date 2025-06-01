@@ -22,9 +22,7 @@ This branch includes several shader examples, such as :
 
 `AbsoluteFate/Resources/Normal` : All normal textures.
 
-`Dependencies/` : Bibliothèques tierces nécessaires au projet.
-
-`Shaders/` : Third-party libraries necessary for the project
+`Dependencies/` : Third-party libraries necessary for the project
 
 `AbsoluteFate.sln` : Solution file for Visual Studio.
  
