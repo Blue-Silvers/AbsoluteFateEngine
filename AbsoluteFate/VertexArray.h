@@ -1,5 +1,8 @@
 #pragma once
 
+/* R / L = Right / Left */
+/* T / B = Top / Bottom */
+
 constexpr float vertices[] =
 {//Coordonate:        Uv pos: R/L   T/B
 -0.5f, 0.5f, 0.0f,            0.0f, 0.0f,     //top left
@@ -8,16 +11,16 @@ constexpr float vertices[] =
 -0.5f, -0.5f, 0.0f,           0.0f, 1.0f	  //bottom left
 };
 
-constexpr float spriteVertices[] = {
-	//POSITION                      NORMALS             Uv pos: R/L   T/B
-	-0.5f, 0.5f, 0.0f,              0.0f, 0.0f, 0.0f,           0.0f, 0.0f,     //top left
-	0.5f, 0.5f, 0.0f,               0.0f, 0.0f, 0.0f,           1.0f, 0.0f,     //top right
-	-0.5f, -0.5f, 0.0f,             0.0f, 0.0f, 0.0f,           0.0f, 1.0f,     //bottom left
-	0.5f, -0.5f, 0.0f,              0.0f, 0.0f, 0.0f,           1.0f, 1.0f,     //bottom right
+constexpr float spriteVertices[] = 
+{//Coordonate:                  NORMALS             Uv pos: R/L   T/B
+-0.5f, 0.5f, 0.0f,              0.0f, 0.0f, 0.0f,           0.0f, 0.0f,     //top left
+0.5f, 0.5f, 0.0f,               0.0f, 0.0f, 0.0f,           1.0f, 0.0f,     //top right
+-0.5f, -0.5f, 0.0f,             0.0f, 0.0f, 0.0f,           0.0f, 1.0f,     //bottom left
+0.5f, -0.5f, 0.0f,              0.0f, 0.0f, 0.0f,           1.0f, 1.0f,     //bottom right
 };
 
-
-constexpr unsigned int indices[] = {
+constexpr unsigned int indices[] = 
+{
 0, 1, 2,
 2, 3, 0
 };
@@ -35,6 +38,7 @@ private:
 	unsigned int mVboId;
 
 public:
+	//Constructor
 	VertexArray();
 	VertexArray(const float* pVertices, 
 				unsigned int pVerticeCount, 
@@ -50,4 +54,3 @@ public:
 	unsigned int GetVerticeCount() const { return mVerticeCount; }
 	unsigned int GetIndicesCount() const { return mIndexCount; }
 };
-

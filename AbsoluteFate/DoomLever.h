@@ -26,4 +26,3 @@ public:
 	inline DoomDoor* GetDoorLinked() { return mDoorLinked; };
 	inline void SetDoorLinked(DoomDoor* pDoor) { mDoorLinked = pDoor; };
 };
-

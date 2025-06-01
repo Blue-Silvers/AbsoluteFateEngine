@@ -1,14 +1,13 @@
 #pragma once
 #include"cmath"
 #include "string"
+
 struct Vector2
 {
 public:
-
 	//Vector value
 	float x = 0;
 	float y = 0;
-
 
 	//Base Vector
 	static const Vector2 Zero;
@@ -88,5 +87,3 @@ public:
 		return "( " + std::to_string(GetMagnitude()) + " )";
 	}
 };
-
-

@@ -2,8 +2,8 @@
 
 class Vector3
 {
-
 public:
+	//Vector value
 	float x;
 	float y;
 	float z;
@@ -124,6 +124,7 @@ public:
 	// Transform a Vector3 by a quaternion
 	static Vector3 Transform(const Vector3& v, const class Quaternion& q);
 
+	//Base Vector
 	static const Vector3 zero;
 	static const Vector3 one;
 	static const Vector3 unitX;
@@ -135,4 +136,3 @@ public:
 	static const Vector3 infinity;
 	static const Vector3 negInfinity;
 };
-

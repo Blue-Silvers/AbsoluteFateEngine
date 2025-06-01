@@ -14,6 +14,7 @@ using namespace std;
 class Texture;
 class SpriteC;
 
+//Base for all renderer type
 class IRenderer
 {
 private:
@@ -52,7 +53,6 @@ public:
     //Draw fonction
     virtual void BeginDraw() = 0;
     virtual void Draw() = 0;
-
     virtual void DrawAllSprites() = 0;
     virtual void EndDraw() = 0;
     //Close

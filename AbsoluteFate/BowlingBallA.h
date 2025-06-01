@@ -29,4 +29,3 @@ public:
 	bool GetIsLunch() { return mIsLunching; };
 	MeshC* GetMeshC() { return mChildSphere->GetMeshC(); };
 };
-

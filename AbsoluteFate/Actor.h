@@ -14,6 +14,7 @@ enum class ActorState {
 	Dead
 };
 
+//Parent of all actors
 class Actor
 {
 private:
@@ -124,6 +125,7 @@ public:
 		return mTagList;
 	};
 
+	//Look specific other actor
 	virtual void LookAt(Vector3 pAxis, Actor* pTarget) 
 	{
 		SetRotation(Quaternion(pAxis, atan2(mTransform.GetPosition().y - pTarget->GetTransform().GetPosition().y, mTransform.GetPosition().x - pTarget->GetTransform().GetPosition().x)));
@@ -143,4 +145,3 @@ public:
 	}
 
 };
-

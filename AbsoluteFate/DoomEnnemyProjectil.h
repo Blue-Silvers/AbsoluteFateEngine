@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include "Actor.h"
 #include "MeshC.h"
 #include "DoomBoxCollider3DC.h"
@@ -20,4 +19,3 @@ public:
 	void HitSomething();
 	inline void SetForward(Vector3 pForward) { mForward = pForward; }
 };
-

@@ -39,8 +39,6 @@ void Vector3::Normalize()
 	z /= len;
 }
 
-
-
 Vector3 Vector3::Transform(Vector3& vec, Matrix4& mat, float w)
 {
 	Vector3 retVal;
@@ -72,7 +70,6 @@ Vector3 Vector3::TransformWithPerspDiv(Vector3& vec, Matrix4& mat, float w)
 	}
 	return retVal;
 }
-
 
 Vector3 Vector3::Transform(const Vector3& v, const Quaternion& q)
 {

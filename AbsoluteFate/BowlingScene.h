@@ -41,4 +41,3 @@ public:
 	void Render() override;
 	void Close() override;
 };
-

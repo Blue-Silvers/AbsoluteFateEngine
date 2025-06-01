@@ -1,6 +1,5 @@
 #include "Quaternion.h"
 
-#include "Vector4.h"
 #include "Matrix4.h"
 #include "Matrix4Row.h"
 #include <array>
@@ -22,31 +21,6 @@ Quaternion::Quaternion(const Vector3& axis, float angle)
 	z = axis.z * scalar;
 	w = Maths::Cos(angle / 2.0f);
 }
-
-/*void Quaternion::AddAngle(const Vector3& axis, float angle)
-{
-	float scalar = Maths::Sin(angle / 2.0f);
-	x += axis.x * scalar;
-	while (x > 1)
-	{
-		x -= 1;
-	}
-	y += axis.y * scalar;
-	while (y > 1)
-	{
-		y -= 1;
-	}
-	z += axis.z * scalar;
-	while (z > 1)
-	{
-		z -= 1;
-	}
-	w += Maths::Cos(angle / 2.0f);
-	while (w > 1)
-	{
-		w -= 1;
-	}
-}*/
 
 void Quaternion::Set(float inX, float inY, float inZ, float inW)
 {
@@ -75,7 +49,6 @@ void Quaternion::Normalize()
 Matrix4 Quaternion::AsMatrix() const
 {
 	// Transposed?
-
 	const float xx = x * x;
 	const float yy = y * y;
 	const float zz = z * z;

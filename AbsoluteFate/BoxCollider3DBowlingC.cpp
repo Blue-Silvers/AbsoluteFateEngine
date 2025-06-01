@@ -18,7 +18,6 @@ bool BoxCollider3DBowlingC::OnCollide() const
             {
                 if (mParentActor != pinA)
                 {
-                    //pinA->GetTransform().GetWorldTransform().GetTranslation()
                     if (mParentActor->GetTransform().GetWorldTransform().GetTranslation().y < pinA->GetTransform().GetWorldTransform().GetTranslation().y + pinA->GetTransform().GetWorldTransform().GetScale().y * pinA->GetBoxCollider()->GetCustomSize().y && mParentActor->GetTransform().GetWorldTransform().GetTranslation().y + mParentActor->GetTransform().GetWorldTransform().GetScale().y * mCustomScale.y > pinA->GetTransform().GetWorldTransform().GetTranslation().y
                         && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x < pinA->GetTransform().GetWorldTransform().GetTranslation().x + pinA->GetTransform().GetWorldTransform().GetScale().x * pinA->GetBoxCollider()->GetCustomSize().x && mParentActor->GetTransform().GetWorldTransform().GetTranslation().x + mParentActor->GetTransform().GetWorldTransform().GetScale().x * mCustomScale.x > pinA->GetTransform().GetWorldTransform().GetTranslation().x
                         && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z < pinA->GetTransform().GetWorldTransform().GetTranslation().z + pinA->GetTransform().GetWorldTransform().GetScale().z * pinA->GetBoxCollider()->GetCustomSize().z && mParentActor->GetTransform().GetWorldTransform().GetTranslation().z + mParentActor->GetTransform().GetWorldTransform().GetScale().z * mCustomScale.z > pinA->GetTransform().GetWorldTransform().GetTranslation().z)
@@ -137,4 +136,3 @@ void BoxCollider3DBowlingC::Update()
 void BoxCollider3DBowlingC::Draw(RendererSDL& pRenderer)
 {
 }
-

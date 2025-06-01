@@ -26,4 +26,3 @@ public:
 	inline bool GetDoorOpen() { return mDoorOpen; };
 	inline void SetDoorOpen(bool isOpen) { mDoorOpen = isOpen; };
 };
-

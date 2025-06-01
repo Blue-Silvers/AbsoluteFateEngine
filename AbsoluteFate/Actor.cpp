@@ -1,6 +1,6 @@
 #include "Actor.h"
 
-#include "RendererSDL.h"
+#include "IRenderer.h"
 
 Actor::Actor() :mState(ActorState::Active),
 				mTransform(0, 1, 0),
@@ -12,7 +12,6 @@ Actor::Actor(Transform pTransform2D, Scene* pScene) : mState(ActorState::Active)
 														mTransform(pTransform2D),
 														mSceneAttached(pScene->ActiveScene)
 {
-
 }
 
 void Actor::Render()

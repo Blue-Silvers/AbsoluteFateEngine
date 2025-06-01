@@ -1,4 +1,5 @@
 #pragma once
+
 class Color
 {
 public:
@@ -45,4 +46,3 @@ public:
 	Color() :r(0), g(0), b(0), a(1) {};
 	Color(float pR, float pG, float pB, float pA) : r(pR), g(pG), b(pB), a(pA) {};
 };
-

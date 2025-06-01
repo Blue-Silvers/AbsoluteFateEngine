@@ -1,7 +1,9 @@
 #include "Game.h"
+
 #include "InputManager.h"
 #include "RendererSDL.h"
 #include "RendererGl.h"
+
 #include <iostream>
 
 //Initialize SDL at start of the game

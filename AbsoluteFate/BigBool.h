@@ -7,4 +7,3 @@ enum BigBool
 	FALSE,
 	MAYBE
 };
-

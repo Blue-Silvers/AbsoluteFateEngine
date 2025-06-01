@@ -16,4 +16,3 @@ public:
 
 	inline vector<OpenGlPictureA*> GetIconList() { return mIconList; };
 };
-

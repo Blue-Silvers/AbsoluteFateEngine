@@ -40,4 +40,3 @@ public:
 	inline Shader GetMainVertexShader() { return mVertexShader; };
 	inline Shader GetMainFragmentShader() { return mFragmentShader; };
 };
-

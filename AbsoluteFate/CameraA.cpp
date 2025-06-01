@@ -2,9 +2,6 @@
 
 #include "IRenderer.h"
 #include "FPSController.h"
-#include "Time.h"
-
-#include "Log.h"
 
 void CameraA::SetSensitivity(float pSensi)
 {
@@ -50,7 +47,6 @@ void CameraA::Update()
 	{
 		mTransform.RotateYInDegrees(mMouseDeltaY * mSensitivity);
 	}
-	//Log::Info("" + std::to_string(mTransform.GetRotation().x) + ", " + std::to_string(mTransform.GetRotation().y) + ", " + std::to_string(mTransform.GetRotation().z)); //DEBUG//
 
 	Matrix4Row view = Matrix4Row::CreateLookAt(camPosition, target, up);
 	if (GetScene()->GetRenderer()->GetType() == IRenderer::RendererType::OPENGL)

@@ -13,9 +13,6 @@ void PlaneTextureOpenGlA::Start()
 	//Actor
 	SetScale2D(Vector2{ 1, 1 }); //scale
 	SetPosition2D(Vector2{ -300, 300 }); //location
-	//sprite component
-	/*SpriteC* sprite = new SpriteC(this, Asset::GetTexture("yes"));
-	AddComponent(sprite);*/
 	//anim component
 	AnimatedSpriteC* animation = new AnimatedSpriteC(this, Asset::GetAnimation("FrontIdle"));
 	animation->SetAnimationFps(2);

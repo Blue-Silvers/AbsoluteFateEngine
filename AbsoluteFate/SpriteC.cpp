@@ -40,4 +40,3 @@ void SpriteC::Draw(IRenderer& pRenderer)
 	Vector2 origin{ mTextureWidth / 2.0f, mTextureHeight / 2.0f };
 	pRenderer.DrawSprite(*mOwner, mTexture, Rectangle((0,0), ((float)mTextureWidth, (float)mTextureHeight)), origin, RendererSDL::Flip::None);
 }
-

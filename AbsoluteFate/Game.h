@@ -16,19 +16,18 @@ private:
 	IRenderer::RendererType mRendererType;
 
 public:
-	
 	SDL_Event event;
 
+	//Constructor
 	Game(std::string gameTitle, Scene* newScene, IRenderer::RendererType pRendererType);
 	Game(const Game&) = delete;
 	Game& operator= (const Game&) = delete;
 
-	void Init(Scene* newScene);
+	//Base fonctions
+	void Init(Scene* newScene); //Initialazer
 	void Loop();//core
 	void Render();
 	void Update();//gameplay
 	void CheckInput();
 	void Close();
-
 };
-

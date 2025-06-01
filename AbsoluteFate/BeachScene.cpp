@@ -1,7 +1,6 @@
 #include "BeachScene.h"
 
 #include "RendererGl.h"
-#include "Log.h"
 
 void BeachScene::SetRenderer(IRenderer* pRenderer)
 {
@@ -23,8 +22,7 @@ void BeachScene::Start()
 		renderer->SetShaderProgram(mShaderProgram);
 	}
 
-	//Actor
-
+	//Actors
 	cam = new CameraA();
 	cam->AttachScene(this);
 	AddActor(cam);

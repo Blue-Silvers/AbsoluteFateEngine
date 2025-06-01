@@ -31,7 +31,6 @@ private:
 	BowlingBallA* bowlingBallA;
 
 public:
-
 	GlTestScene() :Scene("OpenGl") {};
 	void SetRenderer(IRenderer* pRenderer) override;
 	void Start() override;
@@ -42,4 +41,3 @@ public:
 	inline Shader GetMainVertexShader() { return mVertexShader; };
 	inline Shader GetMainFragmentShader() { return mFragmentShader; };
 };
-

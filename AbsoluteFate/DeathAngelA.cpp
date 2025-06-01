@@ -21,8 +21,6 @@ void DeathAngelA::Start()
 	//Actor
 	SetScale2D(Vector2{ 1, 1 }); //scale
 	SetPosition2D(Vector2{ 100, 100 }); //location
-
-	//mTransform.RotateZInDegrees(90);
 	
 	//anim component
 	AnimatedSpriteC* animation = new AnimatedSpriteC(this, Asset::GetAnimation("FrontIdle"));

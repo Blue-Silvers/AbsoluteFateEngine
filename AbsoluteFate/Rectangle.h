@@ -59,6 +59,7 @@ struct Rectangle
             float rightCollide = position.x + dimensions.x - other.position.x; //verify distance between right side of this rectangle and left side of other rectangle
             float leftCollide = position.x - other.position.x + other.dimensions.x; //verify distance between left side of this rectangle and right side of other rectangle
 
+            //Simple collider detection
             if (upCollide >= downCollide && upCollide >= rightCollide && upCollide >= leftCollide)
             {
                 return UP;
@@ -78,6 +79,5 @@ struct Rectangle
         }
         
         return NONE;
-
     };
 };

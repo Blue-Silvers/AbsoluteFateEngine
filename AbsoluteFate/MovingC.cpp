@@ -1,8 +1,6 @@
 #include "MovingC.h"
 #include "Actor.h"
 #include "Time.h"
-#include "Vector2.h"
-#include "Maths.h"
 #include "BoxCollider3DC.h"
 
 #include "Log.h"

@@ -18,4 +18,3 @@ public:
 	void Destroy()override;
 	MeshC* GetMeshComponent() { return mMeshComponent; };
 };
-

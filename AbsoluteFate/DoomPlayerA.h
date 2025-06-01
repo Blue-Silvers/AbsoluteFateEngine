@@ -51,4 +51,3 @@ public:
 	inline bool GetCanShootAgain() { return mCanShootAgain; };
 	inline DoomGunA* GetGun() { return mGun; };
 };
-

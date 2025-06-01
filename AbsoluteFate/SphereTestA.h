@@ -16,4 +16,3 @@ public:
 	BoxCollider3DC* GetBoxCollider() { return mBoxCollider; };
 	MeshC* GetMeshC() { return mMeshComponent; };
 };
-

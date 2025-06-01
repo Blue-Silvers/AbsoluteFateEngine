@@ -12,6 +12,7 @@
 #include <glew.h>
 using namespace std;
 
+//Create your scene
 Pong* scenePong = new Pong();
 Platformer* scene = new Platformer();
 GlTestScene* sceneOpenGl = new GlTestScene();
@@ -19,8 +20,8 @@ BowlingScene* sceneBowling = new BowlingScene();
 DoomScene* doomScene = new DoomScene();
 BeachScene* beachScene = new BeachScene();
 
+//Choose your scene
 int main(int argc, char** argv) {
-	//Game myGame("My Pong Game", scene);
 	//Game myGame("Absolute Fate Engine", scene, IRenderer::RendererType::SDL);
 	//Game myGame("Absolute Fate Engine", sceneOpenGl, IRenderer::RendererType::OPENGL);
 	//Game myGame("Super Bowling 3D", sceneBowling, IRenderer::RendererType::OPENGL);

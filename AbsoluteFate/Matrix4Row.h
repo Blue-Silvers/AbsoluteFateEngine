@@ -157,6 +157,7 @@ public:
 	// Invert the matrix - super slow
 	void Invert();
 
+	//Getters
 	Vector3 GetTranslation() const
 	{
 		return Vector3(mat[3][0], mat[3][1], mat[3][2]);

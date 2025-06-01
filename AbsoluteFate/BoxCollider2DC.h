@@ -34,4 +34,3 @@ public :
     virtual void Draw(RendererSDL& pRenderer);
     virtual void OnEnd() {};
 };
-

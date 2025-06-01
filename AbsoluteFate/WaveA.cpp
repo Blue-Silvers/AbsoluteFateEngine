@@ -6,23 +6,24 @@
 
 void WaveA::Start()
 {
-	//load texture
+	//Load texture
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/White.png", "White");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Noise/PerlinNoise.png", "PerlinNoise");
 	Asset::LoadTexture(*mSceneAttached->GetRenderer(), "Resources/Normal/Water_Normal.png", "WaterNormal");
 	Asset::LoadMesh("Resources/3D_Models/plane.obj", "wave");
+
 	//Actor
 	SetScale(Vector3{ 50, 50, 1 }); //scale
 	SetPosition(Vector3{ 50, 0, -10 }); //location
-	//mesh component
+
+	//Mesh component
 	mMeshComponent = new MeshC(this, &Asset::GetMesh("wave"));
 	mMeshComponent->GetMesh()->SetTextureList(vector<Texture*>{&Asset::GetTexture("White")});
 	mMeshComponent->GetMesh()->SetNoiseTexture(&Asset::GetTexture("PerlinNoise"));
 	mMeshComponent->GetMesh()->SetNormalTexture(&Asset::GetTexture("WaterNormal"));
 	AddComponent(mMeshComponent);
 
-	//change shader
-
+	//Change shader
 	mTessVertexShader.Load("TessWaveVert.shader", ShaderType::VERTEX);
 	mTessFragShader.Load("TessWaveFrag.shader", ShaderType::FRAGMENT);
 	mTessControlShader.Load("TessWaveTesc.shader", ShaderType::TESSELLATION_CONTROL);

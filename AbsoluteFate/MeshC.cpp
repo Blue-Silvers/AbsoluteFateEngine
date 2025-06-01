@@ -45,6 +45,9 @@ void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 	{
 		Matrix4Row wt = mOwner->GetTransform().GetWorldTransform();
 		Matrix4Row viewProj = pView * pProj;
+		mTime += Time::deltaTime;
+
+		//Set shader program variables
 		mMesh->GetShaderProgram().Use();
 		mMesh->GetShaderProgram().setMatrix4Row("uViewProj", viewProj);
 		mMesh->GetShaderProgram().setMatrix4Row("uWorldTransform", wt);
@@ -52,12 +55,10 @@ void MeshC::Draw(Matrix4Row pView, Matrix4Row pProj)
 		mMesh->GetShaderProgram().setVector2f("uOffset", mOffset);
 		mMesh->GetShaderProgram().setInteger("uTessLevel", mTessLevel);
 		mMesh->GetShaderProgram().setVector3f("uViewDir", viewProj.GetTranslation());
-
-		mTime += Time::deltaTime;
 		mMesh->GetShaderProgram().setFloat("uTime", mTime);
-
 		mMesh->GetShaderProgram().setFloat("uDinMapDepth", 8.0f);
 
+		//Use texture
 		Texture* t = mMesh->GetTexture(mTextureIndex);
 		if (t) 
 		{

@@ -7,7 +7,6 @@ class Platformer : public Scene
 {
 public:
 
-
 	Platformer() :Scene("Platformer") {};
 	void SetRenderer(IRenderer* pRenderer) override;
 	void Start() override;
@@ -15,4 +14,3 @@ public:
 	void Render() override;
 	void  Close() override;
 };
-

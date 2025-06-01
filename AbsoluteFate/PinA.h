@@ -1,7 +1,6 @@
 #pragma once
 #include "Actor.h"
 #include "MeshC.h"
-#include "BoxCollider3DC.h"
 #include "BoxCollider3DBowlingC.h"
 
 class PinA : public Actor
@@ -20,4 +19,3 @@ public:
 	void AddForce(Vector3 pForce);
 	bool IsHit() { return hit; };
 };
-

@@ -1,5 +1,7 @@
 #include "Shader.h"
-#include "RendererGl.h"
+
+#include <glew.h>
+
 #include "Log.h"
 
 const std::string Shader::SHADER_PATH = {""};

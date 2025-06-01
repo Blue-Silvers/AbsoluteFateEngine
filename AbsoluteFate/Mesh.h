@@ -28,12 +28,12 @@ private:
 	std::vector<Vertex> mVertices;
 
 public:
+	//Construcor
 	Mesh();
 	Mesh(std::vector<Vertex> pVertices);
 	~Mesh();
 
 	void Unload();
-	void AddTexture(Texture* pTexture);
 
 	//Getters
 	std::vector<Texture*> GetAllFaceTexture() { return mTexturesList; }
@@ -47,10 +47,10 @@ public:
 	int GetVerticeCount() {
 		return mVertices.size();
 	}
-
-	//Setters
 	float* ToVerticeArray();
 
+	//Setters
+	void AddTexture(Texture* pTexture);
 	void SetTextureList(std::vector<Texture*> pTextureList) 
 	{
 		mTexturesList = pTextureList;
@@ -82,4 +82,3 @@ public:
 		mShaderProgram = pShaderProgram;
 	};
 };
-

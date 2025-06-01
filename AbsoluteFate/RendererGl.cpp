@@ -2,7 +2,6 @@
 
 #include "SpriteC.h"
 #include"AnimatedSpriteC.h"
-#include "Asset.h"
 
 // To Load TTF Files
 #include <ft2build.h>
@@ -201,6 +200,7 @@ IRenderer::RendererType RendererGl::GetType()
 	return RendererType::OPENGL;
 }
 
+					//WIP//
 /*void RendererGl::load_font(char* filePath, int fontSize)
 {
 	FT_Library fontLibrary;

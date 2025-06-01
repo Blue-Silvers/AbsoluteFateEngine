@@ -4,7 +4,6 @@
 #include "Asset.h"
 #include "InputManager.h"
 #include "Actor.h"
-#include "Log.h"
 #include <sstream>
 
 BowlingControllerC::BowlingControllerC(Actor* pActor) : Components(pActor)

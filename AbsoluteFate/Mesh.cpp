@@ -45,7 +45,6 @@ float* Mesh::ToVerticeArray()
 	return array;
 }
 
-
 void Mesh::Unload()
 {
 	//delete mVao;
