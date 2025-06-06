@@ -2,7 +2,7 @@
 
 in TESE_OUT{
     vec2 texCoord;
-    float diplacement;
+    float displacement;
 
 } frag_in;
 
@@ -38,10 +38,10 @@ float CustomClamp (float value, float min, float max)
 void main()
 {
     //Foam color + base
-    float foam = CustomClamp(frag_in.diplacement, 0.0, 1.0);
+    float foam = CustomClamp(frag_in.displacement, 0.0, 1.0);
     vec4 foamWave = mix(uBaseColor* texture(uTexture, frag_in.texCoord), uTopColor* texture(uTexture, frag_in.texCoord), foam);
     //Base color + depth
-    float depth = 1 + CustomClamp(frag_in.diplacement, -1.0, 0.0);
+    float depth = 1 + CustomClamp(frag_in.displacement, -1.0, 0.0);
 
     //Read normal map
     vec3 normal = texture(uNormalTexture, frag_in.texCoord * uNormalTiling + vec2(-uTime*0.1,0)).rgb;
