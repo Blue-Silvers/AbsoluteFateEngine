@@ -17,7 +17,7 @@ in TESC_OUT{
 } tese_in[];
 out TESE_OUT{
     vec2 texCoord;
-    float diplacement;
+    float displacement;
 
 } tese_out;
 
@@ -73,5 +73,5 @@ void main(void)
 
     //TESE_OUT
     tese_out.texCoord = uv;
-    tese_out.diplacement = wave/100 * uDisplacement;
+    tese_out.displacement = wave/100 * uDisplacement;
 }

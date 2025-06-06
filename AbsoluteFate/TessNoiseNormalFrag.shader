@@ -2,7 +2,7 @@
 
 in TESE_OUT{
     vec2 texCoord;
-    float diplacement;
+    float displacement;
 
 } frag_in;
 
@@ -50,7 +50,7 @@ void main()
     float spec = pow(max(dot(normal, halfwayDir), 0.0), 16.0);
 
     //Final color
-    float depth = 1 - CustomClamp(frag_in.diplacement, 0, 1);
+    float depth = 1 - CustomClamp(frag_in.displacement, 0, 1);
     vec3 color = vec4(mix(uBaseColor, uBaseColor * (1-uShadowFactor), depth) * texture(uTexture, frag_in.texCoord)).rgb;
     vec3 lighting = mix(color, ((1.5 + diff + spec)) * color - vec3(0.2, 0.2, 0.2) , uNormalStrength);
     FragColor = vec4(lighting, 1.0);
