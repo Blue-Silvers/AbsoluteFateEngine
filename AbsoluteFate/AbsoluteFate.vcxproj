@@ -205,6 +205,10 @@
     <ClCompile Include="SphereTestA.cpp" />
     <ClCompile Include="SpriteC.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TheDescentController.cpp" />
+    <ClCompile Include="TheDescentMovingC.cpp" />
+    <ClCompile Include="TheDescentPlayerA.cpp" />
+    <ClCompile Include="TheDescentScene.cpp" />
     <ClCompile Include="TheWallA.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="Transform.cpp" />
@@ -288,6 +292,10 @@
     <ClInclude Include="SphereTestA.h" />
     <ClInclude Include="SpriteC.h" />
     <ClInclude Include="Texture.h" />
+    <ClInclude Include="TheDescentController.h" />
+    <ClInclude Include="TheDescentMovingC.h" />
+    <ClInclude Include="TheDescentPlayerA.h" />
+    <ClInclude Include="TheDescentScene.h" />
     <ClInclude Include="TheWallA.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="tiny_obj_loader.h" />

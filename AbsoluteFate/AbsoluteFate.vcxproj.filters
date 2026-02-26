@@ -117,6 +117,12 @@
     <Filter Include="Source Files\WIP">
       <UniqueIdentifier>{b2369992-5a64-4480-8f44-ba7bf88ef1ac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Content\TheDescent">
+      <UniqueIdentifier>{516c8c89-9f96-4b51-b226-4c549a653d8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Content\TheDescent">
+      <UniqueIdentifier>{bf32351f-459f-41cb-a9d4-22a394c2588f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -343,6 +349,18 @@
     </ClCompile>
     <ClCompile Include="DrawTextGL.cpp">
       <Filter>Source Files\WIP</Filter>
+    </ClCompile>
+    <ClCompile Include="TheDescentScene.cpp">
+      <Filter>Source Files\Content\TheDescent</Filter>
+    </ClCompile>
+    <ClCompile Include="TheDescentMovingC.cpp">
+      <Filter>Source Files\Content\TheDescent</Filter>
+    </ClCompile>
+    <ClCompile Include="TheDescentController.cpp">
+      <Filter>Source Files\Content\TheDescent</Filter>
+    </ClCompile>
+    <ClCompile Include="TheDescentPlayerA.cpp">
+      <Filter>Source Files\Content\TheDescent</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -591,6 +609,18 @@
     </ClInclude>
     <ClInclude Include="gltext.h">
       <Filter>Header Files\WIP</Filter>
+    </ClInclude>
+    <ClInclude Include="TheDescentScene.h">
+      <Filter>Header Files\Content\TheDescent</Filter>
+    </ClInclude>
+    <ClInclude Include="TheDescentController.h">
+      <Filter>Header Files\Content\TheDescent</Filter>
+    </ClInclude>
+    <ClInclude Include="TheDescentMovingC.h">
+      <Filter>Header Files\Content\TheDescent</Filter>
+    </ClInclude>
+    <ClInclude Include="TheDescentPlayerA.h">
+      <Filter>Header Files\Content\TheDescent</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
