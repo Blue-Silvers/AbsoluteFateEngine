@@ -126,6 +126,9 @@
     <Filter Include="Shader\Transform">
       <UniqueIdentifier>{575bacde-9ec7-420a-848e-c5385fcc31fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader\Fluid">
+      <UniqueIdentifier>{e3235958-9dc9-419a-86b0-936769e47a7c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -364,6 +367,12 @@
     </ClCompile>
     <ClCompile Include="BeachA.cpp">
       <Filter>Source Files\Content\Beach</Filter>
+    </ClCompile>
+    <ClCompile Include="FluidScene.cpp">
+      <Filter>Source Files\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="FluidPlaneA.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -625,6 +634,12 @@
     <ClInclude Include="BeachA.h">
       <Filter>Header Files\Content\Beach</Filter>
     </ClInclude>
+    <ClInclude Include="FluidScene.h">
+      <Filter>Header Files\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="FluidPlaneA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="BasicFrag.shader">
@@ -689,6 +704,24 @@
     </None>
     <None Include="TransformVert.shader">
       <Filter>Shader\Transform</Filter>
+    </None>
+    <None Include="FluidFullscreenVert.shader">
+      <Filter>Shader\Fluid</Filter>
+    </None>
+    <None Include="FluidAdvectFrag.shader">
+      <Filter>Shader\Fluid</Filter>
+    </None>
+    <None Include="FluidDivergenceFrag.shader">
+      <Filter>Shader\Fluid</Filter>
+    </None>
+    <None Include="FluidPressureFrag.shader">
+      <Filter>Shader\Fluid</Filter>
+    </None>
+    <None Include="FluidProjectionFrag.shader">
+      <Filter>Shader\Fluid</Filter>
+    </None>
+    <None Include="FluidAddForceFrag.shader">
+      <Filter>Shader\Fluid</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -177,6 +177,8 @@
     <ClCompile Include="DoomScene.cpp" />
     <ClCompile Include="DoomWall.cpp" />
     <ClCompile Include="DrawTextGL.cpp" />
+    <ClCompile Include="FluidPlaneA.cpp" />
+    <ClCompile Include="FluidScene.cpp" />
     <ClCompile Include="FPSController.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GlTestScene.cpp" />
@@ -259,6 +261,8 @@
     <ClInclude Include="DoomScene.h" />
     <ClInclude Include="DoomWall.h" />
     <ClInclude Include="DrawTextGL.h" />
+    <ClInclude Include="FluidPlaneA.h" />
+    <ClInclude Include="FluidScene.h" />
     <ClInclude Include="FPSController.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GlTestScene.h" />
@@ -307,10 +311,16 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="FluidAddForceFrag.shader" />
+    <None Include="FluidAdvectFrag.shader" />
     <None Include="BasicFrag.shader" />
     <None Include="BasicTesc.shader" />
     <None Include="BasicTese.shader" />
     <None Include="BasicVert.shader" />
+    <None Include="FluidDivergenceFrag.shader" />
+    <None Include="FluidFullscreenVert.shader" />
+    <None Include="FluidPressureFrag.shader" />
+    <None Include="FluidProjectionFrag.shader" />
     <None Include="SimpleFrag.shader" />
     <None Include="SimpleVert.shader" />
     <None Include="SpriteFrag.shader" />
