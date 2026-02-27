@@ -24,7 +24,7 @@ void TheDescentPlayerA::Start()
 	mBoxCollider->SetCustomSize(Vector3(5, 1, 1));
 	AddComponent(mBoxCollider);
 
-	mCanVerticalMove = false;
+	mCanVerticalMove = true;
 
 	SetPosition(Vector3{ -30,0,0 });
 	//move component
@@ -107,6 +107,20 @@ void TheDescentPlayerA::Update()
 	{
 		mTransform.RotateYInDegrees(mMouseDeltaY * mSensitivity);
 	}
+
+	//if ((mMouseDeltaX != 0 && SDL_GetRelativeMouseMode() == SDL_TRUE && mCanHorizontalMove == true) || (mMouseDeltaY != 0 && SDL_GetRelativeMouseMode() == SDL_TRUE && mCanVerticalMove == true))
+	//{
+	//	
+	//	//Rotation is stocked in a vector before being transformed to quat via ZYX order
+	//	const float pitch = mMouseDeltaY * mSensitivity;
+	//	const float yaw = mMouseDeltaX * mSensitivity;
+
+	//	mTransform.addRotationZ(yaw);
+	//	mTransform.addRotationY(pitch);
+	//	mTransform.clampRotationY(-89.0f, 89.0f);
+	//	mTransform.computeRotation();
+	//	Log::Info(to_string(yaw) + " | " + to_string(pitch));
+	//}
 
 	Matrix4Row view = Matrix4Row::CreateLookAt(camPosition, target, up);
 	if (GetScene()->GetRenderer()->GetType() == IRenderer::RendererType::OPENGL)

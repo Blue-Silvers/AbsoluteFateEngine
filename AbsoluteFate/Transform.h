@@ -58,5 +58,47 @@ public:
 	Vector2 GetPosition2D() const { return { mPosition.x, mPosition.y }; };
 	float GetRotation2D() const { return mRotation.z; };
 	float GetRotation2dInDegrees() const { return mRotationDegrees.z; };
+
+
+	//Vector3 mNewRotation;
+	//Quaternion mQRotation;
+
+	//inline Quaternion QuatFromAxisAngle(const Vector3& axis, float angleRad)
+	//{
+	//	Vector3 normalizeAxis = axis;
+	//	normalizeAxis.Normalize(); // IMPORTANT
+
+	//	float halfAngle = angleRad * 0.5f;
+	//	float s = sinf(halfAngle);
+	//	float c = cosf(halfAngle);
+
+	//	return Quaternion(
+	//		c,                    // w
+	//		normalizeAxis.x * s,          // x
+	//		normalizeAxis.y * s,          // y
+	//		normalizeAxis.z * s           // z
+	//	);
+	//}
+
+	//void addRotationX(const float _f) { mNewRotation.x += _f; }
+	//void addRotationY(const float _f) { mNewRotation.y += _f; }
+	//void addRotationZ(const float _f) { mNewRotation.z += _f; }
+
+	//void clampRotationY(const float _min, const float _max) { mNewRotation.y = Maths::Clamp(mNewRotation.y, _min, _max); ComputeWorldTransform();
+	//}
+
+	//void combineRotation(const Quaternion _q) { mQRotation = mQRotation.Concatenate(mQRotation, _q); }
+	//void rotateAroundAxis(const Vector3 _axis, const float _angle) { combineRotation(QuatFromAxisAngle(_axis, Maths::ToRad(_angle))); }
+	//void rotateAroundX(const float _angle) { combineRotation(QuatFromAxisAngle(Forward(), Maths::ToRad(_angle))); }
+	//void rotateAroundY(const float _angle) { combineRotation(QuatFromAxisAngle(Right(), Maths::ToRad(_angle))); }
+	//void rotateAroundZ(const float _angle) { combineRotation(QuatFromAxisAngle(Up(), Maths::ToRad(_angle))); }
+
+	//void computeRotation() {
+	//	mQRotation = Quaternion();
+	//	RotateZInDegrees(mNewRotation.z);
+	//	RotateYInDegrees(mNewRotation.y);
+	//	RotateXInDegrees(mNewRotation.x);
+	//	ComputeWorldTransform();
+	//}
 };
 
