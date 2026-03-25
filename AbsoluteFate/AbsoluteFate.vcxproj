@@ -153,6 +153,7 @@
     <ClCompile Include="BoxCollider3DC.cpp" />
     <ClCompile Include="CameraA.cpp" />
     <ClCompile Include="CameraBowlingA.cpp" />
+    <ClCompile Include="ComputeShader.cpp" />
     <ClCompile Include="Corridor.cpp" />
     <ClCompile Include="CubeTestA.cpp" />
     <ClCompile Include="DeathAngelA.cpp" />
@@ -178,7 +179,7 @@
     <ClCompile Include="DoomWall.cpp" />
     <ClCompile Include="DrawTextGL.cpp" />
     <ClCompile Include="FluidPlaneA.cpp" />
-    <ClCompile Include="FluidScene.cpp" />
+    <ClCompile Include="ComputeShaderScene.cpp" />
     <ClCompile Include="FPSController.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GlTestScene.cpp" />
@@ -236,6 +237,7 @@
     <ClInclude Include="BoxCollider3DC.h" />
     <ClInclude Include="CameraA.h" />
     <ClInclude Include="CameraBowlingA.h" />
+    <ClInclude Include="ComputeShader.h" />
     <ClInclude Include="Corridor.h" />
     <ClInclude Include="CubeTestA.h" />
     <ClInclude Include="DeathAngelA.h" />
@@ -262,7 +264,7 @@
     <ClInclude Include="DoomWall.h" />
     <ClInclude Include="DrawTextGL.h" />
     <ClInclude Include="FluidPlaneA.h" />
-    <ClInclude Include="FluidScene.h" />
+    <ClInclude Include="ComputeShaderScene.h" />
     <ClInclude Include="FPSController.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GlTestScene.h" />
@@ -321,6 +323,9 @@
     <None Include="FluidFullscreenVert.shader" />
     <None Include="FluidPressureFrag.shader" />
     <None Include="FluidProjectionFrag.shader" />
+    <None Include="ParticleFrag.shader" />
+    <None Include="particles.comp" />
+    <None Include="ParticleVert.shader" />
     <None Include="SimpleFrag.shader" />
     <None Include="SimpleVert.shader" />
     <None Include="SpriteFrag.shader" />

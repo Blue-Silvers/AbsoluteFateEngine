@@ -6,7 +6,7 @@
 #include "DoomScene.h"
 #include "BeachScene.h"
 
-#include "FluidScene.h"
+#include "ComputeShaderScene.h"
 
 #include <iostream>
 #include <fstream>
@@ -22,7 +22,7 @@ GlTestScene* sceneOpenGl = new GlTestScene();
 BowlingScene* sceneBowling = new BowlingScene();
 DoomScene* doomScene = new DoomScene();
 BeachScene* beachScene = new BeachScene();
-FluidScene* fluidScene = new FluidScene();
+ComputeShaderScene* computeShaderScene = new ComputeShaderScene();
 
 //Choose your scene
 int main(int argc, char** argv) {
@@ -31,6 +31,6 @@ int main(int argc, char** argv) {
 	//Game myGame("Super Bowling 3D", sceneBowling, IRenderer::RendererType::OPENGL);
 	//Game myGame("Doom", doomScene, IRenderer::RendererType::OPENGL);
 	//Game myGame("Take me to the beach", beachScene, IRenderer::RendererType::OPENGL);
-	Game myGame("Compute shader", fluidScene, IRenderer::RendererType::OPENGL);
+	Game myGame("Compute shader", computeShaderScene, IRenderer::RendererType::OPENGL);
 	return 0;
 }

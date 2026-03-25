@@ -200,136 +200,14 @@ IRenderer::RendererType RendererGl::GetType()
 	return RendererType::OPENGL;
 }
 
-					//WIP//
-/*void RendererGl::load_font(char* filePath, int fontSize)
-{
-	FT_Library fontLibrary;
-	FT_Init_FreeType(&fontLibrary);
-
-	FT_Face fontFace = FT_Face();
-	FT_New_Face(fontLibrary, filePath, 0, &fontFace);
-	FT_Set_Pixel_Sizes(fontFace, 0, fontSize);
-
-	int padding = 2;
-	int row = 0;
-	int col = padding;
-
-	const int textureWidth = 512;
-	char textureBuffer[textureWidth * textureWidth];
-	for (FT_ULong glyphIdx = 32; glyphIdx < 127; ++glyphIdx)
-	{
-		FT_UInt glyphIndex = FT_Get_Char_Index(fontFace, glyphIdx);
-		FT_Load_Glyph(fontFace, glyphIndex, FT_LOAD_DEFAULT);
-		FT_Error error = FT_Render_Glyph(fontFace->glyph, FT_RENDER_MODE_NORMAL);
-
-		if (col + fontFace->glyph->bitmap.width + padding >= 512)
-		{
-			col = padding;
-			row += fontSize;
-		}
-
-		// Font Height
-		renderData->fontHeight = Maths::max((fontFace->size->metrics.ascender - fontFace->size->metrics.descender) >> 6, renderData->fontHeight);
-		for (unsigned int y = 0; y < fontFace->glyph->bitmap.rows; ++y)
-		{
-			for (unsigned int x = 0; x < fontFace->glyph->bitmap.width; ++x)
-			{
-				textureBuffer[(row + y) * textureWidth + col + x] =
-					fontFace->glyph->bitmap.buffer[y * fontFace->glyph->bitmap.width + x];
-			}
-		}
-
-		Glyph* glyph = &renderData->glyphs[glyphIdx];
-		glyph->textureCoords = { (float)col, (float)row };
-		glyph->size =
-		{
-		  (float)fontFace->glyph->bitmap.width,
-		  (float)fontFace->glyph->bitmap.rows
-		};
-		glyph->advance =
-		{
-		  (float)(fontFace->glyph->advance.x >> 6),
-		  (float)(fontFace->glyph->advance.y >> 6)
-		};
-		glyph->offset =
-		{
-		  (float)fontFace->glyph->bitmap_left,
-		  (float)fontFace->glyph->bitmap_top,
-		};
-
-		col += fontFace->glyph->bitmap.width + padding;
-	}
-
-	FT_Done_Face(fontFace);
-	FT_Done_FreeType(fontLibrary);
-
-	// Upload OpenGL Texture
-	{
-		glGenTextures(1, (GLuint*)&glContext.fontAtlasID);
-		glActiveTexture(GL_TEXTURE1); // Bound to binding = 1, see SpriteFrag.shader
-		glBindTexture(GL_TEXTURE_2D, glContext.fontAtlasID);
-
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_R8, textureWidth, textureWidth, 0,
-			GL_RED, GL_UNSIGNED_BYTE, (char*)textureBuffer);
-
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-	}
+void RendererGl::Wait(MemoryBarrier barrier) {
+	glMemoryBarrier(static_cast<GLbitfield>(barrier));
 }
 
-void RendererGl::draw_ui_text(char* text, Vector2 pos, TextData textData)
-{
-	if (!text)
-	{
-		return;
-	}
-
-	Vector2 origin = pos;
-	while (char c = *(text++))
-	{
-		if (c == '\n')
-		{
-			pos.y += renderData->fontHeight * textData.fontSize;
-			pos.x = origin.x;
-			continue;
-		}
-
-		Glyph glyph = renderData->glyphs[c];
-		ShaderTransform transform = {};
-		transform.materialIdx = get_material_idx(textData.material);
-		transform.pos.x = pos.x + glyph.offset.x * textData.fontSize;
-		transform.pos.y = pos.y - glyph.offset.y * textData.fontSize;
-		transform.atlasOffset = glyph.textureCoords;
-		transform.spriteSize = glyph.size;
-		transform.size = glyph.size * textData.fontSize;
-		transform.renderOptions = textData.renderOptions | RENDERING_OPTION_FONT;
-		transform.layer = textData.layer;
-
-		renderData->uiTransforms.push_back(transform);
-
-		// Advance the Glyph
-		pos.x += glyph.advance.x * textData.fontSize;
-	}
+void RendererGl::DispatchCompute(unsigned int numGroupsX, unsigned int numGroupsY, unsigned int numGroupsZ) {
+	glDispatchCompute(numGroupsX, numGroupsY, numGroupsZ);
 }
 
-int RendererGl::get_material_idx(Material material)
-{
-	// Convert from SRGB to linear color space, to be used in the shader, poggies
-	material.color.x = powf(material.color.x, 2.2f);
-	material.color.y = powf(material.color.y, 2.2f);
-	material.color.z = powf(material.color.z, 2.2f);
-	material.color.w = powf(material.color.w, 2.2f);
-
-	for (int materialIdx = 0; materialIdx < renderData->materials.size(); materialIdx++)
-	{
-		if (renderData->materials[materialIdx] == &material)
-		{
-			return materialIdx;
-		}
-	}
-	renderData->materials.push_back(&material);
-	return 0;
+void RendererGl::BindBufferBase(unsigned int slot, unsigned int bufferID) {
+	glBindBufferBase(GL_SHADER_STORAGE_BUFFER, slot, bufferID);
 }
-//https://youtu.be/23x0nGzHQgY?si=7uZus4COJtWPWxut&t=1008*/

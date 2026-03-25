@@ -5,6 +5,12 @@
 
 class SpriteC;
 
+enum class MemoryBarrier {
+	VertexAttribute = GL_VERTEX_ATTRIB_ARRAY_BARRIER_BIT,
+	StorageBuffer = GL_SHADER_STORAGE_BARRIER_BIT,
+	All = GL_ALL_BARRIER_BITS
+};
+
 struct Glyph
 {
 	Vector2 offset;
@@ -89,8 +95,8 @@ public:
 	RendererType GetType() override;
 	Matrix4Row GetProj() override { return mProj; }
 
-						//WIP//
-	/*void load_font(char* filePath, int fontSize);
-	void draw_ui_text(char* text, Vector2 pos, TextData textData = {});
-	int get_material_idx(Material material = {});*/
+	//Compute shader
+	static void Wait(MemoryBarrier barrier);
+	void DispatchCompute(unsigned int numGroupsX, unsigned int numGroupsY = 1, unsigned int numGroupsZ = 1);
+	void BindBufferBase(unsigned int slot, unsigned int bufferID);
 };

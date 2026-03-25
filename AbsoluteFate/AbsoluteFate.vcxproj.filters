@@ -129,6 +129,15 @@
     <Filter Include="Shader\Fluid">
       <UniqueIdentifier>{e3235958-9dc9-419a-86b0-936769e47a7c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Content\ComputeShader">
+      <UniqueIdentifier>{e9440b72-f272-407f-96fa-a9c0337f2a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Content\ComputeShader">
+      <UniqueIdentifier>{cad36966-b7bf-41c8-b211-0c6051671f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\ComputeShader">
+      <UniqueIdentifier>{5ff2733d-cf48-4c41-a952-797f4c13cf3c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimatedSpriteC.cpp">
@@ -368,10 +377,13 @@
     <ClCompile Include="BeachA.cpp">
       <Filter>Source Files\Content\Beach</Filter>
     </ClCompile>
-    <ClCompile Include="FluidScene.cpp">
-      <Filter>Source Files\Content</Filter>
-    </ClCompile>
     <ClCompile Include="FluidPlaneA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeShaderScene.cpp">
+      <Filter>Source Files\Content\ComputeShader</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -634,10 +646,13 @@
     <ClInclude Include="BeachA.h">
       <Filter>Header Files\Content\Beach</Filter>
     </ClInclude>
-    <ClInclude Include="FluidScene.h">
-      <Filter>Header Files\Content</Filter>
-    </ClInclude>
     <ClInclude Include="FluidPlaneA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeShaderScene.h">
+      <Filter>Header Files\Content\ComputeShader</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeShader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -722,6 +737,15 @@
     </None>
     <None Include="FluidAddForceFrag.shader">
       <Filter>Shader\Fluid</Filter>
+    </None>
+    <None Include="particles.comp">
+      <Filter>Shader\ComputeShader</Filter>
+    </None>
+    <None Include="ParticleFrag.shader">
+      <Filter>Shader\ComputeShader</Filter>
+    </None>
+    <None Include="ParticleVert.shader">
+      <Filter>Shader\ComputeShader</Filter>
     </None>
   </ItemGroup>
 </Project>
