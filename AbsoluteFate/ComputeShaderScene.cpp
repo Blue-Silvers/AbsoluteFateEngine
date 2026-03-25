@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cmath>
 #include "RendererGl.h"
+#include "Time.h"
 
 void ComputeShaderScene::SetRenderer(IRenderer* pRenderer)
 {
@@ -37,9 +38,12 @@ void ComputeShaderScene::Start()
     // Position
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(Particle), (void*)0);
-    // Color
+
+    // Coulor
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(Particle), (void*)offsetof(Particle, color));
+
+    glBindVertexArray(0);
 
     // Actor setup
     /*cam = new CameraA();
@@ -57,33 +61,48 @@ void ComputeShaderScene::Update()
 //Drawing
 void ComputeShaderScene::Render()
 {
-    mComputeShader->Bind();
-    mComputeShader->setVector2f("uMousePos", Vector2(0.0f, 0.0f)); // À lier à tes inputs
+    glEnable(GL_PROGRAM_POINT_SIZE);
 
-    // link SSBO 
-    glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 0, mSSBO);
+        if (mComputeShader)
+        {
+            mComputeShader->Bind();
 
-    // Dispatch
-    mComputeShader->Dispatch(mParticleCount / 256, 1, 1);
+            mComputeShader->setFloat("uDeltaTime", Time::deltaTime);
+            mComputeShader->setFloat("uTime", 1.0f);
 
-    // synchronise
-    RendererGl::Wait(MemoryBarrier::VertexAttribute);
+            int mouseX = 0;
+            int mouseY = 0;
+            SDL_GetMouseState(&mouseX, &mouseY);
+            Vector2 mousePos = { (float)mouseX , (float)mouseY };
 
-    mComputeShader->Unbind();
+            mComputeShader->setVector2f("uMousePos", mousePos);
 
-    if (RendererGl* renderer = dynamic_cast<RendererGl*>(mRenderer)) {
-        renderer->SetShaderProgram(mShaderProgram);
+            glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 0, mSSBO);
 
-        glEnable(GL_BLEND);
-        glBlendFunc(GL_SRC_ALPHA, GL_ONE);
+            mComputeShader->Dispatch(mParticleCount / 256, 1, 1);
 
-        glBindVertexArray(mVAO);
-        glDrawArrays(GL_POINTS, 0, mParticleCount);
+            glMemoryBarrier(GL_VERTEX_ATTRIB_ARRAY_BARRIER_BIT);
 
-        glDisable(GL_BLEND);
-    }
+            mComputeShader->Unbind();
+        }
 
-    Scene::Render();
+        if (RendererGl* renderer = dynamic_cast<RendererGl*>(mRenderer))
+        {
+            mShaderProgram->Use();
+
+            glEnable(GL_BLEND);
+            glBlendFunc(GL_SRC_ALPHA, GL_ONE);
+            glEnable(GL_PROGRAM_POINT_SIZE);
+
+            glBindVertexArray(mVAO);
+
+            glDrawArrays(GL_POINTS, 0, mParticleCount);
+
+            glBindVertexArray(0);
+            glDisable(GL_BLEND);
+        }
+
+        Scene::Render();
 }
 
 void ComputeShaderScene::Close()

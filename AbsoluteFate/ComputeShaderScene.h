@@ -20,7 +20,7 @@ class ComputeShaderScene : public Scene
 {
 private:
 	ComputeShader* mComputeShader;
-	unsigned int mParticleCount = 10000;
+	unsigned int mParticleCount = 100000;
 	unsigned int mSSBO;
 	unsigned int mVAO;
 

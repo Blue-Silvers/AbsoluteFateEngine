@@ -18,6 +18,7 @@ RendererGl::RendererGl() :  mWindow(nullptr),
 
 {
 	mSpriteViewProj = Matrix4Row::CreateSimpleViewProj(800, 800);
+	glEnable(GL_PROGRAM_POINT_SIZE);
 }
 
 RendererGl::~RendererGl()
