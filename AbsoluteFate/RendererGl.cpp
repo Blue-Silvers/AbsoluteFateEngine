@@ -66,8 +66,6 @@ bool RendererGl::Initialize(Window& rWindow)
 
 	glPatchParameteri(GL_PATCH_VERTICES, 3);
 
-	//load_font((char*)"Resources/Fonts/AtariClassic-gry3.ttf", 8);
-
 	return true;
 }
 

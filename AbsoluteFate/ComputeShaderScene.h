@@ -26,7 +26,16 @@ private:
 	Shader mVertexShader;
 	Shader mFragmentShader;
 
+	//Uniforms data
 	float mTotalTime = 0.0f;
+	int mMouseX, mMouseY = 0;
+	int mWindowWidth, mWindowHeight = 0;
+	Uint32 mMouseState = 0;
+	float mNdcX = 0.0f;
+	float mNdcY = 0.0f;
+	Vector2 mMousePos = { 0.0f, 0.0f };
+	bool mIsLeftClicking = false;
+	bool mIsRightClicking = false;
 
 public:
 	ComputeShaderScene() :Scene("OpenGl") {};

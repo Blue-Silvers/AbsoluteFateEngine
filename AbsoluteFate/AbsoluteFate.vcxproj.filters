@@ -377,14 +377,14 @@
     <ClCompile Include="BeachA.cpp">
       <Filter>Source Files\Content\Beach</Filter>
     </ClCompile>
-    <ClCompile Include="FluidPlaneA.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ComputeShaderScene.cpp">
       <Filter>Source Files\Content\ComputeShader</Filter>
     </ClCompile>
+    <ClCompile Include="FluidPlaneA.cpp">
+      <Filter>Source Files\WIP</Filter>
+    </ClCompile>
     <ClCompile Include="ComputeShader.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Content\ComputeShader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -646,14 +646,14 @@
     <ClInclude Include="BeachA.h">
       <Filter>Header Files\Content\Beach</Filter>
     </ClInclude>
-    <ClInclude Include="FluidPlaneA.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ComputeShaderScene.h">
       <Filter>Header Files\Content\ComputeShader</Filter>
     </ClInclude>
     <ClInclude Include="ComputeShader.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Content\ComputeShader</Filter>
+    </ClInclude>
+    <ClInclude Include="FluidPlaneA.h">
+      <Filter>Header Files\WIP</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

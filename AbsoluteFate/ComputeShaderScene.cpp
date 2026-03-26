@@ -4,8 +4,6 @@
 #include "RendererGl.h"
 #include "Time.h"
 
-#include "Log.h"
-
 void ComputeShaderScene::SetRenderer(IRenderer* pRenderer)
 {
 	mRenderer = pRenderer;
@@ -41,7 +39,7 @@ void ComputeShaderScene::Start()
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(Particle), (void*)0);
 
-    // Coulor
+    // Color
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(Particle), (void*)offsetof(Particle, color));
 
@@ -53,7 +51,17 @@ void ComputeShaderScene::Start()
 void ComputeShaderScene::Update()
 {
 	Scene::Update();
+
+    //Uniforms datas calcul
     mTotalTime += SDL_GetTicks() / 10000.0f;
+    mMouseState = SDL_GetMouseState(&mMouseX, &mMouseY);
+    mIsLeftClicking = (mMouseState & SDL_BUTTON(SDL_BUTTON_LEFT));
+    mIsRightClicking = (mMouseState & SDL_BUTTON(SDL_BUTTON_RIGHT));
+    mWindowWidth, mWindowHeight;
+    SDL_GetWindowSize(SDL_GL_GetCurrentWindow(), &mWindowWidth, &mWindowHeight);
+    mNdcX = (2.0f * mMouseX) / (float)mWindowWidth - 1.0f;
+    mNdcY = 1.0f - (2.0f * mMouseY) / (float)mWindowHeight;
+    mMousePos = { (float)mNdcX , (float)mNdcY };
 }
 
 //Drawing
@@ -65,23 +73,23 @@ void ComputeShaderScene::Render()
         {
             mComputeShader->Bind();
 
+            //Set uniforms
             mComputeShader->setFloat("uDeltaTime", Time::deltaTime);
             mComputeShader->setFloat("uTime", mTotalTime);
-
-            ///DEBUG///
-            //Log::Info(to_string(mTotalTime));
-
-            int windowWidth, windowHeight;
-            SDL_GetWindowSize(SDL_GL_GetCurrentWindow(), &windowWidth, &windowHeight);
-            int mouseX = 0;
-            int mouseY = 0;
-            SDL_GetMouseState(&mouseX, &mouseY);
-            // CONVERSION CRITIQUE
-            float ndcX = (2.0f * mouseX) / (float)windowWidth - 1.0f;
-            float ndcY = 1.0f - (2.0f * mouseY) / (float)windowHeight;
-            Vector2 mousePos = { (float)ndcX , (float)ndcY };
-
-            mComputeShader->setVector2f("uMousePos", mousePos);
+            if(mIsLeftClicking)
+            {
+                mComputeShader->setVector2f("uMousePos", mMousePos);
+                mComputeShader->setBool("uPulse", false);
+            }
+            else if (mIsRightClicking) 
+            {
+                mComputeShader->setVector2f("uMousePos", mMousePos);
+                mComputeShader->setBool("uPulse", true);
+            }
+            else
+            {
+                mComputeShader->setVector2f("uMousePos", { 2,2 });
+            }
 
             glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 0, mSSBO);
 
