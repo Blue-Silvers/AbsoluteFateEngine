@@ -1,5 +1,5 @@
-# 🎮 AbsoluteFateEngine – AdvancedOpenGL
-This branch of the AbsoluteFateEngine project focuses on exploring and demonstrating advanced OpenGL techniques through the development of custom shaders. It serves as a sandbox for experimenting with modern rendering features.
+# 🎮 AbsoluteFateEngine – ComputeShader
+This branch of the AbsoluteFateEngine project focuses on experiment compute shader with particule system interactible with mouse
 
 ## ✨ Showcase
 
@@ -45,14 +45,8 @@ This branch includes several shader examples, such as :
 
 | Key(s)        | Action                          |
 |---------------|---------------------------------|
-| `Z`           | Move forward                    |
-| `S`           | Move backward                   |
-| `Q`           | Strafe left                     |
-| `D`           | Strafe right                    |
-| `Mouse`       | Camera orientation              |
-| `TAB`         | Show vertices                   |
-| `Enter`       | Take control of the player      |
-| `Escape`      | Exit the game                   |
+| `Mouse Left click`   | Attract                  |
+| `Mouse Rights click` | Impulse                  |
 
 ## 🧰 Dependencies
 - **GLFW** for window management and keyboard/mouse input
