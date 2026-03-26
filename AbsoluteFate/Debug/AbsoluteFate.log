@@ -1,5 +1,1 @@
-﻿  ComputeShaderScene.cpp
-C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\AbsoluteFate\RendererGL.h(11,2): warning C4369: 'MemoryBarrier::All':  enumerator value '4294967295' cannot be represented as 'int', value is '4294967295'
-  (compiling source file 'ComputeShaderScene.cpp')
-  
-  AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe
+﻿  AbsoluteFate.vcxproj -> C:\Users\fury8\OneDrive\Documents\GitHub\AbsoluteFateEngine\Debug\AbsoluteFate.exe

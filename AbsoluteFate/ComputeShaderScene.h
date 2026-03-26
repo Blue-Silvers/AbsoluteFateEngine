@@ -3,9 +3,6 @@
 #include "ShaderProgram.h"
 #include "Shader.h"
 #include "VertexArray.h"
-#include "CameraA.h"
-#include "Corridor.h"
-
 #include "ComputeShader.h"
 #include "Vector2.h"
 #include "Vector4.h"
@@ -29,9 +26,7 @@ private:
 	Shader mVertexShader;
 	Shader mFragmentShader;
 
-	//actor
-	CameraA* cam;
-	Corridor* corridor;
+	float mTotalTime = 0.0f;
 
 public:
 	ComputeShaderScene() :Scene("OpenGl") {};

@@ -25,18 +25,30 @@ void main() {
 
     vec2 dir = uMousePos - pos; 
     float dist = length(dir);
-    
+
+    vec2 perturbation = vec2(sin(uTime * 2.0 + pos.y * 10.0), cos(uTime * 2.0 + pos.x * 10.0)) * 0.05;
+
     float strength = 0.5 / (dist + 0.1); 
-    vec2 force = normalize(dir) * strength;
+    vec2 force = (normalize(dir) + perturbation) * strength;
 
-    //if (dist > 0.5) force *= 0.0; 
+    if (dist > 0.5) 
+    {
+        if (dist < 1.0) 
+        {
+            force *= (1-dist)*2;
+        }
+        else
+        {
+            force *= 0.0;
+        }
+    } 
 
-    vel += force * u_DeltaTime;
-    vel *= 0.98; // Friction pour stabiliser
-    pos += vel * u_DeltaTime;
+    vel += force * uDeltaTime;
+    vel *= 0.98; 
+    pos += vel * uDeltaTime;
 
     particles[id].pos = pos;
     particles[id].vel = vel;
     
-    particles[id].color = vec4(0.5 + (pos.x * 0.5), 0.2, 0.8 + (dist * 0.5), 1.0);
+    particles[id].color = vec4(0.5 + (pos.x * 0.5), 0.2, 0.8 + (dist * 0.5), 0.5);
 }

@@ -8,9 +8,6 @@
 #include <string>
 
 class ComputeShader {
-private:
-    unsigned int mId;
-
 public:
     ComputeShader(const std::string& filePath);
     ~ComputeShader();
@@ -38,7 +35,7 @@ public:
     void setMatrix4Row(const GLchar* name, const Matrix4Row& matrix);
 
 private:
-    unsigned int m_RendererID;
+    unsigned int mId;
     int GetUniformLocation(const std::string& name) const;
     std::string ReadFile(const std::string& filePath);
 };

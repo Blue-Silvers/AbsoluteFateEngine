@@ -4,6 +4,8 @@
 #include "RendererGl.h"
 #include "Time.h"
 
+#include "Log.h"
+
 void ComputeShaderScene::SetRenderer(IRenderer* pRenderer)
 {
 	mRenderer = pRenderer;
@@ -45,17 +47,13 @@ void ComputeShaderScene::Start()
 
     glBindVertexArray(0);
 
-    // Actor setup
-    /*cam = new CameraA();
-    cam->AttachScene(this);
-    AddActor(cam);*/
-
     Scene::Start();
 }
 
 void ComputeShaderScene::Update()
 {
 	Scene::Update();
+    mTotalTime += SDL_GetTicks() / 10000.0f;
 }
 
 //Drawing
@@ -68,12 +66,20 @@ void ComputeShaderScene::Render()
             mComputeShader->Bind();
 
             mComputeShader->setFloat("uDeltaTime", Time::deltaTime);
-            mComputeShader->setFloat("uTime", 1.0f);
+            mComputeShader->setFloat("uTime", mTotalTime);
 
+            ///DEBUG///
+            //Log::Info(to_string(mTotalTime));
+
+            int windowWidth, windowHeight;
+            SDL_GetWindowSize(SDL_GL_GetCurrentWindow(), &windowWidth, &windowHeight);
             int mouseX = 0;
             int mouseY = 0;
             SDL_GetMouseState(&mouseX, &mouseY);
-            Vector2 mousePos = { (float)mouseX , (float)mouseY };
+            // CONVERSION CRITIQUE
+            float ndcX = (2.0f * mouseX) / (float)windowWidth - 1.0f;
+            float ndcY = 1.0f - (2.0f * mouseY) / (float)windowHeight;
+            Vector2 mousePos = { (float)ndcX , (float)ndcY };
 
             mComputeShader->setVector2f("uMousePos", mousePos);
 
