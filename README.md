@@ -1,11 +1,12 @@
 # 🎮 AbsoluteFateEngine – ComputeShader
 This branch of the AbsoluteFateEngine project focuses on experiment compute shader with particule system interactible with mouse
 
-## ✨ Showcase
+## ✨ Showcases
+
+https://github.com/user-attachments/assets/4e923334-22ea-467e-9292-22d00dd116b8
 
 
-https://github.com/user-attachments/assets/ab258933-a56f-4b22-bc4d-26a1dc5bd420
-
+https://github.com/user-attachments/assets/d380fbbb-52b4-4924-9210-1cc01f7125e9
 
 
 
@@ -17,13 +18,13 @@ https://github.com/user-attachments/assets/ab258933-a56f-4b22-bc4d-26a1dc5bd420
 `AbsoluteFate.sln` : Solution file for Visual Studio.
  
 - **Header/CPP use for this branch** :
-
-<img width="185" alt="image" src="https://github.com/user-attachments/assets/47ad79f6-687f-48ee-972b-9749bdd31615" /> <img width="190" alt="image" src="https://github.com/user-attachments/assets/9e270bbe-3a01-4a49-8eb3-4b1a0c5eb4f5" />
+<img width="256" height="153" alt="image" src="https://github.com/user-attachments/assets/c21e850f-044f-44c2-aeee-b5c718d3605f" />
+ <img width="256" height="157" alt="image" src="https://github.com/user-attachments/assets/31b91e57-6327-48ba-8aff-bcd2466adfb1" />
 
 
 - **Shaders use for this branch** :
 
-<img width="197" alt="image" src="https://github.com/user-attachments/assets/c9e32660-2dd0-4c63-aa4b-5e4ff0aa5ed3" />
+<img width="215" height="115" alt="image" src="https://github.com/user-attachments/assets/d670743c-6880-424f-928e-5c8d0bad50ad" />
 
 
 
